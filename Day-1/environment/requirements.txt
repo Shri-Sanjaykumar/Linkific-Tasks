@@ -1,0 +1,3 @@
+# Day 1 - Core Python Environment Dependencies
+numpy>=2.0.0
+pandas>=2.2.0
