@@ -19,4 +19,5 @@ This repository contains day-wise folders to organize and document all internshi
 
 ### Folder Structure
 - `Day-1/` — AI/ML fundamentals, learning roadmap, and development environment setup.
+- `Day-2/` — Python fundamentals, practice exercises, student grade calculator, and simple calculator.
 - Future training days will be added progressively as tasks are assigned.
