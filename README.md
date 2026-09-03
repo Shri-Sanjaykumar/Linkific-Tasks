@@ -23,4 +23,5 @@ This repository contains day-wise folders to organize and document all internshi
 - `Day-3/` — Python data structures, file handling, and Student Record Management System.
 - `Day-4/` — NumPy fundamentals, 1D/2D arrays, indexing, slicing, and Student Marks Analysis.
 - `Day-5/` — Pandas fundamentals, DataFrames, CSV loading, filtering, and summary statistics.
+- `Day-6/` — Data visualization with Matplotlib & Seaborn (Bar, Line, Histogram, Pie).
 - Future training days will be added progressively as tasks are assigned.

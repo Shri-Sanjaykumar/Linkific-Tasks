@@ -1,11 +1,11 @@
 Employee_ID,Name,Department,Age,Salary,Experience_Years
 101,Aarav Sharma,Engineering,28,72000,4
-102,Diya Patel,Marketing,24,52000,2
+102,Diya Patel,HR,23,52000,2
 103,Rohan Verma,Engineering,32,88000,7
-104,Ananya Iyer,Data Science,26,78000,3
-105,Kavya Reddy,Marketing,29,,5
+104,Ananya Iyer,Engineering,26,78000,3
+105,Kavya Reddy,Marketing,29,65000,5
 106,Vikram Singh,Data Science,35,95000,10
 107,Neha Joshi,Engineering,25,60000,2
-108,Rahul Nair,HR,30,55000,
+108,Rahul Nair,HR,30,55000,3
 109,Pooja Hegde,Data Science,27,82000,4
-110,Siddharth Das,HR,31,58000,6
+110,Siddharth Das,HR,43,58000,6

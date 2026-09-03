@@ -54,3 +54,7 @@ secrets.json
 
 # Logs
 *.log
+
+# Local exported charts
+charts/
+Day-6/charts/
