@@ -24,4 +24,5 @@ This repository contains day-wise folders to organize and document all internshi
 - `Day-4/` — NumPy fundamentals, 1D/2D arrays, indexing, slicing, and Student Marks Analysis.
 - `Day-5/` — Pandas fundamentals, DataFrames, CSV loading, filtering, and summary statistics.
 - `Day-6/` — Data visualization with Matplotlib & Seaborn (Bar, Line, Histogram, Pie).
+- `Day-7/` — Week 1 Mini Project: Student Performance Analysis Dashboard (Data cleaning, analysis, and 4 visualizations).
 - Future training days will be added progressively as tasks are assigned.
