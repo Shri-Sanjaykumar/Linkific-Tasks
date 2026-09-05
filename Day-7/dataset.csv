@@ -1,10 +1,10 @@
 Student_ID,Name,Gender,Study_Hours_Per_Week,Attendance_Percentage,Maths,Science,English,Social,Physical_Education
 101,Aarav Sharma,Male,14,92,78,82,75,80,88
 102,Diya Patel,Female,16.5,95,88,90,92,86,94
-103,Rohan Verma,Male,10.5,99,99,99,98,100,100
+103,Rohan Verma,Male,10.5,99,99,99,98,100,32
 104,Ananya Iyer,Female,18,96,92,95,89,91,90
 105,Kavya Reddy,Female,12,84,70,74,72,68,85
-106,Vikram Singh,Male,15.5,89,84,86,78,82,80
+106,Vikram Singh,Male,15.5,89,84,86,78,82,12
 107,Neha Joshi,Female,,75,55,60,58,62,70
 108,Rahul Nair,Male,8.5,70,25,20,22,18,30
 109,Pooja Hegde,Female,13.5,88,74,78,80,76,82
@@ -19,8 +19,8 @@ Student_ID,Name,Gender,Study_Hours_Per_Week,Attendance_Percentage,Maths,Science,
 118,Varun Kapoor,Male,12.5,83,67,72,70,66,84
 119,Riya Jain,Female,16,91,86,,84,88,90
 120,Nikhil Gupta,Male,6.5,62,99,35,38,30,50
-121,Ishaan Malhotra,Male,14.5,85,75,78,74,72,85
+121,Ishaan Malhotra,Male,14.5,85,75,78,74,72,49
 122,Shreya Nambiar,Female,15,89,45,85,86,80,89
 123,Ritika Sen,Female,13,81,64,67,65,68,76
 124,Harsh Vardhan,Male,10,74,79,62,60,56,74
-125,Divya Krishnan,Female,17.5,93,89,91,90,87,92
+125,Divya Krishnan,Female,17.5,93,89,91,90,87,76

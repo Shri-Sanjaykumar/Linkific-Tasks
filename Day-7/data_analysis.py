@@ -11,11 +11,11 @@ import seaborn as sns
 # Intern: Shri Sanjaykumar V | Role: AI/ML Intern | Organization: Linkific
 # ==============================================================================
 
-print("=" * 70)
+print("=" * 65)
 print("     STUDENT PERFORMANCE ANALYSIS DASHBOARD (WEEK 1 MINI PROJECT)   ")
-print("=" * 70)
+print("=" * 65)
 
-# 1. Load Dataset Dynamically
+# 1. Load Dataset
 data_path = os.path.join(os.path.dirname(__file__), "dataset.csv") if "__file__" in locals() else "dataset.csv"
 df = pd.read_csv(data_path)
 print(f"Dataset loaded from: {os.path.abspath(data_path)}")
@@ -59,7 +59,7 @@ def assign_grade(score):
 df["Grade"] = df["Average_Marks"].apply(assign_grade)
 df["Pass_Status"] = np.where(df["Average_Marks"] >= 40, "Pass", "Fail")
 
-# 5. Dynamic Summary Metrics
+# 5. Summary Metrics
 total_students = len(df)
 class_avg = df["Average_Marks"].mean()
 top_idx = df["Average_Marks"].idxmax()
@@ -115,7 +115,7 @@ bars = plt.bar(subjects, subject_means.values, color=bar_colors, edgecolor="blac
 plt.title("Subject-Wise Average Marks (5 Subjects)", fontsize=12, fontweight="bold")
 plt.xlabel("Subjects", fontsize=10)
 plt.ylabel("Average Marks (Out of 100)", fontsize=10)
-plt.ylim(0, 100)
+plt.ylim(0, max(100, float(highest_sub_val) + 10))
 for bar in bars:
     yval = bar.get_height()
     plt.text(bar.get_x() + bar.get_width() / 2.0, yval + 1.5, f"{yval:.2f}", ha="center", va="bottom", fontsize=9)
@@ -139,7 +139,6 @@ print(f"Saved: {hist_file}")
 
 # Chart 3: Pie Chart — Performance Category Distribution
 plt.figure(figsize=(6, 6))
-# Filter out non-zero categories for clean pie chart
 active_grades = grade_counts[grade_counts > 0]
 pie_colors = ["#F8E71C", "#50E3C2", "#4A90E2", "#D0021B"]
 plt.pie(active_grades.values, labels=active_grades.index, autopct="%1.1f%%", startangle=140,
@@ -151,7 +150,7 @@ plt.savefig(pie_file)
 plt.close()
 print(f"Saved: {pie_file}")
 
-# Chart 4: Line Chart — Student Performance Progression (Sample Cohort)
+# Chart 4: Line Chart — Student Performance Progression
 plt.figure(figsize=(9, 4.5))
 sample_df = df.head(12)
 plt.plot(sample_df["Name"], sample_df["Average_Marks"], marker="o", color="#9013FE", linewidth=2)
@@ -159,6 +158,7 @@ plt.title("Student Performance Progression (Sample Cohort)", fontsize=12, fontwe
 plt.xlabel("Student Name", fontsize=10)
 plt.ylabel("Average Marks", fontsize=10)
 plt.xticks(rotation=45, ha="right")
+plt.ylim(max(0, float(df["Average_Marks"].min()) - 10), min(100, float(df["Average_Marks"].max()) + 5))
 plt.grid(True, linestyle="--", alpha=0.5)
 plt.tight_layout()
 line_file = os.path.join(charts_dir, "line_chart.png")
@@ -167,11 +167,11 @@ plt.close()
 print(f"Saved: {line_file}")
 print()
 
-# 7. Dynamic Key Insights Generation
+# 7. Key Insights
 dist_count = grade_counts.get("Distinction", 0)
 fc_count = grade_counts.get("First Class", 0)
 
-dynamic_insights = [
+key_insights = [
     f"1. Top Performing Subject: {highest_subject} recorded the highest class average of {highest_sub_val:.2f} marks.",
     f"2. Most Challenging Subject: {lowest_subject} recorded the lowest class average of {lowest_sub_val:.2f} marks, showing a {(highest_sub_val - lowest_sub_val):.2f}-point gap compared to {highest_subject}.",
     f"3. Top Academic Achiever: {top_student_name} achieved the highest overall average of {top_student_score:.2f} marks across all 5 subjects.",
@@ -180,9 +180,9 @@ dynamic_insights = [
     f"6. Score Range & Spread: Student averages range from {lowest_student_score:.2f} ({lowest_student_name}) to {top_student_score:.2f} ({top_student_name}), with a cohort average of {class_avg:.2f} marks."
 ]
 
-print("=" * 70)
-print("                    DYNAMICALLY GENERATED KEY INSIGHTS                  ")
-print("=" * 70)
-for insight in dynamic_insights:
+print("=" * 65)
+print("                           KEY INSIGHTS                         ")
+print("=" * 65)
+for insight in key_insights:
     print(insight)
-print("=" * 70)
+print("=" * 65)
