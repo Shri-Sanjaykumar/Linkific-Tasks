@@ -118,6 +118,12 @@ python data_analysis.py
 ### Run the Jupyter Notebook
 Open [`data_analysis.ipynb`](data_analysis.ipynb) in VS Code and click **Run All**.
 
+## 🎥 Demo Video
+
+A walkthrough demonstration of the Student Performance Analysis Dashboard, executing both the interactive Jupyter Notebook and the standalone Python pipeline, verifying data recalculations, and showcasing all 4 visualizations:
+
+- **Video File:** [`demo_video.mp4`](demo_video.mp4) *(Available for direct playback on GitHub or local viewing)*
+
 ---
 
 ## 📁 Project Structure
@@ -128,6 +134,7 @@ Day-7/
 ├── dataset_baseline.csv   # Initial baseline dataset for demonstration & reset
 ├── data_analysis.ipynb    # Interactive notebook with charts & key insights
 ├── data_analysis.py       # Standalone executable Python runner
+├── demo_video.mp4         # Screen recording demonstration video
 ├── README.md              # Project documentation and summary
 └── charts/                # Exported high-resolution chart images
     ├── bar_chart.png
