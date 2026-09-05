@@ -23,7 +23,7 @@ The project loads student academic records, performs data cleaning on missing en
 - **Size:** 25 student records across 10 features.
 - **Columns:**
   - `Student_ID`: Unique integer identifier.
-  - `Name`: Full student name (e.g., Aarav Sharma, Diya Patel, Arjun Sen).
+  - `Name`: Full student name (e.g., Aarav Sharma, Diya Patel, Rohan Verma, Arjun Sen).
   - `Gender`: Student gender (`Male`, `Female`).
   - `Study_Hours_Per_Week`: Weekly study duration in hours.
   - `Attendance_Percentage`: Course attendance percentage (0–100%).
@@ -67,18 +67,18 @@ The project loads student academic records, performs data cleaning on missing en
   - `Pass_Status`: Pass ($\ge 40$) vs Fail ($< 40$).
 - **Overall Class Performance:**
   - Total Students Evaluated: 25
-  - Overall Class Average: **73.01** marks
-  - Top Scoring Student: **Arjun Sen** (**92.80** marks)
-  - Lowest Scoring Student: **Nikhil Gupta** (**37.00** marks)
+  - Overall Class Average: **74.24** marks
+  - Top Scoring Student: **Rohan Verma** (**99.20** marks)
+  - Lowest Scoring Student: **Rahul Nair** (**23.00** marks)
 - **Subject-Wise Evaluation:**
-  - Physical Education Average: **80.68**
-  - Science Average: **73.66**
-  - English Average: **72.02**
-  - Social Average: **69.80**
-  - Maths Average: **68.88**
+  - Physical Education Average: **80.28**
+  - Maths Average: **74.56**
+  - Science Average: **73.68**
+  - English Average: **72.34**
+  - Social Average: **70.36**
 - **Academic Standing Counts:**
-  - First Class: 12 students (48.0%)
-  - Distinction: 9 students (36.0%)
+  - First Class: 11 students (44.0%)
+  - Distinction: 10 students (40.0%)
   - Second Class: 3 students (12.0%)
   - Needs Improvement: 1 student (4.0%)
 - **Pass Rate:** 24 Passed (96.0%), 1 Failed (4.0%).
@@ -92,7 +92,7 @@ All 4 charts are saved in `charts/` and dynamically rendered in the notebook:
 1. **Bar Chart (`charts/bar_chart.png`):** Subject-wise average marks across all 5 subjects with exact values annotated on top of each bar.
 2. **Histogram (`charts/histogram.png`):** Distribution of student average marks across 8 bins.
 3. **Pie Chart (`charts/pie_chart.png`):** Percentage distribution across academic standing categories.
-4. **Line Chart (`charts/line_chart.png`):** Score progression across a sample cohort with individual student names on the X-axis.
+4. **Line Chart (`charts/line_chart.png`):** Score progression across a sample cohort with individual student names on the X-axis (shows Rohan Verma peaking at 99.20 marks).
 
 ---
 
@@ -100,12 +100,12 @@ All 4 charts are saved in `charts/` and dynamically rendered in the notebook:
 
 *(Programmatically computed from live dataset values; automatically updates if `dataset.csv` is edited)*
 
-1. **Top Performing Subject:** `Physical_Education` recorded the highest class average of **80.68** marks.
-2. **Most Challenging Subject:** `Maths` recorded the lowest class average of **68.88** marks, showing an **11.80**-point gap compared to Physical Education.
-3. **Top Academic Achiever:** **Arjun Sen** achieved the highest overall average of **92.80** marks across all 5 subjects.
-4. **Academic Standing:** **12 students (48.0%)** secured First Class, while **9 students (36.0%)** attained Distinction.
+1. **Top Performing Subject:** `Physical_Education` recorded the highest class average of **80.28** marks.
+2. **Most Challenging Subject:** `Social` recorded the lowest class average of **70.36** marks, showing a **9.92**-point gap compared to Physical Education.
+3. **Top Academic Achiever:** **Rohan Verma** achieved the highest overall average of **99.20** marks across all 5 subjects.
+4. **Academic Standing:** **11 students (44.0%)** secured First Class, while **10 students (40.0%)** attained Distinction.
 5. **Overall Class Pass Rate:** **24 out of 25 students (96.0%)** passed the examination with an average score of 40 or higher.
-6. **Score Range & Spread:** Student averages range from **37.00** (Nikhil Gupta) to **92.80** (Arjun Sen), with a cohort average of **73.01** marks.
+6. **Score Range & Spread:** Student averages range from **23.00** (Rahul Nair) to **99.20** (Rohan Verma), with a cohort average of **74.24** marks.
 
 ---
 
