@@ -67,18 +67,18 @@ The project loads student academic records, performs data cleaning on missing en
   - `Pass_Status`: Pass ($\ge 40$) vs Fail ($< 40$).
 - **Overall Class Performance:**
   - Total Students Evaluated: 25
-  - Overall Class Average: **72.74** marks
+  - Overall Class Average: **73.38** marks
   - Top Scoring Student: **Arjun Sen** (**92.80** marks)
-  - Lowest Scoring Student: **Rahul Nair** (**23.00** marks)
+  - Lowest Scoring Student: **Nikhil Gupta** (**37.00** marks)
 - **Subject-Wise Evaluation:**
-  - Maths Average: **74.56**
-  - Science Average: **73.68**
-  - Physical Education Average: **72.76**
-  - English Average: **72.34**
-  - Social Average: **70.36**
+  - Physical Education Average: **80.68**
+  - Science Average: **73.66**
+  - English Average: **72.02**
+  - Maths Average: **70.76**
+  - Social Average: **69.80**
 - **Academic Standing Counts:**
-  - First Class: 12 students (48.0%)
-  - Distinction: 9 students (36.0%)
+  - Distinction: 11 students (44.0%)
+  - First Class: 10 students (40.0%)
   - Second Class: 3 students (12.0%)
   - Needs Improvement: 1 student (4.0%)
 - **Pass Rate:** 24 Passed (96.0%), 1 Failed (4.0%).
@@ -87,7 +87,7 @@ The project loads student academic records, performs data cleaning on missing en
 
 ## 📈 Visualizations
 
-All 4 charts are saved in `charts/` and dynamically rendered in the notebook:
+All 4 charts are saved in `charts/` and rendered in the notebook:
 
 1. **Bar Chart (`charts/bar_chart.png`):** Subject-wise average marks across all 5 subjects with exact values annotated on top of each bar.
 2. **Histogram (`charts/histogram.png`):** Distribution of student average marks across 8 bins.
@@ -98,12 +98,12 @@ All 4 charts are saved in `charts/` and dynamically rendered in the notebook:
 
 ## 🔍 Key Insights
 
-1. **Top Performing Subject:** `Maths` recorded the highest class average of **74.56** marks.
-2. **Most Challenging Subject:** `Social` recorded the lowest class average of **70.36** marks, showing a **4.20**-point gap compared to Maths.
+1. **Top Performing Subject:** `Physical_Education` recorded the highest class average of **80.68** marks.
+2. **Most Challenging Subject:** `Social` recorded the lowest class average of **69.80** marks, showing a **10.88**-point gap compared to Physical_Education.
 3. **Top Academic Achiever:** **Arjun Sen** achieved the highest overall average of **92.80** marks across all 5 subjects.
-4. **Academic Standing:** **12 students (48.0%)** secured First Class, while **9 students (36.0%)** attained Distinction.
+4. **Academic Standing:** **10 students (40.0%)** secured First Class, while **11 students (44.0%)** attained Distinction.
 5. **Overall Class Pass Rate:** **24 out of 25 students (96.0%)** passed the examination with an average score of 40 or higher.
-6. **Score Range & Spread:** Student averages range from **23.00** (Rahul Nair) to **92.80** (Arjun Sen), with a cohort average of **72.74** marks.
+6. **Score Range & Spread:** Student averages range from **37.00** (Nikhil Gupta) to **92.80** (Arjun Sen), with a cohort average of **73.38** marks.
 
 ---
 
@@ -124,7 +124,8 @@ Open [`data_analysis.ipynb`](data_analysis.ipynb) in VS Code and click **Run All
 
 ```text
 Day-7/
-├── dataset.csv            # Student dataset (25 rows x 10 columns)
+├── dataset.csv            # Active student dataset (25 rows x 10 columns)
+├── dataset_baseline.csv   # Initial baseline dataset for demonstration & reset
 ├── data_analysis.ipynb    # Interactive notebook with charts & key insights
 ├── data_analysis.py       # Standalone executable Python runner
 ├── README.md              # Project documentation and summary
