@@ -6,6 +6,9 @@
 - **Role:** AI/ML Intern
 - **Organization:** Linkific
 - **Verified Environment:** Python 3.14.3 | Pandas 3.0.3 | NumPy 2.5.0
+- **GitHub Status:** ✅ **Pushed & Up to Date** on both repositories:
+  - [`Shri-Sanjaykumar/Linkific-Tasks`](https://github.com/Shri-Sanjaykumar/Linkific-Tasks)
+  - [`Shri-Sanjaykumar/AI-ML-Internship`](https://github.com/Shri-Sanjaykumar/AI-ML-Internship)
 
 ---
 
@@ -108,13 +111,12 @@ Below is the side-by-side programmatic comparison between the raw input file (`d
 
 ## 📂 Deliverables Checklist
 
-| Deliverable | Requirement | Status | File Location |
+| Deliverable | Requirement | Status | File Location / Link |
 | :--- | :--- | :---: | :--- |
 | **Cleaned Dataset** | Save sanitized dataset separately | ✅ Completed | `Day-8/cleaned_dataset.csv` |
 | **Data Cleaning Notebook** | Complete step-by-step interactive notebook | ✅ Completed | `Day-8/data_preprocessing.ipynb` |
 | **Data Cleaning Script** | Executable standalone Python runner | ✅ Completed | `Day-8/data_preprocessing.py` |
-| **Documentation & Summary** | Project README with metrics & comparison | ✅ Completed | `Day-8/README.md` |
-| **GitHub Updated** | Staged and committed|  ✅ Completed| PUSHED TO GIT|
+| **GitHub Updated** | Pushed to GitHub repositories | ✅ Completed (PUSHED TO GIT) | [Linkific-Tasks](https://github.com/Shri-Sanjaykumar/Linkific-Tasks) & [AI-ML-Internship](https://github.com/Shri-Sanjaykumar/AI-ML-Internship) |
 
 ---
 

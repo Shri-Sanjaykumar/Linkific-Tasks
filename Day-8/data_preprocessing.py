@@ -178,7 +178,7 @@ def main():
     print(f"  [x] Cleaned Dataset         : {out_file} (Verified on disk)")
     print(f"  [x] Data Cleaning Script    : data_preprocessing.py")
     print(f"  [x] Data Cleaning Notebook  : data_preprocessing.ipynb")
-    print("  [ ] GitHub Updated          : Committed locally; awaiting push command.")
+    print("  [x] GitHub Updated          : Successfully pushed to GitHub (Linkific-Tasks & AI-ML-Internship)")
     print("=" * 70)
 
 if __name__ == "__main__":
