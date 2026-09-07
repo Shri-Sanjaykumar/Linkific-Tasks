@@ -25,4 +25,5 @@ This repository contains day-wise folders to organize and document all internshi
 - `Day-5/` — Pandas fundamentals, DataFrames, CSV loading, filtering, and summary statistics.
 - `Day-6/` — Data visualization with Matplotlib & Seaborn (Bar, Line, Histogram, Pie).
 - `Day-7/` — Week 1 Mini Project: Student Performance Analysis Dashboard (Data cleaning, analysis, and 4 visualizations).
+- `Day-8/` — Data Preprocessing & Data Cleaning (Missing value imputation, duplicate handling, column renaming, and data type conversion).
 - Future training days will be added progressively as tasks are assigned.
