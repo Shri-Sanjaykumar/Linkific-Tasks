@@ -114,7 +114,7 @@ Below is the side-by-side programmatic comparison between the raw input file (`d
 | **Data Cleaning Notebook** | Complete step-by-step interactive notebook | ✅ Completed | `Day-8/data_preprocessing.ipynb` |
 | **Data Cleaning Script** | Executable standalone Python runner | ✅ Completed | `Day-8/data_preprocessing.py` |
 | **Documentation & Summary** | Project README with metrics & comparison | ✅ Completed | `Day-8/README.md` |
-| **GitHub Updated** | Staged and committed locally | ⏳ Ready | Awaiting explicit push command |
+| **GitHub Updated** | Staged and committed|  ✅ Completed| PUSHED TO GIT|
 
 ---
 
