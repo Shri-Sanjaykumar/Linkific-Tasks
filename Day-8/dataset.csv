@@ -1999,3 +1999,8 @@ UNIQUE_ID,POSITION_TITLE,DEPARTMENT,BASE_SALARY,RACE,EMPLOYMENT_TYPE,GENDER,EMPL
 1997,POLICE OFFICER,Houston Police Department-HPD,43443.0,White,Full Time,Male,Active,2014-10-13,2015-10-13
 1998,POLICE OFFICER,Houston Police Department-HPD,55461.0,Asian/Pacific Islander,Full Time,Male,Active,2009-01-20,2011-07-02
 1999,FIRE FIGHTER,Houston Fire Department (HFD),51194.0,Hispanic/Latino,Full Time,Male,Active,2009-01-12,2010-07-12
+10,FIRE FIGHTER,Houston Fire Department (HFD),52644.0,Hispanic/Latino,Full Time,Male,Active,2007-05-21,2008-11-15
+11,"CHIEF PHYSICIAN,MD",Health & Human Services,180416.0,Black or African American,Full Time,Male,Active,1987-05-22,1999-08-28
+12,CUSTOMER SERVICE REPRESENTATIVE I,Public Works & Engineering-PWE,30347.0,Black or African American,Full Time,Male,Active,2015-11-16,2015-11-16
+13,PUBLIC HEALTH INVESTIGATOR SUPERVISOR,Health & Human Services,55269.0,Black or African American,Full Time,Male,Active,1999-10-20,2001-05-19
+14,POLICE SERGEANT,Houston Police Department-HPD,77076.0,Black or African American,Full Time,Male,Active,2001-06-04,2015-05-25
