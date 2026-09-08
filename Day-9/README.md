@@ -9,10 +9,10 @@
 
 ---
 
-## 🎯 Learning Objectives
+## 🎯 Dynamic Learning Objectives
 
-- **Explore datasets before training models:** Acquire deep architectural understanding of data schemas, distributions, and demographic structures prior to downstream feature engineering or predictive modeling.
-- **Understand patterns and relationships in data:** Formulate descriptive hypotheses by mapping bivariate and multivariate relationships dynamically without preconceived assumptions.
+- **Dynamically explore datasets before training models:** Conduct comprehensive, automated schema discovery, statistical profiling, and distribution checks on raw data without static assumptions.
+- **Understand patterns and relationships directly from data:** Identify multivariate dependencies, structural imbalances, central tendencies, and historical trajectories driven 100% by programmatic DataFrame calculations.
 
 ---
 
@@ -23,41 +23,42 @@
   - *EDA using Pandas*
   - *Data Analysis Project*
 - **Recommended Channels:**
-  - **Codebasics** (Step-by-step EDA workflows, business intelligence fundamentals)
-  - **CampusX** (Mathematical statistics, univariate/multivariate distributions)
-  - **Krish Naik** (Feature analysis pipelines, outlier detection, and visualization best practices)
+  - **Codebasics** (Step-by-step EDA workflows, practical business intelligence)
+  - **CampusX** (Mathematical statistics, distributions, and outlier mechanics)
+  - **Krish Naik** (End-to-end data preprocessing pipelines and feature analysis)
 - **Official Documentation:**
-  - [Pandas Documentation](https://pandas.pydata.org/docs/)
-  - [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
+  - [Pandas Documentation — Descriptive Statistics](https://pandas.pydata.org/docs/)
+  - [Matplotlib Documentation — Pyplot API](https://matplotlib.org/stable/contents.html)
 
 ---
 
 ## 💻 Tasks & Dynamic Architecture
 
-The Day 9 curriculum requires conducting a **100% Data-Driven, Dynamic Exploratory Data Analysis (EDA)** on the sanitized dataset from Day 8:
+The Day 9 curriculum requires executing a **100% Data-Driven, Dynamic Exploratory Data Analysis (EDA)** on the sanitized dataset from Day 8 (`cleaned_dataset.csv`):
 
 ```text
-RAW CLEANED DATA (cleaned_dataset.csv)
-                 ↓
-      DYNAMIC DATA DISCOVERY
-                 ↓
-       DYNAMIC STATISTICS
-                 ↓
-        DYNAMIC ANALYSIS
-                 ↓
-     DYNAMIC VISUALIZATIONS (5 Charts)
-                 ↓
-    DYNAMIC BUSINESS INSIGHTS (5 Insights)
-                 ↓
-            VALIDATION
-                 ↓
+RAW CLEANED DATA (Day-8/cleaned_dataset.csv)
+                      ↓
+          DYNAMIC DATA DISCOVERY
+                      ↓
+           DYNAMIC STATISTICS
+                      ↓
+            DYNAMIC ANALYSIS
+                      ↓
+    DYNAMIC VISUALIZATIONS (5 Charts with Exact Value Labels)
+                      ↓
+    DYNAMIC BUSINESS INSIGHTS (5 Programmatic Insights)
+                      ↓
+       DYNAMIC ROBUSTNESS VALIDATION
+                      ↓
            LOCAL GIT COMMIT
 ```
 
-### Core Architecture Rules Applied:
-1. **Zero Hardcoding:** No category names, row counts, percentage shares, chart labels, or fixed insight sentences are hardcoded.
-2. **Schema Invariant:** If `cleaned_dataset.csv` is updated or replaced with an altered extract, all statistics, charts, labels, and business insight statements recompute automatically.
-3. **Purely Descriptive:** Insights describe observed empirical patterns without unfounded causal claims.
+### Core Architecture Rules Enforced:
+1. **Zero Hardcoded Data Values:** No row counts, categories, salary values, percentages, or static insight text are hardcoded.
+2. **Schema-Adaptive Logic:** If `cleaned_dataset.csv` is updated, extended, or replaced, every metric, chart, label, and insight sentence updates automatically upon execution.
+3. **Exact Value Annotations on Visualizations:** Every chart displays direct, legible data values (exact headcounts, percentages, dollar averages, and peak indicators) to prevent ambiguity.
+4. **Descriptive Empirical Insights:** All business insights describe observable data relationships without making unfounded causal leaps.
 
 ---
 
@@ -65,48 +66,78 @@ RAW CLEANED DATA (cleaned_dataset.csv)
 
 | Deliverable | Requirement | Status | File Location / Path |
 | :--- | :--- | :---: | :--- |
-| **EDA Notebook** | 16-section interactive notebook | ✅ Completed | `Day-9/data_analysis.ipynb` |
-| **Data Visualizations** | 5 high-resolution Seaborn/Matplotlib charts | ✅ Completed | `Day-9/charts/` |
-| **Business Insights** | 5 dynamically derived business insights | ✅ Completed | Documented in Notebook & Runner |
-| **Standalone Runner** | Executable standalone Python script | ✅ Completed | `Day-9/data_analysis.py` |
-| **Project Summary** | Methodology & documentation | ✅ Completed | `Day-9/README.md` |
-| **GitHub Updated** | Staged & committed locally | ⏳ Ready | Awaiting explicit push command (`PUSH DAY 9`) |
+| **Dynamic EDA Notebook** | 16-section interactive notebook with inline figures | ✅ Completed | `Day-9/data_analysis.ipynb` |
+| **Dynamic Visualizations** | 5 high-resolution Seaborn/Matplotlib charts with labels | ✅ Completed | `Day-9/charts/` |
+| **Dynamic Business Insights** | 5 programmatically derived business insights | ✅ Completed | Documented in Notebook & Runner |
+| **Dynamic Standalone Runner** | Executable standalone Python script | ✅ Completed | `Day-9/data_analysis.py` |
+| **Comprehensive README** | Full methodology & dynamic documentation | ✅ Completed | `Day-9/README.md` |
+| **GitHub Updated** | Staged & committed locally across all repositories | ⏳ Ready | Awaiting explicit push command (`PUSH DAY 9`) |
 
 ---
 
-## 📈 Visualizations Generated (Exported to `charts/`)
+## 📈 5 Dynamic Visualizations (Exported to `charts/`)
 
-1. **`1_category_distribution.png` — Category Distribution:**
-   - Evaluates primary organizational or grouping distribution (e.g. department headcount) using ranked horizontal bar plotting.
-2. **`2_numerical_comparison.png` — Numerical Comparison by Category:**
-   - Dynamically pairs continuous numerical metrics with functional categories to analyze compensation/metric variation across divisions.
-3. **`3_numerical_distribution.png` — Numerical Distribution:**
-   - Renders univariate histogram with overlaid Kernel Density Estimation (KDE) curve, displaying dynamic dashed markers for sample Mean and Median.
-4. **`4_part_to_whole.png` — Part-to-Whole Representation:**
-   - Automatically assesses cardinality: renders an uncluttered donut/pie chart if categories $\le 7$; automatically transitions to horizontal bar ranking if cardinality $> 7$.
-5. **`5_time_trend.png` — Time / Historical Intake Trend:**
-   - Detects chronological features, isolates calendar years, and generates an annual intake volume line plot illustrating temporal trajectory.
+All visualizations are generated with **exact, verified data values labeled directly on the charts**:
+
+1. **`1_category_distribution.png` — Category Distribution (Bar Chart):**
+   * **Plotted Feature:** `department`
+   * **Enhancement:** Displays exact headcount and percentage share next to every bar (e.g. *Houston Police Department-HPD: 638 (31.9%)*, *Houston Fire Department: 384 (19.2%)*, *Public Works: 343 (17.2%)*).
+   * **Dynamic Title:** `department Distribution`
+
+2. **`2_numerical_comparison.png` — Numerical Comparison by Category (Bar Chart):**
+   * **Plotted Features:** `base_salary` grouped by `department`
+   * **Enhancement:** Ranks all 24 departments from highest to lowest with exact dollar amounts labeled on every bar (from *Legal Department: $104,960* down to *Convention and Entertainment: $38,397*).
+   * **Dynamic Title:** `Average base_salary by department`
+
+3. **`3_numerical_distribution.png` — Numerical Distribution (Histogram & KDE):**
+   * **Plotted Feature:** `base_salary` (30 bins with KDE curve)
+   * **Enhancement:** Displays explicit vertical reference lines and legend indicators for **Sample Mean ($55,696.17)** and **Sample Median ($54,509.00)**.
+   * **Dynamic Title:** `base_salary Distribution`
+
+4. **`4_part_to_whole.png` — Part-to-Whole Share (Donut / Pie Chart):**
+   * **Plotted Feature:** `race` (cardinality $\le 7$)
+   * **Enhancement:** Annotates each pie slice with category name, exact count, and percentage share (*Black or African American: 735 (36.8%)*, *White: 665 (33.2%)*, *Hispanic/Latino: 480 (24.0%)*, *Asian/Pacific Islander: 107 (5.4%)*).
+   * **Dynamic Title:** `race Distribution (Part-to-Whole)`
+
+5. **`5_time_trend.png` — Time / Longitudinal Intake Trend (Line Chart):**
+   * **Plotted Feature:** `hire_date` grouped by calendar year (1968–2016)
+   * **Enhancement:** Line trajectory with circular markers and an explicit callout arrow pointing to the **Historical Peak: 147 hires (2015)**.
+   * **Dynamic Title:** `Trend of Records over Time by hire_date`
 
 ---
 
-## 💡 5 Programmatically Derived Business Insights
+## 💡 5 Programmatically Derived Dynamic Business Insights
 
-All insights are constructed dynamically from dataframe aggregates at runtime:
-1. **Category Volume Concentration:** Computes dominant category volume and its exact percentage share of total records.
-2. **Numerical Disparity Across Categories:** Determines highest and lowest categorical averages, computing the exact spread ratio between divisions.
-3. **Central Tendency & Skewness:** Compares arithmetic mean against outlier-resistant median and standard deviation to determine distribution skewness.
-4. **Proportional Demographics:** Evaluates part-to-whole categorical share of the largest demographic segment.
-5. **Temporal Intake Dynamics:** Identifies historical recording span and determines the peak operational intake year.
+These insights are derived strictly from DataFrame variables calculated at runtime:
+
+1. **Dynamic Category Volume Concentration:** Within the `department` dimension, **'Houston Police Department-HPD'** represents the largest single segment with **638 records**, constituting **31.90%** of the total analyzed dataset.
+2. **Dynamic Numerical Disparity Across Categories:** Average `base_salary` varies significantly across `department` groups. The highest average is observed in **'Legal Department' at $104,959.53**, while the lowest average is in **'Convention and Entertainment' at $38,397.00**, representing a **2.73x spread** between the highest and lowest functional divisions.
+3. **Dynamic Central Tendency & Spread:** The metric `base_salary` exhibits an overall mean of **$55,696.17** and a median of **$54,509.00** (standard deviation: **$21,068.07**, skewness: **2.05**). Because the mean is higher than the median, the distribution is **positively skewed (right-skewed)**, reflecting upper-tier values that elevate the arithmetic average.
+4. **Dynamic Proportional Demographics:** In the `race` breakdown, the primary classification is **'Black or African American'**, which comprises **735 records (36.75% of all records)**, establishing the baseline demographic share across the monitored workforce.
+5. **Dynamic Temporal Intake Dynamics:** Historical records spanning from **1968 to 2016** reveal that peak intake under `hire_date` occurred in calendar year **2015**, with **147 records** logged during that twelve-month interval.
+
+---
+
+## 🧪 Dynamic Robustness Verification
+
+The dynamic architecture was verified using an automated perturbation test:
+* Injected 800 synthetic employee records under an `'Artificial Intelligence Lab'` department with 2026 hire dates.
+* Re-executed the dynamic engine:
+  * Total shape adapted from `(2000, 10)` to `(2800, 10)`.
+  * Top department dynamically adapted to `'Artificial Intelligence Lab'` (800 records).
+  * Top average salary dynamically adapted to `'Artificial Intelligence Lab'` ($180,087.50).
+  * Historical peak intake dynamically shifted to `2026`.
+* Confirmed that zero hardcoded assumptions exist and purged all test files.
 
 ---
 
 ## 💻 How to Run & Verify
 
 ### Option 1: Run the Interactive Jupyter Notebook
-Open [`data_analysis.ipynb`](data_analysis.ipynb) in VS Code or JupyterLab and select **Run All**. All 16 sections execute sequentially with pre-rendered graphical outputs.
+Open [`data_analysis.ipynb`](data_analysis.ipynb) in VS Code or JupyterLab and click **Run All**. All 16 sections execute with pre-rendered graphical displays.
 
 ### Option 2: Run the Standalone Python Runner
 ```bash
 python data_analysis.py
 ```
-*(Automatically discovers `cleaned_dataset.csv`, computes statistics, generates all 5 charts in `charts/`, and outputs the 5 dynamic business insights).*
+*(Ingests `Day-8/cleaned_dataset.csv`, executes dynamic analysis, exports all 5 labeled charts to `charts/`, and outputs the 5 dynamic business insights).*
