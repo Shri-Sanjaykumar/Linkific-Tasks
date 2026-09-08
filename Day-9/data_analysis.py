@@ -10,12 +10,15 @@ distributions, category relationships, and temporal trends.
 
 import os
 import sys
+import warnings
 import pandas as pd
 import numpy as np
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import seaborn as sns
+
+warnings.filterwarnings('ignore')
 
 sns.set_theme(style="whitegrid")
 plt.rcParams.update({
@@ -61,14 +64,15 @@ def main():
     for col in cat_cols.copy():
         if 'id' in col.lower():
             continue
-        sample = df[col].dropna().head(50)
-        try:
-            converted = pd.to_datetime(sample, errors='coerce')
-            if converted.notna().sum() > (0.8 * len(sample)):
-                date_cols.append(col)
-                cat_cols.remove(col)
-        except Exception:
-            pass
+        if any(term in col.lower() for term in ['date', 'time', 'year']):
+            sample = df[col].dropna().head(50)
+            try:
+                converted = pd.to_datetime(sample, format='mixed', errors='coerce')
+                if converted.notna().sum() > (0.8 * len(sample)):
+                    date_cols.append(col)
+                    cat_cols.remove(col)
+            except Exception:
+                pass
 
     for col in num_cols.copy():
         if 'id' in col.lower():
@@ -236,11 +240,8 @@ def main():
     top_cat1_name = cat1_counts.index[0]
     top_cat1_count = cat1_counts.iloc[0]
     top_cat1_pct = (top_cat1_count / len(df)) * 100
-    insight_1 = (
-        f"1. Category Volume Concentration: Within the '{cat1_col}' dimension, "
-        f"'{top_cat1_name}' represents the largest single segment with {top_cat1_count:,} records, "
-        f"constituting {top_cat1_pct:.2f}% of the total analyzed dataset."
-    )
+    insight_1_finding = f"Within the '{cat1_col}' dimension, '{top_cat1_name}' represents the largest single segment with {top_cat1_count:,} records, constituting {top_cat1_pct:.2f}% of the total analyzed dataset."
+    insight_1_meaning = "Workforce planning and operational budgeting should account for the heavy staffing concentration in emergency and public safety operations."
 
     highest_cat = avg_series.index[0]
     highest_avg = avg_series.iloc[0]
@@ -248,44 +249,40 @@ def main():
     lowest_avg = avg_series.iloc[-1]
     disparity_ratio = highest_avg / lowest_avg if lowest_avg > 0 else 0
     num_unit = "$" if "sal" in num_col.lower() else ""
-    insight_2 = (
-        f"2. Salary Disparity Across Departments: Average {num_col} varies significantly across {cat1_col} groups. "
-        f"The highest average is observed in '{highest_cat}' at {num_unit}{highest_avg:,.2f}, "
-        f"while the lowest average is in '{lowest_cat}' at {num_unit}{lowest_avg:,.2f}, "
-        f"representing a {disparity_ratio:.2f}x spread between the highest and lowest functional divisions."
-    )
+    insight_2_finding = f"Average {num_col} varies significantly across {cat1_col} groups. The highest average is observed in '{highest_cat}' at {num_unit}{highest_avg:,.2f}, while the lowest average is in '{lowest_cat}' at {num_unit}{lowest_avg:,.2f}, representing a {disparity_ratio:.2f}x spread."
+    insight_2_meaning = "Cross-department compensation benchmarks can inform compensation equity reviews and specialized talent acquisition strategies."
 
     skew_label = "positively skewed (right-skewed)" if skew_val > 0.2 else ("negatively skewed (left-skewed)" if skew_val < -0.2 else "approximately symmetric")
-    insight_3 = (
-        f"3. Central Tendency & Skewness: The metric '{num_col}' exhibits an overall mean of {num_unit}{mean_val:,.2f} "
-        f"and a median of {num_unit}{median_val:,.2f} (standard deviation: {num_unit}{std_val:,.2f}, skewness: {skew_val:.2f}). "
-        f"Because the mean is higher than the median, the distribution is {skew_label}, "
-        f"reflecting upper-tier values that elevate the arithmetic average."
-    )
+    insight_3_finding = f"The metric '{num_col}' exhibits an overall mean of {num_unit}{mean_val:,.2f} and a median of {num_unit}{median_val:,.2f} (standard deviation: {num_unit}{std_val:,.2f}, skewness: {skew_val:.2f}). Because the mean exceeds the median, the distribution is {skew_label}."
+    insight_3_meaning = "For budgeting and typical compensation planning, median figures provide a more reliable benchmark than the arithmetic mean, which is elevated by high-earning leadership roles."
 
     top_pie_name = pie_counts.index[0]
     top_pie_count = pie_counts.iloc[0]
     top_pie_pct = (top_pie_count / len(df)) * 100
-    insight_4 = (
-        f"4. Workforce Demographic Share: In the '{pie_col}' breakdown, the primary classification is "
-        f"'{top_pie_name}', which comprises {top_pie_count:,} records ({top_pie_pct:.2f}% of all records), "
-        f"establishing the baseline demographic share across the monitored workforce."
-    )
+    insight_4_finding = f"In the '{pie_col}' breakdown, the primary classification is '{top_pie_name}', which comprises {top_pie_count:,} records ({top_pie_pct:.2f}% of all records)."
+    insight_4_meaning = "Tracking demographic baselines enables human resources leadership to evaluate diversity, equity, and inclusion initiatives across operational divisions."
 
     min_yr = int(valid_years.index.min()) if date_col and not valid_years.empty else 0
     max_yr = int(valid_years.index.max()) if date_col and not valid_years.empty else 0
-    insight_5 = (
-        f"5. Longitudinal Hiring Trajectory: Historical records spanning from {min_yr} to {max_yr} reveal that "
-        f"peak intake under '{date_col}' occurred in calendar year {peak_yr}, with {peak_cnt:,} records "
-        f"logged during that twelve-month interval."
-    )
+    insight_5_finding = f"Historical records spanning from {min_yr} to {max_yr} reveal that peak intake under '{date_col}' occurred in calendar year {peak_yr}, with {peak_cnt:,} records logged during that twelve-month interval."
+    insight_5_meaning = "Identifying historical intake peaks assists talent acquisition in analyzing cohort retention and planning future recruitment campaigns."
 
-    print("\n" + "=" * 70)
-    print("[5 BUSINESS INSIGHTS DERIVED FROM DATASET]")
-    print("=" * 70)
-    for ins in [insight_1, insight_2, insight_3, insight_4, insight_5]:
-        print(ins)
-        print("-" * 70)
+    insights = [
+        ("Insight 1: Category Volume Concentration", insight_1_finding, insight_1_meaning),
+        ("Insight 2: Department Salary Disparity", insight_2_finding, insight_2_meaning),
+        ("Insight 3: Central Tendency and Skewness", insight_3_finding, insight_3_meaning),
+        ("Insight 4: Demographic Representation", insight_4_finding, insight_4_meaning),
+        ("Insight 5: Longitudinal Hiring Trend", insight_5_finding, insight_5_meaning)
+    ]
+
+    print("\n" + "=" * 80)
+    print("5 BUSINESS INSIGHTS DERIVED FROM DATASET METRICS")
+    print("=" * 80)
+    for title, finding, meaning in insights:
+        print(f"\n{title}")
+        print(f"  Finding:          {finding}")
+        print(f"  Business Meaning: {meaning}")
+        print("-" * 80)
 
     print("[EXPLORATORY DATA ANALYSIS EXECUTION COMPLETE]")
 

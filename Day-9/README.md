@@ -9,117 +9,112 @@
 
 ---
 
-## 🎯 Learning Objectives
+## 🎯 Day 9 Objective
 
-- **Explore datasets before training models:** Conduct comprehensive schema discovery, statistical profiling, and distribution checks on cleaned data.
-- **Understand patterns and relationships in data:** Surface multivariate correlations, structural imbalances, central tendencies, and historical trajectories directly from the dataset.
-
----
-
-## 📺 Recommended Learning Resources
-
-- **YouTube Search Topics:**
-  - *Exploratory Data Analysis Python*
-  - *EDA using Pandas*
-  - *Data Analysis Project*
-- **Recommended Channels:**
-  - **Codebasics** (Step-by-step EDA workflows, practical business intelligence)
-  - **CampusX** (Mathematical statistics, distributions, and outlier mechanics)
-  - **Krish Naik** (End-to-end data preprocessing pipelines and feature analysis)
-- **Official Documentation:**
-  - [Pandas Documentation — Descriptive Statistics](https://pandas.pydata.org/docs/)
-  - [Matplotlib Documentation — Pyplot API](https://matplotlib.org/stable/contents.html)
+The primary objective of Day 9 is to conduct an end-to-end Exploratory Data Analysis (EDA) on the preprocessed dataset prior to machine learning model training. This includes:
+- Exploring dataset architecture, schema, feature types, and data completeness.
+- Computing descriptive statistics, central tendencies, and dispersion metrics.
+- Identifying trends, patterns, and group-level disparities directly from data.
+- Creating 4–5 meaningful statistical visualizations with exact value annotations.
+- Deriving 5 empirical business insights with practical interpretations.
 
 ---
 
-## 💻 Tasks & Workflow Architecture
+## 📁 Dataset Source & Use
 
-Day 9 focuses on conducting an **Exploratory Data Analysis (EDA)** on the sanitized dataset from Day 8 (`cleaned_dataset.csv`):
+The analysis directly consumes the cleaned dataset generated during Day 8:
+- **File:** `Day-8/cleaned_dataset.csv`
+- **Integrity Status:** Verified with 0 missing values and 0 duplicate records.
+- **Access Method:** Loaded via relative file path resolution to ensure complete repository portability.
+
+---
+
+## ⚙️ EDA Methodology
+
+The analysis follows an automated, data-driven workflow:
 
 ```text
 CLEANED DATASET (Day-8/cleaned_dataset.csv)
                       ↓
            SCHEMA & TYPE DISCOVERY
                       ↓
+            DATA QUALITY AUDIT
+                      ↓
             DESCRIPTIVE STATISTICS
                       ↓
-       OUTLIER DETECTION & SKEWNESS (IQR)
+          OUTLIER DETECTION & SPREAD (IQR)
                       ↓
-   5 STATISTICAL VISUALIZATIONS (With Exact Value Labels)
+          TREND & PATTERN IDENTIFICATION
                       ↓
-              5 BUSINESS INSIGHTS
+    5 STATISTICAL VISUALIZATIONS (Exported to charts/)
+                      ↓
+             5 BUSINESS INSIGHTS
                       ↓
                LOCAL GIT COMMITS
 ```
 
-### Analysis Highlights:
-1. **Accurate Value Annotations on Visualizations:** Every chart displays direct, legible data values (exact headcounts, percentages, dollar averages, and peak indicators) to prevent ambiguity and visual clutter.
-2. **Comprehensive Statistical Coverage:** Evaluates central tendency (mean, median), dispersion (standard deviation, IQR), and distributional shape (skewness).
-3. **Empirical Business Insights:** All insights describe verified relationships observed in the dataset.
+1. **Schema & Type Discovery:** Programmatically classifies numerical columns, categorical features, and temporal dates.
+2. **Data Quality Audit:** Confirms data cleanliness, missingness, and record uniqueness.
+3. **Descriptive Statistics:** Calculates five-number summaries, mean, median, standard deviation, and variance.
+4. **Distribution & Outlier Analysis:** Measures skewness and identifies statistical outliers using the Interquartile Range (IQR = Q3 - Q1) rule with 1.5x fence limits.
+5. **Pattern Recognition:** Evaluates cross-category relationships and longitudinal trend patterns.
 
 ---
 
-## 📊 Summary of Deliverables
+## 📈 Data Visualizations (Exported to `charts/`)
 
-| Deliverable | Description | Status | File Location / Path |
-| :--- | :--- | :---: | :--- |
-| **EDA Notebook** | 16-section interactive notebook with inline figures and cell outputs | ✅ Completed | `Day-9/data_analysis.ipynb` |
-| **Data Visualizations** | 5 high-resolution Seaborn/Matplotlib charts with exact value labels | ✅ Completed | `Day-9/charts/` |
-| **Business Insights** | 5 comprehensive, empirical business insights derived from metrics | ✅ Completed | Documented in Notebook & Runner |
-| **Standalone Runner** | Executable standalone Python script for headless analysis | ✅ Completed | `Day-9/data_analysis.py` |
-| **Comprehensive README** | Full documentation and project walkthrough | ✅ Completed | `Day-9/README.md` |
-| **GitHub Updated** | Staged & committed locally across all repositories | ⏳ Ready | Awaiting explicit push command (`PUSH DAY 9`) |
+The analysis generates 5 high-resolution statistical visualizations saved to `Day-9/charts/`:
 
----
-
-## 📈 5 Data Visualizations (Exported to `charts/`)
-
-All visualizations are generated with **exact, verified data values labeled directly on the charts**:
-
-1. **`1_category_distribution.png` — Department Distribution (Horizontal Bar Chart):**
-   * **Plotted Feature:** `department` (all 24 departments)
-   * **Exact Labels:** Displays exact headcount and percentage share next to every bar (e.g. *Houston Police Department-HPD: 638 (31.9%)*, *Houston Fire Department (HFD): 384 (19.2%)*, *Public Works & Engineering-PWE: 343 (17.2%)*).
-   * **Title:** `Department Distribution (Total: 2,000 Records)`
-
-2. **`2_numerical_comparison.png` — Average Base Salary by Department (Horizontal Bar Chart):**
-   * **Plotted Features:** `base_salary` grouped by `department`
-   * **Exact Labels:** Ranks all 24 departments from highest to lowest with exact dollar amounts labeled on every bar (from *Legal Department: $104,960* down to *Convention and Entertainment: $38,397*).
-   * **Title:** `Average Base Salary by Department`
-
-3. **`3_numerical_distribution.png` — Base Salary Distribution (Histogram & KDE):**
-   * **Plotted Feature:** `base_salary` (30 bins with KDE curve)
-   * **Exact Labels:** Displays explicit vertical reference lines for **Sample Mean ($55,696.17)** and **Sample Median ($54,509.00)**, plus a summary statistics callout box showing Mean, Median, Standard Deviation ($21,068.07), and Skewness (+2.05 Right-Skewed).
-   * **Title:** `Base Salary Distribution`
-
-4. **`4_part_to_whole.png` — Race / Ethnicity Distribution (Donut Chart):**
-   * **Plotted Feature:** `race`
-   * **Exact Labels:** Clean side legend preventing any text collisions: *Black or African American: 735 (36.8%)*, *White: 665 (33.2%)*, *Hispanic/Latino: 480 (24.0%)*, *Asian/Pacific Islander: 107 (5.3%)*, *American Indian or Alaskan Native: 11 (0.5%)*, *Others: 2 (0.1%)*. Center circle displays *Total 2,000 Records*.
-   * **Title:** `Race / Ethnicity Distribution (Part-to-Whole)`
-
-5. **`5_time_trend.png` — Yearly Hiring Trend Over Time (Line Chart):**
-   * **Plotted Feature:** `hire_date` grouped by calendar year (1958–2016)
-   * **Exact Labels:** Longitudinal line trajectory with circular markers, shaded area under curve, and an explicit callout box pointing to the **Historical Peak: 147 hires (2015)**.
-   * **Title:** `Yearly Hiring Trend Over Time (hire_date)`
+1. **`1_category_distribution.png` — Category Distribution (Horizontal Bar Chart):**
+   - Evaluates record frequency across functional categories.
+   - Annotates each bar with exact record count and percentage share.
+2. **`2_numerical_comparison.png` — Group Comparison (Horizontal Bar Chart):**
+   - Ranks categories by average continuous numerical metric.
+   - Annotates each bar with exact currency/numerical values.
+3. **`3_numerical_distribution.png` — Numerical Distribution (Histogram with KDE):**
+   - Plots frequency distribution across 30 bins with a continuous KDE curve.
+   - Features vertical reference dashed lines for sample mean and median.
+   - Includes an inset callout box showing mean, median, standard deviation, and skewness.
+4. **`4_part_to_whole.png` — Proportion Analysis (Donut Chart):**
+   - Evaluates categorical part-to-whole composition.
+   - Utilizes a structured side legend with exact counts and percentage shares, eliminating label overlap.
+5. **`5_time_trend.png` — Longitudinal Trend Analysis (Line Chart):**
+   - Tracks record intake volume over calendar years.
+   - Features markers, a subtle filled area under the curve, and an annotated callout box highlighting historical peak intake with 25% upper headroom.
 
 ---
 
-## 💡 5 Business Insights Derived from Dataset
+## 💡 Business Insights Methodology
 
-1. **Category Volume Concentration:** Within the `department` dimension, **'Houston Police Department-HPD'** represents the largest single segment with **638 records**, constituting **31.90%** of the total analyzed dataset. Together with Fire and Public Works, the top three departments account for **68.3%** of all personnel.
-2. **Salary Disparity Across Departments:** Average `base_salary` varies significantly across `department` groups. The highest average is observed in **'Legal Department' at $104,959.53**, while the lowest average is in **'Convention and Entertainment' at $38,397.00**, representing a **2.73x spread** between the highest and lowest functional divisions.
-3. **Central Tendency & Skewness:** The metric `base_salary` exhibits an overall mean of **$55,696.17** and a median of **$54,509.00** (standard deviation: **$21,068.07**, skewness: **+2.05**). Because the mean exceeds the median, the distribution is **positively skewed (right-skewed)**, driven by upper-tier executive salaries that elevate the arithmetic average.
-4. **Workforce Demographic Share:** In the `race` breakdown, the primary classification is **'Black or African American'**, which comprises **735 records (36.75% of all records)**, followed by **'White' with 665 records (33.25%)** and **'Hispanic/Latino' with 480 records (24.00%)**, establishing the demographic distribution of the municipal workforce.
-5. **Longitudinal Hiring Trajectory:** Historical records spanning from **1958 to 2016** reveal that peak hiring occurred in calendar year **2015**, with **147 records** logged during that twelve-month period, reflecting a sustained hiring surge from 2012 to 2015.
+The analysis derives 5 empirical business insights directly from calculated metrics. Each insight follows a two-part format:
+- **Finding:** The precise quantitative observation calculated from the dataset.
+- **Business Meaning:** A conservative, practical interpretation explaining why the finding is relevant for operational planning, budgeting, or workforce management without drawing unsupported causal conclusions.
+
+---
+
+## 🛠️ Tools and Technologies Used
+
+- **Language:** Python 3.14.3
+- **Data Manipulation:** Pandas 3.0.3, NumPy 2.5.0
+- **Data Visualization:** Matplotlib 3.11.0, Seaborn 0.13.2
+- **Environment:** Jupyter Notebook, VS Code, PowerShell
+- **Version Control:** Git, GitHub
+
+---
+
+## 🏁 Conclusion
+
+The Day 9 Exploratory Data Analysis establishes a solid analytical foundation for the dataset. By identifying feature distributions, category concentrations, salary variances, and historical trends directly through data-driven calculations, the pipeline ensures that subsequent machine learning models are built upon well-understood data patterns.
 
 ---
 
 ## 💻 How to Run & Verify
 
 ### Option 1: Run the Interactive Jupyter Notebook
-Open [`data_analysis.ipynb`](data_analysis.ipynb) in VS Code or JupyterLab and select **Run All**. All 14 sections execute with pre-rendered graphical displays and rich tables.
+Open [`data_analysis.ipynb`](data_analysis.ipynb) in VS Code or JupyterLab and select **Run All**. All 16 sections execute with pre-rendered displays and zero errors.
 
 ### Option 2: Run the Standalone Python Script
 ```bash
 python data_analysis.py
 ```
-*(Loads `Day-8/cleaned_dataset.csv`, computes summary statistics, generates all 5 labeled charts into `charts/`, and prints the 5 business insights).*
+*(Ingests `Day-8/cleaned_dataset.csv`, executes the analysis, saves all 5 charts to `charts/`, and outputs the 5 business insights).*
