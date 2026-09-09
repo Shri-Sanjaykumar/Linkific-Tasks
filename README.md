@@ -27,4 +27,5 @@ This repository contains day-wise folders to organize and document all internshi
 - `Day-7/` — Week 1 Mini Project: Student Performance Analysis Dashboard (Data cleaning, analysis, and 4 visualizations).
 - `Day-8/` — Data Preprocessing & Data Cleaning (Missing value imputation, duplicate handling, column renaming, and data type conversion).
 - `Day-9/` — Exploratory Data Analysis (EDA) (Descriptive statistics, category distributions, numerical comparison, skewness analysis, time trends, and 5 business insights).
+- `Day-10/` — Machine Learning Practice: Linear Regression (ML workflow from data to prediction, 80/20 train/test split, Scikit-learn LinearRegression, R² evaluation, and regression visualization).
 - Future training days will be added progressively as tasks are assigned.
