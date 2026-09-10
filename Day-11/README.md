@@ -100,30 +100,47 @@ $$\text{Accuracy} = \frac{\text{Number of Correct Predictions}}{\text{Total Pred
 
 ## 📉 Visualizations
 
-### 1. Model Accuracy Comparison Bar Chart
+### 1. Visualizing Both Models: Decision Boundaries (Side-by-Side)
+Visual comparison showing how Logistic Regression partitions feature space using smooth, continuous linear decision boundaries, whereas the Decision Tree creates orthogonal (axis-aligned) rectangular boxes based on threshold decision rules.
+![Model Decision Boundaries](model_decision_boundaries.png)
+
+### 2. Decision Tree Structure Diagram (Learned Architecture & Split Rules)
+Full tree visualization showing root-to-leaf decision paths, feature split thresholds (e.g. Petal Length $\le 2.45$ cm separating Setosa), Gini impurities, and sample distributions per node.
+![Decision Tree Structure](decision_tree_structure.png)
+
+### 3. Model Accuracy Comparison Bar Chart
+Accuracy evaluation comparing the test set performance of both models on the held-out test split.
 ![Model Accuracy Comparison](model_accuracy_comparison.png)
 
-### 2. Iris Class Distribution (Petal Length vs. Petal Width)
+### 4. Iris Class Distribution (Petal Length vs. Petal Width)
+Scatter plot visualizing the natural separation and slight overlap between the three Iris species.
 ![Iris Class Distribution](iris_class_distribution.png)
 
 ---
 
-## 📝 Observations
+## 📝 Observations (100% Dynamic & Data-Driven)
 
-1. **Both Models Performed Strongly:** Both Logistic Regression (96.67%) and Decision Tree (93.33%) achieved high test accuracy, confirming that the Iris dataset has well-separated, informative features.
-2. **Smooth Boundary Advantage:** The Iris classes exhibit strong linear separability (especially Setosa vs. other species). Logistic Regression's smooth probabilistic boundaries generalized slightly better than Decision Tree's orthogonal axis splits on this test split.
-3. **Identical Splitting is Essential:** Evaluating both models on the exact same stratified test samples ensured that the 3.33% accuracy difference was strictly attributable to model architecture rather than sample variation.
-4. **Dataset Sensitivity:** In machine learning, model performance is context-dependent—a model that wins on one dataset or split may perform differently on another.
+1. **Top Performing Model:** **Logistic Regression** achieved the highest accuracy of **96.67%** (29/30 correct), outperforming **Decision Tree** at **93.33%** (28/30 correct) by a performance margin of **3.33%** (1 additional correct prediction).
+2. **Visual Boundary Separation:**
+   - **Logistic Regression (Linear Boundaries):** Learns linear hyperplanes. In 2D petal space, it cleanly isolates Setosa and constructs an angled linear boundary between Versicolor and Virginica that accommodates slight feature variations smoothly.
+   - **Decision Tree (Orthogonal Splits):** Uses axis-aligned threshold splits (`petal length <= 2.45 cm` cleanly splits Setosa with Gini = 0.0). Subsequent splits carve rectangular partitions, which can be more sensitive to boundary edge cases.
+3. **Misclassification Analysis:**
+   - **Logistic Regression Errors (1):** Misclassified test sample index 25 (Versicolor predicted as Virginica) due to proximity along the boundary interface.
+   - **Decision Tree Errors (2):** Misclassified test sample index 23 (Virginica predicted as Versicolor) and test sample index 25 (Versicolor predicted as Virginica).
+4. **Strong Generalization Across Both Models:** Both classifiers exceeded 93% accuracy without overfitting, confirming that the 4 morphological features of the Iris dataset provide strong discriminant signal.
+5. **Identical Splitting is Essential:** Evaluating both models on the exact same stratified test samples ensured that the 3.33% accuracy difference was strictly attributable to model architecture rather than sample variation.
 
 ---
 
 ## 📁 Files Created
 
-- `classification_practice.ipynb`: Interactive 19-section Jupyter notebook with code, Markdown explanations, and embedded outputs.
-- `classification_practice.py`: Standalone executable Python runner script.
+- `classification_practice.ipynb`: Interactive 24-cell Jupyter notebook with code, Markdown explanations, dynamic observation engine, and all 4 embedded visualizations.
+- `classification_practice.py`: Standalone executable Python runner script with dynamic reporting and automated chart generation.
+- `model_decision_boundaries.png`: Side-by-side decision boundary comparison chart.
+- `decision_tree_structure.png`: Complete visual diagram of the trained Decision Tree.
 - `model_accuracy_comparison.png`: Bar chart comparing model accuracy scores.
 - `iris_class_distribution.png`: Scatter plot visualizing Iris species distributions across petal dimensions.
-- `README.md`: Complete project documentation and concept guide.
+- `README.md`: Complete project documentation, visual analysis, and concept guide.
 
 ---
 
