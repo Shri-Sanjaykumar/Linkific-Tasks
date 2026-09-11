@@ -28,5 +28,6 @@ This repository contains day-wise folders to organize and document all internshi
 - `Day-8/` — Data Preprocessing & Data Cleaning (Missing value imputation, duplicate handling, column renaming, and data type conversion).
 - `Day-9/` — Exploratory Data Analysis (EDA) (Descriptive statistics, category distributions, numerical comparison, skewness analysis, time trends, and 5 business insights).
 - `Day-10/` — Machine Learning Practice: Linear Regression (ML workflow from data to prediction, 80/20 train/test split, Scikit-learn LinearRegression, R² evaluation, and regression visualization).
-- `Day-11/` — Classification Machine Learning (Classification basics, Iris dataset, Logistic Regression, Decision Tree, accuracy comparison, and decision boundary visualization).
+- `Day-11/` — Classification Machine Learning (Classification basics, Iris dataset, Logistic Regression, Decision Tree, and accuracy comparison).
+- `Day-12/` — Classification Model Evaluation (Evaluation metrics: Accuracy, Precision, Recall, F1 Score, Confusion Matrix, and model performance comparison).
 - Future training days will be added progressively as tasks are assigned.
