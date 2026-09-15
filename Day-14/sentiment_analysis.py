@@ -252,6 +252,43 @@ def main():
     plt.close()
     print(f"Saved: {chart3_path}")
 
+    # Chart 3b: Combined Evaluation Summary (Confusion Matrix & Performance Metrics side-by-side)
+    fig, axes = plt.subplots(1, 2, figsize=(12, 4.5), dpi=150)
+    sns.heatmap(
+        cm,
+        annot=True,
+        fmt="d",
+        cmap="Blues",
+        xticklabels=["Negative", "Positive"],
+        yticklabels=["Negative", "Positive"],
+        cbar=False,
+        annot_kws={"size": 13, "weight": "bold"},
+        ax=axes[0]
+    )
+    axes[0].set_title("Confusion Matrix", fontsize=11, fontweight="bold")
+    axes[0].set_xlabel("Predicted Sentiment", fontsize=10)
+    axes[0].set_ylabel("Actual Sentiment", fontsize=10)
+
+    bars_comb = axes[1].bar(
+        metric_names,
+        metric_vals,
+        color=["#2980b9", "#16a085", "#8e44ad", "#d35400"],
+        edgecolor="#333333",
+        width=0.5
+    )
+    axes[1].set_title("Model Evaluation Metrics", fontsize=11, fontweight="bold")
+    axes[1].set_ylabel("Score (0 to 1.0)", fontsize=10)
+    axes[1].set_ylim(0, 1.15)
+    axes[1].grid(axis="y", linestyle="--", alpha=0.5)
+    for bar, val in zip(bars_comb, metric_vals):
+        h = bar.get_height()
+        axes[1].text(bar.get_x() + bar.get_width() / 2.0, h + 0.02, f"{val:.4f}\n({val*100:.1f}%)", ha="center", va="bottom", fontsize=9, fontweight="bold")
+    plt.tight_layout()
+    chart_summary_path = os.path.join(charts_dir, "evaluation_summary.png")
+    plt.savefig(chart_summary_path)
+    plt.close()
+    print(f"Saved: {chart_summary_path}")
+
     # Chart 4: Sample Prediction Probabilities
     demo_sentences = [
         "The cinematography was breathtaking and the performances were outstanding.",
