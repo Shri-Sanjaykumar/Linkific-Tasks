@@ -30,4 +30,5 @@ This repository contains day-wise folders to organize and document all internshi
 - `Day-10/` — Machine Learning Practice: Linear Regression (ML workflow from data to prediction, 80/20 train/test split, Scikit-learn LinearRegression, R² evaluation, and regression visualization).
 - `Day-11/` — Classification Machine Learning (Classification basics, Iris dataset, Logistic Regression, Decision Tree, and accuracy comparison).
 - `Day-12/` — Classification Model Evaluation (Evaluation metrics: Accuracy, Precision, Recall, F1 Score, Confusion Matrix, and model performance comparison).
+- `Day-13/` — Natural Language Processing (NLP) Practice (Text preprocessing: Lowercasing, Tokenization, Stopword Removal, TF-IDF Vectorization, and vocabulary feature analysis).
 - Future training days will be added progressively as tasks are assigned.
