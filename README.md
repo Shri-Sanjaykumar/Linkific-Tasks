@@ -31,4 +31,5 @@ This repository contains day-wise folders to organize and document all internshi
 - `Day-11/` — Classification Machine Learning (Classification basics, Iris dataset, Logistic Regression, Decision Tree, and accuracy comparison).
 - `Day-12/` — Classification Model Evaluation (Evaluation metrics: Accuracy, Precision, Recall, F1 Score, Confusion Matrix, and model performance comparison).
 - `Day-13/` — Natural Language Processing (NLP) Practice (Text preprocessing: Lowercasing, Tokenization, Stopword Removal, TF-IDF Vectorization, and vocabulary feature analysis).
+- `Day-14/` — Weekly Mini Project: Basic Sentiment Analysis using Machine Learning (Text classification pipeline, IMDb review dataset, TF-IDF vectorization, Logistic Regression, and model evaluation).
 - Future training days will be added progressively as tasks are assigned.

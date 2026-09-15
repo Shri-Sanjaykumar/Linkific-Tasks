@@ -1,0 +1,8 @@
+Metric,Score
+Accuracy,0.755
+Precision,0.7525
+Recall,0.76
+F1-Score,0.7562
+Test Samples,200.0
+Correct Predictions,151.0
+Misclassifications,49.0
