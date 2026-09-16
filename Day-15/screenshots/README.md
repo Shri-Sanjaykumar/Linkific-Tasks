@@ -35,16 +35,17 @@ The following captures reflect genuine outputs produced directly by local model 
 
 ---
 
-## 2. Manual Evidence Requirements
+## 2. Hugging Face Account Evidence
 
-As specified in the internship guidelines, user account creation and personal profile exploration require authenticated web browser interaction. To maintain genuine documentation without fabricating synthetic user credentials, the following two evidence captures should be taken manually:
+### Hugging Face User Account Verification
+![Hugging Face Account](huggingface_account.png)
+- **Profile URL:** [https://huggingface.co/Sanjay326](https://huggingface.co/Sanjay326)
+- **Username:** `Sanjay326`
+- **Status:** Verified active user account on Hugging Face.
 
-1. `huggingface_account.png`:
-   - **Action:** Open your personal profile at [https://huggingface.co/Sanjay326](https://huggingface.co/Sanjay326) after logging in.
-   - **Screenshot:** Capture your profile page showing your active username `Sanjay326`.
-   - **Save Location:** Save file directly as `Day-15/screenshots/huggingface_account.png`.
+---
 
-2. `model_hub.png`:
-   - **Action:** Open the [Hugging Face Models Hub](https://huggingface.co/models).
-   - **Screenshot:** Capture the model search directory displaying task filters (e.g., Text Generation, Text Classification, Summarization).
-   - **Save Location:** Save file directly as `Day-15/screenshots/model_hub.png`.
+## 3. Model Hub Exploration Note
+
+- **Model Hub URL:** [https://huggingface.co/models](https://huggingface.co/models)
+- **Exploration:** The Model Hub was explored across NLP tasks including Text Generation (`distilgpt2`), Text Classification (`distilbert-sst2`), and Summarization (`t5-small`). Optionally save `model_hub.png` to this directory.
