@@ -1,0 +1,7 @@
+Task: Text Generation
+Model: distilbert/distilgpt2
+Input Prompt: Artificial Intelligence is changing the way people work because
+Generation Settings: max_new_tokens=40, temperature=0.7, do_sample=True, pad_token_id=50256
+
+Generated Output:
+Artificial Intelligence is changing the way people work because it is getting more automated. And it is changing the way people work.

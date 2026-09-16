@@ -1,0 +1,7 @@
+Task: Text Summarization
+Model: t5-small
+Input Text: Artificial Intelligence is increasingly being used in healthcare, finance, education, and software development. Machine Learning systems can analyze large datasets and identify patterns that are difficult to detect manually. Generative AI has also introduced systems that can create text, images, and other forms of content.
+Settings: max_length=60, min_length=20, do_sample=False
+
+Generated Summary:
+artificial intelligence is increasingly being used in healthcare, finance, education, and software development. machine learning systems can analyze large datasets and identify patterns that are difficult to detect manually.

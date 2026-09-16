@@ -1,0 +1,6 @@
+Task: Sentiment Analysis
+Model: distilbert/distilbert-base-uncased-finetuned-sst-2-english
+Input Text: The movie had excellent performances and an engaging story.
+
+Predicted Label: POSITIVE
+Confidence Score: 0.9999 (99.99%)
