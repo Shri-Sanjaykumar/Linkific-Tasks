@@ -1,0 +1,20 @@
+DAY 16 RAG CHUNK SIZE EXPERIMENT SUMMARY (EMPIRICAL EVALUATION)
+============================================================
+ chunk_size  retrieval_distance  relevance  correctness  completeness  grounding  overall_score
+        200             0.42518      3.568          4.7          2.92        5.0          4.048
+        400             0.43624      4.054          4.4          4.48        5.0          4.482
+        800             0.43172      4.338          4.7          4.48        5.0          4.628
+
+BEST-PERFORMING CHUNK SIZE CONFIGURATION: 800 characters
+Average Overall Score: 4.63 / 5.00
+Average Relevance:     4.34 / 5.00
+Average Completeness:  4.48 / 5.00
+Average Correctness:   4.70 / 5.00
+Average Grounding:     5.00 / 5.00
+
+Findings Explanation:
+- Chunk Size 200: High chunk fragmentation (71 chunks) resulted in lower completeness (2.92) because multi-step policy procedures were split across chunk boundaries.
+- Chunk Size 400: Balanced individual clause capture (4.48 completeness, 4.48 overall score).
+- Chunk Size 800: Highest overall score (4.63) by providing sufficient context window to preserve complete multi-step instructions and achieving 4.34 relevance.
+
+Conclusion: For this demonstration dataset and evaluation set, the 800-character chunk size provided the best observed balance between retrieval relevance and response completeness.

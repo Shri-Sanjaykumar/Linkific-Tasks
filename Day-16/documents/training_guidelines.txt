@@ -1,0 +1,19 @@
+================================================================================
+DOCUMENT: INTERNSHIP TRAINING GUIDELINES AND ROADMAP
+NOTICE: Synthetic demonstration documents created for RAG experimentation.
+================================================================================
+
+1. Training Program Structure:
+The AI/ML Internship Training Program spans a comprehensive four-week structured curriculum. The program balances foundational programming, classical machine learning algorithms, and modern generative AI frameworks. Each training day focuses on a distinct core competency, progressing sequentially from basic data manipulation to advanced natural language processing.
+
+2. Curriculum Phases and Milestones:
+- Phase 1 (Days 1 to 6): Python programming, data structures, NumPy array mathematics, Pandas data manipulation, and exploratory data visualization with Matplotlib and Seaborn.
+- Phase 2 (Days 7 to 9): Week 1 Mini-Project (Student Performance Analysis), data cleaning techniques, missing value imputation, and advanced exploratory data analysis (EDA).
+- Phase 3 (Days 10 to 12): Supervised machine learning algorithms, linear regression, binary classification (Logistic Regression, Decision Trees), and rigorous classification model evaluation metrics.
+- Phase 4 (Days 13 to 16): Natural Language Processing (NLP), text preprocessing, TF-IDF vectorization, Hugging Face pretrained models, and Retrieval-Augmented Generation (RAG) pipelines.
+
+3. Daily Training Routine:
+Each working day begins at 10:00 AM with the release of the daily task specification and learning objectives. Interns spend the afternoon conducting hands-on experimentation, writing Python scripts, and building interactive Jupyter notebooks. At 7:00 PM (19:00 / 20:00 IST), interns attend the daily review meeting conducted by mentors (Suyash Sir / Aditya Sir) or HR (Rebecca Mam) to present code walkthroughs and verify deliverables.
+
+4. Code Quality and Best Practices:
+All submitted code must adhere strictly to PEP 8 standards. Code must include clear docstrings, meaningful variable names, dynamic calculations instead of hardcoded numbers, and robust exception handling. Deliverables must be verified through local test execution with zero runtime errors prior to final submission.

@@ -1,0 +1,117 @@
+[
+  {
+    "question": "What is the process for submitting an internship task?",
+    "retrieved_chunks": [
+      {
+        "source": "submission_guidelines.txt",
+        "chunk_id": 3,
+        "text": "commence at 7:00 PM or 8:00 PM IST, during which interns present their deliverables. Late submissions without prior approval from the mentor are marked as incomplete and affect weekly performance rat"
+      },
+      {
+        "source": "submission_guidelines.txt",
+        "chunk_id": 2,
+        "text": "ission Deadline:\nInterns must complete and submit their assigned daily training tasks by 6:00 PM IST on the day of assignment. Evening review meetings commence at 7:00 PM or 8:00 PM IST, during which"
+      }
+    ],
+    "answer": "6:00 PM IST",
+    "evaluation": {
+      "relevance": 4.44,
+      "correctness": 5.0,
+      "completeness": 3.0,
+      "grounding": 5.0,
+      "overall_score": 4.36
+    }
+  },
+  {
+    "question": "What happens when an intern takes leave?",
+    "retrieved_chunks": [
+      {
+        "source": "leave_policy.txt",
+        "chunk_id": 12,
+        "text": "ated unexcused absences may lead to formal review and potential termination of the internship agreement."
+      },
+      {
+        "source": "leave_policy.txt",
+        "chunk_id": 10,
+        "text": "king Days and Task Recovery:\nWhen an intern takes an approved leave, they remain responsible for completing all missed technical modules. Interns are granted compensatory working periods on designated"
+      }
+    ],
+    "answer": "they remain responsible for completing all missed technical modules",
+    "evaluation": {
+      "relevance": 3.33,
+      "correctness": 5.0,
+      "completeness": 3.0,
+      "grounding": 5.0,
+      "overall_score": 4.08
+    }
+  },
+  {
+    "question": "What are the main steps in the training workflow?",
+    "retrieved_chunks": [
+      {
+        "source": "project_workflow.txt",
+        "chunk_id": 4,
+        "text": "atasets, handle missing values, remove noise, and perform exploratory sanity checks.\nStage 3: Model Development and Training \u2014 Implement baseline models, engineer relevant features, and optimize model"
+      },
+      {
+        "source": "training_guidelines.txt",
+        "chunk_id": 9,
+        "text": "eprocessing, TF-IDF vectorization, Hugging Face pretrained models, and Retrieval-Augmented Generation (RAG) pipelines.\n\n3. Daily Training Routine:\nEach working day begins at 10:00 AM with the release"
+      }
+    ],
+    "answer": "handle missing values, remove noise, and perform exploratory sanity checks",
+    "evaluation": {
+      "relevance": 3.12,
+      "correctness": 5.0,
+      "completeness": 2.6,
+      "grounding": 5.0,
+      "overall_score": 3.93
+    }
+  },
+  {
+    "question": "What should an intern complete before submitting a project?",
+    "retrieved_chunks": [
+      {
+        "source": "submission_guidelines.txt",
+        "chunk_id": 3,
+        "text": "commence at 7:00 PM or 8:00 PM IST, during which interns present their deliverables. Late submissions without prior approval from the mentor are marked as incomplete and affect weekly performance rat"
+      },
+      {
+        "source": "project_workflow.txt",
+        "chunk_id": 7,
+        "text": "xecution scripts, and comprehensive README documentation.\n\n2. Pre-Submission Checklist:\nBefore an intern can submit a project, the following validation steps must be completed:\n- Execute all notebook"
+      }
+    ],
+    "answer": "validation steps",
+    "evaluation": {
+      "relevance": 2.89,
+      "correctness": 3.5,
+      "completeness": 2.6,
+      "grounding": 5.0,
+      "overall_score": 3.5
+    }
+  },
+  {
+    "question": "What are the basic onboarding requirements?",
+    "retrieved_chunks": [
+      {
+        "source": "onboarding.txt",
+        "chunk_id": 11,
+        "text": "romptly.\n\n4. Onboarding Checklist:\nBefore beginning project assignments, interns must complete the onboarding checklist:\n- Submit digital identity and internship acceptance verification.\n- Configure G"
+      },
+      {
+        "source": "onboarding.txt",
+        "chunk_id": 5,
+        "text": "vironment Setup:\nEvery intern must configure their local development workstation within the first 24 hours of onboarding. The required tools include Python (version 3.10 or higher), Visual Studio Code"
+      }
+    ],
+    "answer": "Python (version 3.10 or higher), Visual Studio Code",
+    "evaluation": {
+      "relevance": 4.06,
+      "correctness": 5.0,
+      "completeness": 3.4,
+      "grounding": 5.0,
+      "overall_score": 4.37
+    }
+  }
+]

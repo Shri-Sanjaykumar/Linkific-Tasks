@@ -1,0 +1,21 @@
+================================================================================
+DOCUMENT: EMPLOYEE & INTERN ONBOARDING GUIDE
+NOTICE: Synthetic demonstration documents created for RAG experimentation.
+================================================================================
+
+1. Welcome and Orientation:
+Welcome to the Linkific AI/ML Internship Training Program. All incoming interns participate in a structured orientation session on their first day. The session introduces interns to the company mission, team structure, core communication protocols, and the training roadmap. Interns are assigned a dedicated technical mentor who will supervise daily assignments and conduct code reviews throughout the training tenure.
+
+2. Workspace and Environment Setup:
+Every intern must configure their local development workstation within the first 24 hours of onboarding. The required tools include Python (version 3.10 or higher), Visual Studio Code, Git, and Jupyter Notebook. Interns must clone the assigned internship repository and configure local development environments using virtual environments or standard pip packages. All system dependencies including NumPy, Pandas, Scikit-learn, and Hugging Face Transformers must be verified.
+
+3. Communication Protocols:
+Official daily communication occurs via designated messaging channels and email. Interns must join the daily morning standup channel where task briefs are posted. Important company announcements, meeting schedules, and feedback are shared through official email threads. Interns are expected to maintain professional communication and report technical blockers to their mentors promptly.
+
+4. Onboarding Checklist:
+Before beginning project assignments, interns must complete the onboarding checklist:
+- Submit digital identity and internship acceptance verification.
+- Configure Git credentials with official name and registered email address.
+- Verify repository clone and push permissions on GitHub.
+- Complete the introductory Python and environment verification test.
+- Review and acknowledge company information confidentiality and data security rules.

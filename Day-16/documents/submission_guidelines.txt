@@ -1,0 +1,24 @@
+================================================================================
+DOCUMENT: TASK AND PROJECT SUBMISSION GUIDELINES
+NOTICE: Synthetic demonstration documents created for RAG experimentation.
+================================================================================
+
+1. Daily Submission Deadline:
+Interns must complete and submit their assigned daily training tasks by 6:00 PM IST on the day of assignment. Evening review meetings commence at 7:00 PM or 8:00 PM IST, during which interns present their deliverables. Late submissions without prior approval from the mentor are marked as incomplete and affect weekly performance ratings.
+
+2. Standard Deliverables Structure:
+Every daily submission must be organized inside a dedicated day folder (e.g., Day-16/) containing the following required assets:
+- An interactive, fully executed Jupyter Notebook (.ipynb) containing clear markdown explanations and cell outputs.
+- A standalone Python execution script (.py) that reproduces the complete experiment from the command line.
+- A comprehensive technical README.md document detailing objectives, architecture, experimental results, and key learnings.
+- An outputs/ directory storing raw generated text files, evaluation metrics, and comparison tables.
+- A screenshots/ directory containing genuine visual execution evidence, chart figures, and a dedicated README.md gallery.
+
+3. Git and Repository Management:
+Interns maintain two synchronized Git repositories:
+- Linkific-Tasks: Primary repository tracking daily assignments, notes, and task implementations.
+- AI-ML-Internship: Comprehensive internship learning repository tracking curriculum progression.
+Commit messages must follow conventional commit standards (e.g., feat(day-16): add basic rag pipeline). Changes must only be pushed to remote repositories after explicit mentor approval or task sign-off.
+
+4. Daily Internship Tracker Entry:
+Following task verification, interns must log their daily progress in the official Excel / Google Sheets Internship Tracker. The entry must record the date, day number, task title, detailed description, tools and technologies used, completion status, reviewer name (Rebecca Mam / Suyash Sir), and meeting participants.

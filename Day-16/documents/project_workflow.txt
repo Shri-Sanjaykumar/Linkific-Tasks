@@ -1,0 +1,23 @@
+================================================================================
+DOCUMENT: PROJECT DEVELOPMENT WORKFLOW
+NOTICE: Synthetic demonstration documents created for RAG experimentation.
+================================================================================
+
+1. Project Lifecycle Overview:
+Technical projects and weekly mini-projects follow a standardized 5-stage engineering lifecycle:
+Stage 1: Problem Definition and Requirements Analysis — Thoroughly review project objectives, constraints, and target evaluation criteria.
+Stage 2: Data Preprocessing and Validation — Clean raw datasets, handle missing values, remove noise, and perform exploratory sanity checks.
+Stage 3: Model Development and Training — Implement baseline models, engineer relevant features, and optimize model parameters.
+Stage 4: Rigorous Evaluation and Interpretation — Evaluate models using task-specific metrics, generate confusion matrices, and document limitations.
+Stage 5: Documentation and Delivery — Prepare clean interactive notebooks, standalone execution scripts, and comprehensive README documentation.
+
+2. Pre-Submission Checklist:
+Before an intern can submit a project, the following validation steps must be completed:
+- Execute all notebook cells from top to bottom to guarantee zero runtime errors.
+- Confirm all generated plots, charts, and output text files are saved in the project directory.
+- Verify that no sensitive API keys, private passwords, or confidential company data are present in the repository.
+- Ensure all technical documentation accurately reflects the actual experimental results without exaggeration or fabricated numbers.
+- Sync changes across local development and mirror repositories before committing.
+
+3. Code Review and Feedback Integration:
+Once a project is completed, it undergoes mentor evaluation during daily technical review sessions. Reviewers evaluate projects on code modularity, documentation clarity, technical depth, and presentation fluency. Interns must incorporate mentor feedback and make required revisions within 24 hours of the review meeting.

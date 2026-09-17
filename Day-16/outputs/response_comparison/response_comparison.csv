@@ -1,0 +1,16 @@
+question,chunk_size,top_source,retrieval_distance,generated_answer,relevance,correctness,completeness,grounding,overall_score
+What is the process for submitting an internship task?,200,submission_guidelines.txt,0.3762,6:00 PM IST,4.44,5.0,3.0,5.0,4.36
+What happens when an intern takes leave?,200,leave_policy.txt,0.381,they remain responsible for completing all missed technical modules,3.33,5.0,3.0,5.0,4.08
+What are the main steps in the training workflow?,200,project_workflow.txt,0.5298,"handle missing values, remove noise, and perform exploratory sanity checks",3.12,5.0,2.6,5.0,3.93
+What should an intern complete before submitting a project?,200,submission_guidelines.txt,0.3844,validation steps,2.89,3.5,2.6,5.0,3.5
+What are the basic onboarding requirements?,200,onboarding.txt,0.4545,"Python (version 3.10 or higher), Visual Studio Code",4.06,5.0,3.4,5.0,4.37
+What is the process for submitting an internship task?,400,submission_guidelines.txt,0.4291,task verification,3.61,3.5,4.0,5.0,4.03
+What happens when an intern takes leave?,400,leave_policy.txt,0.3703,they remain responsible for completing all missed technical modules,4.44,5.0,5.0,5.0,4.86
+What are the main steps in the training workflow?,400,project_workflow.txt,0.4328,"Implement baseline models, engineer relevant features, and optimize model parameters",3.44,5.0,4.2,5.0,4.41
+What should an intern complete before submitting a project?,400,project_workflow.txt,0.4104,the following validation steps,4.72,3.5,4.2,5.0,4.35
+What are the basic onboarding requirements?,400,onboarding.txt,0.5386,introductory Python and environment verification test. - Review and acknowledge company information confidentiality and data security rules,4.06,5.0,5.0,5.0,4.76
+What is the process for submitting an internship task?,800,submission_guidelines.txt,0.4568,Daily Submission Deadline,4.72,5.0,4.0,5.0,4.68
+What happens when an intern takes leave?,800,leave_policy.txt,0.3571,they remain responsible for completing all missed technical modules,4.44,5.0,5.0,5.0,4.86
+What are the main steps in the training workflow?,800,project_workflow.txt,0.4335,"Implement baseline models, engineer relevant features, and optimize model parameters",3.75,5.0,4.2,5.0,4.49
+What should an intern complete before submitting a project?,800,project_workflow.txt,0.3944,validation steps,4.72,3.5,4.2,5.0,4.35
+What are the basic onboarding requirements?,800,onboarding.txt,0.5168,- Submit digital identity and internship acceptance verification,4.06,5.0,5.0,5.0,4.76

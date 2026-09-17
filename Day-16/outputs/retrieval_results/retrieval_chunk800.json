@@ -1,0 +1,117 @@
+[
+  {
+    "question": "What is the process for submitting an internship task?",
+    "retrieved_chunks": [
+      {
+        "source": "submission_guidelines.txt",
+        "chunk_id": 0,
+        "text": "================================================================================\nDOCUMENT: TASK AND PROJECT SUBMISSION GUIDELINES\nNOTICE: Synthetic demonstration documents created for RAG experimentation.\n================================================================================\n\n1. Daily Submission Deadline:\nInterns must complete and submit their assigned daily training tasks by 6:00 PM IST on the day of assignment. Evening review meetings commence at 7:00 PM or 8:00 PM IST, during which interns present their deliverables. Late submissions without prior approval from the mentor are marked as incomplete and affect weekly performance ratings.\n\n2. Standard Deliverables Structure:\nEvery daily submission must be organized inside a dedicated day folder (e.g., Day-16/) containing the follo"
+      },
+      {
+        "source": "onboarding.txt",
+        "chunk_id": 2,
+        "text": "nel where task briefs are posted. Important company announcements, meeting schedules, and feedback are shared through official email threads. Interns are expected to maintain professional communication and report technical blockers to their mentors promptly.\n\n4. Onboarding Checklist:\nBefore beginning project assignments, interns must complete the onboarding checklist:\n- Submit digital identity and internship acceptance verification.\n- Configure Git credentials with official name and registered email address.\n- Verify repository clone and push permissions on GitHub.\n- Complete the introductory Python and environment verification test.\n- Review and acknowledge company information confidentiality and data security rules."
+      }
+    ],
+    "answer": "Daily Submission Deadline",
+    "evaluation": {
+      "relevance": 4.72,
+      "correctness": 5.0,
+      "completeness": 4.0,
+      "grounding": 5.0,
+      "overall_score": 4.68
+    }
+  },
+  {
+    "question": "What happens when an intern takes leave?",
+    "retrieved_chunks": [
+      {
+        "source": "leave_policy.txt",
+        "chunk_id": 2,
+        "text": "suming duties if the medical leave extends beyond two consecutive working days.\n\n4. Compensatory Working Days and Task Recovery:\nWhen an intern takes an approved leave, they remain responsible for completing all missed technical modules. Interns are granted compensatory working periods on designated weekend catch-up sessions to finalize pending notebooks and project submissions. Unnotified or repeated unexcused absences may lead to formal review and potential termination of the internship agreement."
+      },
+      {
+        "source": "leave_policy.txt",
+        "chunk_id": 1,
+        "text": "on.\n\n2. Planned Leave Procedure:\nInterns requiring planned leave must submit a formal written leave request via email to both their technical mentor and the HR coordinator (Rebecca Mam) at least 24 hours in advance. The email must specify the reason for absence, the expected duration, and a handover plan for any pending tasks. Planned leaves exceeding two consecutive working days require prior approval from the program manager.\n\n3. Emergency and Sick Leave Procedure:\nIn cases of medical emergencies or unexpected illness, interns must notify their mentor and HR before 10:00 AM on the day of absence via official messaging. A formal medical certificate or doctor's note must be submitted upon resuming duties if the medical leave extends beyond two consecutive working days.\n\n4. Compensatory Wor"
+      }
+    ],
+    "answer": "they remain responsible for completing all missed technical modules",
+    "evaluation": {
+      "relevance": 4.44,
+      "correctness": 5.0,
+      "completeness": 5.0,
+      "grounding": 5.0,
+      "overall_score": 4.86
+    }
+  },
+  {
+    "question": "What are the main steps in the training workflow?",
+    "retrieved_chunks": [
+      {
+        "source": "project_workflow.txt",
+        "chunk_id": 1,
+        "text": "Development and Training \u2014 Implement baseline models, engineer relevant features, and optimize model parameters.\nStage 4: Rigorous Evaluation and Interpretation \u2014 Evaluate models using task-specific metrics, generate confusion matrices, and document limitations.\nStage 5: Documentation and Delivery \u2014 Prepare clean interactive notebooks, standalone execution scripts, and comprehensive README documentation.\n\n2. Pre-Submission Checklist:\nBefore an intern can submit a project, the following validation steps must be completed:\n- Execute all notebook cells from top to bottom to guarantee zero runtime errors.\n- Confirm all generated plots, charts, and output text files are saved in the project directory.\n- Verify that no sensitive API keys, private passwords, or confidential company data are prese"
+      },
+      {
+        "source": "training_guidelines.txt",
+        "chunk_id": 2,
+        "text": "etrained models, and Retrieval-Augmented Generation (RAG) pipelines.\n\n3. Daily Training Routine:\nEach working day begins at 10:00 AM with the release of the daily task specification and learning objectives. Interns spend the afternoon conducting hands-on experimentation, writing Python scripts, and building interactive Jupyter notebooks. At 7:00 PM (19:00 / 20:00 IST), interns attend the daily review meeting conducted by mentors (Suyash Sir / Aditya Sir) or HR (Rebecca Mam) to present code walkthroughs and verify deliverables.\n\n4. Code Quality and Best Practices:\nAll submitted code must adhere strictly to PEP 8 standards. Code must include clear docstrings, meaningful variable names, dynamic calculations instead of hardcoded numbers, and robust exception handling. Deliverables must be veri"
+      }
+    ],
+    "answer": "Implement baseline models, engineer relevant features, and optimize model parameters",
+    "evaluation": {
+      "relevance": 3.75,
+      "correctness": 5.0,
+      "completeness": 4.2,
+      "grounding": 5.0,
+      "overall_score": 4.49
+    }
+  },
+  {
+    "question": "What should an intern complete before submitting a project?",
+    "retrieved_chunks": [
+      {
+        "source": "project_workflow.txt",
+        "chunk_id": 1,
+        "text": "Development and Training \u2014 Implement baseline models, engineer relevant features, and optimize model parameters.\nStage 4: Rigorous Evaluation and Interpretation \u2014 Evaluate models using task-specific metrics, generate confusion matrices, and document limitations.\nStage 5: Documentation and Delivery \u2014 Prepare clean interactive notebooks, standalone execution scripts, and comprehensive README documentation.\n\n2. Pre-Submission Checklist:\nBefore an intern can submit a project, the following validation steps must be completed:\n- Execute all notebook cells from top to bottom to guarantee zero runtime errors.\n- Confirm all generated plots, charts, and output text files are saved in the project directory.\n- Verify that no sensitive API keys, private passwords, or confidential company data are prese"
+      },
+      {
+        "source": "onboarding.txt",
+        "chunk_id": 2,
+        "text": "nel where task briefs are posted. Important company announcements, meeting schedules, and feedback are shared through official email threads. Interns are expected to maintain professional communication and report technical blockers to their mentors promptly.\n\n4. Onboarding Checklist:\nBefore beginning project assignments, interns must complete the onboarding checklist:\n- Submit digital identity and internship acceptance verification.\n- Configure Git credentials with official name and registered email address.\n- Verify repository clone and push permissions on GitHub.\n- Complete the introductory Python and environment verification test.\n- Review and acknowledge company information confidentiality and data security rules."
+      }
+    ],
+    "answer": "validation steps",
+    "evaluation": {
+      "relevance": 4.72,
+      "correctness": 3.5,
+      "completeness": 4.2,
+      "grounding": 5.0,
+      "overall_score": 4.35
+    }
+  },
+  {
+    "question": "What are the basic onboarding requirements?",
+    "retrieved_chunks": [
+      {
+        "source": "onboarding.txt",
+        "chunk_id": 2,
+        "text": "nel where task briefs are posted. Important company announcements, meeting schedules, and feedback are shared through official email threads. Interns are expected to maintain professional communication and report technical blockers to their mentors promptly.\n\n4. Onboarding Checklist:\nBefore beginning project assignments, interns must complete the onboarding checklist:\n- Submit digital identity and internship acceptance verification.\n- Configure Git credentials with official name and registered email address.\n- Verify repository clone and push permissions on GitHub.\n- Complete the introductory Python and environment verification test.\n- Review and acknowledge company information confidentiality and data security rules."
+      },
+      {
+        "source": "project_workflow.txt",
+        "chunk_id": 1,
+        "text": "Development and Training \u2014 Implement baseline models, engineer relevant features, and optimize model parameters.\nStage 4: Rigorous Evaluation and Interpretation \u2014 Evaluate models using task-specific metrics, generate confusion matrices, and document limitations.\nStage 5: Documentation and Delivery \u2014 Prepare clean interactive notebooks, standalone execution scripts, and comprehensive README documentation.\n\n2. Pre-Submission Checklist:\nBefore an intern can submit a project, the following validation steps must be completed:\n- Execute all notebook cells from top to bottom to guarantee zero runtime errors.\n- Confirm all generated plots, charts, and output text files are saved in the project directory.\n- Verify that no sensitive API keys, private passwords, or confidential company data are prese"
+      }
+    ],
+    "answer": "- Submit digital identity and internship acceptance verification",
+    "evaluation": {
+      "relevance": 4.06,
+      "correctness": 5.0,
+      "completeness": 5.0,
+      "grounding": 5.0,
+      "overall_score": 4.76
+    }
+  }
+]

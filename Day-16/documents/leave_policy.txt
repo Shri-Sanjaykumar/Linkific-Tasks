@@ -1,0 +1,16 @@
+================================================================================
+DOCUMENT: ATTENDANCE AND LEAVE POLICY
+NOTICE: Synthetic demonstration documents created for RAG experimentation.
+================================================================================
+
+1. Working Hours and Schedule:
+The standard internship working schedule is Monday through Friday, from 9:30 AM to 6:30 PM Indian Standard Time (IST). Daily attendance is recorded through regular participation in morning briefings, continuous task activity, and evening submission check-ins. Interns must maintain at least 85% attendance across the duration of the program to be eligible for internship completion certification.
+
+2. Planned Leave Procedure:
+Interns requiring planned leave must submit a formal written leave request via email to both their technical mentor and the HR coordinator (Rebecca Mam) at least 24 hours in advance. The email must specify the reason for absence, the expected duration, and a handover plan for any pending tasks. Planned leaves exceeding two consecutive working days require prior approval from the program manager.
+
+3. Emergency and Sick Leave Procedure:
+In cases of medical emergencies or unexpected illness, interns must notify their mentor and HR before 10:00 AM on the day of absence via official messaging. A formal medical certificate or doctor's note must be submitted upon resuming duties if the medical leave extends beyond two consecutive working days.
+
+4. Compensatory Working Days and Task Recovery:
+When an intern takes an approved leave, they remain responsible for completing all missed technical modules. Interns are granted compensatory working periods on designated weekend catch-up sessions to finalize pending notebooks and project submissions. Unnotified or repeated unexcused absences may lead to formal review and potential termination of the internship agreement.
