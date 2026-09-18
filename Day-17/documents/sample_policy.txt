@@ -1,0 +1,13 @@
+================================================================================
+DOCUMENT: INTERNSHIP PROJECT AND CODE QUALITY STANDARDS
+NOTICE: Synthetic demonstration document created for RAG API experimentation.
+================================================================================
+
+1. Code Quality Principles:
+All Python code developed during the Linkific AI/ML internship must adhere strictly to PEP 8 standards. Code must include clear docstrings, descriptive variable names, dynamic computations instead of hardcoded numbers, and robust error handling.
+
+2. Pre-Submission Verification:
+Before any project submission or repository push, interns must execute all code cells top to bottom to guarantee zero runtime errors. All generated visual charts, evaluation metric JSON files, and test reports must be preserved in dedicated project folders.
+
+3. Repository Management:
+Interns maintain two synchronized Git repositories: Linkific-Tasks and AI-ML-Internship. Commit messages must follow conventional standards. Code must never be pushed to remote GitHub repositories without explicit mentor approval.

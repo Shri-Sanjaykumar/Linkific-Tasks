@@ -34,4 +34,5 @@ This repository contains day-wise folders to organize and document all internshi
 - `Day-14/` — Weekly Mini Project: Basic Sentiment Analysis using Machine Learning (Text classification pipeline, IMDb review dataset, TF-IDF vectorization, Logistic Regression, and model evaluation).
 - `Day-15/` — Introduction to Large Language Models and Hugging Face (AI evolution, LLM fundamentals, model hub exploration, and comparative inference across Text Generation, Sentiment Analysis, and Summarization).
 - `Day-16/` — Basic Retrieval-Augmented Generation (RAG) (Embeddings, Vector Databases, ChromaDB, FAISS, Semantic Search, Chunk Size Optimization [200 vs 400 vs 800 chars], and RAG Generation Pipeline with Seq2Seq LM).
+- `Day-17/` — Production-Grade Retrieval-Augmented Generation (RAG) Microservice with FastAPI (FastAPI REST architecture, multi-format page-aware PDF/TXT ingestion, 10MB limit, sliding-window chunking [800/100], 384-dim all-MiniLM-L6-v2 embeddings, ChromaDB cosine vector search, local T5 grounded QA, and 10 robustness/functional test validations).
 - Future training days will be added progressively as tasks are assigned.

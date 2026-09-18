@@ -1,0 +1,206 @@
+[
+  {
+    "test_id": "TEST 1",
+    "test_name": "Question Before Upload",
+    "category": "Robustness",
+    "endpoint": "POST /ask",
+    "input": "Valid question before any documents are indexed",
+    "expected_status": 400,
+    "expected_behavior": "Reject query with clear instruction that documents must be uploaded first",
+    "actual_status": 400,
+    "actual_behavior": {
+      "detail": "No documents have been uploaded yet. Please upload a document before asking questions.",
+      "status_code": 400
+    },
+    "elapsed_ms": 17.95,
+    "status": "PASS"
+  },
+  {
+    "test_id": "TEST 2",
+    "test_name": "Unsupported File Format",
+    "category": "Robustness",
+    "endpoint": "POST /upload",
+    "input": "Image file (.jpg binary)",
+    "expected_status": 415,
+    "expected_behavior": "Reject with HTTP 415 and message listing allowed formats (.pdf, .txt)",
+    "actual_status": 415,
+    "actual_behavior": {
+      "detail": "Unsupported file format '.jpg'. Supported formats are: .txt, .pdf",
+      "status_code": 415
+    },
+    "elapsed_ms": 4.84,
+    "status": "PASS"
+  },
+  {
+    "test_id": "TEST 3",
+    "test_name": "Empty File",
+    "category": "Robustness",
+    "endpoint": "POST /upload",
+    "input": "0-byte file (empty.pdf)",
+    "expected_status": 400,
+    "expected_behavior": "Reject with HTTP 400 and validation error indicating empty file",
+    "actual_status": 400,
+    "actual_behavior": {
+      "detail": "Uploaded file is empty (0 bytes).",
+      "status_code": 400
+    },
+    "elapsed_ms": 5.44,
+    "status": "PASS"
+  },
+  {
+    "test_id": "TEST 4",
+    "test_name": "Corrupted PDF",
+    "category": "Robustness",
+    "endpoint": "POST /upload",
+    "input": "Malformed binary without PDF xref/trailer table",
+    "expected_status": 400,
+    "expected_behavior": "Catch stream parsing exception gracefully without exposing stack trace",
+    "actual_status": 400,
+    "actual_behavior": {
+      "detail": "Invalid or corrupted PDF file: Stream has ended unexpectedly",
+      "status_code": 400
+    },
+    "elapsed_ms": 4.31,
+    "status": "PASS"
+  },
+  {
+    "test_id": "TEST 5",
+    "test_name": "Normal PDF Ingestion",
+    "category": "Core Feature",
+    "endpoint": "POST /upload",
+    "input": "Valid 2-page PDF (sample_onboarding.pdf)",
+    "expected_status": 200,
+    "expected_behavior": "Extract page-by-page text, chunk at 800 chars, embed, index in ChromaDB",
+    "actual_status": 200,
+    "actual_behavior": {
+      "document_id": "99d93505",
+      "filename": "sample_onboarding.pdf",
+      "file_type": ".pdf",
+      "file_size_bytes": 3488,
+      "pages_count": 2,
+      "chunks_count": 4,
+      "chunk_size": 800,
+      "overlap": 100,
+      "message": "Document 'sample_onboarding.pdf' successfully processed and indexed (4 chunks created)."
+    },
+    "elapsed_ms": 304.43,
+    "status": "PASS"
+  },
+  {
+    "test_id": "TEST 6",
+    "test_name": "Valid TXT Ingestion",
+    "category": "Core Feature",
+    "endpoint": "POST /upload",
+    "input": "Valid plain text file (sample_policy.txt)",
+    "expected_status": 200,
+    "expected_behavior": "Decode UTF-8, partition into chunks, embed, index in ChromaDB",
+    "actual_status": 200,
+    "actual_behavior": {
+      "document_id": "9236dc4b",
+      "filename": "sample_policy.txt",
+      "file_type": ".txt",
+      "file_size_bytes": 1133,
+      "pages_count": 1,
+      "chunks_count": 2,
+      "chunk_size": 800,
+      "overlap": 100,
+      "message": "Document 'sample_policy.txt' successfully processed and indexed (2 chunks created)."
+    },
+    "elapsed_ms": 162.07,
+    "status": "PASS"
+  },
+  {
+    "test_id": "TEST 7",
+    "test_name": "Large PDF Document",
+    "category": "Robustness",
+    "endpoint": "POST /upload",
+    "input": "Multi-page technical handbook (large_document.pdf, 2.05 MB, 14 pages)",
+    "expected_status": 200,
+    "expected_behavior": "Process multi-page document within 10MB threshold, record chunk count",
+    "actual_status": 200,
+    "actual_behavior": {
+      "document_id": "6601db97",
+      "filename": "large_document.pdf",
+      "file_type": ".pdf",
+      "file_size_bytes": 2050948,
+      "pages_count": 14,
+      "chunks_count": 28,
+      "chunk_size": 800,
+      "overlap": 100,
+      "message": "Document 'large_document.pdf' successfully processed and indexed (28 chunks created)."
+    },
+    "elapsed_ms": 1064.07,
+    "status": "PASS"
+  },
+  {
+    "test_id": "TEST 8",
+    "test_name": "Empty Question",
+    "category": "Robustness",
+    "endpoint": "POST /ask",
+    "input": "Whitespace-only question string",
+    "expected_status": 400,
+    "expected_behavior": "Reject with validation error requiring at least 3 non-whitespace chars",
+    "actual_status": 400,
+    "actual_behavior": {
+      "detail": "Question must contain at least 3 non-whitespace characters.",
+      "status_code": 400
+    },
+    "elapsed_ms": 3.95,
+    "status": "PASS"
+  },
+  {
+    "test_id": "TEST 9",
+    "test_name": "Normal RAG Question",
+    "category": "Core Feature",
+    "endpoint": "POST /ask",
+    "input": "'What is the daily task submission deadline?'",
+    "expected_status": 200,
+    "expected_behavior": "Retrieve top-k chunks, synthesize T5 answer, return source citation and similarity",
+    "actual_status": 200,
+    "actual_behavior": {
+      "question": "What is the daily task submission deadline?",
+      "answer": "6:00 PM IST",
+      "total_sources": 2,
+      "sources": [
+        {
+          "document_id": "99d93505",
+          "filename": "sample_onboarding.pdf",
+          "page_number": 2,
+          "chunk_id": 2,
+          "similarity_score": 0.4498,
+          "cosine_distance": 0.5502,
+          "text_snippet": "Section 3: Task Submission Guidelines\nAll daily technical tasks must be completed and submitted by 6:00 PM IST each evening. Deliverables\nmu..."
+        },
+        {
+          "document_id": "99d93505",
+          "filename": "sample_onboarding.pdf",
+          "page_number": 2,
+          "chunk_id": 3,
+          "similarity_score": 0.4442,
+          "cosine_distance": 0.5558,
+          "text_snippet": "t be sent before 10:00 AM on the day of absence. Missed technical modules must be\ncompleted during designated compensatory weekend catch-up ..."
+        }
+      ]
+    },
+    "elapsed_ms": 302.83,
+    "status": "PASS"
+  },
+  {
+    "test_id": "TEST 10",
+    "test_name": "Document Deletion",
+    "category": "Functional",
+    "endpoint": "DELETE /documents/99d93505",
+    "input": "DELETE /documents/99d93505",
+    "expected_status": 200,
+    "expected_behavior": "Remove document from registry and purge its vectors from ChromaDB",
+    "actual_status": 200,
+    "actual_behavior": {
+      "document_id": "99d93505",
+      "filename": "sample_onboarding.pdf",
+      "chunks_removed": 4,
+      "message": "Document 'sample_onboarding.pdf' and 4 indexed chunks were successfully removed."
+    },
+    "elapsed_ms": 12.72,
+    "status": "PASS"
+  }
+]
