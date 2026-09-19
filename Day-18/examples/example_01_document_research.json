@@ -1,0 +1,91 @@
+{
+  "question": "What is the leave policy?",
+  "answer": "Based on the demonstration documentation: DOCUMENT TITLE: Attendance, Leave, and Working Schedule Policy 2. Planned Leave Request Procedure: Interns requiring planned personal or academic leave must submit a formal written request via email at least 24 hours in advance. The leave email must be sent to both the designated technical mentor and the HR coordinator (Rebecca Mam). The request must specify: - The exact dates of absence - The business reason for leave - A handover and catch-up plan for pending daily technical deliverables Planned leave exceeding two consecutive working days requires prior approval from the engineering lead.",
+  "sources": [
+    "Attendance, Leave, and Working Schedule Policy"
+  ],
+  "status": "answered",
+  "plan": [
+    {
+      "step_id": 1,
+      "description": "Tokenize query, filter stopwords, and extract core keywords.",
+      "target_tool": "analysis",
+      "expected_output": "List of substantive search keywords.",
+      "status": "completed"
+    },
+    {
+      "step_id": 2,
+      "description": "Execute lexical relevance search across synthetic knowledge base chunks.",
+      "target_tool": "document_search",
+      "expected_output": "Ranked list of top-3 relevant chunks with term-overlap similarity scores.",
+      "status": "completed"
+    },
+    {
+      "step_id": 3,
+      "description": "Inspect retrieved chunks and evaluate information sufficiency against threshold.",
+      "target_tool": "evaluation",
+      "expected_output": "Determine whether retrieved content sufficiently answers query.",
+      "status": "completed"
+    },
+    {
+      "step_id": 4,
+      "description": "If sufficient, proceed to answer; if borderline, perform query refinement.",
+      "target_tool": "decision",
+      "expected_output": "Decision to synthesize answer or execute refined lexical search.",
+      "status": "skipped"
+    },
+    {
+      "step_id": 5,
+      "description": "Synthesize grounded final response with source document attribution.",
+      "target_tool": "final_response",
+      "expected_output": "Factual answer citing source document titles.",
+      "status": "completed"
+    }
+  ],
+  "tools_used": [
+    "document_search",
+    "final_response"
+  ],
+  "execution_trace": [
+    {
+      "state": "PLAN",
+      "action_or_plan": "Analyzed query 'What is the leave policy?' and determined intent 'document_search'. Created 5-step ordered execution plan.",
+      "tool": null,
+      "observation": null,
+      "decision": "Target workflow: document_search",
+      "timestamp": "2026-09-19T11:01:05.399848"
+    },
+    {
+      "state": "ACT",
+      "action_or_plan": "Executing tool 'document_search' with arguments: {'query': 'What is the leave policy?', 'top_k': 3}",
+      "tool": "document_search",
+      "observation": null,
+      "decision": null,
+      "timestamp": "2026-09-19T11:01:05.399918"
+    },
+    {
+      "state": "OBSERVE",
+      "action_or_plan": "Inspected tool execution result.",
+      "tool": null,
+      "observation": "Retrieved 3 chunk(s). Highest relevance score: 1.0.",
+      "decision": null,
+      "timestamp": "2026-09-19T11:01:05.401473"
+    },
+    {
+      "state": "DECIDE",
+      "action_or_plan": "Evaluated observation against sufficiency criteria.",
+      "tool": null,
+      "observation": null,
+      "decision": "Retrieved context is highly relevant and sufficient. Proceeding to final response synthesis.",
+      "timestamp": "2026-09-19T11:01:05.401490"
+    },
+    {
+      "state": "FINAL",
+      "action_or_plan": "Synthesized grounded final response with source document attribution.",
+      "tool": null,
+      "observation": null,
+      "decision": "Status=answered, Source count=1",
+      "timestamp": "2026-09-19T11:01:05.401757"
+    }
+  ]
+}

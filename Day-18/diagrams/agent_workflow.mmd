@@ -1,0 +1,29 @@
+flowchart TD
+    Start(["User Submits Question"]) --> S_Init["State: INITIALIZED<br/>Reset Memory & Trace"]
+    S_Init --> S_Plan["State: PLANNING<br/>Planner Analyzes Intent & Builds Plan"]
+    
+    S_Plan --> BranchIntent{"Detected Intent?"}
+    BranchIntent -->|"Unsupported Domain<br/>(Stock, Weather, Crypto)"| FastRefusal["Fast Path: Controlled Refusal<br/>Skip Internal Search"]
+    BranchIntent -->|"Direct Document ID<br/>(DOC-*-*)"| ToolLookup["Select Tool: document_lookup"]
+    BranchIntent -->|"Metadata Request<br/>(author, version)"| ToolMeta["Select Tool: document_metadata"]
+    BranchIntent -->|"General Research / Policy"| ToolSearch["Select Tool: document_search"]
+
+    ToolLookup --> S_Act["State: TOOL_EXECUTION (ACT)<br/>Dispatch Tool with JSON Arguments"]
+    ToolMeta --> S_Act
+    ToolSearch --> S_Act
+
+    S_Act --> ToolRegistry["ToolRegistry Dispatcher<br/>Execute Tool Function Safely"]
+    ToolRegistry --> S_Observe["State: OBSERVING (OBSERVE)<br/>Record ToolResult & Add Context to Memory"]
+
+    S_Observe --> S_Decide["State: DECIDING (DECIDE)<br/>Evaluate Relevance & Sufficiency"]
+
+    S_Decide --> BranchSufficiency{"Sufficiency Check"}
+    BranchSufficiency -->|"High Relevance (score >= 0.40)"| S_Final["State: FINAL_RESPONSE<br/>Invoke final_response Tool"]
+    BranchSufficiency -->|"Borderline Relevance (0.25 <= score < 0.40)"| RefineSearch["ACT: Execute Refined Query<br/>OBSERVE: Additional Chunks<br/>DECIDE: Aggregate Context"]
+    BranchSufficiency -->|"No Relevance (score < 0.25)"| SafeNoInfo["State: FINAL_RESPONSE<br/>Safe No-Information Output"]
+
+    RefineSearch --> S_Final
+    SafeNoInfo --> S_Final
+    FastRefusal --> S_Final
+
+    S_Final --> Output["AgentResponse Generated<br/>- Grounded Answer<br/>- Source Document Attribution<br/>- Complete ReAct-Inspired Trace<br/>- Status (answered / no_relevant_information)"]

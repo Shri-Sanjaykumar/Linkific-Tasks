@@ -1,0 +1,29 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.3, pytest-9.1.1, pluggy-1.6.0 -- C:\Python314\python.exe
+cachedir: .pytest_cache
+hypothesis profile 'default'
+rootdir: C:\Users\Priya\Downloads\internship\Day-18
+plugins: anyio-4.14.1, hypothesis-6.165.10, asyncio-1.4.0, cov-7.1.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 18 items
+
+tests/test_agent.py::test_agent_initialization PASSED                    [  5%]
+tests/test_agent.py::test_agent_memory_reset PASSED                      [ 11%]
+tests/test_agent.py::test_planner_search_intent PASSED                   [ 16%]
+tests/test_agent.py::test_planner_lookup_intent PASSED                   [ 22%]
+tests/test_agent.py::test_planner_metadata_intent PASSED                 [ 27%]
+tests/test_agent.py::test_planner_out_of_domain_intent PASSED            [ 33%]
+tests/test_agent.py::test_planner_step_generation PASSED                 [ 38%]
+tests/test_agent.py::test_tool_registry_valid_dispatch PASSED            [ 44%]
+tests/test_agent.py::test_tool_registry_unknown_tool PASSED              [ 50%]
+tests/test_agent.py::test_document_search_execution PASSED               [ 55%]
+tests/test_agent.py::test_document_lookup_execution PASSED               [ 61%]
+tests/test_agent.py::test_document_lookup_invalid_id PASSED              [ 66%]
+tests/test_agent.py::test_document_metadata_execution PASSED             [ 72%]
+tests/test_agent.py::test_agent_leave_policy_grounded PASSED             [ 77%]
+tests/test_agent.py::test_agent_training_requirements_grounded PASSED    [ 83%]
+tests/test_agent.py::test_agent_out_of_domain_refusal PASSED             [ 88%]
+tests/test_agent.py::test_agent_empty_query_handling PASSED              [ 94%]
+tests/test_agent.py::test_agent_react_trace_completeness PASSED          [100%]
+
+============================= 18 passed in 0.57s ==============================

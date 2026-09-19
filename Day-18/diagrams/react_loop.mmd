@@ -1,0 +1,53 @@
+stateDiagram-v2
+    [*] --> PLAN: User Query Received
+
+    state PLAN {
+        [*] --> ParseTokens: Clean and Tokenize
+        ParseTokens --> DetectIntent: Match Patterns & Keywords
+        DetectIntent --> GenerateSteps: Ordered Step List
+        GenerateSteps --> [*]
+    }
+
+    PLAN --> ACT: Step 1 Ready for Execution
+
+    state ACT {
+        [*] --> SelectTool: Map Intent to Discrete Tool
+        SelectTool --> BuildArguments: Structure Tool Arguments
+        BuildArguments --> DispatchTool: ToolRegistry.execute()
+        DispatchTool --> [*]
+    }
+
+    ACT --> OBSERVE: ToolResult Returned
+
+    state OBSERVE {
+        [*] --> ParseResult: Inspect Success & Data
+        ParseResult --> StoreContext: Add Chunks to AgentMemory
+        StoreContext --> LogObservation: Record Summary in Trace
+        LogObservation --> [*]
+    }
+
+    OBSERVE --> DECIDE: Observations Complete
+
+    state DECIDE {
+        [*] --> CheckRelevance: Compare Score to Thresholds
+        CheckRelevance --> Sufficient: Score >= 0.40
+        CheckRelevance --> Borderline: 0.25 <= Score < 0.40
+        CheckRelevance --> Insufficient: Score < 0.25
+        
+        Borderline --> RefineQuery: Construct Broader Keywords
+        RefineQuery --> [*]
+        Sufficient --> ProceedFinal: Proceed to Synthesis
+        Insufficient --> RejectSafely: Flag No Information
+    }
+
+    DECIDE --> ACT: Refined Query (if Borderline)
+    DECIDE --> FINAL_RESPONSE: Context Sufficient or Refused
+
+    state FINAL_RESPONSE {
+        [*] --> SynthesizeAnswer: Extract Sentences from Context
+        SynthesizeAnswer --> AttachCitations: Extract Distinct Document Titles
+        AttachCitations --> PackageResponse: Return Pydantic AgentResponse
+        PackageResponse --> [*]
+    }
+
+    FINAL_RESPONSE --> [*]: Response Delivered to User

@@ -1,0 +1,33 @@
+================================================================================
+DOCUMENT ID: DOC-TRAIN-003
+DOCUMENT TITLE: Internship Training Curriculum and Technical Submission Guidelines
+CATEGORY: Technical Training
+AUTHOR: Linkific AI/ML Curriculum Board
+VERSION: 3.0 (September 2026)
+NOTICE: 100% Synthetic demonstration document for AI Agent experimentation.
+================================================================================
+
+1. Daily Submission Deadlines and Protocol:
+All daily technical tasks, notebooks, test scripts, and documentation must be finalized and submitted by 6:00 PM IST each evening.
+Deliverables submitted after 6:00 PM IST are flagged as late submissions unless an extension was formally requested before 12:00 PM on the same business day.
+
+2. Weekly Evaluation and Sprint Reviews:
+Technical mentors (including Suyash Sir) conduct weekly milestone evaluation sessions every Friday afternoon.
+During these sprint reviews, interns demonstrate:
+- Working code and test execution results
+- Architectural diagrams and technical documentation
+- Explanations of algorithmic tradeoffs and design decisions
+
+3. Curriculum Trajectory (Month 1):
+The Month 1 training syllabus comprises:
+- Week 1: Python programming, NumPy matrix operations, Pandas data analysis, and visual analytics
+- Week 2: Data preprocessing, feature engineering, Linear Regression, and Classification models
+- Week 3: Natural Language Processing, text tokenization, TF-IDF vectorization, and Sentiment Analysis
+- Week 4: Large Language Models, Hugging Face Transformers, Vector Databases (ChromaDB/FAISS), Retrieval-Augmented Generation (RAG), and Autonomous AI Agents
+
+4. Code Quality & Engineering Standards:
+All submitted code must satisfy Linkific engineering criteria:
+- Explicit type annotations and comprehensive docstrings
+- Adherence to PEP 8 styling conventions
+- Automated test coverage verified via PyTest
+- Deterministic random seeds for machine learning reproducibility

@@ -1,0 +1,42 @@
+flowchart TB
+    subgraph UI_Layer ["1. Presentation & Interface Layer"]
+        CLI["Antigravity Interactive CLI / Runner"]
+        API["Proposed FastAPI Service (Day 17 Extension)"]
+    end
+
+    subgraph Agent_Core ["2. Agent Core & Orchestration Layer"]
+        Agent["DocumentResearchAgent"]
+        StateMachine["State Machine<br/>INITIALIZED -> PLANNING -> ACT -> OBSERVE -> DECIDE -> FINAL"]
+        Memory["Working Memory (AgentMemory)<br/>Short-term Traces, Context Buffer, Sources"]
+    end
+
+    subgraph Reasoning_Layer ["3. Planning & Reasoning Layer"]
+        Planner["Deterministic Planner & Intent Classifier"]
+        DecisionEngine["Relevance & Sufficiency Evaluator"]
+        RefinementLogic["Single-Pass Query Expansion Engine"]
+    end
+
+    subgraph Tool_Layer ["4. Tool Execution & Dispatch Layer"]
+        ToolReg["ToolRegistry Dispatcher"]
+        T1["document_search(query, top_k)"]
+        T2["document_lookup(document_id)"]
+        T3["document_metadata(document_id)"]
+        T4["final_response(context, question)"]
+    end
+
+    subgraph Storage_Layer ["5. Synthetic Knowledge Base Layer"]
+        KB1["DOC-LEAVE-001<br/>Leave & Attendance Policy"]
+        KB2["DOC-ONBOARD-002<br/>Intern Onboarding Guide"]
+        KB3["DOC-TRAIN-003<br/>Training Curriculum"]
+        KB4["DOC-WORKFLOW-004<br/>ML Project Lifecycle"]
+    end
+
+    UI_Layer --> Agent_Core
+    Agent --> StateMachine
+    Agent --> Memory
+    Agent --> Reasoning_Layer
+    Reasoning_Layer --> Tool_Layer
+    Tool_Layer --> ToolReg
+    ToolReg --> T1 & T2 & T3 & T4
+    T1 & T2 & T3 --> Storage_Layer
+    T4 --> Memory

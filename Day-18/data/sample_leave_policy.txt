@@ -1,0 +1,31 @@
+================================================================================
+DOCUMENT ID: DOC-LEAVE-001
+DOCUMENT TITLE: Attendance, Leave, and Working Schedule Policy
+CATEGORY: Human Resources & Operations
+AUTHOR: Linkific People Operations Team
+VERSION: 2.1 (September 2026)
+NOTICE: 100% Synthetic demonstration document for AI Agent experimentation.
+================================================================================
+
+1. Working Schedule & Attendance Requirements:
+The standard internship working hours are Monday through Friday, 9:30 AM to 6:30 PM Indian Standard Time (IST).
+Attendance is tracked daily through morning standup briefings, continuous task activity, and evening submission check-ins.
+Interns must maintain a cumulative attendance rate of at least 85% across the program duration to qualify for official internship completion certification.
+
+2. Planned Leave Request Procedure:
+Interns requiring planned personal or academic leave must submit a formal written request via email at least 24 hours in advance.
+The leave email must be sent to both the designated technical mentor and the HR coordinator (Rebecca Mam).
+The request must specify:
+- The exact dates of absence
+- The business reason for leave
+- A handover and catch-up plan for pending daily technical deliverables
+Planned leave exceeding two consecutive working days requires prior approval from the engineering lead.
+
+3. Emergency and Sick Leave Guidelines:
+In the event of sudden medical illness or unforeseen personal emergencies, interns must notify their mentor and HR via official Slack channels before 10:00 AM IST on the day of absence.
+If medical absence exceeds two consecutive working days, a signed medical certificate from a licensed physician must be provided upon return to duty.
+
+4. Compensatory Catch-Up & Task Recovery:
+Taking approved leave does not exempt an intern from completing assigned curriculum modules.
+Interns are granted access to compensatory weekend catch-up sessions to finalize pending notebooks, code implementations, and project milestones.
+Repeated unexcused absences or failure to submit compensatory deliverables may lead to formal review.

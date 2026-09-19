@@ -1,0 +1,92 @@
+{
+  "question": "What are the training requirements?",
+  "answer": "Based on the demonstration documentation: DOCUMENT TITLE: Internship Training Curriculum and Technical Submission Guidelines 3. Curriculum Trajectory (Month 1): The Month 1 training syllabus comprises: - Week 1: Python programming, NumPy matrix operations, Pandas data analysis, and visual analytics - Week 2: Data preprocessing, feature engineering, Linear Regression, and Classification models - Week 3: Natural Language Processing, text tokenization, TF-IDF vectorization, and Sentiment Analysis - Week 4: Large Language Models, Hugging Face Transformers, Vector Databases (ChromaDB/FAISS), Retrieval-Augmented Generation (RAG), and Autonomous AI Agents 1. Working Schedule & Attendance Requirements: The standard internship working hours are Monday through Friday, 9:30 AM to 6:30 PM Indian Standard Time (IST).",
+  "sources": [
+    "Internship Training Curriculum and Technical Submission Guidelines",
+    "Attendance, Leave, and Working Schedule Policy"
+  ],
+  "status": "answered",
+  "plan": [
+    {
+      "step_id": 1,
+      "description": "Tokenize query, filter stopwords, and extract core keywords.",
+      "target_tool": "analysis",
+      "expected_output": "List of substantive search keywords.",
+      "status": "completed"
+    },
+    {
+      "step_id": 2,
+      "description": "Execute lexical relevance search across synthetic knowledge base chunks.",
+      "target_tool": "document_search",
+      "expected_output": "Ranked list of top-3 relevant chunks with term-overlap similarity scores.",
+      "status": "completed"
+    },
+    {
+      "step_id": 3,
+      "description": "Inspect retrieved chunks and evaluate information sufficiency against threshold.",
+      "target_tool": "evaluation",
+      "expected_output": "Determine whether retrieved content sufficiently answers query.",
+      "status": "completed"
+    },
+    {
+      "step_id": 4,
+      "description": "If sufficient, proceed to answer; if borderline, perform query refinement.",
+      "target_tool": "decision",
+      "expected_output": "Decision to synthesize answer or execute refined lexical search.",
+      "status": "skipped"
+    },
+    {
+      "step_id": 5,
+      "description": "Synthesize grounded final response with source document attribution.",
+      "target_tool": "final_response",
+      "expected_output": "Factual answer citing source document titles.",
+      "status": "completed"
+    }
+  ],
+  "tools_used": [
+    "document_search",
+    "final_response"
+  ],
+  "execution_trace": [
+    {
+      "state": "PLAN",
+      "action_or_plan": "Analyzed query 'What are the training requirements?' and determined intent 'document_search'. Created 5-step ordered execution plan.",
+      "tool": null,
+      "observation": null,
+      "decision": "Target workflow: document_search",
+      "timestamp": "2026-09-19T11:01:05.402732"
+    },
+    {
+      "state": "ACT",
+      "action_or_plan": "Executing tool 'document_search' with arguments: {'query': 'What are the training requirements?', 'top_k': 3}",
+      "tool": "document_search",
+      "observation": null,
+      "decision": null,
+      "timestamp": "2026-09-19T11:01:05.402757"
+    },
+    {
+      "state": "OBSERVE",
+      "action_or_plan": "Inspected tool execution result.",
+      "tool": null,
+      "observation": "Retrieved 3 chunk(s). Highest relevance score: 0.6.",
+      "decision": null,
+      "timestamp": "2026-09-19T11:01:05.403214"
+    },
+    {
+      "state": "DECIDE",
+      "action_or_plan": "Evaluated observation against sufficiency criteria.",
+      "tool": null,
+      "observation": null,
+      "decision": "Retrieved context is highly relevant and sufficient. Proceeding to final response synthesis.",
+      "timestamp": "2026-09-19T11:01:05.403223"
+    },
+    {
+      "state": "FINAL",
+      "action_or_plan": "Synthesized grounded final response with source document attribution.",
+      "tool": null,
+      "observation": null,
+      "decision": "Status=answered, Source count=2",
+      "timestamp": "2026-09-19T11:01:05.403335"
+    }
+  ]
+}
