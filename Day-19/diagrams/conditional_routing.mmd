@@ -1,0 +1,33 @@
+flowchart LR
+    subgraph S1 [Routing After Initialization]
+        direction TB
+        R1[route_after_init] -->|status == validation_error| F1[handle_failure]
+        R1 -->|status == initialized| D1[retrieve_documents]
+    end
+
+    subgraph S2 [Routing After Retrieval]
+        direction TB
+        R2[route_after_retrieval] -->|status == retrieval_error| F2[handle_failure]
+        R2 -->|status == retrieval_complete| V2[validate_context]
+    end
+
+    subgraph S3 [Routing After Validation]
+        direction TB
+        R3[route_after_validation] -->|context_sufficient == True| G3[generate_answer]
+        R3 -->|attempts <= max_retries| Q3[refine_question_or_retrieve]
+        R3 -->|attempts > max_retries| F3[handle_failure]
+    end
+
+    subgraph S4 [Routing After Generation]
+        direction TB
+        R4[route_after_generation] -->|status == generation_error| F4[handle_failure]
+        R4 -->|status == generation_complete| M4[update_memory]
+    end
+
+    classDef routeBox fill:#09172c,stroke:#1f4e94,stroke-width:1.5px,color:#ffffff;
+    classDef targetBox fill:#00284d,stroke:#1f4e94,stroke-width:1px,color:#99ceff;
+    classDef failBox fill:#3b0a0a,stroke:#8a1c1c,stroke-width:1.5px,color:#ff9999;
+
+    class R1,R2,R3,R4 routeBox;
+    class D1,V2,G3,Q3,M4 targetBox;
+    class F1,F2,F3,F4 failBox;

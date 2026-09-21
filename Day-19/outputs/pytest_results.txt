@@ -1,0 +1,42 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.3, pytest-9.1.1, pluggy-1.6.0 -- C:\Python314\python.exe
+cachedir: .pytest_cache
+hypothesis profile 'default'
+rootdir: C:\Users\Priya\Downloads\internship
+plugins: anyio-4.14.1, hypothesis-6.165.10, langsmith-0.13.0, asyncio-1.4.0, cov-7.1.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collecting ... collected 31 items
+
+Day-19/tests/test_workflow.py::test_01_graph_creation PASSED             [  3%]
+Day-19/tests/test_workflow.py::test_02_graph_compilation_without_checkpointer PASSED [  6%]
+Day-19/tests/test_workflow.py::test_03_graph_compilation_with_checkpointer PASSED [  9%]
+Day-19/tests/test_workflow.py::test_04_state_initialization_valid_input PASSED [ 12%]
+Day-19/tests/test_workflow.py::test_05_state_schema_keys PASSED          [ 16%]
+Day-19/tests/test_workflow.py::test_06_execution_trace_creation PASSED   [ 19%]
+Day-19/tests/test_workflow.py::test_07_relevant_document_retrieval PASSED [ 22%]
+Day-19/tests/test_workflow.py::test_08_no_relevant_document_retrieval PASSED [ 25%]
+Day-19/tests/test_workflow.py::test_09_retrieval_metadata_preservation PASSED [ 29%]
+Day-19/tests/test_workflow.py::test_10_retrieval_exception_handling PASSED [ 32%]
+Day-19/tests/test_workflow.py::test_11_route_after_init PASSED           [ 35%]
+Day-19/tests/test_workflow.py::test_12_route_after_retrieval PASSED      [ 38%]
+Day-19/tests/test_workflow.py::test_13_route_after_validation PASSED     [ 41%]
+Day-19/tests/test_workflow.py::test_14_retry_loop_bounded_execution PASSED [ 45%]
+Day-19/tests/test_workflow.py::test_15_answer_generation_with_context PASSED [ 48%]
+Day-19/tests/test_workflow.py::test_16_no_context_fallback_response PASSED [ 51%]
+Day-19/tests/test_workflow.py::test_17_generation_exception_handling PASSED [ 54%]
+Day-19/tests/test_workflow.py::test_18_empty_question_rejection PASSED   [ 58%]
+Day-19/tests/test_workflow.py::test_19_whitespace_question_rejection PASSED [ 61%]
+Day-19/tests/test_workflow.py::test_20_short_question_rejection PASSED   [ 64%]
+Day-19/tests/test_workflow.py::test_21_memory_enabled_with_thread_id PASSED [ 67%]
+Day-19/tests/test_workflow.py::test_22_conversation_history_update PASSED [ 70%]
+Day-19/tests/test_workflow.py::test_23_multiple_turns_same_thread PASSED [ 74%]
+Day-19/tests/test_workflow.py::test_24_thread_isolation PASSED           [ 77%]
+Day-19/tests/test_workflow.py::test_25_successful_workflow_terminates PASSED [ 80%]
+Day-19/tests/test_workflow.py::test_26_retry_loop_terminates_safely PASSED [ 83%]
+Day-19/tests/test_workflow.py::test_27_final_response_expected_structure PASSED [ 87%]
+Day-19/tests/test_workflow.py::test_28_interactive_exit_commands PASSED  [ 90%]
+Day-19/tests/test_workflow.py::test_29_interactive_blank_input_handling PASSED [ 93%]
+Day-19/tests/test_workflow.py::test_30_interactive_multiple_questions_memory PASSED [ 96%]
+Day-19/tests/test_workflow.py::test_31_interactive_safe_termination_on_interrupt PASSED [100%]
+
+============================= 31 passed in 23.32s =============================

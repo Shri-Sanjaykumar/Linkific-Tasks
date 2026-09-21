@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyTest cache
+.pytest_cache/
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Sensitive files
+.env
+*.pem
+*.key
+
+# OS artifacts
+.DS_Store
+Thumbs.db

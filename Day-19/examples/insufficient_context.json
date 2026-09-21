@@ -1,0 +1,72 @@
+{
+  "question": "What is the weather on Mars tomorrow?",
+  "original_question": "What is the weather on Mars tomorrow?",
+  "retrieval_query": "weather mars tomorrow policy guidelines",
+  "retrieved_context": [
+    {
+      "chunk_id": "DOC-LEAVE-002-C06",
+      "document_id": "DOC-LEAVE-002",
+      "filename": "sample_leave_policy.txt",
+      "category": "Employee Policies & Benefits",
+      "source": "synthetic",
+      "text": "Category C: Casual Leave (CL)\n- Entitlement: 6 working days per calendar year for unforeseen personal emergencies or urgent personal business.\n- Constraints: Casual Leave cannot be combined with Annual Leave and cannot exceed two (2) consecutive days per instance.",
+      "score": 0.2353
+    },
+    {
+      "chunk_id": "DOC-TRAIN-003-C04",
+      "document_id": "DOC-TRAIN-003",
+      "filename": "sample_training_guidelines.txt",
+      "category": "Technical Training & Curriculum",
+      "source": "synthetic",
+      "text": "3. TASK SUBMISSION DEADLINES & ARTIFACT STANDARDS\n- Milestone Submissions: Every daily assignment and weekly capstone task must be committed and pushed to the designated repository before 23:59 IST on the specified due date.\n- Submission Package: A valid task submission must contain clean, documented source code, requirements specifications, automated unit tests, execution trace logs, and architectural diagrams.\n- Late Submission Policy: Submissions delayed up to twenty-four (24) hours receive a 10% grading deduction. Submissions beyond 24 hours require written mentor approval to qualify for grading.",
+      "score": 0.2313
+    },
+    {
+      "chunk_id": "DOC-WORKFLOW-004-C05",
+      "document_id": "DOC-WORKFLOW-004",
+      "filename": "sample_project_workflow.txt",
+      "category": "Engineering Standards & SDLC",
+      "source": "synthetic",
+      "text": "4. STAGING VALIDATION & PRODUCTION RELEASE\n- Continuous Integration: Successful merges into 'develop' trigger automated build and deployment to the Staging Environment within 10 minutes.\n- Quality Sign-Off: QA Engineers verify user stories in Staging before promotion approval.\n- Production Deployment Windows: Production releases occur on Tuesdays and Thursdays at 06:00 UTC to minimize customer traffic impact. Zero Friday afternoon deployments are permitted.",
+      "score": 0.2203
+    }
+  ],
+  "sources": [
+    "DOC-LEAVE-002",
+    "DOC-TRAIN-003",
+    "DOC-WORKFLOW-004"
+  ],
+  "answer": "I could not find enough relevant information in the available documentation to answer this question reliably. Please try rephrasing your question or refer to the employee handbook.",
+  "status": "fallback_completed",
+  "retrieval_attempts": 3,
+  "max_retries": 2,
+  "context_sufficient": false,
+  "error_message": "No relevant documentation found after 3 retrieval attempts",
+  "conversation_history": [
+    {
+      "turn_index": 1,
+      "question": "What is the weather on Mars tomorrow?",
+      "answer": "I could not find enough relevant information in the available documentation to answer this question reliably. Please try rephrasing your question or refer to the employee handbook.",
+      "sources": [
+        "DOC-LEAVE-002",
+        "DOC-TRAIN-003",
+        "DOC-WORKFLOW-004"
+      ],
+      "status": "fallback_completed"
+    }
+  ],
+  "execution_trace": [
+    "initialize_state: Accepted question='What is the weather on Mars tomorrow?' (existing_history_turns=0)",
+    "retrieve_documents: attempt=1/3, query='What is the weather on Mars tomorrow?', chunks_retrieved=3",
+    "validate_context: INSUFFICIENT (max_score=0.1588 < 0.45, chunks=3)",
+    "refine_question_or_retrieve: attempt=1, previous='What is the weather on Mars tomorrow?', refined='weather mars tomorrow'",
+    "retrieve_documents: attempt=2/3, query='weather mars tomorrow', chunks_retrieved=3",
+    "validate_context: INSUFFICIENT (max_score=0.1868 < 0.45, chunks=3)",
+    "refine_question_or_retrieve: attempt=2, previous='weather mars tomorrow', refined='weather mars tomorrow policy guidelines'",
+    "retrieve_documents: attempt=3/3, query='weather mars tomorrow policy guidelines', chunks_retrieved=3",
+    "validate_context: INSUFFICIENT (max_score=0.2353 < 0.45, chunks=3)",
+    "handle_failure: resolved with fallback answer (reason='No relevant documentation found after 3 retrieval attempts')",
+    "update_memory: recorded turn 1 into conversation_history",
+    "finalize: workflow completed with final_status='fallback_completed'"
+  ]
+}

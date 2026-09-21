@@ -1,0 +1,36 @@
+# Document ID: DOC-WORKFLOW-004
+# Filename: sample_project_workflow.txt
+# Category: Engineering Standards & SDLC
+# Source: synthetic
+
+================================================================================
+SYNTHETIC GLOBAL ENTERPRISE — ENGINEERING SDLC & PROJECT WORKFLOW
+================================================================================
+
+1. AGILE SPRINTS & CADENCE
+All software development squads operate in structured two-week sprint cycles beginning on alternate Mondays.
+- Sprint Planning: Alternate Mondays, 10:00 AM — backlog grooming and story point allocation.
+- Daily Standup: Every weekday at 09:45 AM (15 minutes strictly). Updates follow the standard three-part format: yesterday's achievements, today's commitments, and active blockers.
+- Sprint Demo & Retrospective: Alternate Fridays at 16:00 PM — sprint review, stakeholder demonstrations, and retrospective action item assignment.
+
+2. TASK LIFECYCLE & JIRA STATES
+Development work items progress through predefined workflow states:
+[Backlog] -> [Selected for Development] -> [In Progress] -> [In Review] -> [QA Testing] -> [Ready for Deployment] -> [Done]
+- Work items cannot transition to 'In Review' without an active branch reference and passing CI checks.
+- Work items cannot transition to 'Done' without documented peer approval and verified staging deployment.
+
+3. CODE REVIEW & PULL REQUEST (PR) STANDARDS
+- Approval Requirements: Every Pull Request requires at least two (2) independent peer review approvals before merge authorization.
+- Test Coverage Threshold: New feature pull requests must include unit and integration tests maintaining a minimum of 80% code coverage.
+- CI/CD Gate: Automated linting (Ruff/Flake8), type validation (Mypy), and test execution (PyTest) must pass 100% cleanly before merge button enablement.
+- Branching Model: We follow GitFlow. Feature branches branch from 'develop' and use naming convention 'feature/TICKET-ID-brief-description'. Direct commits to 'main' or 'develop' are strictly blocked by branch protection rules.
+
+4. STAGING VALIDATION & PRODUCTION RELEASE
+- Continuous Integration: Successful merges into 'develop' trigger automated build and deployment to the Staging Environment within 10 minutes.
+- Quality Sign-Off: QA Engineers verify user stories in Staging before promotion approval.
+- Production Deployment Windows: Production releases occur on Tuesdays and Thursdays at 06:00 UTC to minimize customer traffic impact. Zero Friday afternoon deployments are permitted.
+
+5. INCIDENT MANAGEMENT & SEVERITY ESCALATION
+- Priority 1 (P1 - Critical): Core service outage or data vulnerability. Immediate response required within 15 minutes. Incident Commander assigned, cross-functional bridge opened, updates every 30 minutes.
+- Priority 2 (P2 - Major): Degraded feature performance with no immediate workaround. Response time: 1 hour.
+- Priority 3 (P3 - Minor): Localized defect with functional workaround. Addressed in current or subsequent sprint.

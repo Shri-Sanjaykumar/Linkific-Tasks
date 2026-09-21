@@ -1,0 +1,30 @@
+# Document ID: DOC-TRAIN-003
+# Filename: sample_training_guidelines.txt
+# Category: Technical Training & Curriculum
+# Source: synthetic
+
+================================================================================
+SYNTHETIC GLOBAL ENTERPRISE — INTERN TRAINING & CERTIFICATION GUIDELINES
+================================================================================
+
+1. PROGRAM OBJECTIVE & FRAMEWORK
+The technical engineering internship curriculum is a fast-paced, multi-week immersion covering modern AI/ML software architectures, Retrieval-Augmented Generation (RAG), stateful orchestration (LangGraph), API deployment, and automated quality assurance.
+
+2. CORE ATTENDANCE & PARTICIPATION REQUIREMENTS
+- Mandatory Attendance: Interns must maintain an active attendance rate of at least eighty-five percent (85%) across all scheduled lectures, lab reviews, and technical standups.
+- Unexcused Absences: More than two (2) unexcused absences within a single milestone phase will trigger a formal performance review.
+- Daily Sync: Daily engineering sync occurs promptly at 20:00 (8:00 PM IST) with technical mentors and interns.
+
+3. TASK SUBMISSION DEADLINES & ARTIFACT STANDARDS
+- Milestone Submissions: Every daily assignment and weekly capstone task must be committed and pushed to the designated repository before 23:59 IST on the specified due date.
+- Submission Package: A valid task submission must contain clean, documented source code, requirements specifications, automated unit tests, execution trace logs, and architectural diagrams.
+- Late Submission Policy: Submissions delayed up to twenty-four (24) hours receive a 10% grading deduction. Submissions beyond 24 hours require written mentor approval to qualify for grading.
+
+4. BENCHMARK ASSESSMENT & QUIZ CRITERIA
+- Knowledge Quizzes: Each training module concludes with a technical assessment quiz.
+- Passing Threshold: Interns must achieve a minimum score of seventy-five percent (75%) on each modular quiz. A single re-take is permitted within 72 hours of initial evaluation.
+- Capstone Defense: In the final evaluation phase, interns present and defend their technical architecture in a live 20-minute code walkthrough with Senior Architects.
+
+5. MENTORSHIP & TECHNICAL SUPPORT
+- 1-on-1 Mentorship: Interns are assigned a dedicated Senior Engineer Mentor for bi-weekly technical guidance and code review feedback.
+- Help Desk: Technical questions regarding lab setups, library dependencies, or cloud environments should be posted in the #intern-training-support Slack channel.

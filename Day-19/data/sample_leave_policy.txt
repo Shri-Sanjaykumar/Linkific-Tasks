@@ -1,0 +1,40 @@
+# Document ID: DOC-LEAVE-002
+# Filename: sample_leave_policy.txt
+# Category: Employee Policies & Benefits
+# Source: synthetic
+
+================================================================================
+SYNTHETIC GLOBAL ENTERPRISE — CORPORATE LEAVE & TIME-OFF POLICY
+================================================================================
+
+1. POLICY OVERVIEW & PURPOSE
+Synthetic Global Enterprise believes in supporting work-life harmony, physical well-being, and personal recovery for all regular staff and interns. This document codifies eligibility, accrual mechanisms, notice requirements, approval workflows, and encashment terms for all authorized leave categories.
+
+2. AUTHORIZED LEAVE CATEGORIES & ENTITLEMENTS
+
+Category A: Annual Earned Leave (AL)
+- Entitlement: 18 working days per calendar year, accrued at 1.5 days per completed calendar month of active service.
+- Advance Notice: For planned absences exceeding 3 consecutive days, employees must submit a formal request via the HRMS portal at least two (2) weeks prior. For single-day planned leaves, a minimum of 48 hours notice is required.
+- Approval Authority: Direct Reporting Manager approval is mandatory.
+- Carry-Forward & Lapse Rules: A maximum of 10 unused Annual Leave days may be carried over to the following calendar year. All accrued days exceeding 10 lapse automatically on December 31.
+
+Category B: Sick & Medical Leave (SL)
+- Entitlement: 10 working days per calendar year, credited upfront on January 1 (or pro-rated upon joining date).
+- Notification: Employees must notify their Direct Manager and squad before 09:30 AM on the day of unplanned illness.
+- Medical Documentation: A certified Medical Practitioner certificate is required for continuous absences exceeding three (3) consecutive days.
+- Encashment: Sick leave cannot be encashed or carried forward. Unused balance lapses annually.
+
+Category C: Casual Leave (CL)
+- Entitlement: 6 working days per calendar year for unforeseen personal emergencies or urgent personal business.
+- Constraints: Casual Leave cannot be combined with Annual Leave and cannot exceed two (2) consecutive days per instance.
+
+Category D: Parental & Caregiver Leave
+- Maternity Leave: 26 weeks of fully paid leave for eligible female employees, extendable by 4 weeks upon medical recommendation.
+- Paternity Leave: 15 working days of paid leave to be taken within six (6) months of child arrival.
+- Adoption / Primary Caregiver Leave: 12 weeks of paid leave following formal legal adoption.
+
+3. LEAVE APPLICATION & ESCALATION WORKFLOW
+- Step 1: Submit digital application through hrms.synthetic-domain.internal/leave.
+- Step 2: Reporting Manager reviews and acts within forty-eight (48) business hours.
+- Step 3: If no response is received within 48 hours, the request automatically escalates to Department Head for administrative review.
+- Emergency Leave: In catastrophic circumstances where portal access is unavailable, direct SMS or telephone contact with the Manager followed by retrospective submission within 24 hours of return is accepted.

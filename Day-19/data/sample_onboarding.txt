@@ -1,0 +1,51 @@
+# Document ID: DOC-ONBOARD-001
+# Filename: sample_onboarding.txt
+# Category: Human Resources & Operations
+# Source: synthetic
+
+================================================================================
+SYNTHETIC GLOBAL ENTERPRISE — EMPLOYEE & INTERN ONBOARDING GUIDE
+================================================================================
+
+1. INTRODUCTION & PURPOSE
+Welcome to the synthetic team. This guide outlines the formal onboarding process for all newly joined full-time employees and technical interns. The objective of this standardized procedure is to ensure seamless administrative integration, IT workstation provisioning, security compliance, and organizational alignment during the first thirty (30) days of employment.
+
+2. ONBOARDING PHASES & TIMELINE
+
+Phase 1: Day 1 — Administrative Intake & Identity Verification
+- Complete biometric identity verification and submit government-issued identification cards to the HR Operations desk by 10:00 AM.
+- Sign the Non-Disclosure Agreement (NDA), Data Protection Agreement (DPA), and Employee Code of Conduct via the internal HR portal (hrms.synthetic-domain.internal).
+- Attend the mandatory Welcome and Orientation Session conducted by the Talent Development Team at 11:30 AM in Conference Room Alpha (or via virtual bridge).
+- Receive your permanent Employee Identification Badge and corporate proximity keycard.
+
+Phase 2: Days 2 to 3 — IT Asset Setup & Security Credentials
+- Collect your pre-configured development laptop from the IT Service Desk (Building B, Level 2).
+- Complete Multi-Factor Authentication (MFA) registration using an approved hardware security token or authenticator application.
+- Initialize your single sign-on (SSO) credentials and configure your company email account (username@synthetic-domain.internal).
+- Verify access to internal communication channels: Slack/Teams workspace, Jira project boards, Confluence documentation repository, and Git version control system.
+- Complete the mandatory Cyber Security Awareness and Data Privacy e-learning module within forty-eight (48) hours of credential activation.
+
+Phase 3: Week 1 — Team Integration & Buddy Assignment
+- Meet your assigned Onboarding Buddy and Engineering Team Lead for a structured 1-on-1 sprint orientation.
+- Review team repository guidelines, code style conventions, and development environment setup instructions.
+- Set up your local development environment following the documented repository onboarding steps.
+- Attend your first daily agile standup meeting and introduce yourself to cross-functional squad members.
+
+Phase 4: Days 15 to 30 — Role Transition & First Milestone Review
+- Submit your first development pull request (PR) or complete your initial assigned onboarding task under buddy mentorship.
+- Schedule the Day 15 progress check-in with your Direct Manager to discuss questions, workload distribution, and role clarity.
+- Complete the Day 30 formal onboarding assessment survey and review performance goals for the upcoming quarter.
+
+3. REQUIRED ONBOARDING CHECKLIST
+Every new employee must track and complete the following items in the HRMS Onboarding Portal:
+- Item ONB-101: Signed NDA and Employment Terms (Deadline: Day 1)
+- Item ONB-102: Direct Deposit Banking and Tax Withholding Information (Deadline: Day 3)
+- Item ONB-103: Mandatory Security and Compliance Certifications (Deadline: Day 5)
+- Item ONB-104: Workstation Security Baseline Compliance Check (Deadline: Day 7)
+- Item ONB-105: 30-Day Milestone Review with Team Lead (Deadline: Day 30)
+
+4. ESCALATION & SUPPORT PROCEDURES
+If you experience blockers during the onboarding journey, use the following escalation channels:
+- IT Support & Hardware Issues: Email itsupport@synthetic-domain.internal or log a ticket on helpdesk.internal/it. Emergency hotline: Extension 4357.
+- HR Documentation & Benefits Inquiries: Contact hr-operations@synthetic-domain.internal.
+- Technical Mentorship Blockers: Contact your designated Onboarding Buddy or Engineering Manager directly on the #help-onboarding team chat channel.

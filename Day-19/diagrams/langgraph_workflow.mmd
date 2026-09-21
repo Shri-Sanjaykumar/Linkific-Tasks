@@ -1,0 +1,34 @@
+flowchart TD
+    A([START]) --> B[initialize_state]
+    
+    B --> C{Valid Input?}
+    C -- No --> F[handle_failure]
+    C -- Yes --> D[retrieve_documents]
+    
+    D --> E{Retrieval Error?}
+    E -- Yes --> F
+    E -- No --> G[validate_context]
+    
+    G --> H{Context Sufficient?}
+    H -- Yes --> I[generate_answer]
+    H -- No and Retries Available --> J[refine_question_or_retrieve]
+    J --> D
+    H -- No Retries Left --> F
+    
+    I --> K{Generation Error?}
+    K -- Yes --> F
+    K -- No --> L[update_memory]
+    
+    F --> L
+    L --> M[finalize]
+    M --> N([END])
+
+    classDef startEnd fill:#00284d,stroke:#1f4e94,stroke-width:2px,color:#99ceff;
+    classDef nodeBox fill:#09172c,stroke:#1f4e94,stroke-width:1.5px,color:#ffffff;
+    classDef decision fill:#000e1a,stroke:#1a3e5f,stroke-width:1.5px,stroke-dasharray: 2 2,color:#99ceff;
+    classDef failure fill:#3b0a0a,stroke:#8a1c1c,stroke-width:1.5px,color:#ff9999;
+
+    class A,N startEnd;
+    class B,D,G,I,J,L,M nodeBox;
+    class C,E,H,K decision;
+    class F failure;

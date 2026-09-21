@@ -1,0 +1,34 @@
+sequenceDiagram
+    autonumber
+    actor User
+    participant Graph as LangGraph Workflow
+    participant Nodes as Workflow Nodes
+    participant Saver as InMemorySaver Checkpointer
+
+    Note over User,Saver: Turn 1: Initial Query (thread_id = T1)
+    User->>Graph: invoke({"question": "What are onboarding steps?"}, thread_id=T1)
+    Graph->>Saver: load_checkpoint(thread_id=T1)
+    Saver-->>Graph: None (fresh thread)
+    Graph->>Nodes: initialize_state (conversation_history=[])
+    Nodes->>Nodes: retrieve -> validate -> generate
+    Nodes->>Nodes: update_memory (append Turn 1)
+    Nodes->>Graph: finalize
+    Graph->>Saver: save_checkpoint(thread_id=T1, state={history: [Turn 1]})
+    Graph-->>User: Return Answer + Sources
+
+    Note over User,Saver: Turn 2: Contextual Follow-up (Same thread_id = T1)
+    User->>Graph: invoke({"question": "What should I complete first?"}, thread_id=T1)
+    Graph->>Saver: load_checkpoint(thread_id=T1)
+    Saver-->>Graph: Restored State (history: [Turn 1])
+    Graph->>Nodes: initialize_state (preserves existing history: [Turn 1])
+    Nodes->>Nodes: retrieve_documents
+    Nodes->>Nodes: validate_context
+    opt Insufficient Context
+        Nodes->>Nodes: refine_question_or_retrieve (uses Turn 1 context keyword 'onboarding')
+        Nodes->>Nodes: retry retrieval
+    end
+    Nodes->>Nodes: generate_answer
+    Nodes->>Nodes: update_memory (append Turn 2, total history=2)
+    Nodes->>Graph: finalize
+    Graph->>Saver: save_checkpoint(thread_id=T1, state={history: [Turn 1, Turn 2]})
+    Graph-->>User: Return Follow-up Answer

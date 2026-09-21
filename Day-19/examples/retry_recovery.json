@@ -1,0 +1,20 @@
+{
+  "scenario": "insufficient_context_with_retries",
+  "retrieval_attempts": 3,
+  "max_retries": 2,
+  "final_status": "fallback_completed",
+  "execution_trace": [
+    "initialize_state: Accepted question='What is the weather on Mars tomorrow?' (existing_history_turns=0)",
+    "retrieve_documents: attempt=1/3, query='What is the weather on Mars tomorrow?', chunks_retrieved=3",
+    "validate_context: INSUFFICIENT (max_score=0.1588 < 0.45, chunks=3)",
+    "refine_question_or_retrieve: attempt=1, previous='What is the weather on Mars tomorrow?', refined='weather mars tomorrow'",
+    "retrieve_documents: attempt=2/3, query='weather mars tomorrow', chunks_retrieved=3",
+    "validate_context: INSUFFICIENT (max_score=0.1868 < 0.45, chunks=3)",
+    "refine_question_or_retrieve: attempt=2, previous='weather mars tomorrow', refined='weather mars tomorrow policy guidelines'",
+    "retrieve_documents: attempt=3/3, query='weather mars tomorrow policy guidelines', chunks_retrieved=3",
+    "validate_context: INSUFFICIENT (max_score=0.2353 < 0.45, chunks=3)",
+    "handle_failure: resolved with fallback answer (reason='No relevant documentation found after 3 retrieval attempts')",
+    "update_memory: recorded turn 1 into conversation_history",
+    "finalize: workflow completed with final_status='fallback_completed'"
+  ]
+}
