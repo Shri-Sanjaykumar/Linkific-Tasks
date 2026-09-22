@@ -1,0 +1,24 @@
+flowchart TD
+    subgraph Chain1 ["Pipeline 1: File Reader ➔ Data Analyzer"]
+        C1_Start(["sample_sales.csv Path"]) --> C1_Step1["file_reader_tool()"]
+        C1_Step1 --> C1_Out1["Structured Payload: {parsed_structure, line_count}"]
+        C1_Out1 --> C1_Route["Payload Router: Extract Records"]
+        C1_Route --> C1_Step2["data_analyzer_tool(operation='summary')"]
+        C1_Step2 --> C1_End(["Final Statistical Summary & Aggregations"])
+    end
+
+    subgraph Chain2 ["Pipeline 2: Database Tool ➔ Data Analyzer"]
+        C2_Start(["SQL SELECT Query"]) --> C2_Step1["database_tool(operation='query')"]
+        C2_Step1 --> C2_Out1["Record Set: [{salary, tenure_years}, ...]"]
+        C2_Out1 --> C2_Route["Payload Router: Extract Employee Records"]
+        C2_Route --> C2_Step2["data_analyzer_tool(operation='average', col='salary')"]
+        C2_Step2 --> C2_End(["Computed Mean Salary ($105,166.67)"])
+    end
+
+    subgraph Chain3 ["Pipeline 3: Date Tool ➔ Calculator"]
+        C3_Start(["Start & Target ISO Dates"]) --> C3_Step1["date_tool(operation='date_diff')"]
+        C3_Step1 --> C3_Out1["Interval Payload: {days_difference: 21}"]
+        C3_Out1 --> C3_Route["Payload Router: a = 21, b = 8.0, op = 'multiply'"]
+        C3_Route --> C3_Step2["calculator_tool()"]
+        C3_Step2 --> C3_End(["Calculated Total Working Hours (168.0 hrs)"])
+    end

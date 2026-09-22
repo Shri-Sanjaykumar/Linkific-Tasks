@@ -1,0 +1,5 @@
+name,age,salary
+Alice,30,95000
+Bob,unknown,105000
+Charlie
+David,35,not_a_number,extra_field

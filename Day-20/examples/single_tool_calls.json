@@ -1,0 +1,333 @@
+{
+  "calculator": {
+    "tool_name": "calculator",
+    "success": true,
+    "data": {
+      "operation": "divide",
+      "a": 48.0,
+      "b": 12.0,
+      "result": 4
+    },
+    "error": null,
+    "metadata": {
+      "execution_type": "deterministic_math"
+    },
+    "timestamp": 1790088944.4243224
+  },
+  "web_search": {
+    "tool_name": "web_search",
+    "success": true,
+    "data": {
+      "query": "LangGraph stateful workflow",
+      "total_results": 1,
+      "results": [
+        {
+          "title": "LangChain",
+          "url": "https://en.wikipedia.org/wiki/LangChain",
+          "snippet": "launched LangGraph Platform into general availability, providing managed infrastructure for deploying long-running, stateful AI agents. In April 2025, LangChain",
+          "relevance_score": 0.95,
+          "source": "Wikipedia Online Search"
+        }
+      ]
+    },
+    "error": null,
+    "metadata": {
+      "is_live": true,
+      "provider": "Live Web Search (Wikipedia & DuckDuckGo)"
+    },
+    "timestamp": 1790088946.384975
+  },
+  "database_tool": {
+    "tool_name": "database_tool",
+    "success": true,
+    "data": {
+      "operation": "query",
+      "query": "SELECT name, role, salary FROM employees WHERE salary > 100000",
+      "parameters": [],
+      "record_count": 3,
+      "records": [
+        {
+          "name": "Aarav Sharma",
+          "role": "Senior ML Engineer",
+          "salary": 125000.0
+        },
+        {
+          "name": "Priya Patel",
+          "role": "Product Manager",
+          "salary": 115000.0
+        },
+        {
+          "name": "Vikram Malhotra",
+          "role": "DevOps Architect",
+          "salary": 130000.0
+        }
+      ]
+    },
+    "error": null,
+    "metadata": {
+      "is_empty": false
+    },
+    "timestamp": 1790088946.3951228
+  },
+  "file_reader": {
+    "tool_name": "file_reader",
+    "success": true,
+    "data": {
+      "file_path": "C:\\projects\\linkific\\internship\\Day-20\\data\\sample_sales.csv",
+      "filename": "sample_sales.csv",
+      "extension": ".csv",
+      "char_count": 368,
+      "line_count": 11,
+      "file_size_bytes": 379,
+      "content": "region,product,units_sold,unit_price,revenue\nNorth,Widget A,150,25.50,3825.00\nNorth,Widget B,80,45.00,3600.00\nSouth,Widget A,210,25.50,5355.00\nSouth,Widget C,45,120.00,5400.00\nEast,Widget B,120,45.00,5400.00\nEast,Widget C,60,120.00,7200.00\nWest,Widget A,190,25.50,4845.00\nWest,Widget B,95,45.00,4275.00\nWest,Widget C,30,120.00,3600.00\nNorth,Widget C,50,120.00,6000.00\n",
+      "parsed_structure": [
+        {
+          "region": "North",
+          "product": "Widget A",
+          "units_sold": "150",
+          "unit_price": "25.50",
+          "revenue": "3825.00"
+        },
+        {
+          "region": "North",
+          "product": "Widget B",
+          "units_sold": "80",
+          "unit_price": "45.00",
+          "revenue": "3600.00"
+        },
+        {
+          "region": "South",
+          "product": "Widget A",
+          "units_sold": "210",
+          "unit_price": "25.50",
+          "revenue": "5355.00"
+        },
+        {
+          "region": "South",
+          "product": "Widget C",
+          "units_sold": "45",
+          "unit_price": "120.00",
+          "revenue": "5400.00"
+        },
+        {
+          "region": "East",
+          "product": "Widget B",
+          "units_sold": "120",
+          "unit_price": "45.00",
+          "revenue": "5400.00"
+        },
+        {
+          "region": "East",
+          "product": "Widget C",
+          "units_sold": "60",
+          "unit_price": "120.00",
+          "revenue": "7200.00"
+        },
+        {
+          "region": "West",
+          "product": "Widget A",
+          "units_sold": "190",
+          "unit_price": "25.50",
+          "revenue": "4845.00"
+        },
+        {
+          "region": "West",
+          "product": "Widget B",
+          "units_sold": "95",
+          "unit_price": "45.00",
+          "revenue": "4275.00"
+        },
+        {
+          "region": "West",
+          "product": "Widget C",
+          "units_sold": "30",
+          "unit_price": "120.00",
+          "revenue": "3600.00"
+        },
+        {
+          "region": "North",
+          "product": "Widget C",
+          "units_sold": "50",
+          "unit_price": "120.00",
+          "revenue": "6000.00"
+        }
+      ],
+      "truncated": false
+    },
+    "error": null,
+    "metadata": {
+      "encoding": "utf-8"
+    },
+    "timestamp": 1790088946.3966923
+  },
+  "weather_tool": {
+    "tool_name": "weather_tool",
+    "success": true,
+    "data": {
+      "location": "Bengaluru",
+      "country": "India",
+      "temperature": 24.1,
+      "temperature_unit": "\u00b0C",
+      "condition": "Overcast",
+      "humidity_percent": 69,
+      "wind_kmh": 12.3,
+      "air_quality_index": 42,
+      "observation_timestamp": "2026-09-22T14:55:47Z"
+    },
+    "error": null,
+    "metadata": {
+      "is_live": true,
+      "provider": "Open-Meteo Live API"
+    },
+    "timestamp": 1790088947.9968717
+  },
+  "email_tool": {
+    "tool_name": "email_tool",
+    "success": true,
+    "data": {
+      "action": "draft",
+      "draft_id": "DRAFT-CFE6F0",
+      "recipient": "mentor@linkific.internal",
+      "subject": "Day 20 Submission",
+      "body": "Tool creation and chaining verified.",
+      "status": "draft_saved",
+      "saved_file": "C:\\projects\\linkific\\internship\\Day-20\\data\\drafts\\DRAFT-CFE6F0.eml",
+      "created_at": "2026-09-22T14:55:47Z"
+    },
+    "error": null,
+    "metadata": {
+      "persisted_on_disk": true
+    },
+    "timestamp": 1790088948.0455306
+  },
+  "date_tool": {
+    "tool_name": "date_tool",
+    "success": true,
+    "data": {
+      "operation": "date_diff",
+      "start_date": "2026-09-01",
+      "end_date": "2026-09-22",
+      "days_difference": 21,
+      "hours_difference": 504,
+      "is_positive": true
+    },
+    "error": null,
+    "metadata": {
+      "timezone": "UTC"
+    },
+    "timestamp": 1790088948.0495598
+  },
+  "data_analyzer": {
+    "tool_name": "data_analyzer",
+    "success": true,
+    "data": {
+      "operation": "summary",
+      "total_rows": 10,
+      "total_columns": 5,
+      "columns": [
+        "units_sold",
+        "product",
+        "region",
+        "revenue",
+        "unit_price"
+      ],
+      "column_statistics": {
+        "units_sold": {
+          "type": "numeric",
+          "count": 10,
+          "mean": 103.0,
+          "min": 30.0,
+          "max": 210.0
+        },
+        "product": {
+          "type": "categorical",
+          "count": 10,
+          "distinct_values": 3
+        },
+        "region": {
+          "type": "categorical",
+          "count": 10,
+          "distinct_values": 4
+        },
+        "revenue": {
+          "type": "numeric",
+          "count": 10,
+          "mean": 4950.0,
+          "min": 3600.0,
+          "max": 7200.0
+        },
+        "unit_price": {
+          "type": "numeric",
+          "count": 10,
+          "mean": 69.15,
+          "min": 25.5,
+          "max": 120.0
+        }
+      }
+    },
+    "error": null,
+    "metadata": {},
+    "timestamp": 1790088948.0506675
+  },
+  "company_search": {
+    "tool_name": "company_search",
+    "success": true,
+    "data": {
+      "query": "remote work and hardware allowance",
+      "category_filter": null,
+      "matches_count": 2,
+      "matches": [
+        {
+          "document_id": "DOC-POL-001",
+          "title": "Linkific Engineering & Remote Work Policy Guidelines",
+          "category": "Corporate Policy",
+          "section_index": 4,
+          "heading": "2. REMOTE WORK REIMBURSEMENT AND TOOL ACCESS",
+          "excerpt": "2. REMOTE WORK REIMBURSEMENT AND TOOL ACCESS\nInterns and engineers are provided standard cloud infrastructure credentials, authorized API test keys, and documentation access. Hardware allowances cover authorized peripherals up to $500 upon approval b...",
+          "relevance_score": 1.0,
+          "source_file": "sample_policy.txt"
+        },
+        {
+          "document_id": "DOC-GENERAL",
+          "title": "sample_onboarding.txt",
+          "category": "General",
+          "section_index": 5,
+          "heading": "2. ONBOARDING PHASES & TIMELINE",
+          "excerpt": "2. ONBOARDING PHASES & TIMELINE\n\nPhase 1: Day 1 \u2014 Administrative Intake & Identity Verification\n- Complete biometric identity verification and submit government-issued identification cards to the HR Operations desk by 10:00 AM.\n- Sign the Non-Disclos...",
+          "relevance_score": 0.6,
+          "source_file": "sample_onboarding.txt"
+        }
+      ]
+    },
+    "error": null,
+    "metadata": {
+      "total_candidates": 24
+    },
+    "timestamp": 1790088948.0533733
+  },
+  "pdf_reader": {
+    "tool_name": "pdf_reader",
+    "success": true,
+    "data": {
+      "filename": "company_handbook.pdf",
+      "search_keyword": "Tool Chaining",
+      "matches_found": 1,
+      "matching_pages": [
+        {
+          "page": 2,
+          "snippet": "...Function Calling and Tool Chaining Standards..."
+        }
+      ],
+      "metadata": {
+        "title": "untitled",
+        "author": "anonymous",
+        "page_count": 2,
+        "filename": "company_handbook.pdf",
+        "file_size_bytes": 2637
+      }
+    },
+    "error": null,
+    "metadata": {},
+    "timestamp": 1790088948.3176172
+  }
+}

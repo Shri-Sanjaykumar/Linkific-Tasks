@@ -1,0 +1,50 @@
+[
+  {
+    "id": 101,
+    "name": "Aarav Sharma",
+    "department": "Engineering",
+    "role": "Senior ML Engineer",
+    "salary": 125000,
+    "tenure_years": 4.5
+  },
+  {
+    "id": 102,
+    "name": "Priya Patel",
+    "department": "Product",
+    "role": "Product Manager",
+    "salary": 115000,
+    "tenure_years": 3.0
+  },
+  {
+    "id": 103,
+    "name": "Rohan Iyer",
+    "department": "Engineering",
+    "role": "Data Scientist",
+    "salary": 98000,
+    "tenure_years": 2.1
+  },
+  {
+    "id": 104,
+    "name": "Ananya Desai",
+    "department": "Marketing",
+    "role": "Growth Specialist",
+    "salary": 85000,
+    "tenure_years": 1.5
+  },
+  {
+    "id": 105,
+    "name": "Vikram Malhotra",
+    "department": "Engineering",
+    "role": "DevOps Architect",
+    "salary": 130000,
+    "tenure_years": 5.2
+  },
+  {
+    "id": 106,
+    "name": "Sneha Reddy",
+    "department": "HR",
+    "role": "Talent Acquisition Lead",
+    "salary": 78000,
+    "tenure_years": 2.8
+  }
+]

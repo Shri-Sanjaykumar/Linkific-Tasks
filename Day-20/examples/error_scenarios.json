@@ -1,0 +1,180 @@
+{
+  "calculator_div_zero": {
+    "tool_name": "calculator",
+    "success": false,
+    "data": null,
+    "error": "Division by zero is not allowed.",
+    "metadata": {
+      "operation": "divide",
+      "a": 100,
+      "b": 0
+    },
+    "timestamp": 1790088948.3195872
+  },
+  "calculator_bad_op": {
+    "tool_name": "calculator",
+    "success": false,
+    "data": null,
+    "error": "Argument validation failed: Parameter 'operation' value 'modulus' is not in allowed choices: ['add', 'subtract', 'multiply', 'divide'].",
+    "metadata": {
+      "validation_errors": [
+        "Parameter 'operation' value 'modulus' is not in allowed choices: ['add', 'subtract', 'multiply', 'divide']."
+      ]
+    },
+    "timestamp": 1790088948.3198805
+  },
+  "web_search_empty": {
+    "tool_name": "web_search",
+    "success": false,
+    "data": null,
+    "error": "Search query cannot be empty or whitespace.",
+    "metadata": {
+      "query": "   "
+    },
+    "timestamp": 1790088948.3201056
+  },
+  "web_search_timeout": {
+    "tool_name": "web_search",
+    "success": false,
+    "data": null,
+    "error": "Upstream search provider timeout (HTTP 503 Service Unavailable).",
+    "metadata": {
+      "query": "python",
+      "error_code": "UPSTREAM_SERVICE_TIMEOUT",
+      "is_mock": true
+    },
+    "timestamp": 1790088948.3202996
+  },
+  "database_bad_table": {
+    "tool_name": "database_tool",
+    "success": false,
+    "data": null,
+    "error": "SQLite OperationalError: no such table: non_existent_table",
+    "metadata": {
+      "query": "SELECT * FROM non_existent_table",
+      "error_code": "SQLITE_OPERATIONAL_ERROR"
+    },
+    "timestamp": 1790088948.3210444
+  },
+  "database_destructive_block": {
+    "tool_name": "database_tool",
+    "success": false,
+    "data": null,
+    "error": "Security restriction: Destructive SQL query ('DROP') is prohibited in read-only environment.",
+    "metadata": {
+      "query": "DROP TABLE employees"
+    },
+    "timestamp": 1790088948.3214993
+  },
+  "database_conn_fail": {
+    "tool_name": "database_tool",
+    "success": false,
+    "data": null,
+    "error": "Database connection failed: operational timeout or host unreachable.",
+    "metadata": {
+      "db_path": "C:\\projects\\linkific\\internship\\Day-20\\data\\company_records.db",
+      "error_code": "DB_CONNECTION_ERROR"
+    },
+    "timestamp": 1790088948.3217134
+  },
+  "file_reader_missing": {
+    "tool_name": "file_reader",
+    "success": false,
+    "data": null,
+    "error": "File not found: 'data/does_not_exist.txt'. Please check the path and try again.",
+    "metadata": {
+      "file_path": "data/does_not_exist.txt",
+      "error_code": "FILE_NOT_FOUND"
+    },
+    "timestamp": 1790088948.322693
+  },
+  "file_reader_bad_ext": {
+    "tool_name": "file_reader",
+    "success": false,
+    "data": null,
+    "error": "Unsupported file format '.db'. Allowed extensions: ['.csv', '.json', '.md', '.txt'].",
+    "metadata": {
+      "file_path": "C:\\projects\\linkific\\internship\\Day-20\\data\\company_records.db",
+      "extension": ".db",
+      "error_code": "UNSUPPORTED_FORMAT"
+    },
+    "timestamp": 1790088948.3240175
+  },
+  "weather_invalid_city": {
+    "tool_name": "weather_tool",
+    "success": false,
+    "data": null,
+    "error": "Invalid location '123456'. Location must be a recognizable city name.",
+    "metadata": {
+      "location": "123456"
+    },
+    "timestamp": 1790088948.3242962
+  },
+  "weather_service_outage": {
+    "tool_name": "weather_tool",
+    "success": false,
+    "data": null,
+    "error": "Weather service connection timed out (HTTP 504 Gateway Timeout).",
+    "metadata": {
+      "location": "Bengaluru",
+      "error_code": "WEATHER_GATEWAY_TIMEOUT"
+    },
+    "timestamp": 1790088948.3245573
+  },
+  "email_invalid_syntax": {
+    "tool_name": "email_tool",
+    "success": false,
+    "data": null,
+    "error": "Invalid recipient email address format: 'not-an-email'. Must conform to standard user@domain.tld syntax.",
+    "metadata": {
+      "recipient": "not-an-email",
+      "error_code": "INVALID_EMAIL_SYNTAX"
+    },
+    "timestamp": 1790088948.3249762
+  },
+  "date_invalid_leap": {
+    "tool_name": "date_tool",
+    "success": false,
+    "data": null,
+    "error": "Invalid 'start_date' format: '2026-02-29'. Must be valid ISO format 'YYYY-MM-DD'.",
+    "metadata": {
+      "start_date": "2026-02-29"
+    },
+    "timestamp": 1790088948.3261251
+  },
+  "data_analyzer_empty": {
+    "tool_name": "data_analyzer",
+    "success": false,
+    "data": null,
+    "error": "Dataset text string is empty.",
+    "metadata": {
+      "operation": "summary"
+    },
+    "timestamp": 1790088948.326455
+  },
+  "data_analyzer_missing_col": {
+    "tool_name": "data_analyzer",
+    "success": false,
+    "data": null,
+    "error": "Column 'profit_margin' not found in dataset. Available columns: ['units_sold', 'product', 'region', 'revenue', 'unit_price'].",
+    "metadata": {
+      "target_column": "profit_margin",
+      "available_columns": [
+        "units_sold",
+        "product",
+        "region",
+        "revenue",
+        "unit_price"
+      ]
+    },
+    "timestamp": 1790088948.327156
+  },
+  "unsupported_tool": {
+    "tool_name": "non_existent_tool",
+    "success": false,
+    "data": null,
+    "error": "Unsupported or unregistered tool: 'non_existent_tool'.",
+    "metadata": {},
+    "timestamp": 1790088948.3274307
+  }
+}

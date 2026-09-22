@@ -1,0 +1,20 @@
+================================================================================
+DOCUMENT ID: DOC-POL-001
+DOCUMENT TITLE: Linkific Engineering & Remote Work Policy Guidelines
+CATEGORY: Corporate Policy
+AUTHOR: Operations & HR Governance Board
+VERSION: 2.1
+LAST REVISED: September 2026
+================================================================================
+
+1. WORK SCHEDULE AND CORE COLLABORATION HOURS
+Linkific operates on an agile, outcome-driven operational cadence. Core collaboration hours are 10:00 AM to 5:00 PM IST Monday through Friday. Daily progress syncs take place at 20:00 IST with assigned technical mentors and peers.
+
+2. REMOTE WORK REIMBURSEMENT AND TOOL ACCESS
+Interns and engineers are provided standard cloud infrastructure credentials, authorized API test keys, and documentation access. Hardware allowances cover authorized peripherals up to $500 upon approval by the Engineering Lead.
+
+3. LEAVE ENTITLEMENT AND NOTICE PERIODS
+Full-time personnel accrue 1.75 days of paid annual leave per calendar month (21 days total annually). Leave requests exceeding 3 consecutive business days require at least 5 business days advance submission via the internal portal. Unused sick leave permits rollover of up to 5 business days into the subsequent fiscal calendar year.
+
+4. DATA SECURITY AND CODE REPOSITORY GOVERNANCE
+All source code must reside strictly within authorized GitHub organizations (Linkific-Tasks). Under no circumstances may credentials, confidential company intellectual property, customer PII, or restricted API secrets be committed to version control. Branch protection rules require peer approval prior to merge into the main branch.

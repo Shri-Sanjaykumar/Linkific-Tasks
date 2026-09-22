@@ -1,0 +1,23 @@
+flowchart TD
+    ErrEntry(["Incoming Operation / Input"]) --> GuardLevel1{"Level 1: System Guardrails"}
+    
+    GuardLevel1 -- Empty Input / Whitespace --> Err1["Reject with EMPTY_INPUT Code"]
+    GuardLevel1 -- Path Traversal / Escape --> Err2["Block with PATH_TRAVERSAL_BLOCKED"]
+    GuardLevel1 -- Destructive SQL (DROP/DELETE) --> Err3["Block with DESTRUCTIVE_QUERY_PROHIBITED"]
+    
+    GuardLevel1 -- Passes --> GuardLevel2{"Level 2: Schema & Type Validation"}
+    GuardLevel2 -- Missing Required Field --> Err4["Return VALIDATION_ERROR: Missing Parameter"]
+    GuardLevel2 -- Type Mismatch (str vs num) --> Err5["Return VALIDATION_ERROR: Invalid Type"]
+    GuardLevel2 -- Disallowed Enum Option --> Err6["Return VALIDATION_ERROR: Value not in Enum"]
+    
+    GuardLevel2 -- Passes --> GuardLevel3{"Level 3: Domain / Execution Guard"}
+    GuardLevel3 -- Division by Zero --> Err7["ZeroDivisionError: Controlled 0-Div Envelope"]
+    GuardLevel3 -- Missing File on Disk --> Err8["FILE_NOT_FOUND: Controlled Error Envelope"]
+    GuardLevel3 -- Invalid Leap Day (2026-02-29) --> Err9["INVALID_DATE: ISO Validation Envelope"]
+    GuardLevel3 -- Upstream Service Failure --> Err10["SERVICE_TIMEOUT: Handled Mock Outage"]
+    GuardLevel3 -- Malformed Dataset / Empty Rows --> Err11["EMPTY_DATASET: Audit Failure Notice"]
+    
+    GuardLevel3 -- Normal Execution --> Success(["ToolResult.ok(data=...)"])
+    
+    Err1 & Err2 & Err3 & Err4 & Err5 & Err6 & Err7 & Err8 & Err9 & Err10 & Err11 --> Envelope["ToolResult.fail(error, metadata)"]
+    Envelope --> ClientResponse(["Graceful Client Return (No Crashing)"])

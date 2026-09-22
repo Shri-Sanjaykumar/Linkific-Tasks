@@ -1,0 +1,34 @@
+flowchart TD
+    Start(["User Natural Language Request"]) --> IntClass["Intent Classifier & Tool Selector"]
+    
+    IntClass --> MatchCheck{"Is Matching Tool Registered?"}
+    
+    MatchCheck -- No --> Refusal["Generate Controlled Refusal Response<br/>(unsupported_request)"]
+    Refusal --> TraceRefuse["Log Operational Trace (Refused)"]
+    TraceRefuse --> EndRefuse(["Return Controlled Response"])
+    
+    MatchCheck -- Yes --> ArgExtract["Extract & Map Parameters"]
+    ArgExtract --> ValCheck{"Validate Arguments Against Tool Schema"}
+    
+    ValCheck -- Failed --> ValError["Generate Structured Validation Error<br/>(validation_error)"]
+    ValError --> TraceVal["Log Operational Trace (Failed Validation)"]
+    TraceVal --> EndVal(["Return Error Envelope"])
+    
+    ValCheck -- Passed --> ExecDispatcher["Tool Registry Execution Dispatcher"]
+    
+    subgraph ToolEcosystem ["Registered Tool Ecosystem"]
+        T1["Calculator"]
+        T2["Web Search (Demo Index)"]
+        T3["Database Tool (SQLite)"]
+        T4["File Reader (.csv, .json, .txt)"]
+        T5["Weather Tool (Demo Index)"]
+        T6["Email Tool (Safe Simulator)"]
+        T7["Date Tool (ISO Math)"]
+        T8["Data Analyzer (Tabular Stats)"]
+        T9["Company Search (Linkific Policies)"]
+    end
+    
+    ExecDispatcher --> ToolEcosystem
+    ToolEcosystem --> ResultEnv["Package Standard ToolResult Envelope<br/>(success, data, error, metadata)"]
+    ResultEnv --> LogTrace["Record Execution Trace (TraceStep, Duration, Timestamps)"]
+    LogTrace --> EndSuccess(["Return Structured FunctionCallResult"])

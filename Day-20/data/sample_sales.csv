@@ -1,0 +1,11 @@
+region,product,units_sold,unit_price,revenue
+North,Widget A,150,25.50,3825.00
+North,Widget B,80,45.00,3600.00
+South,Widget A,210,25.50,5355.00
+South,Widget C,45,120.00,5400.00
+East,Widget B,120,45.00,5400.00
+East,Widget C,60,120.00,7200.00
+West,Widget A,190,25.50,4845.00
+West,Widget B,95,45.00,4275.00
+West,Widget C,30,120.00,3600.00
+North,Widget C,50,120.00,6000.00
