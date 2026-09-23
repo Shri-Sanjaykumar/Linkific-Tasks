@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "timestamp": "2026-09-23T11:31:26Z",
+    "benchmark_mode": "live_http_server",
+    "python_version": "3.14.3",
+    "os": "win32",
+    "num_requests_concurrent": 50,
+    "concurrency_level": 10,
+    "payload_summary": "What are the core hours and remote hardware allowance?"
+  },
+  "concurrent_workload": {
+    "synchronous_baseline": {
+      "total_requests": 50,
+      "successful_requests": 50,
+      "failed_requests": 0,
+      "error_rate_pct": 0.0,
+      "total_wall_time_s": 1.1483,
+      "throughput_rps": 43.54,
+      "min_ms": 72.17,
+      "mean_ms": 208.7,
+      "median_ms": 141.98,
+      "p90_ms": 465.54,
+      "p95_ms": 471.1,
+      "max_ms": 492.02
+    },
+    "asynchronous_optimized": {
+      "total_requests": 50,
+      "successful_requests": 50,
+      "failed_requests": 0,
+      "error_rate_pct": 0.0,
+      "total_wall_time_s": 0.8902,
+      "throughput_rps": 56.17,
+      "min_ms": 91.17,
+      "mean_ms": 166.77,
+      "median_ms": 161.47,
+      "p90_ms": 236.27,
+      "p95_ms": 253.72,
+      "max_ms": 272.71
+    },
+    "comparison": {
+      "latency_reduction_ms": 41.93,
+      "latency_reduction_percent": 20.09,
+      "throughput_gain_rps": 12.63,
+      "throughput_gain_percent": 29.01
+    }
+  },
+  "sequential_workload": {
+    "synchronous_sequential": {
+      "total_requests": 20,
+      "successful_requests": 20,
+      "failed_requests": 0,
+      "error_rate_pct": 0.0,
+      "total_wall_time_s": 1.1466,
+      "throughput_rps": 17.44,
+      "min_ms": 52.36,
+      "mean_ms": 57.21,
+      "median_ms": 55.93,
+      "p90_ms": 63.73,
+      "p95_ms": 67.66,
+      "max_ms": 67.66
+    },
+    "asynchronous_sequential": {
+      "total_requests": 20,
+      "successful_requests": 20,
+      "failed_requests": 0,
+      "error_rate_pct": 0.0,
+      "total_wall_time_s": 1.4842,
+      "throughput_rps": 13.48,
+      "min_ms": 61.92,
+      "mean_ms": 74.1,
+      "median_ms": 75.35,
+      "p90_ms": 84.9,
+      "p95_ms": 93.5,
+      "max_ms": 93.5
+    },
+    "sequential_latency_delta_ms": -16.89
+  }
+}

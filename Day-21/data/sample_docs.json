@@ -1,0 +1,47 @@
+[
+  {
+    "id": "DOC-POL-001",
+    "title": "Corporate Leave and Attendance Policy",
+    "category": "Human Resources",
+    "content": "All Linkific employees and interns are entitled to 1.5 paid leave days per completed calendar month of active service. Planned time-off requires supervisor notification at least 3 working days in advance. Core collaboration hours are 10:00 AM to 5:00 PM IST Monday through Friday, during which all remote team members must remain accessible on designated communication channels.",
+    "author": "HR Operations",
+    "version": "2.4",
+    "word_count": 56
+  },
+  {
+    "id": "DOC-POL-002",
+    "title": "Remote Work and Hardware Security Guidelines",
+    "category": "Information Security",
+    "content": "Employees operating remotely are provided authorized cloud infrastructure credentials and VPN access. Company data must never be stored on unencrypted personal storage or public machines. Authorized hardware allowance covers peripherals up to $500 per fiscal year. Multi-factor authentication is strictly enforced across all development and production repositories.",
+    "author": "Security Engineering",
+    "version": "3.1",
+    "word_count": 52
+  },
+  {
+    "id": "DOC-POL-003",
+    "title": "Engineering Onboarding and Tooling Standards",
+    "category": "Engineering",
+    "content": "New engineering interns must complete repository access setup within 48 hours of onboarding. Code contributions require pre-commit linting, unit test coverage exceeding 90 percent, and mandatory peer review approval before merging into the main branch. Production deployments are managed through automated CI/CD pipelines with automated rollback safeguards.",
+    "author": "Engineering Leadership",
+    "version": "1.8",
+    "word_count": 51
+  },
+  {
+    "id": "DOC-POL-004",
+    "title": "Code Review and Quality Assurance Protocol",
+    "category": "Quality Assurance",
+    "content": "Every pull request must be reviewed by at least one senior engineer. Static code analysis tools and automated test suites must pass before pull requests can be merged. Performance regression benchmarks are executed on all asynchronous endpoints, ensuring latency percentiles meet defined SLAs before release.",
+    "author": "QA Architecture Team",
+    "version": "2.0",
+    "word_count": 48
+  },
+  {
+    "id": "DOC-POL-005",
+    "title": "Data Privacy and Access Control Standard",
+    "category": "Compliance",
+    "content": "Customer data and internal company records are classified into Public, Internal, and Confidential tiers. Access to Confidential data requires role-based access tokens and explicit management approval. Audit logs record all access attempts with unique correlation IDs, IP addresses, and timestamps for compliance verification.",
+    "author": "Compliance Officer",
+    "version": "1.5",
+    "word_count": 49
+  }
+]
