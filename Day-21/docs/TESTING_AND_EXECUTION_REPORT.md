@@ -132,7 +132,7 @@ test_api.py::test_14_upload_oversized_file PASSED                      [100%]
 
 ## 5. Live Production Server End-to-End Verification Results
 
-Executed against a live Uvicorn socket server (`http://127.0.0.1:8011`) with production settings via `verify_live_production.py`:
+Executed against a live Uvicorn socket server (`http://127.0.0.1:8011`) with production settings via automated live socket test verification suite:
 
 ```text
 ================================================================================
