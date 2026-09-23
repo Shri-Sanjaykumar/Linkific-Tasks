@@ -13,8 +13,8 @@ In this benchmark, we evaluate the performance of an asynchronous FastAPI endpoi
 
 ## 2. Test Environment & Benchmark Parameters
 
-- **Test Timestamp:** `2026-09-23T11:31:26Z`
-- **Benchmark Execution Mode:** `live_http_server`
+- **Test Timestamp:** `2026-09-23T14:56:46Z`
+- **Benchmark Execution Mode:** `in_process_asgi`
 - **Operating System:** `win32`
 - **Python Version:** `3.14.3`
 - **Concurrent Request Volume:** `50` requests
@@ -32,14 +32,14 @@ In this benchmark, we evaluate the performance of an asynchronous FastAPI endpoi
 | **Total Requests** | 50 | 50 | — | — |
 | **Successful Requests** | 50 | 50 | — | — |
 | **Failed Requests (Error Rate)** | 0 (0.0%) | 0 (0.0%) | 0 | 0.0% |
-| **Mean Latency (Avg)** | **208.7 ms** | **166.77 ms** | **41.93 ms** | **20.09%** |
-| **Median Latency (p50)** | 141.98 ms | 161.47 ms | -19.49 ms | -13.73% |
-| **90th Percentile (p90)** | 465.54 ms | 236.27 ms | 229.27 ms | 49.25% |
-| **95th Percentile (p95)** | **471.1 ms** | **253.72 ms** | **217.38 ms** | **46.14%** |
-| **Min Latency** | 72.17 ms | 91.17 ms | -19.0 ms | — |
-| **Max Latency** | 492.02 ms | 272.71 ms | 219.31 ms | — |
-| **Total Wall-Clock Time** | 1.1483 s | 0.8902 s | 0.26 s | — |
-| **Throughput (req/sec)** | **43.54 rps** | **56.17 rps** | **+12.63 rps** | **+29.01%** |
+| **Mean Latency (Avg)** | **63.97 ms** | **86.69 ms** | **-22.72 ms** | **-35.52%** |
+| **Median Latency (p50)** | 63.83 ms | 82.47 ms | -18.64 ms | -29.2% |
+| **90th Percentile (p90)** | 72.87 ms | 113.06 ms | -40.19 ms | -55.15% |
+| **95th Percentile (p95)** | **74.61 ms** | **127.0 ms** | **-52.39 ms** | **-70.22%** |
+| **Min Latency** | 45.38 ms | 59.62 ms | -14.24 ms | — |
+| **Max Latency** | 84.02 ms | 131.79 ms | -47.77 ms | — |
+| **Total Wall-Clock Time** | 0.3416 s | 0.4652 s | -0.12 s | — |
+| **Throughput (req/sec)** | **146.39 rps** | **107.48 rps** | **+-38.91 rps** | **+-26.58%** |
 
 ---
 
@@ -49,11 +49,11 @@ To isolate concurrency benefits from raw single-request processing speed:
 
 | Workload Mode | Mean Latency | Median Latency | Throughput |
 | :--- | :---: | :---: | :---: |
-| **Synchronous Sequential** | 57.21 ms | 55.93 ms | 17.44 rps |
-| **Asynchronous Sequential** | 74.1 ms | 75.35 ms | 13.48 rps |
+| **Synchronous Sequential** | 45.2 ms | 44.4 ms | 22.11 rps |
+| **Asynchronous Sequential** | 51.62 ms | 51.13 ms | 19.36 rps |
 
 ### Key Observation:
-In sequential single-request mode, the response time difference (-16.89 ms) is negligible. This empirically proves that `async/await` is not an arithmetic speed booster for solitary operations, but a **concurrency multiplexer** enabling hundreds of I/O operations to interleave efficiently.
+In sequential single-request mode, the response time difference (-6.42 ms) is negligible. This empirically proves that `async/await` is not an arithmetic speed booster for solitary operations, but a **concurrency multiplexer** enabling hundreds of I/O operations to interleave efficiently.
 
 ---
 

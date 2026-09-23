@@ -3,12 +3,12 @@
   "successful_requests": 50,
   "failed_requests": 0,
   "error_rate_pct": 0.0,
-  "total_wall_time_s": 1.1483,
-  "throughput_rps": 43.54,
-  "min_ms": 72.17,
-  "mean_ms": 208.7,
-  "median_ms": 141.98,
-  "p90_ms": 465.54,
-  "p95_ms": 471.1,
-  "max_ms": 492.02
+  "total_wall_time_s": 0.3416,
+  "throughput_rps": 146.39,
+  "min_ms": 45.38,
+  "mean_ms": 63.97,
+  "median_ms": 63.83,
+  "p90_ms": 72.87,
+  "p95_ms": 74.61,
+  "max_ms": 84.02
 }
