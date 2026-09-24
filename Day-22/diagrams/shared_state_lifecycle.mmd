@@ -1,0 +1,24 @@
+stateDiagram-v2
+    [*] --> INITIALIZED: Client submits query
+
+    INITIALIZED --> PLANNING: Coordinator constructs ExecutionPlan
+    PLANNING --> RESEARCHING: Research Agent assigned TASK-RES-002
+
+    RESEARCHING --> ANALYZING: Evidence stored in SharedState
+    RESEARCHING --> FAILED: Missing corpus or unhandled exception
+
+    ANALYZING --> CRITIQUING: Insights & correlations stored in SharedState
+    ANALYZING --> FAILED: Analytical model failure
+
+    CRITIQUING --> REVISING: Critic issues REVISION_REQUIRED (cycle < max_revisions)
+    REVISING --> RESEARCHING: Missing sources defect
+    REVISING --> ANALYZING: Reasoning / correlation defect
+
+    CRITIQUING --> WRITING: Critic issues APPROVED
+    CRITIQUING --> WRITING: Circuit breaker triggered (cycle >= max_revisions)
+
+    WRITING --> COMPLETED: Writer submits WriterReport & Traceability Matrix
+    WRITING --> FAILED: Report synthesis failure
+
+    COMPLETED --> [*]: Return WorkflowResponse
+    FAILED --> [*]: Return Error Details

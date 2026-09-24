@@ -1,0 +1,38 @@
+flowchart TD
+    User(["Client / Enterprise User"]) -->|Submit Research Brief| CoordInit["Coordinator Agent<br/>(1. Decompose Query & Create Execution Plan)"]
+
+    subgraph Orchestration["Centralized Orchestration & Shared State"]
+        CoordInit --> StateManager[("Centralized Shared State<br/>• Single Source of Truth<br/>• Role-Governed Access<br/>• Transition Audit Log")]
+        MessageBus["In-Process Message Bus<br/>• Typed Message Contracts<br/>• Persistent JSONL Audit Trail"]
+    end
+
+    CoordInit -->|TASK-RES-002| ResAgent["Research Agent<br/>(2. Evidence Gathering)"]
+    ResAgent -.->|Query Corpus| Corpus[("Enterprise Document Corpus<br/>sample_docs.json")]
+    Corpus -.->|Grounded Chunks| ResAgent
+    ResAgent -->|RESEARCH_SUBMISSION| MessageBus
+    MessageBus --> StateManager
+
+    StateManager -->|Read Findings| AnaAgent["Analyzer Agent<br/>(3. Cognitive Insight Synthesis)"]
+    AnaAgent -->|Thematic Clusters & Correlations| AnaAgent
+    AnaAgent -->|ANALYSIS_SUBMISSION| MessageBus
+    MessageBus --> StateManager
+
+    StateManager -->|Read Evidence & Analysis| CriticAgent["Critic Agent<br/>(4. Adversarial Quality Gate)"]
+    CriticAgent -->|Audit Factual Groundedness| CriticAgent
+    
+    CriticAgent -->|Verdict & Defect List| MessageBus
+    MessageBus --> CoordEval{"Coordinator Agent<br/>Evaluates Verdict"}
+
+    CoordEval -->|Verdict = REVISION_REQUIRED<br/>& Revision Count < Max Limit| ReviseRouter{"Revision Router"}
+    ReviseRouter -->|Target: Missing Sources| ResAgent
+    ReviseRouter -->|Target: Reasoning Defect| AnaAgent
+
+    CoordEval -->|Verdict = APPROVED<br/>OR Max Revisions Reached| WriterAgent["Writer Agent<br/>(5. Executive Report Synthesis)"]
+    
+    WriterAgent -->|Embed Provenance Citations| WriterAgent
+    WriterAgent -->|Construct Traceability Matrix| WriterAgent
+    WriterAgent -->|REPORT_DRAFT| MessageBus
+    MessageBus --> StateManager
+
+    StateManager --> Finalize["Coordinator Agent<br/>(6. Final Validation & Telemetry)"]
+    Finalize --> Response(["Verified Enterprise Brief<br/>• Executive Summary<br/>• Evidence Citations<br/>• Audit Telemetry"])

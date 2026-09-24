@@ -1,0 +1,82 @@
+[
+  {
+    "id": "DOC-POL-001",
+    "title": "Corporate Leave, Attendance, and Remote Work Policy",
+    "category": "Human Resources",
+    "content": "All Linkific employees and interns are entitled to 1.5 paid leave days per completed calendar month of active service. Planned time-off requires supervisor notification at least 3 working days in advance. Core collaboration hours are 10:00 AM to 5:00 PM IST Monday through Friday, during which all remote team members must remain accessible on designated communication channels. Remote employees may work from home full-time subject to quarterly performance reviews.",
+    "author": "HR Operations",
+    "version": "2.4",
+    "word_count": 71,
+    "last_updated": "2026-08-15"
+  },
+  {
+    "id": "DOC-POL-002",
+    "title": "Information Security, VPN Access, and Hardware Allowance Guidelines",
+    "category": "Information Security",
+    "content": "Employees operating remotely are provided authorized cloud infrastructure credentials and corporate VPN access. Company data must never be stored on unencrypted personal storage or public machines. Authorized hardware allowance covers ergonomic peripherals up to $500 per fiscal year upon receipt submission. Multi-factor authentication (MFA) is strictly enforced across all development and production repositories.",
+    "author": "Security Engineering",
+    "version": "3.1",
+    "word_count": 60,
+    "last_updated": "2026-07-20"
+  },
+  {
+    "id": "DOC-POL-003",
+    "title": "Engineering Standards, Onboarding, and CI/CD Protocol",
+    "category": "Engineering",
+    "content": "New engineering interns must complete repository access setup within 48 hours of onboarding. Code contributions require pre-commit linting, unit test coverage exceeding 90 percent, and mandatory peer review approval before merging into the main branch. Production deployments are managed through automated CI/CD pipelines with automated rollback safeguards and semantic release versioning.",
+    "author": "Engineering Leadership",
+    "version": "1.8",
+    "word_count": 55,
+    "last_updated": "2026-08-01"
+  },
+  {
+    "id": "DOC-POL-004",
+    "title": "Quality Assurance, Performance Benchmarking, and SLA Targets",
+    "category": "Quality Assurance",
+    "content": "Every pull request must be reviewed by at least one senior engineer. Static code analysis tools and automated test suites must pass before pull requests can be merged. Performance regression benchmarks are executed on all asynchronous endpoints, ensuring p95 latency stays under 100ms and throughput meets defined SLAs before production releases.",
+    "author": "QA Architecture Team",
+    "version": "2.0",
+    "word_count": 54,
+    "last_updated": "2026-06-12"
+  },
+  {
+    "id": "DOC-POL-005",
+    "title": "Data Classification, Access Control, and Audit Logging Protocol",
+    "category": "Compliance",
+    "content": "Customer data and internal company records are classified into Public, Internal, and Confidential tiers. Access to Confidential data requires role-based access tokens and explicit management approval. Audit logs record all access attempts with unique correlation IDs, IP addresses, and timestamps for compliance verification, retained for a minimum of 365 days.",
+    "author": "Compliance Officer",
+    "version": "1.5",
+    "word_count": 55,
+    "last_updated": "2026-05-18"
+  },
+  {
+    "id": "DOC-POL-006",
+    "title": "AI Model Governance, LLM Prompt Security, and Hallucination Safeguards",
+    "category": "Artificial Intelligence",
+    "content": "All AI agents deployed within Linkific must adhere to three foundational safety principles: 1) Strict groundedness: responses must cite verified internal documentation chunks. 2) Adversarial review: multi-agent workflows must incorporate an independent Critic to check factual consistency before output generation. 3) Human-in-the-loop escalation: critical decisions exceeding $5,000 or customer contract alterations require supervisor confirmation.",
+    "author": "AI Governance Committee",
+    "version": "1.0",
+    "word_count": 62,
+    "last_updated": "2026-09-01"
+  },
+  {
+    "id": "DOC-POL-007",
+    "title": "Incident Response, Escalation Paths, and Outage Post-Mortem Guidelines",
+    "category": "Site Reliability Engineering",
+    "content": "Incidents are triaged into Severity 1 (critical outage), Severity 2 (degraded feature), and Severity 3 (minor defect). Sev-1 alerts trigger automatic pager rotation with a 15-minute response SLA. Blameless post-mortems must be published within 72 hours of incident resolution, detailing root cause, preventative action items, and audit log telemetry.",
+    "author": "SRE Lead",
+    "version": "2.2",
+    "word_count": 52,
+    "last_updated": "2026-07-30"
+  },
+  {
+    "id": "DOC-POL-008",
+    "title": "Cloud Architecture, Microservices Routing, and Zero-Trust Networking",
+    "category": "Infrastructure Architecture",
+    "content": "Linkific cloud microservices communicate over encrypted mTLS channels following zero-trust principles. All external HTTP endpoints are fronted by an API gateway with rate limiting (100 req/sec per tenant), DDoS mitigation, and distributed request tracing using X-Request-ID headers. Internal services register with service discovery and must supply mutual HMAC authentication tokens.",
+    "author": "Principal Architect",
+    "version": "3.0",
+    "word_count": 54,
+    "last_updated": "2026-08-25"
+  }
+]

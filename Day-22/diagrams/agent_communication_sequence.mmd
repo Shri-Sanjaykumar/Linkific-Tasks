@@ -1,0 +1,47 @@
+sequenceDiagram
+    autonumber
+    actor User as Client / User
+    participant Coord as Coordinator Agent
+    participant Bus as Message Bus & Audit Log
+    participant State as Centralized Shared State
+    participant Res as Research Agent
+    participant Ana as Analyzer Agent
+    participant Cri as Critic Agent
+    participant Wri as Writer Agent
+
+    User->>Coord: Submit Research Brief
+    Coord->>State: Initialize SharedState & Set ExecutionPlan
+    Coord->>Bus: Dispatch TASK_ASSIGNMENT (TASK-RES-002)
+    Bus->>Res: Deliver Assignment
+
+    Note over Res: Queries Corpus, Extracts Grounded Evidence
+    Res->>State: Store ResearchFindings (Evidence Items)
+    Res->>Bus: Emit RESEARCH_SUBMISSION
+    Bus->>Ana: Forward Notification
+
+    Note over Ana: Clusters Themes, Derives Insights & Correlations
+    Ana->>State: Store AnalysisResult
+    Ana->>Bus: Emit ANALYSIS_SUBMISSION
+    Bus->>Cri: Forward Notification
+
+    Note over Cri: Audits Citations, Flags Unsupported Claims
+    Cri->>State: Store CriticReview
+    Cri->>Bus: Emit CRITIC_REVIEW (Approved / Revision Request)
+    Bus->>Coord: Forward Quality Gate Outcome
+
+    alt Revision Required & Cycle < Max Revisions
+        Coord->>State: Increment Revision Count
+        Coord->>Bus: Emit REVISION_REQUEST to Target Agent
+        Note over Coord,Cri: Iteration loop executes until Approved
+    else Approved or Circuit Breaker Triggered
+        Coord->>Bus: Dispatch TASK_ASSIGNMENT (TASK-WRI-005)
+        Bus->>Wri: Deliver Assignment
+    end
+
+    Note over Wri: Formats Markdown Brief & Evidence Traceability Matrix
+    Wri->>State: Store Final WriterReport
+    Wri->>Bus: Emit REPORT_DRAFT
+    Bus->>Coord: Forward Report Notification
+
+    Coord->>State: Mark Workflow COMPLETED & Compile Telemetry
+    Coord-->>User: Return Verified Enterprise Response
