@@ -9,6 +9,7 @@ Responsibilities:
 """
 
 import logging
+import re
 from typing import List, Dict, Any, Optional
 from .base import BaseAgent
 from ..schemas import (
@@ -103,6 +104,67 @@ class CriticAgent(BaseAgent):
                         ))
                     else:
                         valid_citations += 1
+
+                        # Check 2b: Adversarial Verification of Factual & Numerical Fidelity
+                        if not insight.is_assumption and findings and findings.evidence:
+                            matching_evidence = [e for e in findings.evidence if e.source_id in insight.supporting_evidence_ids]
+                            source_texts = " ".join([e.excerpt for e in matching_evidence])
+
+                            # A. Numerical Fidelity & Truncation Check
+                            clean_stmt = re.sub(r'\[?DOC-[A-Z0-9-]+\]?', '', insight.statement)
+                            stmt_nums = re.findall(r'\b\d+(?:\.\d+)?\b', clean_stmt)
+
+                            clean_source = re.sub(r'\[?DOC-[A-Z0-9-]+\]?', '', source_texts)
+                            source_nums = set(re.findall(r'\b\d+(?:\.\d+)?\b', clean_source))
+
+                            for num_val in stmt_nums:
+                                if num_val not in source_nums:
+                                    # Check specifically for truncated decimals (e.g., '1' when source has '1.5')
+                                    truncated_candidates = [s for s in source_nums if s.startswith(num_val + ".")]
+                                    if truncated_candidates:
+                                        unsupported_claims += 1
+                                        defects.append(DefectItem(
+                                            category=DefectCategory.HALLUCINATION,
+                                            severity=DefectSeverity.CRITICAL,
+                                            description=(
+                                                f"Factual truncation detected in insight: numerical value '{num_val}' "
+                                                f"truncates true source evidence figure '{truncated_candidates[0]}'."
+                                            ),
+                                            target_agent=AgentRole.ANALYZER,
+                                            actionable_correction=(
+                                                f"Preserve exact numerical precision '{truncated_candidates[0]}' "
+                                                f"as defined in source document."
+                                            )
+                                        ))
+                                    else:
+                                        unsupported_claims += 1
+                                        defects.append(DefectItem(
+                                            category=DefectCategory.UNSUPPORTED_CLAIM,
+                                            severity=DefectSeverity.MAJOR,
+                                            description=(
+                                                f"Insight introduces numerical metric '{num_val}' "
+                                                f"absent from cited source text."
+                                            ),
+                                            target_agent=AgentRole.ANALYZER,
+                                            actionable_correction="Align numerical claims strictly with figures verified in the evidence."
+                                        ))
+
+                            # B. Sentence Completeness & Dangling Phrase Check
+                            dangling_match = re.search(
+                                r'\b(to|of|and|in|at|the|a|an|with|for|by|or|from|under|subject|are|is)\s*\.?$',
+                                insight.statement.strip().rstrip('.')
+                            )
+                            if dangling_match:
+                                defects.append(DefectItem(
+                                    category=DefectCategory.FORMAT_ERROR,
+                                    severity=DefectSeverity.CRITICAL,
+                                    description=(
+                                        f"Premature clause truncation detected: statement ends with "
+                                        f"dangling grammatical predicate '{dangling_match.group(1)}'."
+                                    ),
+                                    target_agent=AgentRole.ANALYZER,
+                                    actionable_correction="Complete the sentence predicate with full factual clauses from source document."
+                                ))
 
         # Check 3: Query Intent & Scope Coverage
         if query and findings and findings.evidence:

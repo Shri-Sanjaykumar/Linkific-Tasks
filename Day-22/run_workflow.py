@@ -110,22 +110,25 @@ def run_demo(query: str, max_revisions: int = 2):
 
 def main():
     parser = argparse.ArgumentParser(description="Run Linkific Multi-Agent Research Assistant (Day 22)")
-    parser.add_argument("--query", type=str, default=None, help="Custom research query to process")
-    parser.add_argument("--demo", type=str, default="1", choices=["1", "2", "3"], help="Select pre-packaged demo query (1, 2, or 3)")
+    parser.add_argument("--query", "-q", type=str, default=None, help="Custom research query to process")
+    parser.add_argument("--demo", "--scenario", "-s", dest="demo", type=str, default="1", choices=["1", "2", "3"], help="Select pre-packaged scenario/demo query (1, 2, or 3)")
+    parser.add_argument("--all", action="store_true", help="Execute all 3 pre-packaged scenarios consecutively")
     parser.add_argument("--max-revisions", type=int, default=2, help="Max Critic revision rounds (default: 2)")
 
     args = parser.parse_args()
 
     print_banner()
 
-    if args.query:
-        target_query = args.query
+    if args.all:
+        for demo in DEMO_QUERIES:
+            print(f"\nExecuting Pre-Configured Scenario #{demo['id']}: {demo['title']}")
+            run_demo(query=demo["query"], max_revisions=args.max_revisions)
+    elif args.query:
+        run_demo(query=args.query, max_revisions=args.max_revisions)
     else:
         selected_demo = next(d for d in DEMO_QUERIES if d["id"] == args.demo)
         print(f"Executing Pre-Configured Scenario #{selected_demo['id']}: {selected_demo['title']}")
-        target_query = selected_demo["query"]
-
-    run_demo(query=target_query, max_revisions=args.max_revisions)
+        run_demo(query=selected_demo["query"], max_revisions=args.max_revisions)
 
 
 if __name__ == "__main__":

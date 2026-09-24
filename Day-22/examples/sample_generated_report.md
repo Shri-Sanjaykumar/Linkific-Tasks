@@ -2,10 +2,10 @@
 **Workflow ID:** `WF-C53FE6EB` | **Status:** `Verified`
 
 ## 1. Executive Summary
-This report presents a verified cross-departmental synthesis addressing: 'What are the corporate guidelines regarding remote work, hardware allowances, and core collaboration hours?'. According to Corporate Leave, Attendance, and Remote Work Policy (DOC-POL-001), All Linkific employees and interns are entitled to 1. According to Information Security, VPN Access, and Hardware Allowance Guidelines (DOC-POL-002), Employees operating remotely are provided authorized cloud infrastructure credentials and corporate VPN access.
+This report presents a verified cross-departmental synthesis addressing: 'What are the corporate guidelines regarding remote work, hardware allowances, and core collaboration hours?'. According to Corporate Leave, Attendance, and Remote Work Policy (DOC-POL-001), All Linkific employees and interns are entitled to 1.5 paid leave days per completed calendar month of active service. According to Information Security, VPN Access, and Hardware Allowance Guidelines (DOC-POL-002), Employees operating remotely are provided authorized cloud infrastructure credentials and corporate VPN access.
 
 ## 2. Policy Dimensions: Human Resources
-- According to Corporate Leave, Attendance, and Remote Work Policy (DOC-POL-001), All Linkific employees and interns are entitled to 1. [DOC-POL-001]
+- According to Corporate Leave, Attendance, and Remote Work Policy (DOC-POL-001), All Linkific employees and interns are entitled to 1.5 paid leave days per completed calendar month of active service. [DOC-POL-001]
 
 *Sources Cited:* DOC-POL-001
 

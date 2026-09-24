@@ -18,7 +18,7 @@ This project designs and implements an enterprise-grade **Multi-Agent Research A
 2. **[Multi-Agent Workflow Diagram](docs/MULTI_AGENT_WORKFLOW.md)**: Visual Mermaid flowchart and state lifecycle diagrams (`diagrams/`).
 3. **[Architecture Notes](docs/ARCHITECTURE_NOTES.md)**: Deep architectural rationale, security boundaries, and enterprise integration patterns.
 4. **[Shared State & Communication Guide](docs/SHARED_STATE_AND_COMMUNICATION.md)**: Complete guide to state ownership and message protocols.
-5. **[Testing & Verification Report](docs/TESTING_AND_VERIFICATION_REPORT.md)**: 39 automated tests with 100% pass rate and cross-day regression safety.
+5. **[Testing & Verification Report](docs/TESTING_AND_VERIFICATION_REPORT.md)**: 42 automated tests with 100% pass rate plus 116 cross-day regression tests.
 
 ---
 
@@ -136,7 +136,7 @@ python run_workflow.py --interactive
 ```
 
 ### 3. Run the Automated Test Suite
-Execute the full test suite verifying all 39 test cases:
+Execute the full Day 22 test suite verifying all 42 test cases:
 
 ```bash
 pytest tests/ -v
@@ -144,7 +144,16 @@ pytest tests/ -v
 
 Expected output:
 ```text
-============================= 39 passed in 20.24s =============================
+============================= 42 passed in 15.69s =============================
+```
+
+### 4. Run Full Cross-Day Regression Verification
+Verify zero regressions across previous internship milestones (116 tests):
+
+```bash
+pytest ../Day-17/tests/ -q   # 14 passed
+pytest ../Day-20/tests/ -q   # 58 passed
+pytest ../Day-21/tests/ -q   # 44 passed
 ```
 
 ---

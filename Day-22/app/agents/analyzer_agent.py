@@ -9,6 +9,7 @@ Responsibilities:
 """
 
 import logging
+import re
 from typing import List, Dict, Any, Optional
 from collections import defaultdict
 from .base import BaseAgent
@@ -76,9 +77,13 @@ class AnalyzerAgent(BaseAgent):
         for item in findings.evidence:
             clusters[item.category].append(item.title)
             
-            # Formulate structured insight
-            sentences = [s.strip() for s in item.excerpt.split(".") if len(s.strip()) > 15]
-            core_finding = sentences[0] if sentences else item.excerpt
+            # Formulate structured insight with robust sentence boundary detection
+            # Preserves decimals (e.g. 1.5), percentages, and full clauses
+            match = re.search(r'(?<!\d)[.!?](?!\d)(?:\s+|$)', item.excerpt.strip())
+            if match and len(item.excerpt[:match.start()].strip()) > 15:
+                core_finding = item.excerpt[:match.start()].strip()
+            else:
+                core_finding = item.excerpt.strip().rstrip('.')
             
             insight = InsightItem(
                 topic=item.category,

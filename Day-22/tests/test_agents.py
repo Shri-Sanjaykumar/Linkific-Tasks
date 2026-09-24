@@ -9,6 +9,7 @@ Tests each of the 5 specialized agents in isolation:
 """
 
 import pytest
+import re
 from app.schemas import (
     AgentRole,
     CriticVerdict,
@@ -153,3 +154,104 @@ def test_coordinator_plan_creation(state_manager, message_bus):
     assert plan.milestones[3].assigned_agent == AgentRole.CRITIC
     assert plan.milestones[4].assigned_agent == AgentRole.WRITER
     assert plan.milestones[5].assigned_agent == AgentRole.COORDINATOR
+
+
+def test_numerical_and_factual_preservation(state_manager, message_bus):
+    """
+    Verify factual fidelity: decimal quantities (e.g. 1.5 paid leave days)
+    are accurately preserved from raw evidence through Analyzer, Critic, and Writer.
+    Ensures no truncation occurs from '1.5' to '1.'.
+    """
+    evidence = [
+        EvidenceItem(
+            source_id="DOC-POL-001",
+            title="Corporate Leave Policy",
+            category="Human Resources",
+            excerpt="All Linkific employees and interns are entitled to 1.5 paid leave days per completed calendar month of active service. Core collaboration hours are 10:00 AM to 5:00 PM IST.",
+            relevance_score=0.95,
+            version="2.4",
+            author="HR Operations"
+        )
+    ]
+    state_manager.set_research_findings(AgentRole.RESEARCH, ResearchFindings(query="leave entitlement", evidence=evidence))
+
+    # 1. Analyzer Step
+    analyzer = AnalyzerAgent(state_manager, message_bus)
+    analysis = analyzer.execute(task_id="TASK-ANA-FACTUAL")
+
+    assert len(analysis.key_insights) >= 1
+    hr_insight = analysis.key_insights[0]
+    assert "1.5" in hr_insight.statement
+    assert not re.search(r'entitled to 1\.(?!\d)', hr_insight.statement)
+    assert "1.5 paid leave days" in hr_insight.statement
+
+    # 2. Critic Step
+    critic = CriticAgent(state_manager, message_bus, min_score=0.80)
+    review = critic.execute(task_id="TASK-CRI-FACTUAL")
+    assert review.verdict == CriticVerdict.APPROVED
+    assert not any(d.severity == DefectSeverity.CRITICAL for d in review.defects)
+
+    # 3. Writer Step
+    writer = WriterAgent(state_manager, message_bus)
+    report = writer.execute(task_id="TASK-WRI-FACTUAL")
+    assert "1.5" in report.executive_summary or "1.5" in report.markdown_output
+    assert "1.5 paid leave days" in report.markdown_output
+    assert not re.search(r'entitled to 1\.(?!\d)', report.markdown_output)
+
+
+def test_critic_detects_numerical_truncation_distortion(state_manager, message_bus, sample_evidence):
+    """
+    Verify CriticAgent actively catches and rejects factual numerical truncation
+    (e.g., claiming entitlement of '1' when source evidence explicitly specifies '1.5').
+    """
+    truncated_analysis = AnalysisResult(
+        key_insights=[
+            InsightItem(
+                topic="Human Resources",
+                statement="All Linkific employees and interns are entitled to 1. [DOC-POL-001]",
+                supporting_evidence_ids=["DOC-POL-001"],
+                confidence=0.90
+            )
+        ]
+    )
+
+    state_manager.set_research_findings(AgentRole.RESEARCH, ResearchFindings(query="leave policy", evidence=sample_evidence))
+    state_manager.set_analysis_result(AgentRole.ANALYZER, truncated_analysis)
+
+    critic = CriticAgent(state_manager, message_bus)
+    review = critic.execute(task_id="TASK-CRI-TRUNC-CHECK")
+
+    assert review.verdict == CriticVerdict.REVISION_REQUIRED
+    # Must flag factual truncation defect
+    truncation_defects = [
+        d for d in review.defects
+        if d.category in (DefectCategory.HALLUCINATION, DefectCategory.FORMAT_ERROR)
+        and d.severity == DefectSeverity.CRITICAL
+    ]
+    assert len(truncation_defects) > 0
+    assert any("truncat" in d.description.lower() for d in truncation_defects)
+
+
+def test_critic_detects_dangling_truncated_clauses(state_manager, message_bus, sample_evidence):
+    """
+    Verify CriticAgent catches incomplete clauses ending with dangling grammatical prepositions.
+    """
+    dangling_analysis = AnalysisResult(
+        key_insights=[
+            InsightItem(
+                topic="Human Resources",
+                statement="Employees may work from home subject to.",
+                supporting_evidence_ids=["DOC-POL-001"],
+                confidence=0.85
+            )
+        ]
+    )
+
+    state_manager.set_research_findings(AgentRole.RESEARCH, ResearchFindings(query="remote work", evidence=sample_evidence))
+    state_manager.set_analysis_result(AgentRole.ANALYZER, dangling_analysis)
+
+    critic = CriticAgent(state_manager, message_bus)
+    review = critic.execute(task_id="TASK-CRI-DANGLING-CHECK")
+
+    assert review.verdict == CriticVerdict.REVISION_REQUIRED
+    assert any(d.category == DefectCategory.FORMAT_ERROR for d in review.defects)
