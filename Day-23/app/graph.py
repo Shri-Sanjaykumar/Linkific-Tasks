@@ -5,8 +5,84 @@ Linkific Enterprise Multi-Agent Research Assistant
 
 import time
 from typing import Optional, Dict, Any
-from langgraph.graph import StateGraph, START, END
-from langgraph.checkpoint.base import BaseCheckpointSaver
+try:
+    from langgraph.graph import StateGraph, START, END
+    from langgraph.checkpoint.base import BaseCheckpointSaver
+    LANGGRAPH_AVAILABLE = True
+except ImportError:
+    LANGGRAPH_AVAILABLE = False
+    START = "__start__"
+    END = "__end__"
+
+    class BaseCheckpointSaver:
+        """Fallback base class when langgraph is not installed."""
+        pass
+
+    class _CompiledGraphFallback:
+        """
+        Pure-Python fallback runtime for StateGraph when langgraph package is absent.
+        Executes identical node sequences, channel reducers, and conditional routing.
+        """
+        def __init__(self, nodes, edges, conditional_edges, state_schema):
+            self.nodes = nodes
+            self.edges = edges
+            self.conditional_edges = conditional_edges
+            self.state_schema = state_schema
+
+        def invoke(self, state: Dict[str, Any], config: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+            from .state import update_milestones
+            curr_state = dict(state)
+            current_node = self.edges.get(START, "coordinator_plan")
+            visited_count = 0
+            max_hops = 50
+
+            while current_node != END and visited_count < max_hops:
+                visited_count += 1
+                node_fn = self.nodes.get(current_node)
+                if not node_fn:
+                    break
+                update = node_fn(curr_state)
+                # Channel-aware reducer updates
+                for k, v in update.items():
+                    if k in ("communication_log", "critic_reviews", "errors") and isinstance(v, list):
+                        curr_state[k] = curr_state.get(k, []) + v
+                    elif k == "milestones" and isinstance(v, list):
+                        curr_state[k] = update_milestones(curr_state.get(k, []), v)
+                    else:
+                        curr_state[k] = v
+
+                # Determine next node
+                if current_node in self.conditional_edges:
+                    routing_fn, mapping = self.conditional_edges[current_node]
+                    target = routing_fn(curr_state)
+                    current_node = mapping.get(target, target)
+                elif current_node in self.edges:
+                    current_node = self.edges[current_node]
+                else:
+                    break
+            return curr_state
+
+    class StateGraph:
+        """
+        Pure-Python StateGraph builder fallback when langgraph package is absent.
+        """
+        def __init__(self, state_schema):
+            self.state_schema = state_schema
+            self.nodes = {}
+            self.edges = {}
+            self.conditional_edges = {}
+
+        def add_node(self, name, func):
+            self.nodes[name] = func
+
+        def add_edge(self, start_node, end_node):
+            self.edges[start_node] = end_node
+
+        def add_conditional_edges(self, source, path_func, path_map):
+            self.conditional_edges[source] = (path_func, path_map)
+
+        def compile(self, checkpointer=None):
+            return _CompiledGraphFallback(self.nodes, self.edges, self.conditional_edges, self.state_schema)
 
 from .state import MultiAgentState, create_initial_state
 from .schemas import WorkflowRequest, WorkflowResponse, WorkflowStatus
