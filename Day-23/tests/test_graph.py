@@ -7,6 +7,9 @@ from app.schemas import MessageType, AgentRole, WorkflowStatus
 
 
 def test_build_multi_agent_graph():
+    from app.graph import StateGraph, LANGGRAPH_AVAILABLE
+    assert LANGGRAPH_AVAILABLE is True, "Official LangGraph must be installed and active"
+    assert "langgraph" in StateGraph.__module__, f"Expected StateGraph from langgraph, got {StateGraph.__module__}"
     graph = build_multi_agent_graph()
     assert graph is not None
     # LangGraph compiled graph has invoke method
