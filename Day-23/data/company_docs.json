@@ -1,0 +1,66 @@
+[
+  {
+    "doc_id": "DOC-POL-001",
+    "title": "Corporate Leave, Attendance, and Remote Work Policy",
+    "category": "Human Resources",
+    "version": "2.4",
+    "author": "HR Operations",
+    "content": "All Linkific employees and interns are entitled to 1.5 paid leave days per completed calendar month of active service. Planned time-off requires supervisor notification at least 3 working days in advance. Core collaboration hours are 10:00 AM to 5:00 PM IST Monday through Friday, during which all remote team members must remain accessible on designated communication channels. Remote employees may work from home full-time subject to quarterly performance reviews."
+  },
+  {
+    "doc_id": "DOC-POL-002",
+    "title": "Information Security, VPN Access, and Hardware Allowance Guidelines",
+    "category": "Information Security",
+    "version": "3.1",
+    "author": "Security Engineering",
+    "content": "Employees operating remotely are provided authorized cloud infrastructure credentials and corporate VPN access. Multi-factor authentication (MFA) via hardware security keys or authorized authenticator applications is mandatory across all internal portals. An annual remote hardware allowance up to $500 USD is claimable for ergonomic accessories, dual monitors, or certified network hardware upon presenting valid purchase receipts."
+  },
+  {
+    "doc_id": "DOC-POL-003",
+    "title": "Engineering Standards, Onboarding, and CI/CD Protocol",
+    "category": "Engineering",
+    "version": "1.8",
+    "author": "Core Platform Engineering",
+    "content": "New engineering interns must complete repository access setup within 48 hours of onboarding. All production code commits require at least two peer approvals on GitHub pull requests. Automated CI pipelines enforce 100% linter compliance and mandatory unit testing. Merge to main branch triggers automated staging deployment followed by integration smoke testing."
+  },
+  {
+    "doc_id": "DOC-POL-004",
+    "title": "Incident Response, Escalation Paths, and Outage Post-Mortem Guidelines",
+    "category": "Site Reliability Engineering",
+    "version": "2.0",
+    "author": "SRE Leadership",
+    "content": "Production incidents are categorized into Severity 1 (critical outage impacting >20% user traffic), Severity 2 (degraded feature availability), and Severity 3 (minor defect with non-blocking workaround). Severity 1 alerts require designated on-call response within 15 minutes. Post-mortem root-cause documentation must be filed within 72 hours of incident resolution."
+  },
+  {
+    "doc_id": "DOC-POL-005",
+    "title": "REST API Standards, Microservice Versioning, and Pagination Protocol",
+    "category": "API Architecture",
+    "version": "2.2",
+    "author": "Architecture Committee",
+    "content": "All internal and external HTTP endpoints must follow OpenAPI 3.1 specification. URL path versioning (e.g., /api/v1) is strictly required for public contracts. Collection responses must provide standardized limit/offset pagination and include an X-Request-ID response header for cross-service distributed tracing and microsecond latency auditing."
+  },
+  {
+    "doc_id": "DOC-POL-006",
+    "title": "Software Quality Assurance, Automated Test Gates, and Code Coverage",
+    "category": "QA & Quality Control",
+    "version": "1.5",
+    "author": "Quality Assurance Team",
+    "content": "Enterprise microservice repositories must achieve and maintain a minimum of 80% automated branch test coverage prior to promotion to production environments. Pull requests failing automated test gates or introducing untested regressions will be automatically blocked by GitHub branch protection rules."
+  },
+  {
+    "doc_id": "DOC-POL-007",
+    "title": "Cloud Infrastructure, Kubernetes Orchestration, and Disaster Recovery",
+    "category": "Cloud Infrastructure",
+    "version": "3.0",
+    "author": "DevOps Operations",
+    "content": "Workloads are orchestrated on multi-zone Kubernetes clusters deployed on Google Cloud Platform and AWS. Disaster recovery recovery point objective (RPO) is 15 minutes, with a recovery time objective (RTO) of 1 hour. Infrastructure is managed declaratively via Terraform, and all state files are encrypted at rest using Cloud KMS keys."
+  },
+  {
+    "doc_id": "DOC-POL-008",
+    "title": "Data Protection, GDPR Compliance, and Retention Schedules",
+    "category": "Legal & Compliance",
+    "version": "2.1",
+    "author": "Corporate Legal",
+    "content": "Customer identifiable data (PII) must be encrypted in transit using TLS 1.3 and at rest using AES-256 encryption. Retention of customer query logs is capped at 90 days, after which automated lifecycle policies securely truncate database entries. Data Subject Access Requests (DSAR) must be addressed within 30 calendar days."
+  }
+]

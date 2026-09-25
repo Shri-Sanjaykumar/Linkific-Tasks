@@ -1,0 +1,32 @@
+flowchart TD
+    START([START: User Ingress]) --> CoordinatorPlan[coordinator_plan Node]
+
+    CoordinatorPlan -->|Query Valid| Researcher[researcher Node]
+    CoordinatorPlan -->|Query Invalid| ErrorHandler[error_handler Node]
+
+    subgraph DynamicRouting ["Mode-Aware Execution Topology"]
+        Researcher -->|mode == 'streamlined'| Writer[writer Node]
+        Researcher -->|mode == 'comprehensive'| Analyzer[analyzer Node]
+        Researcher -->|Corpus Error| ErrorHandler
+
+        Analyzer --> Critic[critic Node]
+        
+        Critic -->|Verdict: APPROVED| Writer
+        Critic -.->|Verdict: REVISION_REQUIRED & Revisions < 2| Analyzer
+        Critic -->|Circuit Breaker Tripped| Writer
+    end
+
+    Writer --> CoordinatorSynth[coordinator_synthesize Node]
+    CoordinatorSynth --> END([END: User Egress])
+    ErrorHandler --> END
+
+    subgraph StateChannels ["LangGraph MultiAgentState Channels"]
+        direction TB
+        S1["workflow_id / query / mode"]
+        S2["research_findings: EvidenceItem[]"]
+        S3["analysis_result: InsightItem[]"]
+        S4["critic_reviews: CriticReview[] (operator.add)"]
+        S5["final_report: WriterReport"]
+        S6["communication_log: AgentMessage[] (operator.add)"]
+        S7["errors: string[] (operator.add)"]
+    end

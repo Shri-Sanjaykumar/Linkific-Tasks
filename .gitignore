@@ -58,3 +58,7 @@ secrets.json
 
 # Local exported charts
 Day-6/charts/
+
+# Pytest cache
+.pytest_cache/
+

@@ -1,0 +1,5 @@
+# Linkific Enterprise AI Service — Day 23: Multi-Agent System Implementation
+langgraph>=1.2.0
+langchain-core>=1.4.0
+pydantic>=2.5.0
+pytest>=7.4.0
