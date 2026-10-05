@@ -7,7 +7,7 @@ from functools import lru_cache
 from typing import List, Dict, Any, Union
 import json
 import os
-from pydantic import Field, field_validator
+from pydantic import Field, field_validator, model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -35,9 +35,12 @@ class Settings(BaseSettings):
     WORKERS: int = Field(default=1, description="Uvicorn worker count")
 
     # Security & Access Control
-    API_KEY: str = Field(default="linkific-sec-prod-key-2026-xyz", description="Authentication API key")
+    API_KEY: str = Field(
+        default="linkific-dev-local-test-key-2026",
+        description="Authentication API key. Must be overridden with high entropy in production via .env"
+    )
     CORS_ORIGINS: Union[List[str], str] = Field(
-        default=["*"],
+        default=["http://localhost:3000", "https://www.linkific.in", "https://app.linkific.in"],
         description="Allowed CORS origin domains"
     )
 
@@ -77,7 +80,7 @@ class Settings(BaseSettings):
 
     @field_validator("API_KEY")
     @classmethod
-    def validate_api_key(cls, v: str, info) -> str:
+    def validate_api_key(cls, v: str) -> str:
         v_clean = v.strip()
         if len(v_clean) < 8:
             raise ValueError("API_KEY must be at least 8 characters long for baseline security")
@@ -86,17 +89,44 @@ class Settings(BaseSettings):
     @field_validator("CORS_ORIGINS", mode="before")
     @classmethod
     def parse_cors_origins(cls, v: Any) -> List[str]:
+        default_trusted = ["http://localhost:3000", "https://www.linkific.in", "https://app.linkific.in"]
         if isinstance(v, str):
             v = v.strip()
             if v.startswith("[") and v.endswith("]"):
                 try:
-                    return json.loads(v)
+                    parsed = json.loads(v)
+                    if isinstance(parsed, list):
+                        filtered = [origin.strip() for origin in parsed if origin.strip() and origin.strip() != "*"]
+                        return filtered or default_trusted
                 except Exception:
                     pass
-            return [origin.strip() for origin in v.split(",") if origin.strip()]
+            filtered = [origin.strip() for origin in v.split(",") if origin.strip() and origin.strip() != "*"]
+            return filtered or default_trusted
         if isinstance(v, list):
-            return v
-        return ["*"]
+            filtered = [origin for origin in v if origin != "*"]
+            return filtered or default_trusted
+        return default_trusted
+
+    @model_validator(mode="after")
+    def validate_production_security(self) -> "Settings":
+        """
+        Enforce that production environments cannot use default or placeholder keys.
+        """
+        if self.is_production:
+            insecure_keys = {
+                "linkific-dev-local-test-key-2026",
+                "linkific-sec-prod-key-2026-xyz",
+                "your_secure_production_api_key_here_min_24_chars",
+                "changeme",
+                "secret12345",
+                "test-api-key"
+            }
+            if self.API_KEY.lower() in insecure_keys or "placeholder" in self.API_KEY.lower() or "replace_me" in self.API_KEY.lower():
+                raise ValueError(
+                    "Production deployment requires a unique, secure API_KEY override. "
+                    "Default development/placeholder keys are strictly rejected in production mode."
+                )
+        return self
 
     @property
     def is_production(self) -> bool:

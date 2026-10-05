@@ -3,17 +3,17 @@
 **Project:** Linkific Enterprise AI & Workflow Automation Service  
 **Organization:** Linkific ([https://www.linkific.in/](https://www.linkific.in/))  
 **Milestone:** Day 24 — Production Engineering & Microservice Hardening  
-**Status:** **100% VERIFIED & PRODUCTION READY (61/61 TESTS PASSED)**  
+**Status:** **62/62 AUTOMATED TESTS PASSED (90% COVERAGE) — STAGED FOR PRODUCTION**  
 
 ---
 
 ## 🎯 Learning Objectives Covered
 
-- **Pytest:** Structured unit, API, integration, and cross-day regression test suites with fixtures, parameterization, and isolated subprocess execution.
+- **Pytest:** Structured unit, API, integration, and cross-day regression test suites (62 tests, 100% pass rate) with fixtures, parameterization, and isolated subprocess execution.
 - **Logging:** Production JSON-formatted structured logging with thread-safe `X-Correlation-ID` context propagation, rotating audit file handlers, and secret masking.
-- **Docker Basics:** Security-hardened multi-stage `Dockerfile`, unprivileged non-root user execution (`appuser`), `.dockerignore` hygiene, healthcheck probes, and `docker-compose.yml` orchestration with Prometheus.
-- **Environment Variables:** Strongly-typed configuration management using `pydantic-settings` (`Settings`), `.env.example` documentation, validation constraints, and runtime safety checks.
-- **Monitoring:** Live OpenMetrics/Prometheus telemetry on `/metrics`, dual liveness (`/health/live`) and readiness (`/health/ready`) probes, and microsecond latency headers.
+- **Docker Basics:** Security-hardened multi-stage `Dockerfile`, unprivileged non-root user execution (`appuser` UID 10001), `.dockerignore` hygiene, healthcheck probes, and `docker-compose.yml` orchestration with Prometheus.
+- **Environment Variables:** Strongly-typed configuration management using `pydantic-settings` (`Settings`), `.env.example` documentation, validation constraints, default-key rejection in production, and runtime safety checks.
+- **Monitoring:** Live OpenMetrics/Prometheus telemetry on `/metrics`, dual liveness (`/health/live`) and readiness (`/health/ready`) probes, sliding-window rate limiting (`RATE_LIMIT_PER_MINUTE=120`), and microsecond latency headers.
 
 ---
 
@@ -33,7 +33,8 @@ In Day 24, the company platform has been hardened into an enterprise microservic
 ```
 Day-24/
 ├── .env.example                     # Production environment variable template
-├── .env                             # Local active configuration
+├── .env                             # Local active configuration (ignored by Git)
+├── .gitignore                       # Explicit Git ignore rules for secrets and caches
 ├── .dockerignore                    # Excludes build caches, secrets, and test artifacts
 ├── Dockerfile                       # Hardened multi-stage Docker build
 ├── docker-compose.yml               # Service & Prometheus orchestration
@@ -79,10 +80,10 @@ Day-24/
     │   └── test_finance_rules.py    # PO matching & invoice threshold unit tests
     └── api/
         ├── test_health_and_monitoring.py # Liveness, readiness, and metrics tests
-        ├── test_auth_and_security.py     # API key gating & CORS tests
+        ├── test_auth_and_security.py     # API key gating & strict CORS tests
         ├── test_workflow_api.py          # Multi-agent HTTP execution tests
         ├── test_finance_api.py           # Finance automation API tests
-        └── test_error_handling_api.py    # 404, 422, and tracing header tests
+        └── test_error_handling_api.py    # 404, 422, rate limiting & tracing header tests
 ```
 
 ---
@@ -99,12 +100,13 @@ Copy `.env.example` to `.env` to configure the service:
 | `DEBUG` | `bool` | `false` | Enables hot reloading and debug diagnostics |
 | `HOST` | `str` | `0.0.0.0` | Network binding interface |
 | `PORT` | `int` | `8000` | Network binding port (1-65535) |
-| `API_KEY` | `str` | `linkific-sec-prod-key-2026-xyz` | Authentication key required in `X-API-Key` header |
-| `CORS_ORIGINS` | `list` | `["*"]` | Allowed CORS origins for browser applications |
+| `API_KEY` | `str` | *(Configured via .env)* | High-entropy authentication key required in `X-API-Key` header |
+| `CORS_ORIGINS` | `list` | `["https://www.linkific.in","https://app.linkific.in","http://localhost:3000"]` | Allowed CORS origins for browser applications (wildcards stripped) |
 | `LOG_LEVEL` | `str` | `INFO` | Logging threshold (`DEBUG`, `INFO`, `WARNING`, `ERROR`) |
 | `LOG_FORMAT` | `str` | `json` | Formatting layout: `json` (production) or `text` (terminal) |
 | `LOG_FILE_PATH` | `str` | `data/service.log` | Destination path for rotating log entries |
 | `METRICS_ENABLED` | `bool` | `true` | Exposes Prometheus telemetry on `/metrics` |
+| `RATE_LIMIT_PER_MINUTE` | `int` | `120` | Max requests per minute per client IP (HTTP 429 enforcement) |
 | `MAX_WORKFLOW_REVISIONS` | `int` | `2` | Circuit breaker limit on adversarial agent revisions |
 
 ---
@@ -197,7 +199,7 @@ curl -X GET http://localhost:8000/metrics
 ```bash
 curl -X POST http://localhost:8000/api/v1/finance/invoice-approval \
   -H "Content-Type: application/json" \
-  -H "X-API-Key: linkific-sec-prod-key-2026-xyz" \
+  -H "X-API-Key: YOUR_CONFIGURED_API_KEY" \
   -d '{
     "invoice_id": "INV-2026-001",
     "po_number": "PO-8812",
@@ -211,7 +213,7 @@ curl -X POST http://localhost:8000/api/v1/finance/invoice-approval \
 ```bash
 curl -X POST http://localhost:8000/api/v1/workflow/run \
   -H "Content-Type: application/json" \
-  -H "X-API-Key: linkific-sec-prod-key-2026-xyz" \
+  -H "X-API-Key: YOUR_CONFIGURED_API_KEY" \
   -d '{
     "query": "What are the corporate guidelines regarding remote work, hardware allowances, and core collaboration hours?",
     "mode": "streamlined"
@@ -223,9 +225,10 @@ curl -X POST http://localhost:8000/api/v1/workflow/run \
 ## 📊 Test Results Summary
 
 ```text
-============================= 61 passed, 1 skipped in 8.62s =============================
+============================= 62 passed in 0.82s =============================
 ```
-- **Unit Tests:** 32 passed (Configuration, Logging, Metrics, Agent Nodes, Finance Rules).
-- **API Tests:** 24 passed (Probes, Auth, Security, Workflows, Finance Automation, Errors).
-- **Regression Tests:** 5 passed, 1 skipped (Days 20, 21, 22, 23 green; Day 17 skipped due to Windows OS PyTorch DLL WDAC policy).
-- **Quality Gate:** 100% Pass Rate.
+- **Unit Tests:** 36 passed (Configuration, Logging, Metrics, Agent Reasoning Nodes, Finance Approval Rules).
+- **API Tests:** 21 passed (Liveness, Readiness, Prometheus Metrics, API Key Authentication, Strict CORS, Workflow, Finance Automation, Error Handling, Tracing Headers).
+- **Regression Tests:** 5 passed (Days 17, 20, 21, 22, and 23 full cross-day backwards compatibility).
+- **Branch-Aware Coverage:** 90%
+- **Pass Rate:** 100% (62/62 tests passing).

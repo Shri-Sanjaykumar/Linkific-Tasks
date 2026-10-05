@@ -30,7 +30,11 @@ def test_valid_api_key_authorizes_system_info(client, auth_headers):
 
 
 def test_cors_preflight_and_response_headers(client):
-    """Verify CORS headers are set appropriately on requests."""
+    """Verify CORS headers allow trusted origins and strictly deny untrusted origins."""
     response = client.get("/", headers={"Origin": "https://www.linkific.in"})
     assert response.status_code == 200
-    assert "access-control-allow-origin" in response.headers
+    assert response.headers.get("access-control-allow-origin") == "https://www.linkific.in"
+
+    untrusted_resp = client.get("/", headers={"Origin": "https://evil.example"})
+    assert untrusted_resp.status_code == 200
+    assert "access-control-allow-origin" not in untrusted_resp.headers

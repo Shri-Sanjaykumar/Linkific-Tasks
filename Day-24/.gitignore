@@ -1,0 +1,30 @@
+# ==============================================================================
+# Day 24 Git Ignore Rules
+# ==============================================================================
+
+# Active local environment variables containing sensitive secrets
+.env
+.env.local
+.env.*
+*.env
+
+# Python byte-code, compilation caches and runtime artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Testing and coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.hypothesis/
+
+# Local service runtime logs
+data/service.log*
+*.log
+
+# Local virtual environments
+venv/
+.venv/
+env/

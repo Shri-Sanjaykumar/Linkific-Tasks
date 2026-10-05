@@ -20,7 +20,7 @@ def test_default_settings_loading():
 def test_environment_validation():
     """Verify supported runtime environment values."""
     for env in ["development", "staging", "production", "test"]:
-        s = Settings(ENVIRONMENT=env)
+        s = Settings(ENVIRONMENT=env, API_KEY="valid-secure-key-for-test-342")
         assert s.ENVIRONMENT == env
 
 
@@ -47,14 +47,16 @@ def test_invalid_port_raises_validation_error():
 
 
 def test_api_key_length_validation():
-    """Verify that insecure short API keys raise ValidationError."""
+    """Verify that insecure short API keys or default keys in production raise ValidationError."""
     with pytest.raises(ValidationError):
         Settings(API_KEY="short")
+    with pytest.raises(ValidationError):
+        Settings(ENVIRONMENT="production", API_KEY="linkific-dev-local-test-key-2026")
 
 
 def test_is_production_property():
     """Verify is_production evaluates correctly."""
-    prod = Settings(ENVIRONMENT="production")
+    prod = Settings(ENVIRONMENT="production", API_KEY="prod-secure-custom-key-12345")
     assert prod.is_production is True
     dev = Settings(ENVIRONMENT="development")
     assert dev.is_production is False
@@ -69,10 +71,11 @@ def test_get_safe_dict_masks_api_key():
 
 
 def test_cors_origins_parsing():
-    """Verify that CORS_ORIGINS parses list, json array string, and comma-separated string."""
+    """Verify that CORS_ORIGINS parses list, json array string, and comma-separated string, stripping wildcards."""
     s_list = Settings(CORS_ORIGINS=["https://linkific.in"])
     assert s_list.CORS_ORIGINS == ["https://linkific.in"]
 
-    s_str = Settings(CORS_ORIGINS="https://linkific.in, https://app.linkific.in")
+    s_str = Settings(CORS_ORIGINS="https://linkific.in, https://app.linkific.in, *")
     assert "https://linkific.in" in s_str.CORS_ORIGINS
     assert "https://app.linkific.in" in s_str.CORS_ORIGINS
+    assert "*" not in s_str.CORS_ORIGINS

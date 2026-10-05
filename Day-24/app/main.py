@@ -5,6 +5,8 @@ correlation ID tracing, and multi-agent workflow automation endpoints.
 """
 
 from contextlib import asynccontextmanager
+from collections import defaultdict
+import threading
 import time
 import uuid
 import os
@@ -59,6 +61,35 @@ async def lifespan(app: FastAPI):
     logger.info(f"Service '{settings.APP_NAME}' shutting down gracefully.")
 
 
+
+class SlidingWindowRateLimiter:
+    """
+    Thread-safe in-memory sliding window rate limiter.
+    Enforces RATE_LIMIT_PER_MINUTE threshold per client IP across API endpoints.
+    """
+    def __init__(self, limit: int = 120):
+        self.limit = limit
+        self.lock = threading.Lock()
+        self.records = defaultdict(list)
+
+    def is_allowed(self, client_id: str) -> tuple[bool, int]:
+        now = time.time()
+        window = 60.0
+        with self.lock:
+            # Clean timestamps older than sliding 60-second window
+            self.records[client_id] = [t for t in self.records[client_id] if now - t < window]
+            if len(self.records[client_id]) >= self.limit:
+                oldest = self.records[client_id][0]
+                retry_after = max(1, int(window - (now - oldest)))
+                return False, retry_after
+            self.records[client_id].append(now)
+            return True, 0
+
+    def reset(self):
+        with self.lock:
+            self.records.clear()
+
+
 # ==============================================================================
 # FastAPI App Factory
 # ==============================================================================
@@ -84,7 +115,10 @@ def create_app() -> FastAPI:
         allow_headers=["*"],
     )
 
-    # 2. Correlation ID & Observability Middleware
+    rate_limiter = SlidingWindowRateLimiter(limit=settings.RATE_LIMIT_PER_MINUTE)
+    app.state.rate_limiter = rate_limiter
+
+    # 2. Correlation ID, Observability & Rate-Limiting Middleware
     @app.middleware("http")
     async def observability_middleware(request: Request, call_next):
         # Extract or generate correlation ID
@@ -92,6 +126,28 @@ def create_app() -> FastAPI:
         if not correlation_id:
             correlation_id = f"CORR-{uuid.uuid4().hex[:12].upper()}"
         set_correlation_id(correlation_id)
+
+        # Enforce rate limiting on API endpoints (exempting health/readiness/metrics probes)
+        path = request.url.path
+        if not path.startswith("/health") and path != "/metrics":
+            client_ip = request.client.host if request.client else "127.0.0.1"
+            allowed, retry_after = rate_limiter.is_allowed(client_ip)
+            if not allowed:
+                logger.warning(
+                    f"Rate limit exceeded for client {client_ip} on {path} (Limit: {settings.RATE_LIMIT_PER_MINUTE}/min)"
+                )
+                return JSONResponse(
+                    status_code=status.HTTP_429_TOO_MANY_REQUESTS,
+                    content={
+                        "error": "Too Many Requests",
+                        "detail": f"Rate limit of {settings.RATE_LIMIT_PER_MINUTE} requests per minute exceeded.",
+                        "correlation_id": correlation_id
+                    },
+                    headers={
+                        "Retry-After": str(retry_after),
+                        "X-Correlation-ID": correlation_id
+                    }
+                )
 
         start_time = time.time()
         path = request.url.path
