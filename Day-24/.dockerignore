@@ -1,0 +1,32 @@
+# Git
+.git
+.gitignore
+
+# Python caches & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.hypothesis/
+
+# Local Environment Secrets & Editor Artifacts
+.env
+.env.local
+*.log
+.vscode/
+.idea/
+*.swp
+
+# Documentation & Diagrams (kept in repository, omitted from runtime container)
+docs/
+diagrams/
+tests/
