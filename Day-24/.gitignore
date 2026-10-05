@@ -28,3 +28,9 @@ data/service.log*
 venv/
 .venv/
 env/
+
+# Local screenshot folders and images (kept local, excluded from git push)
+screenshots/
+screenhot/
+*.jpg
+*.jpeg
