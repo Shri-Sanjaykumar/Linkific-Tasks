@@ -108,6 +108,7 @@ class LLMRouter:
                 "accuracy_percent": c["accuracy_percent"],
                 "is_eligible": c["is_eligible"],
                 "composite_score": c["composite_score"],
+                "cost_inr": round(c["cost_usd"] * 86.50, 4),
             }
             for c in sorted(evaluated_candidates, key=lambda x: x["composite_score"], reverse=True)
         ]
@@ -116,6 +117,7 @@ class LLMRouter:
             selected_model=winner["model_ref"],
             matched_reason=matched_reason,
             estimated_cost_usd=winner["cost_usd"],
+            estimated_cost_inr=round(winner["cost_usd"] * 86.50, 4),
             estimated_latency_sec=winner["latency_sec"],
             expected_accuracy_percent=winner["accuracy_percent"],
             candidate_ranking=clean_ranking,

@@ -56,7 +56,7 @@ class ModelSpec(BaseModel):
 
 
 class CostCalculationResult(BaseModel):
-    """Calculated costs across different traffic volumes and caching conditions."""
+    """Calculated costs across different traffic volumes and caching conditions in USD and INR."""
     model_id: str
     provider: str
     input_tokens: int
@@ -68,11 +68,17 @@ class CostCalculationResult(BaseModel):
     savings_percent: float
     monthly_cost_standard_usd: float
     monthly_cost_cached_usd: float
+    standard_cost_inr: float = 0.0
+    cached_cost_inr: float = 0.0
+    savings_inr: float = 0.0
+    monthly_cost_standard_inr: float = 0.0
+    monthly_cost_cached_inr: float = 0.0
 
 
 class RoutingConstraint(BaseModel):
     """Constraints for model routing."""
     max_cost_per_query_usd: Optional[float] = None
+    max_cost_per_query_inr: Optional[float] = None
     min_accuracy_percent: Optional[float] = None
     max_latency_sec: Optional[float] = None
     priority: str = Field("balanced", description="One of: 'cost', 'speed', 'accuracy', 'balanced'")
@@ -83,6 +89,7 @@ class RoutingDecision(BaseModel):
     selected_model: ModelSpec
     matched_reason: str
     estimated_cost_usd: float
+    estimated_cost_inr: float = 0.0
     estimated_latency_sec: float
     expected_accuracy_percent: float
     candidate_ranking: List[Dict[str, Any]]
@@ -97,6 +104,7 @@ class EvaluationResult(BaseModel):
     prompt_tokens: int
     completion_tokens: int
     cost_usd: float
+    cost_inr: float = 0.0
     latency_sec: float
     accuracy_score: float
     matched_ground_truth: bool

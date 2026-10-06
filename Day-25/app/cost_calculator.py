@@ -12,8 +12,11 @@ from app.models import ModelSpec, CostCalculationResult
 from app.database import MODEL_REGISTRY, get_model_by_id
 
 
+USD_TO_INR_RATE = 86.50  # Real-time exchange rate baseline: 1 USD = 86.50 INR
+
+
 class CostCalculator:
-    """Enterprise LLM Cost Calculation and Optimization Engine."""
+    """Enterprise LLM Cost Calculation and Optimization Engine with Dual USD/INR Support."""
 
     @staticmethod
     def calculate_single_call_cost(
@@ -52,6 +55,11 @@ class CostCalculator:
         return round(total_cost, 7)
 
     @classmethod
+    def usd_to_inr(cls, usd_amount: float) -> float:
+        """Convert USD amount to Indian Rupees (INR)."""
+        return round(usd_amount * USD_TO_INR_RATE, 4)
+
+    @classmethod
     def compare_costs(
         cls,
         input_tokens: int,
@@ -61,7 +69,7 @@ class CostCalculator:
         is_batch: bool = False,
         model_ids: Optional[List[str]] = None,
     ) -> List[CostCalculationResult]:
-        """Compare costs across all models in registry or specified subset."""
+        """Compare costs across all models in registry or specified subset with USD and INR outputs."""
         if model_ids is None:
             models = list(MODEL_REGISTRY.values())
         else:
@@ -109,6 +117,11 @@ class CostCalculator:
                     savings_percent=round(savings_pct, 2),
                     monthly_cost_standard_usd=round(monthly_std, 2),
                     monthly_cost_cached_usd=round(monthly_cached, 2),
+                    standard_cost_inr=cls.usd_to_inr(std_cost),
+                    cached_cost_inr=cls.usd_to_inr(cached_cost),
+                    savings_inr=cls.usd_to_inr(savings_usd),
+                    monthly_cost_standard_inr=round(monthly_std * USD_TO_INR_RATE, 2),
+                    monthly_cost_cached_inr=round(monthly_cached * USD_TO_INR_RATE, 2),
                 )
             )
 
@@ -124,7 +137,7 @@ class CostCalculator:
         avg_output_tokens: int = 400,
         cacheable_prefix_ratio: float = 0.70,
     ) -> Dict[str, Any]:
-        """Simulate Linkific enterprise invoice processing savings switching from naive frontier model to hybrid caching architecture."""
+        """Simulate Linkific enterprise invoice processing savings in USD and INR."""
         # Baseline: Uncached GPT-4o for 100% of volume
         gpt4o = get_model_by_id("gpt-4o")
         baseline_cost_per_doc = cls.calculate_single_call_cost(gpt4o, avg_input_tokens, avg_output_tokens, 0)
@@ -148,10 +161,15 @@ class CostCalculator:
 
         return {
             "monthly_docs": monthly_docs,
+            "exchange_rate_usd_to_inr": USD_TO_INR_RATE,
             "baseline_model": "gpt-4o (No Caching)",
             "baseline_monthly_usd": round(baseline_monthly, 2),
+            "baseline_monthly_inr": round(baseline_monthly * USD_TO_INR_RATE, 2),
             "hybrid_monthly_usd": round(hybrid_monthly, 2),
+            "hybrid_monthly_inr": round(hybrid_monthly * USD_TO_INR_RATE, 2),
             "monthly_savings_usd": round(total_savings_monthly, 2),
+            "monthly_savings_inr": round(total_savings_monthly * USD_TO_INR_RATE, 2),
             "annual_savings_usd": round(total_savings_annual, 2),
+            "annual_savings_inr": round(total_savings_annual * USD_TO_INR_RATE, 2),
             "cost_reduction_percentage": round(reduction_percentage, 2),
         }
