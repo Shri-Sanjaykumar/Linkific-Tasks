@@ -1,0 +1,92 @@
+[
+  {
+    "applicant_id": "APP_101",
+    "region": "Metro",
+    "annual_revenue_usd": 120000.0,
+    "annual_revenue_inr": 10380000.0,
+    "credit_score": 740,
+    "actual_qualified": true,
+    "approved": true
+  },
+  {
+    "applicant_id": "APP_102",
+    "region": "Metro",
+    "annual_revenue_usd": 95000.0,
+    "annual_revenue_inr": 8217500.0,
+    "credit_score": 710,
+    "actual_qualified": true,
+    "approved": true
+  },
+  {
+    "applicant_id": "APP_103",
+    "region": "Metro",
+    "annual_revenue_usd": 60000.0,
+    "annual_revenue_inr": 5190000.0,
+    "credit_score": 680,
+    "actual_qualified": false,
+    "approved": false
+  },
+  {
+    "applicant_id": "APP_104",
+    "region": "Metro",
+    "annual_revenue_usd": 40000.0,
+    "annual_revenue_inr": 3460000.0,
+    "credit_score": 620,
+    "actual_qualified": false,
+    "approved": false
+  },
+  {
+    "applicant_id": "APP_105",
+    "region": "Metro",
+    "annual_revenue_usd": 110000.0,
+    "annual_revenue_inr": 9515000.0,
+    "credit_score": 750,
+    "actual_qualified": true,
+    "approved": true
+  },
+  {
+    "applicant_id": "APP_106",
+    "region": "Rural",
+    "annual_revenue_usd": 115000.0,
+    "annual_revenue_inr": 9947500.0,
+    "credit_score": 735,
+    "actual_qualified": true,
+    "approved": true
+  },
+  {
+    "applicant_id": "APP_107",
+    "region": "Rural",
+    "annual_revenue_usd": 85000.0,
+    "annual_revenue_inr": 7352500.0,
+    "credit_score": 695,
+    "actual_qualified": true,
+    "approved": true
+  },
+  {
+    "applicant_id": "APP_108",
+    "region": "Rural",
+    "annual_revenue_usd": 130000.0,
+    "annual_revenue_inr": 11245000.0,
+    "credit_score": 760,
+    "actual_qualified": true,
+    "approved": true
+  },
+  {
+    "applicant_id": "APP_109",
+    "region": "Rural",
+    "annual_revenue_usd": 45000.0,
+    "annual_revenue_inr": 3892500.0,
+    "credit_score": 610,
+    "actual_qualified": false,
+    "approved": false
+  },
+  {
+    "applicant_id": "APP_110",
+    "region": "Rural",
+    "annual_revenue_usd": 50000.0,
+    "annual_revenue_inr": 4325000.0,
+    "credit_score": 630,
+    "actual_qualified": false,
+    "approved": false
+  }
+]
