@@ -36,7 +36,7 @@ To solve this, Linkific designed and implemented **FinDoc-AuditEngine**: an ente
 | **FastAPI REST Service** | [`app/main.py`](app/main.py), [`app/routers/audit.py`](app/routers/audit.py) | Production REST API with `/process`, `/ledger`, `/summary`, `/health/live`, `/health/ready`. |
 | **Realistic Benchmark Dataset** | [`data/benchmark_invoices.json`](data/benchmark_invoices.json) | 5 enterprise test scenarios covering STP, Manager Review, Director Signoff, Discrepancy, and Fraud Freeze. |
 | **CLI Demonstration Script** | [`run_project.py`](run_project.py) | Interactive runner processing benchmark invoices, displaying tabular audit decisions and portfolio KPIs. |
-| **Automated Test Suite** | [`tests/`](tests/) | 13 unit/integration tests + 7 cross-day regression tests (Days 20 to 26) = **20/20 passed**. |
+| **Automated Test Suite** | [`tests/`](tests/) | 13 unit/integration tests + 7 Day-27 system regression tests = **20/20 passed**. |
 
 ---
 
