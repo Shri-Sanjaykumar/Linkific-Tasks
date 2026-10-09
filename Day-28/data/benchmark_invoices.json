@@ -1,0 +1,221 @@
+[
+  {
+    "invoice": {
+      "invoice_id": "INV-1001",
+      "vendor_id": "VEND-001",
+      "vendor_name": "OfficeDepot India Pvt Ltd",
+      "po_number": "PO-9001",
+      "invoice_date": "2026-10-01",
+      "due_date": "2026-10-31",
+      "subtotal_usd": 400.0,
+      "tax_usd": 32.0,
+      "total_amount_usd": 432.0,
+      "currency": "USD",
+      "items": [
+        {
+          "item_id": "ITEM-1",
+          "description": "Ergonomic Keyboards",
+          "quantity": 10,
+          "unit_price_usd": 40.0,
+          "total_price_usd": 400.0
+        }
+      ],
+      "vendor_country": "IN",
+      "is_new_vendor": false,
+      "vendor_contact_email": "accounts@officedepot.in",
+      "vendor_pan": "ABCDE1234F"
+    },
+    "po": {
+      "po_number": "PO-9001",
+      "vendor_id": "VEND-001",
+      "approved_total_usd": 432.0,
+      "items": [
+        {
+          "item_id": "ITEM-1",
+          "description": "Ergonomic Keyboards",
+          "quantity": 10,
+          "unit_price_usd": 40.0,
+          "total_price_usd": 400.0
+        }
+      ],
+      "grn_units_received": { "ITEM-1": 10 },
+      "grn_units_rejected": { "ITEM-1": 0 }
+    },
+    "expected_tier": "TIER_1_STP_AUTO_APPROVED",
+    "expected_authorized": true
+  },
+  {
+    "invoice": {
+      "invoice_id": "INV-1002",
+      "vendor_id": "VEND-002",
+      "vendor_name": "CloudScale Networks LLC",
+      "po_number": "PO-9002",
+      "invoice_date": "2026-10-02",
+      "due_date": "2026-11-01",
+      "subtotal_usd": 4500.0,
+      "tax_usd": 360.0,
+      "total_amount_usd": 4860.0,
+      "currency": "USD",
+      "items": [
+        {
+          "item_id": "ITEM-SRV",
+          "description": "Dedicated Cloud Cluster Node",
+          "quantity": 3,
+          "unit_price_usd": 1500.0,
+          "total_price_usd": 4500.0
+        }
+      ],
+      "vendor_country": "US",
+      "is_new_vendor": false,
+      "vendor_contact_email": "billing@cloudscale.net"
+    },
+    "po": {
+      "po_number": "PO-9002",
+      "vendor_id": "VEND-002",
+      "approved_total_usd": 4860.0,
+      "items": [
+        {
+          "item_id": "ITEM-SRV",
+          "description": "Dedicated Cloud Cluster Node",
+          "quantity": 3,
+          "unit_price_usd": 1500.0,
+          "total_price_usd": 4500.0
+        }
+      ],
+      "grn_units_received": { "ITEM-SRV": 3 },
+      "grn_units_rejected": { "ITEM-SRV": 0 }
+    },
+    "expected_tier": "TIER_2_MANAGER_REVIEW",
+    "expected_authorized": true
+  },
+  {
+    "invoice": {
+      "invoice_id": "INV-1003",
+      "vendor_id": "VEND-003",
+      "vendor_name": "NVIDIA Enterprise Systems",
+      "po_number": "PO-9003",
+      "invoice_date": "2026-10-03",
+      "due_date": "2026-11-03",
+      "subtotal_usd": 25000.0,
+      "tax_usd": 2000.0,
+      "total_amount_usd": 27000.0,
+      "currency": "USD",
+      "items": [
+        {
+          "item_id": "ITEM-GPU",
+          "description": "H100 Tensor Core GPU Compute Board",
+          "quantity": 1,
+          "unit_price_usd": 25000.0,
+          "total_price_usd": 25000.0
+        }
+      ],
+      "vendor_country": "US",
+      "is_new_vendor": false
+    },
+    "po": {
+      "po_number": "PO-9003",
+      "vendor_id": "VEND-003",
+      "approved_total_usd": 27000.0,
+      "items": [
+        {
+          "item_id": "ITEM-GPU",
+          "description": "H100 Tensor Core GPU Compute Board",
+          "quantity": 1,
+          "unit_price_usd": 25000.0,
+          "total_price_usd": 25000.0
+        }
+      ],
+      "grn_units_received": { "ITEM-GPU": 1 },
+      "grn_units_rejected": { "ITEM-GPU": 0 }
+    },
+    "expected_tier": "TIER_3_DIRECTOR_SIGNOFF",
+    "expected_authorized": true
+  },
+  {
+    "invoice": {
+      "invoice_id": "INV-1004",
+      "vendor_id": "VEND-004",
+      "vendor_name": "Overcharge Technologies",
+      "po_number": "PO-9004",
+      "invoice_date": "2026-10-04",
+      "due_date": "2026-10-25",
+      "subtotal_usd": 5000.0,
+      "tax_usd": 400.0,
+      "total_amount_usd": 5400.0,
+      "currency": "USD",
+      "items": [
+        {
+          "item_id": "ITEM-RAM",
+          "description": "Server DDR5 64GB Module",
+          "quantity": 50,
+          "unit_price_usd": 100.0,
+          "total_price_usd": 5000.0
+        }
+      ],
+      "vendor_country": "IN",
+      "is_new_vendor": false
+    },
+    "po": {
+      "po_number": "PO-9004",
+      "vendor_id": "VEND-004",
+      "approved_total_usd": 4320.0,
+      "items": [
+        {
+          "item_id": "ITEM-RAM",
+          "description": "Server DDR5 64GB Module",
+          "quantity": 50,
+          "unit_price_usd": 80.0,
+          "total_price_usd": 4000.0
+        }
+      ],
+      "grn_units_received": { "ITEM-RAM": 50 },
+      "grn_units_rejected": { "ITEM-RAM": 0 }
+    },
+    "expected_tier": "REJECTED_DISCREPANCY",
+    "expected_authorized": false
+  },
+  {
+    "invoice": {
+      "invoice_id": "INV-1005",
+      "vendor_id": "VEND-999",
+      "vendor_name": "Shadow Island Holding BZ",
+      "po_number": "PO-9005",
+      "invoice_date": "2026-10-05",
+      "due_date": "2026-10-10",
+      "subtotal_usd": 49500.0,
+      "tax_usd": 0.0,
+      "total_amount_usd": 49500.0,
+      "currency": "USD",
+      "items": [
+        {
+          "item_id": "ITEM-CONSULT",
+          "description": "Advisory Fee",
+          "quantity": 1,
+          "unit_price_usd": 49500.0,
+          "total_price_usd": 49500.0
+        }
+      ],
+      "vendor_country": "BZ",
+      "is_new_vendor": true,
+      "vendor_bank_account": "99281726351423"
+    },
+    "po": {
+      "po_number": "PO-9005",
+      "vendor_id": "VEND-999",
+      "approved_total_usd": 49500.0,
+      "items": [
+        {
+          "item_id": "ITEM-CONSULT",
+          "description": "Advisory Fee",
+          "quantity": 1,
+          "unit_price_usd": 49500.0,
+          "total_price_usd": 49500.0
+        }
+      ],
+      "grn_units_received": { "ITEM-CONSULT": 1 },
+      "grn_units_rejected": { "ITEM-CONSULT": 0 }
+    },
+    "expected_tier": "FROZEN_FRAUD_RISK",
+    "expected_authorized": false
+  }
+]
