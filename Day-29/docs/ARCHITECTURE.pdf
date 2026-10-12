@@ -1,0 +1,136 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Pages /Kids [8 0 R 11 0 R] /Count 2 >>
+endobj
+6 0 obj
+<< /Length 7941 >>
+stream
+0.060 0.090 0.160 rg 0.00 814.00 595.28 28.00 re f
+BT /F2 8.20 Tf 0.950 0.970 1.000 rg 1 0 0 1 38.00 824.00 Tm (LINKIFIC ENTERPRISE AI/ML ENGINEERING INTERNSHIP  |  SHRI SANJAYKUMAR V \(VIT VELLORE\)) Tj ET
+BT /F3 8.00 Tf 0.750 0.820 0.920 rg 1 0 0 1 375.61 824.00 Tm (Day 29 Deliverable: System & 7-D XAI Architecture) Tj ET
+0.40 w 0.700 0.750 0.820 RG 38.00 36.00 m 557.00 36.00 l S
+BT /F1 7.80 Tf 0.350 0.400 0.480 rg 1 0 0 1 38.00 24.00 Tm (FinDoc-AuditEngine v3.0  |  github.com/Shri-Sanjaykumar/Linkific-Tasks  |  linkedin.com/in/shri-sanjaykumar-v-588bab28a) Tj ET
+BT /F2 8.00 Tf 0.200 0.250 0.330 rg 1 0 0 1 530.25 24.00 Tm (Page 1) Tj ET
+BT /F2 14.00 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 790.00 Tm (Day 29 Deliverable: FinDoc-AuditEngine v3.0 System Architecture Specification) Tj ET
+BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 763.00 Tm (1. High-Level Component Topology) Tj ET
+0.50 w 0.150 0.230 0.350 RG 38.00 760.00 m 557.00 760.00 l S
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 743.00 Tm (flowchart TB) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 731.50 Tm (subgraph Client_Layer ["1. Presentation & Client Layer"]) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 720.00 Tm (WEB["Institutional Web Workbench\\n\(index.html + dashboard.css + dashboard.js\)"]) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 708.50 Tm (CLI["CLI Runners\\n\(run_project.py / run_mentor_demo.py\)"]) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 697.00 Tm (SWAGGER["OpenAPI / Swagger UI\\n\(/docs\)"]) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 685.50 Tm (end) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 669.00 Tm (subgraph API_Gateway ["2. FastAPI Application & Exception Layer \(app/main.py\)"]) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 657.50 Tm (ROUTER_API["REST Router \(/api/v1/audit\)\\n- POST /process\\n- POST /parse-raw\\n- POST /demo-batch\\n- GET /ledger &) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 646.00 Tm (/summary\\n- GET /export/csv"]) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 634.50 Tm (ERR_HANDLER["RFC 7807 Global Exception Handler\\n\(FinDocAuditException -> JSONResponse\)"]) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 623.00 Tm (end) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 606.50 Tm (subgraph Core_Domain ["3. Core AI/ML & Reconciliation Services"]) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 595.00 Tm (PII["Stage 1: FinancialPrivacyScrubber\\n\(PAN, Aadhaar, Email, Phone, Account\)"]) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 583.50 Tm (MATCH["Stage 2: ReconciliationMatcher\\n\(Line-Item Invoice vs PO vs Dock GRN\)"]) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 572.00 Tm (ML["Stage 3: AnomalyScorer\\n\(7D StandardScaler + IsolationForest + Perturbation XAI\)"]) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 560.50 Tm (GOV["Stage 4: ApprovalRouter\\n\(5 Governance Tiers + Dual USD/INR @ 86.50\)"]) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 549.00 Tm (end) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 532.50 Tm (subgraph Storage_Layer ["4. State & Compliance Export"]) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 521.00 Tm (LEDGER["Immutable Audit Ledger & PO Registry"]) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 509.50 Tm (CSV_EXP["CSV Compliance Report Generator"]) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 498.00 Tm (end) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 481.50 Tm (WEB --> ROUTER_API) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 470.00 Tm (CLI --> ROUTER_API) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 458.50 Tm (SWAGGER --> ROUTER_API) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 447.00 Tm (ROUTER_API --> ERR_HANDLER) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 435.50 Tm (ROUTER_API --> PII) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 424.00 Tm (PII --> MATCH) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 412.50 Tm (MATCH --> ML) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 401.00 Tm (ML --> GOV) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 389.50 Tm (GOV --> LEDGER) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 378.00 Tm (LEDGER --> CSV_EXP) Tj ET
+BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 348.50 Tm (2. 7-Dimensional ML Feature Vector Specification) Tj ET
+0.50 w 0.150 0.230 0.350 RG 38.00 345.50 m 557.00 345.50 l S
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 328.50 Tm (| Index | Feature Name | Mathematical Formulation | Normal Operational Range | Anomaly Trigger Condition |) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 317.00 Tm (| :--- | :--- | :--- | :--- | :--- |) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 305.50 Tm (| 0 | Log Capital Scale | $\\ln\(1 + \\text{Total}_{\\text{USD}}\)$ | $4.8 - 10.3$ \($120 - $30k\) | Extreme capital outliers \(> $40,000\)) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 294.00 Tm (|) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 282.50 Tm (| 1 | Unit Rate Markup % | $\\frac{|\\Delta P_{\\text{USD}}|}{\\text{Base Spend}} \\times 100$ | $0.0\\% - 0.5\\%$ | Vendor unit) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 271.00 Tm (price exceeds PO rate \(> 1%\) |) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 259.50 Tm (| 2 | Dock GRN Shortage % | $\\frac{\\Delta Q_{\\text{units}}}{Q_{\\text{billed}}} \\times 100$ | $0.0\\%$ | Billed units rejected) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 248.00 Tm (or missing at dock |) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 236.50 Tm (| 3 | Tax Deviation | $\\max\(0, \\text{Tax}\\% - 20.0\\%\)$ | $0.0\\%$ | Tax rate exceeds corporate indirect tax ceiling |) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 225.00 Tm (| 4 | Payment Urgency | $\\min\(10, \\frac{30}{\\max\(1, \\text{DueDays}\)}\)$ | $1.0 - 2.0$ \(Net-30 to Net-15\) | Rush wire demand) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 213.50 Tm (\(<= 5 days, urgency >= 6.0\) |) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 202.00 Tm (| 5 | Vendor Risk Profile | $0.55 \\cdot \\mathbb{I}_{\\text{new}} + 0.45 \\cdot \\mathbb{I}_{>\\$5k} + 0.75 \\cdot) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 190.50 Tm (\\mathbb{I}_{\\neg\\text{PO}}$ | $0.0 - 0.35$ | New vendor high-value spend or missing PO |) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 179.00 Tm (| 6 | Jurisdiction AML Index | Lookup in JURISDICTION_RISK_MAP | $0.05 - 0.08$ \(IN, US, DE, GB\) | Offshore tax havens) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 167.50 Tm (\(BZ, KY, PA, VG $\\ge 0.88$\) |) Tj ET
+BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 138.00 Tm (3. Corporate Governance Routing Matrix \(1 USD = 86.50 INR\)) Tj ET
+0.50 w 0.150 0.230 0.350 RG 38.00 135.00 m 557.00 135.00 l S
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 118.00 Tm (| Approval Tier | USD Threshold | INR Threshold \(@ 86.50\) | 3-Way Match Required | Max Risk Level | HITL Required |) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 106.50 Tm (| :--- | :--- | :--- | :--- | :--- | :--- |) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 95.00 Tm (| TIER_1_STP_AUTO_APPROVED | < $1,000.00 | < INR 86,500.00 | True \(matched\) | LOW \(< 35.0\) | False \(Autonomous\) |) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 83.50 Tm (| TIER_2_MANAGER_REVIEW | $1,000 ñ $10,000 | INR 86,500 ñ 865,000 | True \(matched\) | LOW / MEDIUM | True) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 72.00 Tm (\(Manager\) |) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 60.50 Tm (| TIER_3_DIRECTOR_SIGNOFF | > $10,000.00 | > INR 865,000.00 | True \(matched\) | LOW / MEDIUM / HIGH | True) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Annot /Subtype /Link /Rect [38.00 22.00 458.62 31.80] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Shri-Sanjaykumar/Linkific-Tasks) >> >>
+endobj
+8 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 595.276 841.890] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 6 0 R /Annots [7 0 R] >>
+endobj
+9 0 obj
+<< /Length 1071 >>
+stream
+0.060 0.090 0.160 rg 0.00 814.00 595.28 28.00 re f
+BT /F2 8.20 Tf 0.950 0.970 1.000 rg 1 0 0 1 38.00 824.00 Tm (LINKIFIC ENTERPRISE AI/ML ENGINEERING INTERNSHIP  |  SHRI SANJAYKUMAR V \(VIT VELLORE\)) Tj ET
+BT /F3 8.00 Tf 0.750 0.820 0.920 rg 1 0 0 1 375.61 824.00 Tm (Day 29 Deliverable: System & 7-D XAI Architecture) Tj ET
+0.40 w 0.700 0.750 0.820 RG 38.00 36.00 m 557.00 36.00 l S
+BT /F1 7.80 Tf 0.350 0.400 0.480 rg 1 0 0 1 38.00 24.00 Tm (FinDoc-AuditEngine v3.0  |  github.com/Shri-Sanjaykumar/Linkific-Tasks  |  linkedin.com/in/shri-sanjaykumar-v-588bab28a) Tj ET
+BT /F2 8.00 Tf 0.200 0.250 0.330 rg 1 0 0 1 530.25 24.00 Tm (Page 2) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 790.00 Tm (\(Director\) |) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 778.50 Tm (| REJECTED_DISCREPANCY | Any Amount | Any Amount | False \(unmatched\) | Any | True \(Vendor Hold\) |) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 767.00 Tm (| FROZEN_FRAUD_RISK | Any Amount | Any Amount | Any | CRITICAL \(>= 85.0\) | True \(Security Freeze\) |) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Annot /Subtype /Link /Rect [38.00 22.00 458.62 31.80] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Shri-Sanjaykumar/Linkific-Tasks) >> >>
+endobj
+11 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 595.276 841.890] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 9 0 R /Annots [10 0 R] >>
+endobj
+12 0 obj
+<< /Type /Catalog /Pages 5 0 R >>
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000000015 00000 n 
+0000000112 00000 n 
+0000000214 00000 n 
+0000000319 00000 n 
+0000000428 00000 n 
+0000000492 00000 n 
+0000008485 00000 n 
+0000008672 00000 n 
+0000008852 00000 n 
+0000009975 00000 n 
+0000010163 00000 n 
+0000010345 00000 n 
+trailer
+<< /Size 13 /Root 12 0 R >>
+startxref
+10395
+%%EOF

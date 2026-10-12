@@ -11,7 +11,7 @@ from fastapi.templating import Jinja2Templates
 from app.core.config import settings
 from app.core.logging_config import logger
 from app.exceptions import FinDocAuditException
-from app.routers import audit, portfolio
+from app.routers import audit, portfolio, mentor_prep
 
 BASE_DIR = Path(__file__).resolve().parent
 STATIC_DIR = BASE_DIR / "static"
@@ -98,3 +98,5 @@ async def system_health_check():
 app.include_router(audit.router, prefix="/api/v1/audit", tags=["Audit Engine"])
 
 app.include_router(portfolio.router, prefix="/api/v1/portfolio", tags=["Day 30 Capstone Portfolio & Career Hub"])
+
+app.include_router(mentor_prep.router, prefix="/api/v1/prep", tags=["Day 29 & 30 Slides, Interview Q&A & Checklist"])

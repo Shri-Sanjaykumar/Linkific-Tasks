@@ -752,3 +752,285 @@ function closeDetailModal(event) {
   if (event && event.target && event.target.id !== 'detailModalBackdrop') return;
   document.getElementById('detailModalBackdrop').classList.remove('open');
 }
+
+
+
+// ---------------------------------------------------------------------------
+// DAY 29 & DAY 30 INTERACTIVE SLIDE DECK, 15:00 TIMER, 10 Q&As & PORTFOLIO HUB
+// ---------------------------------------------------------------------------
+let currentSlideIndex = 0;
+let slidesData = [];
+let timerSecondsRemaining = 15 * 60;
+let timerIntervalId = null;
+
+function renderCurrentSlide() {
+    const stage = document.getElementById("slideStageContainer");
+    const counter = document.getElementById("slideCounterLabel");
+    if (!stage || !slidesData.length) return;
+
+    const s = slidesData[currentSlideIndex];
+    if (counter) {
+        counter.textContent = `Slide ${s.slide} of ${slidesData.length} (${s.time_mark})`;
+    }
+    stage.innerHTML = `
+        <div class="slide-top-meta">
+            <span class="slide-badge">SLIDE ${s.slide} OF ${slidesData.length} &bull; ${s.section.toUpperCase()}</span>
+            <span class="mono" style="font-size:0.78rem; color:#475569;">Target Timing: ${s.time_mark}</span>
+        </div>
+        <div class="slide-title-main">${s.title}</div>
+        <ul class="slide-bullets-list">
+            ${s.bullets.map(b => `<li>${b}</li>`).join("")}
+        </ul>
+        <div class="slide-speaker-box">
+            <strong>Speaker Notes:</strong> "${s.speaker_notes}"
+        </div>
+    `;
+}
+
+window.changeSlide = function(delta) {
+    if (!slidesData.length) return;
+    currentSlideIndex = (currentSlideIndex + delta + slidesData.length) % slidesData.length;
+    renderCurrentSlide();
+};
+
+function updateTimerUI() {
+    const el = document.getElementById("practiceTimerDisplay");
+    if (!el) return;
+    const mins = String(Math.floor(timerSecondsRemaining / 60)).padStart(2, "0");
+    const secs = String(timerSecondsRemaining % 60).padStart(2, "0");
+    el.textContent = `${mins}:${secs}`;
+}
+
+window.startPracticeTimer = function() {
+    if (timerIntervalId) return;
+    timerIntervalId = setInterval(() => {
+        if (timerSecondsRemaining > 0) {
+            timerSecondsRemaining--;
+            updateTimerUI();
+        } else {
+            clearInterval(timerIntervalId);
+            timerIntervalId = null;
+        }
+    }, 1000);
+};
+
+window.pausePracticeTimer = function() {
+    if (timerIntervalId) {
+        clearInterval(timerIntervalId);
+        timerIntervalId = null;
+    }
+};
+
+window.resetPracticeTimer = function() {
+    pausePracticeTimer();
+    timerSecondsRemaining = 15 * 60;
+    updateTimerUI();
+};
+
+window.switchDay29Tab = function(tab) {
+    const views = {
+        workbench: "d29WorkbenchView",
+        slides: "d29SlidesView",
+        qa: "d29QAView",
+        checklist: "d29ChecklistView",
+    };
+    const btns = {
+        workbench: "d29BtnWorkbench",
+        slides: "d29BtnSlides",
+        qa: "d29BtnQA",
+        checklist: "d29BtnChecklist",
+    };
+    Object.keys(views).forEach(k => {
+        const v = document.getElementById(views[k]);
+        const b = document.getElementById(btns[k]);
+        if (v) v.classList.toggle("hidden", k !== tab);
+        if (b) b.classList.toggle("active", k === tab);
+    });
+};
+
+window.switchDay30Tab = function(tab) {
+    const views = {
+        workbench: "d30WorkbenchView",
+        panel: "d30PanelView",
+        portfolio: "d30PortfolioView",
+        resume: "d30ResumeView",
+        reflection: "d30ReflectionView",
+    };
+    const btns = {
+        workbench: "d30BtnWorkbench",
+        panel: "d30BtnPanel",
+        portfolio: "d30BtnPortfolio",
+        resume: "d30BtnResume",
+        reflection: "d30BtnReflection",
+    };
+    Object.keys(views).forEach(k => {
+        const v = document.getElementById(views[k]);
+        const b = document.getElementById(btns[k]);
+        if (v) v.classList.toggle("hidden", k !== tab);
+        if (b) b.classList.toggle("active", k === tab);
+    });
+};
+
+async function loadPrepAndPortfolioModules() {
+    try {
+        const [slidesRes, qaRes, chkRes, d29DlRes] = await Promise.all([
+            fetch("/api/v1/prep/slides"),
+            fetch("/api/v1/prep/interview-qa"),
+            fetch("/api/v1/prep/checklist-and-video"),
+            fetch("/api/v1/prep/deliverables"),
+        ]);
+
+        if (slidesRes.ok) {
+            const sJson = await slidesRes.json();
+            slidesData = sJson.slides || [];
+            renderCurrentSlide();
+        }
+
+        if (qaRes.ok) {
+            const qJson = await qaRes.json();
+            const qaGrid = document.getElementById("qaGridContainer");
+            if (qaGrid && qJson.items) {
+                qaGrid.innerHTML = qJson.items.map(item => `
+                    <div class="qa-card">
+                        <div class="qa-q">[${item.id} &bull; ${item.category}] ${item.question}</div>
+                        <div class="qa-a">${item.answer}</div>
+                        <div class="qa-ref">Code / Doc Reference: ${item.code_ref}</div>
+                    </div>
+                `).join("");
+            }
+        }
+
+        if (chkRes.ok) {
+            const cJson = await chkRes.json();
+            const chkContainer = document.getElementById("checklistItemsContainer");
+            if (chkContainer && cJson.checklist) {
+                chkContainer.innerHTML = cJson.checklist.map(c => `
+                    <label class="checklist-row">
+                        <input type="checkbox" checked style="width:16px; height:16px;" />
+                        <span class="mono" style="font-weight:600; color:#0F172A; min-width:190px;">[${c.phase}]</span>
+                        <span>${c.task}</span>
+                    </label>
+                `).join("");
+            }
+            const vidContainer = document.getElementById("videoStoryboardContainer");
+            if (vidContainer && cJson.video_storyboard) {
+                vidContainer.innerHTML = cJson.video_storyboard.map(v => `
+                    <div class="stakeholder-card">
+                        <h3>${v.scene}</h3>
+                        <div class="stakeholder-meta">${v.title}</div>
+                        <p style="font-size:0.80rem; color:#334155; margin-bottom:8px;"><strong>Visual:</strong> ${v.visual}</p>
+                        <p style="font-size:0.80rem; color:#475569;"><strong>Narration:</strong> ${v.narration}</p>
+                    </div>
+                `).join("");
+            }
+        }
+
+        if (d29DlRes.ok) {
+            const dlJson = await d29DlRes.json();
+            const d29Grid = document.getElementById("d29DeliverablesGrid");
+            if (d29Grid && dlJson.deliverables) {
+                d29Grid.innerHTML = dlJson.deliverables.map(item => `
+                    <div class="deliverable-card">
+                        <div>
+                            <div class="deliverable-title">${item.title}</div>
+                            <div class="deliverable-sub">${item.filename} (${item.format} &bull; ${item.size_kb} KB)</div>
+                        </div>
+                        <a href="${item.download_url}" target="_blank" class="btn ${item.format === 'PDF' ? 'btn-primary' : 'btn-outline'} btn-sm">
+                            Download ${item.format}
+                        </a>
+                    </div>
+                `).join("");
+            }
+        }
+
+        // Day 30 specific endpoints (if running Day 30 portal)
+        const ovRes = await fetch("/api/v1/portfolio/overview");
+        if (ovRes.ok) {
+            const ov = await ovRes.json();
+            const tbody = document.getElementById("progressionMatrixBody");
+            if (tbody && ov.progression_matrix) {
+                tbody.innerHTML = ov.progression_matrix.map(row => `
+                    <tr>
+                        <td class="mono"><strong>${row.phase}</strong></td>
+                        <td><strong>${row.title}</strong></td>
+                        <td class="mono">${row.skills.join(" &bull; ")}</td>
+                        <td>${row.outcome}</td>
+                    </tr>
+                `).join("");
+            }
+            const pGrid = document.getElementById("portfolioProjectsGrid");
+            if (pGrid && ov.projects) {
+                pGrid.innerHTML = ov.projects.map(p => `
+                    <div class="stakeholder-card">
+                        <h3>${p.name}</h3>
+                        <div class="stakeholder-meta">${p.stack}</div>
+                        <p style="font-size:0.81rem; color:#334155; line-height:1.55;">${p.impact}</p>
+                    </div>
+                `).join("");
+            }
+
+            const [pbRes, rmRes, dl30Res] = await Promise.all([
+                fetch("/api/v1/portfolio/panel-briefing"),
+                fetch("/api/v1/portfolio/roadmap"),
+                fetch("/api/v1/portfolio/deliverables"),
+            ]);
+
+            if (pbRes.ok) {
+                const pb = await pbRes.json();
+                const container = document.getElementById("stakeholderCardsContainer");
+                if (container && pb.tracks) {
+                    container.innerHTML = Object.values(pb.tracks).map(t => `
+                        <div class="stakeholder-card">
+                            <h3>${t.audience}</h3>
+                            <div class="stakeholder-meta">${t.duration} &bull; ${t.focus}</div>
+                            <ul class="stakeholder-list">
+                                ${t.key_points.map(kp => `<li>${kp}</li>`).join("")}
+                            </ul>
+                        </div>
+                    `).join("");
+                }
+            }
+
+            if (rmRes.ok) {
+                const rm = await rmRes.json();
+                const rContainer = document.getElementById("roadmapCardsContainer");
+                if (rContainer && rm.phases) {
+                    rContainer.innerHTML = rm.phases.map(p => `
+                        <div class="stakeholder-card">
+                            <h3>${p.month}</h3>
+                            <div class="stakeholder-meta">${p.theme}</div>
+                            <ul class="stakeholder-list">
+                                ${p.milestones.map(m => `<li>${m}</li>`).join("")}
+                                <li><strong>Target KPI:</strong> ${p.kpi}</li>
+                            </ul>
+                        </div>
+                    `).join("");
+                }
+            }
+
+            if (dl30Res.ok) {
+                const dl = await dl30Res.json();
+                const dGrid = document.getElementById("deliverablesGridContainer");
+                if (dGrid && dl.deliverables) {
+                    dGrid.innerHTML = dl.deliverables.map(item => `
+                        <div class="deliverable-card">
+                            <div>
+                                <div class="deliverable-title">${item.title}</div>
+                                <div class="deliverable-sub">${item.filename} (${item.format} &bull; ${item.size_kb} KB)</div>
+                            </div>
+                            <a href="${item.download_url}" target="_blank" class="btn ${item.format === 'PDF' ? 'btn-primary' : 'btn-outline'} btn-sm">
+                                Download ${item.format}
+                            </a>
+                        </div>
+                    `).join("");
+                }
+            }
+        }
+    } catch (e) {
+        console.error("Error loading presentation/portfolio modules:", e);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    loadPrepAndPortfolioModules();
+});

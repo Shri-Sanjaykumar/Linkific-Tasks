@@ -1,0 +1,115 @@
+%-------------------------
+% Updated ATS Resume in LaTeX (Jake's Resume / NimbusSanL Style)
+% Candidate: Shri Sanjaykumar V (VIT Vellore, CGPA: 9.12/10.0)
+%-------------------------
+\documentclass[letterpaper,10pt]{article}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\renewcommand{\familydefault}{\sfdefault}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.2in}
+
+\titleformat{\section}{\vspace{-6pt}\scshape\raggedright\large\bfseries}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{SHRI SANJAYKUMAR V}} \\ \vspace{3pt}
+    \small Vellore, India $|$ +91 6369945011 $|$ \href{mailto:v.shrisanjaykumar@gmail.com}{v.shrisanjaykumar@gmail.com} $|$
+    \href{https://www.linkedin.com/in/shri-sanjaykumar-v-588bab28a/}{LinkedIn} $|$
+    \href{https://github.com/Shri-Sanjaykumar}{GitHub}
+\end{center}
+
+\section{Technical Skills}
+\small{
+\textbf{Programming:} Python, Java, C++, C, JavaScript, TypeScript, SQL \\
+\textbf{Core CS:} Data Structures \& Algorithms, Object-Oriented Programming, System Design, Distributed Systems \\
+\textbf{Software Engineering:} FastAPI, REST APIs, Microservices, Pydantic v2, PyTest, SDLC, Agile/Scrum, CI/CD, Git/GitHub \\
+\textbf{Cloud \& DevOps:} AWS (EC2), Microsoft Azure (VMs, NSG), Docker, GitHub Actions, Linux, SSH \\
+\textbf{AI \& Emerging Tech:} Generative AI, RAG, Vector Search, Semantic Search, Agentic AI, scikit-learn, Isolation Forest, Explainable AI (XAI), Prompt Engineering, OpenAI API, SAP Generative AI Hub SDK, Responsible AI (PII Redaction)
+}
+
+\section{Experience}
+\textbf{Linkific} \hfill \textbf{Aug 2026 -- Oct 2026} \\
+\textit{AI/ML Software Engineering Intern -- Financial AI \& Explainable ML} \hfill \href{https://github.com/Shri-Sanjaykumar/Linkific-Tasks}{\textit{GitHub Portfolio}}
+\begin{itemize}[leftmargin=0.18in, label=$\bullet$, itemsep=-2pt, topsep=2pt]
+    \small
+    \item \textbf{Architected} FinDoc-AuditEngine v3.0, an enterprise Accounts Payable auditing gateway combining deterministic \textbf{3-Way Reconciliation (Invoice--PO--GRN)} with a \textbf{7-dimensional StandardScaler + 200-tree Isolation Forest} model and \textbf{Perturbation XAI} in FastAPI.
+    \item \textbf{Engineered} a pre-inference \textbf{Responsible AI Privacy Shield} masking 6 financial PII categories (PAN, Aadhaar, Bank Account, Phone, Email) and built an \textbf{Institutional Editorial Workbench} supporting dual-currency (USD/INR @ 86.50) auditing in $<15$ms latency.
+    \item \textbf{Established} a \textbf{30-test automated PyTest suite (100\% pass rate), Pydantic v2} cross-field validators, correlation-ID telemetry middleware, and automated GitHub Actions CI/CD workflows across 30 AI/ML engineering modules.
+\end{itemize}
+
+\textbf{TForce India Private Limited} \hfill \textbf{May 2026 -- Jul 2026} \\
+\textit{Software Engineering Intern -- Generative AI}
+\begin{itemize}[leftmargin=0.18in, label=$\bullet$, itemsep=-2pt, topsep=2pt]
+    \small
+    \item \textbf{Engineered} enterprise Generative AI workflows and RAG pipelines using \textbf{Python, SAP BTP, and SAP Generative AI Hub SDK}, enabling context-grounded retrieval for domain-specific queries.
+    \item \textbf{Integrated} AI components into backend microservices through \textbf{RESTful API patterns}, supporting cross-system interoperability and modular service isolation.
+    \item \textbf{Executed} Python-based testing and evaluation scripts to analyze workflow performance, response latency, and system stability through iterative validation.
+\end{itemize}
+
+\section{Projects}
+\textbf{FinDoc-AuditEngine v3.0 -- Financial Reconciliation \& Explainable ML Gateway} \hfill \textit{Python, FastAPI, Isolation Forest, XAI, PyTest $|$ \href{https://github.com/Shri-Sanjaykumar/Linkific-Tasks/tree/main/Day-30}{GitHub}}
+\begin{itemize}[leftmargin=0.18in, label=$\bullet$, itemsep=-2pt, topsep=2pt]
+    \small
+    \item \textbf{Built} a full-stack institutional procurement audit engine performing SKU-level 3-Way Matching, unstructured OCR invoice parsing, and 7-D unsupervised anomaly detection with Single-Feature Perturbation XAI ($+$pts risk attribution) and 5-tier governance routing.
+\end{itemize}
+
+\textbf{LEGITIFY -- Security \& Compliance Analysis Platform} \hfill \textit{Python, DevSecOps, AppSec, GitHub API $|$ \href{https://github.com/Shri-Sanjaykumar/LEGITIFY}{GitHub}}
+\begin{itemize}[leftmargin=0.18in, label=$\bullet$, itemsep=-2pt, topsep=2pt]
+    \small
+    \item \textbf{Engineered} an automated security platform to analyze source-code repositories, detect configuration vulnerabilities using DevSecOps practices, and automate policy-driven compliance workflows across repository assets.
+\end{itemize}
+
+\textbf{CampusLLM -- Personalized University Assistant} \hfill \textit{Python, Next.js, React, RAG, Vector Search, OpenAI API $|$ \href{https://github.com/Shri-Sanjaykumar/campusLLM}{GitHub}}
+\begin{itemize}[leftmargin=0.18in, label=$\bullet$, itemsep=-2pt, topsep=2pt]
+    \small
+    \item \textbf{Architected} a RAG assistant combining vector embeddings, semantic search, and intelligent query routing for source-grounded, source-cited university responses with $\sim$3-second average end-to-end pipeline latency.
+\end{itemize}
+
+\textbf{FinTrack -- Personal Finance \& Group Settlement Platform} \hfill \textit{Python, React, Node.js, Firebase, REST APIs $|$ \href{https://fin-track-mauve-sigma.vercel.app/}{Live Demo}}
+\begin{itemize}[leftmargin=0.18in, label=$\bullet$, itemsep=-2pt, topsep=2pt]
+    \small
+    \item \textbf{Architected} a modular full-stack platform with REST APIs across 5+ modules, optimizing a graph-based multi-party debt-settlement algorithm and integrating the OpenAI API for natural-language spending insights.
+\end{itemize}
+
+\textbf{Solar Energy Forecasting} \hfill \textit{Python, scikit-learn, XGBoost, LSTM, NASA POWER API $|$ \href{https://github.com/Shri-Sanjaykumar/solar-energy-forecasting}{GitHub}}
+\begin{itemize}[leftmargin=0.18in, label=$\bullet$, itemsep=-2pt, topsep=2pt]
+    \small
+    \item \textbf{Built} an end-to-end ML pipeline benchmarking 5 models (Linear Regression, Random Forest, XGBoost, Gradient Boosting, LSTM) using MAE/RMSE on multivariate NASA POWER weather features for automated 7-day forecasting.
+\end{itemize}
+
+\section{Education}
+\textbf{Vellore Institute of Technology, Vellore} \hfill \textbf{Aug 2023 -- Present} \\
+\textit{M.Tech Integrated in Software Engineering} \hfill \textbf{CGPA: 9.12/10.0} \\
+\small{\textbf{Relevant Coursework:} Data Structures \& Algorithms, OOP, Software Engineering, System Design, Distributed Systems, DBMS, Computer Networks}
+
+\section{Certifications}
+\small{
+\href{https://catalog-education.oracle.com/pls/certview/sharebadge?id=FC6E3F8AB9971E72946BD9ED3DB8104F0CC00597A44F35DB500F11EAB2565425}{\textbf{Cloud Infrastructure Certified AI Foundations Associate}} \hfill \textit{Oracle} \\
+\href{https://catalog-education.oracle.com/ords/certview/sharebadge?id=99707AD7CBDB65050635C8B57090D5A13D6371C49A3FED415C0215AF843E7A04}{\textbf{Agentic AI Certified Foundations Associate}} \hfill \textit{Oracle} \\
+\href{https://drive.google.com/file/d/17mM6JOFQRAaN-D9ZETAm1oF__SpRy2-6/view?usp=sharing}{\textbf{Software Engineer Role Certification}} \hfill \textit{HackerRank} \\
+\href{https://drive.google.com/file/d/13Z6KOukU2_8xBA6i6l2sajIgJlxwzsSy/view?usp=sharing}{\textbf{SQL (Advanced) Skill Certification}} \hfill \textit{HackerRank} \\
+\href{https://drive.google.com/file/d/1vM0O20uitDqHrypwxGs9cyIz43h6hnWH/view?usp=sharing}{\textbf{Java (Basic) Skill Certification}} \hfill \textit{HackerRank}
+}
+
+\section{Leadership \& Extracurriculars}
+\textbf{Vice Chairperson \& Core Member, VIT Health Club} \hfill \textbf{2024 -- Present} \\
+\small{Led ``Hack the Hospital'' with 600+ participants, coordinating workshops, teams, stakeholders, timelines, and deliverables.} \\
+\textbf{Purchase Manager \& Sponsorship Team, Riviera \& Gravitas Tech Festivals, VIT} \hfill \textbf{2025 -- Present} \\
+\small{Secured INR 60+ lakhs in sponsorships; managed procurement, sponsor deliverables, negotiations, and cross-functional coordination.}
+
+\end{document}

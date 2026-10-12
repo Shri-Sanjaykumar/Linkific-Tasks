@@ -1,0 +1,302 @@
+%PDF-1.4
+%ту╧╙
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Pages /Kids [8 0 R 11 0 R] /Count 2 >>
+endobj
+6 0 obj
+<< /Length 19583 >>
+stream
+0.060 0.090 0.160 rg 0.00 814.00 595.28 28.00 re f
+BT /F2 8.20 Tf 0.950 0.970 1.000 rg 1 0 0 1 38.00 824.00 Tm (LINKIFIC ENTERPRISE AI/ML ENGINEERING INTERNSHIP  |  SHRI SANJAYKUMAR V \(VIT VELLORE\)) Tj ET
+BT /F3 8.00 Tf 0.750 0.820 0.920 rg 1 0 0 1 344.94 824.00 Tm (Day 29 Deliverable: Demo Practice Checklist & Video Script) Tj ET
+0.40 w 0.700 0.750 0.820 RG 38.00 36.00 m 557.00 36.00 l S
+BT /F1 7.80 Tf 0.350 0.400 0.480 rg 1 0 0 1 38.00 24.00 Tm (FinDoc-AuditEngine v3.0  |  github.com/Shri-Sanjaykumar/Linkific-Tasks  |  linkedin.com/in/shri-sanjaykumar-v-588bab28a) Tj ET
+BT /F2 8.00 Tf 0.200 0.250 0.330 rg 1 0 0 1 530.25 24.00 Tm (Page 1) Tj ET
+BT /F2 14.00 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 790.00 Tm (Day 29 Deliverable: Mentor Live Demo Practice Checklist & Video Script) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 767.00 Tm (Project: FinDoc-AuditEngine v3.0) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 755.50 Tm (Target Demo Duration: 10Ц15 Minutes) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 744.00 Tm (Verification Status: 25/25 Automated Tests Passing | Localhost Server Active \(http://127.0.0.1:8000\)) Tj ET
+BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 714.50 Tm (1. Pre-Demo Environment Readiness Checklist \(T-Minus 10 Minutes\)) Tj ET
+0.50 w 0.150 0.230 0.350 RG 38.00 711.50 m 557.00 711.50 l S
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 694.50 Tm (Х) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 694.50 Tm ([x]) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 64.27 694.50 Tm (1.) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 74.50 694.50 Tm (Verify) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 100.58 694.50 Tm (Python) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 131.77 694.50 Tm (&) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 140.47 694.50 Tm (Dependencies:) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 204.39 694.50 Tm (Python) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 235.59 694.50 Tm (3.14.3) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 263.72 694.50 Tm (environment) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 316.90 694.50 Tm (active) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 343.48 694.50 Tm (with) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 362.40 694.50 Tm (fastapi,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 394.62 694.50 Tm (uvicorn,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 429.38 694.50 Tm (scikit-learn,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 478.46 694.50 Tm (pydantic,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 517.83 694.50 Tm (pytest.) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 683.00 Tm (Х) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 683.00 Tm ([x]) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 64.27 683.00 Tm (2.) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 74.50 683.00 Tm (Run) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 93.93 683.00 Tm (Pre-Flight) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 136.36 683.00 Tm (PyTest) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 167.55 683.00 Tm (Suite:) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 671.50 Tm (cd C:\\projects\\linkific\\internship\\Day-29) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 660.00 Tm (python -m pytest tests -v) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 648.50 Tm (*Confirm output reads 25 passed in < 2.0s.*) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 637.00 Tm (Х) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 637.00 Tm ([x]) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 64.27 637.00 Tm (3.) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 74.50 637.00 Tm (Launch) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 107.24 637.00 Tm (Localhost) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 149.17 637.00 Tm (Server) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 178.82 637.00 Tm (via) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 193.14 637.00 Tm (Application-Control) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 273.41 637.00 Tm (Safe) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 294.89 637.00 Tm (Runner:) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 625.50 Tm (python run_server.py) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 614.00 Tm (*Confirm Uvicorn is listening on http://127.0.0.1:8000.*) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 602.50 Tm (Х) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 602.50 Tm ([x]) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 64.27 602.50 Tm (4.) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 74.50 602.50 Tm (Open) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 99.56 602.50 Tm (Browser) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 135.86 602.50 Tm (Tabs) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 158.87 602.50 Tm (in) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 168.58 602.50 Tm (Advance:) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 591.00 Tm (Х) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 591.00 Tm (Tab) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 70.41 591.00 Tm (1:) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 80.64 591.00 Tm (Institutional) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 129.73 591.00 Tm (Audit) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 153.26 591.00 Tm (Workbench) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 202.34 591.00 Tm (Ц) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 209.77 591.00 Tm (http://127.0.0.1:8000/dashboard) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 579.50 Tm (Х) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 579.50 Tm (Tab) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 70.41 579.50 Tm (2:) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 80.64 579.50 Tm (Swagger) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 119.50 579.50 Tm (OpenAPI) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 159.39 579.50 Tm (Specification) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 214.10 579.50 Tm (Ц) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 221.54 579.50 Tm (http://127.0.0.1:8000/docs) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 568.00 Tm (Х) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 568.00 Tm (Tab) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 70.41 568.00 Tm (3:) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 80.64 568.00 Tm (System) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 113.87 568.00 Tm (Health) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 143.02 568.00 Tm (&) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 151.71 568.00 Tm (Model) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 179.32 568.00 Tm (Telemetry) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 222.77 568.00 Tm (Ц) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 230.20 568.00 Tm (http://127.0.0.1:8000/health) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 556.50 Tm (Х) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 556.50 Tm ([x]) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 64.27 556.50 Tm (5.) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 74.50 556.50 Tm (Terminal) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 112.84 556.50 Tm (Window) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 148.11 556.50 Tm (Arrangement:) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 206.40 556.50 Tm (Keep) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 230.44 556.50 Tm (PowerShell) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 279.53 556.50 Tm (open) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 302.54 556.50 Tm (alongside) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 344.48 556.50 Tm (the) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 359.82 556.50 Tm (browser) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 395.10 556.50 Tm (so) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 407.37 556.50 Tm (mentors) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 443.16 556.50 Tm (can) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 460.54 556.50 Tm (see) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 477.93 556.50 Tm (live) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 494.29 556.50 Tm (server) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 522.41 556.50 Tm (logs) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 545.00 Tm (\(Privacy) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 87.78 545.00 Tm (Gate,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 112.84 545.00 Tm (Reconciliation,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 175.22 545.00 Tm (ML) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 190.55 545.00 Tm (Scorer,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 222.76 545.00 Tm (Governance) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 275.43 545.00 Tm (Router\)) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 308.66 545.00 Tm (stream) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 339.33 545.00 Tm (on) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 352.12 545.00 Tm (every) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 377.17 545.00 Tm (click.) Tj ET
+BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 515.50 Tm (2. Five-Act Live Mentor Demo Script \(Step-by-Step\)) Tj ET
+0.50 w 0.150 0.230 0.350 RG 38.00 512.50 m 557.00 512.50 l S
+BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 493.50 Tm (Act 1: System Telemetry & Institutional UI Tour \(1.5 Minutes\)) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 480.50 Tm (1. Show http://127.0.0.1:8000/health to confirm IsolationForest_v2.0, Perturbation_Marginal_XAI_7D, and pegged_usd_to_inr:) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 469.00 Tm (86.5.) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 457.50 Tm (2. Switch to http://127.0.0.1:8000/dashboard. Point out the clean institutional light grid, IBM Plex Mono tabular numerals, and) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 446.00 Tm (the 5-column KPI strip at the top.) Tj ET
+BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 427.50 Tm (Act 2: One-Click 5-Scenario Enterprise Batch Execution \(2 Minutes\)) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 414.50 Tm (1. Click "Run 5-Scenario Batch" in the top-right command bar.) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 403.00 Tm (2. Point out how the KPI strip immediately updates:) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 391.50 Tm (Х) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 391.50 Tm (Total) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 75.01 391.50 Tm (Invoices) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 111.31 391.50 Tm (Audited:) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 147.62 391.50 Tm (5) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 380.00 Tm (Х) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 380.00 Tm (Disbursed) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 95.97 380.00 Tm (Capital) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 127.15 380.00 Tm (\(USD\):) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 157.82 380.00 Tm ($32,292.00) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 368.50 Tm (Х) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 368.50 Tm (Disbursed) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 95.97 368.50 Tm (Capital) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 127.15 368.50 Tm (\(INR\):) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 154.24 368.50 Tm (INR) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 172.64 368.50 Tm (2,793,258.00) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 357.00 Tm (Х) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 357.00 Tm (Straight-Through) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 123.59 357.00 Tm (Rate) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 145.57 357.00 Tm (\(STP\):) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 174.71 357.00 Tm (20.0%) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 345.50 Tm (Х) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 345.50 Tm (Held) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 73.47 345.50 Tm (/) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 78.59 345.50 Tm (Blocked) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 113.87 345.50 Tm (Exceptions:) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 163.98 345.50 Tm (2) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 334.00 Tm (3. Use the Filter Tabs \(Tier 1 STP, Tier 2 Manager, Tier 3 Director, Rejected, Frozen Fraud\) in the bottom ledger and click) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 322.50 Tm ("Inspect" on INV-1005 to show the slide-over cryptographic JSON Audit Dossier.) Tj ET
+BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 304.00 Tm (Act 3: Proving 100% Dynamic Execution on Arbitrary Custom Inputs \(3 Minutes\)) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 291.00 Tm (1. Click "New Blank" or "Synthesize Random Invoice" in Panel 1.) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 279.50 Tm (2. Add a second line item using + Add Line Item:) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 268.00 Tm (Х) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 268.00 Tm (Row) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 72.96 268.00 Tm (1:) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 83.19 268.00 Tm (SKU-SRV,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 129.20 268.00 Tm (Dell) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 147.60 268.00 Tm (PowerEdge) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 197.71 268.00 Tm (Server,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 229.92 268.00 Tm (Inv) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 244.75 268.00 Tm (Rate) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 266.74 268.00 Tm ($4,200,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 299.99 268.00 Tm (PO) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 315.84 268.00 Tm (Rate) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 337.83 268.00 Tm ($4,000) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 368.52 268.00 Tm (\(+$200) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 399.97 268.00 Tm (overcharge\),) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 454.17 268.00 Tm (Qty) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 471.04 268.00 Tm (2,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 481.27 268.00 Tm (GRN) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 504.27 268.00 Tm (Recv) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 527.79 268.00 Tm (2,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 256.50 Tm (GRN) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 75.00 256.50 Tm (Rej) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 91.36 256.50 Tm (0.) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 245.00 Tm (Х) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 245.00 Tm (Row) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 72.96 245.00 Tm (2:) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 83.19 245.00 Tm (SKU-NIC,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 126.12 245.00 Tm (100GbE) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 162.44 245.00 Tm (Fiber) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 185.95 245.00 Tm (Transceiver,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 239.12 245.00 Tm (Inv) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 253.95 245.00 Tm (Rate) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 275.94 245.00 Tm ($300,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 301.51 245.00 Tm (PO) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 317.36 245.00 Tm (Rate) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 339.35 245.00 Tm ($300,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 364.93 245.00 Tm (Qty) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 381.80 245.00 Tm (5,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 392.03 245.00 Tm (GRN) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 415.03 245.00 Tm (Recv) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 438.55 245.00 Tm (5,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 448.78 245.00 Tm (GRN) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 471.78 245.00 Tm (Rej) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 488.14 245.00 Tm (2) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 495.81 245.00 Tm (\(2) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 506.54 245.00 Tm (damaged) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 547.46 245.00 Tm (at) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 233.50 Tm (dock\).) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 222.00 Tm (3. Point out the Live Pre-Audit Calculation Strip updating as you type:) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 210.50 Tm (Х) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 210.50 Tm (Projected) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 93.42 210.50 Tm (Rate) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 115.41 210.50 Tm (Variance) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 154.27 210.50 Tm (and) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 172.17 210.50 Tm (Projected) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 213.59 210.50 Tm (Dock) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 237.10 210.50 Tm (Shortage) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 277.00 210.50 Tm (turn) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 295.40 210.50 Tm (crimson) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 330.16 210.50 Tm (before) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 358.80 210.50 Tm (submission.) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 199.00 Tm (4. Click "Execute 3-Way Reconciliation & Isolation Forest Audit".) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 187.50 Tm (5. In Panel 2, show the Per-Item Reconciliation Verification Table \(flagging RATE_VARIANCE on Row 1 and) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 176.00 Tm (QTY_SHORTAGE on Row 2\) and the Perturbation Feature Attribution Bars dynamically calculated for your custom input.) Tj ET
+BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 157.50 Tm (Act 4: Unstructured Free-Text Parsing & PII Redaction \(1.5 Minutes\)) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 144.50 Tm (1. Click "Paste Raw Text / PII" in Panel 1.) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 133.00 Tm (2. Paste:) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 121.50 Tm (Invoice INV-7742 from Horizon Cybernetics Pvt Ltd; PO: PO-7742; Total: $890.00; Country: IN; Contact:) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 110.00 Tm (priya.billing@horizon.in; Tax PAN: ABCDE1234F; Account: 987654321099) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 98.50 Tm (3. Click "Extract Fields & Scrub PII". Show the green confirmation banner proving that 3 PII tokens \(EMAIL, PAN, ACCOUNT\)) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 87.00 Tm (were masked and the form fields were populated automatically.) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 75.50 Tm (4. Click "Execute 3-Way Reconciliation & Isolation Forest Audit" to watch it route to TIER_1_STP_AUTO_APPROVED.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Annot /Subtype /Link /Rect [38.00 22.00 458.62 31.80] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Shri-Sanjaykumar/Linkific-Tasks) >> >>
+endobj
+8 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 595.276 841.890] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 6 0 R /Annots [7 0 R] >>
+endobj
+9 0 obj
+<< /Length 1327 >>
+stream
+0.060 0.090 0.160 rg 0.00 814.00 595.28 28.00 re f
+BT /F2 8.20 Tf 0.950 0.970 1.000 rg 1 0 0 1 38.00 824.00 Tm (LINKIFIC ENTERPRISE AI/ML ENGINEERING INTERNSHIP  |  SHRI SANJAYKUMAR V \(VIT VELLORE\)) Tj ET
+BT /F3 8.00 Tf 0.750 0.820 0.920 rg 1 0 0 1 344.94 824.00 Tm (Day 29 Deliverable: Demo Practice Checklist & Video Script) Tj ET
+0.40 w 0.700 0.750 0.820 RG 38.00 36.00 m 557.00 36.00 l S
+BT /F1 7.80 Tf 0.350 0.400 0.480 rg 1 0 0 1 38.00 24.00 Tm (FinDoc-AuditEngine v3.0  |  github.com/Shri-Sanjaykumar/Linkific-Tasks  |  linkedin.com/in/shri-sanjaykumar-v-588bab28a) Tj ET
+BT /F2 8.00 Tf 0.200 0.250 0.330 rg 1 0 0 1 530.25 24.00 Tm (Page 2) Tj ET
+BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 788.00 Tm (Act 5: Compliance CSV Export & CLI Mentor Demo Runner \(2 Minutes\)) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 775.00 Tm (1. Click "Export CSV" in the top command bar to download FinDoc_Audit_Compliance_Ledger.csv.) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 763.50 Tm (2. Switch to the terminal and run the automated CLI mentor script:) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 752.00 Tm (python run_mentor_demo.py) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 740.50 Tm (Show the 5-stage formatted terminal walkthrough and 25/25 test verification.) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Annot /Subtype /Link /Rect [38.00 22.00 458.62 31.80] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Shri-Sanjaykumar/Linkific-Tasks) >> >>
+endobj
+11 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 595.276 841.890] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 9 0 R /Annots [10 0 R] >>
+endobj
+12 0 obj
+<< /Type /Catalog /Pages 5 0 R >>
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000000015 00000 n 
+0000000112 00000 n 
+0000000214 00000 n 
+0000000319 00000 n 
+0000000428 00000 n 
+0000000492 00000 n 
+0000020128 00000 n 
+0000020315 00000 n 
+0000020495 00000 n 
+0000021874 00000 n 
+0000022062 00000 n 
+0000022244 00000 n 
+trailer
+<< /Size 13 /Root 12 0 R >>
+startxref
+22294
+%%EOF

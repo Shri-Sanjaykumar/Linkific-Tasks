@@ -189,8 +189,12 @@ def get_learning_roadmap():
 def list_day30_deliverables():
     """List all Day 30 career, reflection, presentation, and architecture deliverables available for download."""
     catalog = [
-        ("SHRI_SANJAYKUMAR_V_UPDATED_RESUME_LINKIFIC.pdf", "Updated ATS Resume (Single-Page Institutional PDF)", "PDF"),
-        ("INTERNSHIP_REFLECTION_REPORT.pdf", "Internship Reflection Report (3-Page Formal PDF)", "PDF"),
+        ("SHRI_SANJAYKUMAR_V_UPDATED_RESUME_LINKIFIC.pdf", "Updated ATS Resume (True Vector PDF with Clickable Links)", "PDF"),
+        ("SHRI_SANJAYKUMAR_V_UPDATED_RESUME_LINKIFIC.tex", "Updated ATS Resume (LaTeX Overleaf Source Code)", "LaTeX"),
+        ("INTERNSHIP_REFLECTION_REPORT.pdf", "Internship Reflection Report (2-3 Page True Vector PDF)", "PDF"),
+        ("PERSONAL_LEARNING_ROADMAP_90_DAYS.pdf", "Personal Learning Roadmap — 90 Days (True Vector PDF)", "PDF"),
+        ("UPDATED_LINKEDIN_PROFILE.pdf", "Updated LinkedIn Profile Blueprint (True Vector PDF)", "PDF"),
+        ("PORTFOLIO_AND_PANEL_PRESENTATION.pdf", "Final Panel Presentation Playbook (True Vector PDF)", "PDF"),
         ("INTERNSHIP_REFLECTION_REPORT.md", "Internship Reflection Report (2–3 Pages Full Markdown)", "Markdown"),
         ("UPDATED_RESUME_SHRI_SANJAYKUMAR_V.md", "Updated Resume (ATS Markdown & Structured Sections)", "Markdown"),
         ("UPDATED_LINKEDIN_PROFILE.md", "Updated LinkedIn Profile Guide (shri-sanjaykumar-v-588bab28a)", "Markdown"),
