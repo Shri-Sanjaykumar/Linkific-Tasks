@@ -55,7 +55,7 @@ SLIDES_DECK = [
         "bullets": [
             "DPDP Act 2023 & GDPR Compliance: FinancialPrivacyScrubber executes BEFORE logging, ledger storage, or ML vectorization.",
             "6 High-Precision Compiled Regex Patterns: Masks PAN ([A-Z]{5}[0-9]{4}[A-Z]{1}), Aadhaar (12-digit), Bank Accounts, Credit Cards, Phones, and Emails.",
-            "Dynamic Free-Text Parser (POST /api/v1/audit/parse-raw): Extracts Invoice ID, PO Number, Vendor, Country, and USD total from raw email/OCR memos while scrubbing PII.",
+            "Dynamic Free-Text Parser (POST /api/v1/audit/parse-raw): Extracts Invoice ID, PO Number, Vendor, Country, and USD total from raw email/invoice text memos while scrubbing PII.",
         ],
         "speaker_notes": "Before any invoice touches our matcher or ML model, Stage 1 strips six categories of financial PII and maps them to deterministic surrogates.",
     },
@@ -115,7 +115,7 @@ SLIDES_DECK = [
         "bullets": [
             "Swiss Accounting Grid Aesthetic: #F8FAFC stone canvas, #FFFFFF crisp panels, 1px solid #E2E8F0 hairline borders, Plus Jakarta Sans + IBM Plex Mono tabular-nums.",
             "Zero Static Scenario Coupling: collectLineItemsFromDOM() reads every SKU's Invoice Rate, PO Contract Rate, Billed Qty, GRN Received, and GRN Rejected live from DOM inputs.",
-            "Interactive Capabilities: + Add Line Item, Random Realistic Invoice Synthesizer, Unstructured OCR Text Parser, and 1-Click 5-Scenario Batch Execution.",
+            "Interactive Capabilities: + Add Line Item, Random Realistic Invoice Synthesizer, Regex Invoice-Text Parser, and 1-Click 5-Scenario Batch Execution.",
         ],
         "speaker_notes": "Let's transition to the live workbench at localhost:8000. Notice the clean institutional light typography and how editing any cell dynamically recalculates 3-way variances and XAI bars.",
     },
@@ -162,7 +162,7 @@ INTERVIEW_QA_ITEMS = [
         "id": "Q1",
         "category": "Architecture",
         "question": "Why did you design a hybrid architecture combining deterministic 3-Way Matching with an unsupervised Isolation Forest instead of using a single ML model or LLM?",
-        "answer": "In regulated enterprise finance, known contractual violations (unit price overcharges or dock quantity shortages) require 100% deterministic mathematical precision down to $0.01—which probabilistic models cannot guarantee. Conversely, deterministic rules fail when a fraudulent or collusive invoice matches its PO on paper (e.g., an offshore shell vendor billing $49,500 just under the $50k CFO approval cap with Net-1 rush terms). Combining Stage 2 deterministic reconciliation with Stage 3 7-D Isolation Forest gives us 100% precision on contract breaches AND statistical zero-day anomaly detection.",
+        "answer": "In regulated enterprise finance, known contractual violations (unit price overcharges or dock quantity shortages) require deterministic enforcement of configured price and subtotal tolerances—which probabilistic models cannot guarantee. Conversely, deterministic rules fail when a fraudulent or collusive invoice matches its PO on paper (e.g., an offshore shell vendor billing $49,500 just under the $50k CFO approval cap with Net-1 rush terms). Combining Stage 2 deterministic reconciliation with Stage 3 7-D Isolation Forest enforces configured quantity and pricing rules while flagging statistical multi-feature anomalies.",
         "code_ref": "app/services/matcher.py & app/services/anomaly_detector.py",
     },
     {
@@ -237,14 +237,14 @@ DEMO_CHECKLIST_AND_VIDEO = {
         {"id": "chk3", "phase": "Live Demo Step 1 (Min 0–3)", "task": "Present architectural overview & click 'Run All 5 Scenarios (Batch)' to populate all 5 governance tiers in USD & INR."},
         {"id": "chk4", "phase": "Live Demo Step 2 (Min 3–6)", "task": "Click 'Scenario 4 (Rate + Dock Variance)' or edit a live row's Invoice Rate vs. PO Rate and GRN Rejected units to prove 100% dynamic execution."},
         {"id": "chk5", "phase": "Live Demo Step 3 (Min 6–9)", "task": "Walk through the Perturbation XAI Attribution bars (+pts per feature) and Stage Timing Telemetry (<15ms total)."},
-        {"id": "chk6", "phase": "Live Demo Step 4 (Min 9–11)", "task": "Paste a raw invoice memo with PAN, Aadhaar & Email into the Unstructured OCR Parser and click 'Parse & Scrub PII'."},
+        {"id": "chk6", "phase": "Live Demo Step 4 (Min 9–11)", "task": "Paste a raw invoice memo with PAN, Aadhaar & Email into the Regex Invoice-Text Parser and click 'Parse & Scrub PII'."},
         {"id": "chk7", "phase": "Live Demo Step 5 (Min 11–15)", "task": "Click 'Export CSV' to download the compliance ledger and transition to the 10 Technical Interview Q&As."},
     ],
     "video_storyboard": [
         {"scene": "Scene 1 (0:00 – 0:35)", "title": "Executive Hook & Architecture", "visual": "Show Institutional Editorial Light UI header, KPI ribbon (1 USD = 86.50 INR), and 4-stage pipeline diagram.", "narration": "Introduce FinDoc-AuditEngine v3.0 and why hybrid deterministic 3-Way Matching + 7-D Explainable Isolation Forest outperforms black-box AI."},
         {"scene": "Scene 2 (0:35 – 1:20)", "title": "1-Click 5-Scenario Enterprise Batch", "visual": "Click 'Run All 5 Scenarios (Batch)' and highlight Tier 1 STP ($432), Tier 3 Director ($27,000), and Frozen Fraud Risk ($49,500 Offshore).", "narration": "Explain how INV-1005 matches its PO mathematically but is frozen at 99.0/100 CRITICAL risk due to offshore jurisdiction and Net-1 rush payment."},
         {"scene": "Scene 3 (1:20 – 2:10)", "title": "Live Dynamic Line-Item Editing & Perturbation XAI", "visual": "Modify SKU unit rate and dock rejected units in the table, click 'Execute 3-Way Audit & ML Risk Scoring', and zoom into the XAI attribution bars.", "narration": "Show real-time Single-Feature Perturbation XAI attributing exact risk points to Unit Rate Markup and Dock GRN Shortage."},
-        {"scene": "Scene 4 (2:10 – 2:40)", "title": "Unstructured OCR Memo Parsing & Pre-Inference PII Shield", "visual": "Open Raw OCR Parser, click 'Parse & Scrub PII', and show masked [EMAIL_01], [PAN_02], [AADHAAR_05] tokens.", "narration": "Demonstrate DPDP Act / GDPR compliance via Stage 1 pre-inference PII redaction."},
+        {"scene": "Scene 4 (2:10 – 2:40)", "title": "Regex Invoice-Text Memo Parsing & Pre-Inference PII Shield", "visual": "Open Regex Invoice-Text Parser, click 'Parse & Scrub PII', and show masked [EMAIL_01], [PAN_02], [AADHAAR_05] tokens.", "narration": "Demonstrate DPDP Act / GDPR compliance via Stage 1 pre-inference PII redaction."},
         {"scene": "Scene 5 (2:40 – 3:00)", "title": "PyTest Suite (100% Pass) & CSV Compliance Export", "visual": "Download CSV compliance ledger and show terminal running PyTest suite.", "narration": "Conclude with sub-15ms pipeline telemetry, all collected tests passed (28 passed in Day 29 / 33 passed in Day 30), and 90-day production MLOps roadmap."},
     ],
 }

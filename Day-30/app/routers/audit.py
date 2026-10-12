@@ -184,7 +184,7 @@ def clear_audit_ledger():
 
 @router.get("/export/csv")
 def export_ledger_csv():
-    """Export the immutable audit ledger as a downloadable CSV compliance report."""
+    """Export the in-memory prototype audit ledger as a downloadable CSV compliance report."""
     output = io.StringIO()
     writer = csv.writer(output)
     writer.writerow([

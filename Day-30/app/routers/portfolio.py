@@ -73,7 +73,7 @@ def get_portfolio_overview():
                 "phase": "Phase VI (Days 26–30)",
                 "title": "Capstone FinDoc-AuditEngine v3.0 & Panel Defense",
                 "skills": ["3-Way Reconciliation", "7-D Isolation Forest + Perturbation XAI", "Institutional UI"],
-                "outcome": "Production AP audit workbench (USD/INR @ 86.50, 33 passed in Day 30 / 28 passed in Day 29).",
+                "outcome": "Working AP audit prototype & reference implementation (USD/INR @ 86.50, 33 passed in Day 30 / 28 passed in Day 29).",
             },
         ],
         "projects": [
@@ -118,7 +118,7 @@ def get_panel_briefing():
                 "key_points": [
                     "Real-World Procurement Motivation: Inspired by managing INR 60+ Lakhs in sponsorships and purchase orders as Purchase Manager for VIT's Riviera & Gravitas festivals.",
                     "Iterative Engineering Growth: Evolved from Day 26 prototype to Day 28 PR code review refactoring, Day 29 Institutional Editorial Light UI, and Day 30 Executive Capstone.",
-                    "100% Dynamic Execution: Eliminated static scenario coupling via collectLineItemsFromDOM(), supporting live SKU rate edits, GRN dock rejections, and raw OCR memo parsing.",
+                    "100% Dynamic Execution: Eliminated static scenario coupling via collectLineItemsFromDOM(), supporting live SKU rate edits, GRN dock rejections, and regex invoice-text memo parsing.",
                     "Dual-Currency Institutional Ledger: Real-time accounting in USD ($) and INR (pegged at 1 USD = 86.50 INR) with downloadable CSV compliance reports.",
                 ],
             },
@@ -138,7 +138,7 @@ def get_panel_briefing():
                 "focus": "7-D Isolation Forest Math, Single-Feature Perturbation XAI, Pre-Inference PII Shield & Scale",
                 "duration": "5–7 Minutes + Technical Q&A",
                 "key_points": [
-                    "Hybrid Neuro-Symbolic Design: Deterministic 3-Way Matching catches exact contract breaches (100% precision), while 200-tree IsolationForest catches zero-day statistical anomalies.",
+                    "Hybrid Neuro-Symbolic Design: Deterministic 3-Way Matching enforces configured price and quantity rules, while a 200-tree IsolationForest (seeded synthetic baseline) scores multi-feature statistical anomalies.",
                     "Log-Compression & StandardScaler: Applies ln(1 + Total_USD) and z-score scaling across all 7 features so dollar magnitude never dominates bounded variance ratios in random tree splits.",
                     "Real-Time Perturbation XAI: Computes marginal risk drop delta_R_k = max(0, R(x) - R(x^(k <- mu_k))) across all 7 features in ~7.9ms on CPU without heavy SHAP overhead.",
                     "Pre-Inference Responsible AI Gate: Stage 1 regex shield masks PAN, Aadhaar, Bank Account, Credit Card, Phone, and Email into deterministic surrogates ([PAN_01]) prior to inference.",
