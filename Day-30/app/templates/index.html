@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FinDoc-AuditEngine — Accounts Payable & 3-Way Reconciliation Workbench</title>
+  <link rel="stylesheet" href="/static/css/dashboard.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Institutional Top Command Bar -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand-cluster">
+        <div class="brand-mark">FD</div>
+        <div class="brand-titles">
+          <h1>FinDoc-AuditEngine</h1>
+          <span class="brand-divider">/</span>
+          <span class="brand-subtitle">Enterprise 3-Way Reconciliation &amp; ML Risk Workbench</span>
+        </div>
+      </div>
+
+      <div class="topbar-controls">
+        <span class="meta-tag"><span class="status-dot"></span>Engine: IsolationForest v2.0</span>
+        <span class="meta-tag">FX Peg: 1 USD = 86.50 INR</span>
+        <button type="button" class="btn btn-outline btn-sm" onclick="runFullDemoBatch()" id="btnBatchDemo">Run 5-Scenario Batch</button>
+        <a href="/api/v1/audit/export/csv" class="btn btn-outline btn-sm">Export CSV</a>
+        <a href="/docs" target="_blank" class="btn btn-subtle btn-sm">OpenAPI Spec</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="workspace">
+
+    <!-- Hairline Tabular KPI Strip -->
+    <section class="kpi-strip">
+      <div class="kpi-cell">
+        <span class="kpi-label">Total Invoices Audited</span>
+        <span class="kpi-value" id="metricTotalAudits">0</span>
+        <span class="kpi-sub">Active session ledger volume</span>
+      </div>
+      <div class="kpi-cell">
+        <span class="kpi-label">Disbursed Capital (USD)</span>
+        <span class="kpi-value" id="metricDisbursedUSD">$0.00</span>
+        <span class="kpi-sub">Authorized compliant spend</span>
+      </div>
+      <div class="kpi-cell">
+        <span class="kpi-label">Disbursed Capital (INR)</span>
+        <span class="kpi-value" id="metricDisbursedINR">INR 0.00</span>
+        <span class="kpi-sub">Converted at 86.50 INR / USD</span>
+      </div>
+      <div class="kpi-cell">
+        <span class="kpi-label">Straight-Through Rate (STP)</span>
+        <span class="kpi-value" id="metricStpRate">0.0%</span>
+        <span class="kpi-sub">Tier 1 autonomous approvals</span>
+      </div>
+      <div class="kpi-cell">
+        <span class="kpi-label">Held / Blocked Exceptions</span>
+        <span class="kpi-value" id="metricBlockedCount">0</span>
+        <span class="kpi-sub">Discrepancy &amp; AML fraud holds</span>
+      </div>
+    </section>
+
+    <!-- Main Split Workbench -->
+    <div class="workbench-grid">
+
+      <!-- Left Panel: Dynamic Document Ingestion & 3-Way Reconciliation Editor -->
+      <section class="panel">
+        <div class="panel-header">
+          <div class="panel-title-group">
+            <h2>1. Invoice &amp; Purchase Order Reconciliation Input</h2>
+            <p>Enter any custom vendor invoice, add or edit line-item rates and dock GRN quantities, or load a template.</p>
+          </div>
+          <div style="display:flex; gap:6px;">
+            <button type="button" class="btn btn-subtle btn-sm" onclick="toggleRawParser()">Paste Raw Text / PII</button>
+            <button type="button" class="btn btn-subtle btn-sm" onclick="generateRandomScenario()">Synthesize Random Invoice</button>
+            <button type="button" class="btn btn-outline btn-sm" onclick="resetBlankInvoice()">New Blank</button>
+          </div>
+        </div>
+
+        <div class="panel-body">
+
+          <!-- Template Loader Bar -->
+          <div class="ingestion-toolbar">
+            <div class="preset-group">
+              <label for="presetSelect">Reference Templates:</label>
+              <select id="presetSelect" class="select-control" onchange="onPresetSelected()">
+                <option value="">-- Custom Dynamic Entry (Or Select Reference Case) --</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Optional Free-Text Document Parser & PII Scrubber Drawer -->
+          <div id="rawParserDrawer" class="raw-parser-drawer">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <strong style="font-size:12px;">Unstructured Invoice Text &amp; Pre-Inference PII Scrubber</strong>
+              <span style="font-size:11px; color:var(--text-muted);">Detects PAN, Aadhaar, Email, Phone, Bank Account</span>
+            </div>
+            <textarea id="rawDocumentInput" placeholder="Example: Invoice INV-2040 from Apex Global Systems; PO: PO-8820; Total: $6,450.00; Country: US; Contact: finance@apexglobal.com; Tax PAN: ABCDE1234F; Account: 987654321012"></textarea>
+            <div style="display:flex; justify-content:space-between; align-items:center; gap:10px;">
+              <span id="rawScrubPreview" class="mono" style="font-size:11.5px; color:var(--status-approved-fg);"></span>
+              <button type="button" class="btn btn-primary btn-sm" onclick="parseRawInvoiceText()">Extract Fields &amp; Scrub PII</button>
+            </div>
+          </div>
+
+          <form id="auditForm" onsubmit="executeAudit(event)">
+            <div class="section-divider-title">
+              <span>Counterparty &amp; Settlement Metadata</span>
+              <span class="mono" style="font-weight:500; font-size:11px;">All fields dynamically evaluated</span>
+            </div>
+
+            <div class="form-grid-4">
+              <div class="field-group">
+                <label for="inputInvoiceId">Invoice Number</label>
+                <input type="text" id="inputInvoiceId" class="input-control mono" value="INV-1001" required>
+              </div>
+              <div class="field-group">
+                <label for="inputVendorName">Vendor Legal Name</label>
+                <input type="text" id="inputVendorName" class="input-control" value="OfficeDepot India Pvt Ltd" required>
+              </div>
+              <div class="field-group">
+                <label for="inputPoNumber">ERP PO Reference</label>
+                <input type="text" id="inputPoNumber" class="input-control mono" value="PO-9001" placeholder="e.g. PO-9001">
+              </div>
+              <div class="field-group">
+                <label for="inputCountry">Jurisdiction (ISO-2)</label>
+                <select id="inputCountry" class="select-control mono">
+                  <option value="IN">IN — India (Domestic)</option>
+                  <option value="US">US — United States</option>
+                  <option value="GB">GB — United Kingdom</option>
+                  <option value="DE">DE — Germany</option>
+                  <option value="SG">SG — Singapore</option>
+                  <option value="AE">AE — UAE (Regional Hub)</option>
+                  <option value="CH">CH — Switzerland</option>
+                  <option value="BZ">BZ — Belize (Offshore AML Flag)</option>
+                  <option value="KY">KY — Cayman Islands (Offshore AML Flag)</option>
+                  <option value="PA">PA — Panama (Offshore AML Flag)</option>
+                  <option value="VG">VG — British Virgin Islands (AML Flag)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-grid-4">
+              <div class="field-group">
+                <label for="inputInvoiceDate">Invoice Date</label>
+                <input type="date" id="inputInvoiceDate" class="input-control mono" value="2026-10-01" onchange="recalculateDynamicTotals()">
+              </div>
+              <div class="field-group">
+                <label for="inputDueDate">Settlement Due Date</label>
+                <input type="date" id="inputDueDate" class="input-control mono" value="2026-10-31" onchange="recalculateDynamicTotals()">
+              </div>
+              <div class="field-group">
+                <label for="inputTaxUsd">Tax Amount (USD)</label>
+                <input type="number" step="0.01" min="0" id="inputTaxUsd" class="input-control mono" value="32.00" oninput="recalculateDynamicTotals()">
+              </div>
+              <div class="field-group">
+                <label for="inputAmount">Total Billed (USD)</label>
+                <input type="number" step="0.01" min="0.01" id="inputAmount" class="input-control mono" value="432.00" required oninput="onManualTotalChange()">
+              </div>
+            </div>
+
+            <div class="form-grid-3">
+              <div class="field-group">
+                <label for="inputEmail">Vendor Contact Email (PII Gate)</label>
+                <input type="text" id="inputEmail" class="input-control mono" value="accounts@officedepot.in" placeholder="billing@vendor.com">
+              </div>
+              <div class="field-group">
+                <label for="inputPan">Tax ID / Indian PAN (PII Gate)</label>
+                <input type="text" id="inputPan" class="input-control mono" value="ABCDE1234F" placeholder="ABCDE1234F">
+              </div>
+              <div class="field-group">
+                <label for="inputBankAccount">Beneficiary Account (PII Gate)</label>
+                <input type="text" id="inputBankAccount" class="input-control mono" value="" placeholder="Optional account #">
+              </div>
+            </div>
+
+            <div class="checkbox-row">
+              <label class="checkbox-item">
+                <input type="checkbox" id="inputHasPo" checked onchange="recalculateDynamicTotals()">
+                <span>ERP Purchase Order Exists in Commitment Ledger</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" id="inputIsNew" onchange="recalculateDynamicTotals()">
+                <span>First-Time / Unvetted Onboarding Vendor</span>
+              </label>
+            </div>
+
+            <!-- Dynamic Editable Line Items Table -->
+            <div class="section-divider-title">
+              <span>Line-Item 3-Way Matching Matrix (Invoice vs. PO vs. Dock GRN)</span>
+              <button type="button" class="btn btn-subtle btn-sm" onclick="addLineItemRow()">+ Add Line Item</button>
+            </div>
+
+            <div class="line-items-wrapper">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th style="width:110px;">Item Code</th>
+                    <th>Description</th>
+                    <th style="width:95px; text-align:right;">Inv Rate ($)</th>
+                    <th style="width:95px; text-align:right;">PO Rate ($)</th>
+                    <th style="width:75px; text-align:right;">Billed Qty</th>
+                    <th style="width:85px; text-align:right;">GRN Recv</th>
+                    <th style="width:85px; text-align:right;">GRN Rej</th>
+                    <th style="width:36px;"></th>
+                  </tr>
+                </thead>
+                <tbody id="itemsTableBody">
+                  <!-- Populated dynamically by JS -->
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Live Pre-Audit Calculation Strip -->
+            <div class="live-preview-strip">
+              <div class="preview-metric">
+                <span>Line Items Subtotal</span>
+                <span id="previewSubtotal">$400.00</span>
+              </div>
+              <div class="preview-metric">
+                <span>Invoice Total (INR @ 86.50)</span>
+                <span id="previewInrTotal">INR 37,368.00</span>
+              </div>
+              <div class="preview-metric">
+                <span>Projected Rate Variance</span>
+                <span id="previewRateVar">$0.00</span>
+              </div>
+              <div class="preview-metric">
+                <span>Projected Dock Shortage</span>
+                <span id="previewQtyVar">0 units</span>
+              </div>
+            </div>
+
+            <button type="submit" id="btnSubmitAudit" class="btn btn-primary btn-block">
+              Execute 3-Way Reconciliation &amp; Isolation Forest Audit
+            </button>
+          </form>
+
+        </div>
+      </section>
+
+      <!-- Right Panel: Live Governance Determination & Perturbation ML Attribution -->
+      <section class="panel">
+        <div class="panel-header">
+          <div class="panel-title-group">
+            <h2>2. Audit Determination &amp; Explainable ML Attribution</h2>
+            <p>Real-time governance routing and Isolation Forest feature perturbation breakdown.</p>
+          </div>
+          <span class="meta-tag" id="badgeAuditId">Awaiting Run</span>
+        </div>
+
+        <div class="panel-body">
+
+          <div id="emptyStatePanel" class="empty-determination">
+            <h3>No Active Transaction Selected</h3>
+            <p>Submit the reconciliation form on the left or run the 5-scenario batch to inspect live ML risk telemetry.</p>
+          </div>
+
+          <div id="inspectionResultCard" style="display:none;">
+            <div id="certificateBanner" class="certificate-banner tier-STP">
+              <div>
+                <div class="cert-label" id="resAuthStatus">AUTHORIZED DISBURSEMENT</div>
+                <div class="cert-tier-title" id="resTierTitle">Tier 1: Straight-Through Processing (STP)</div>
+                <div class="cert-summary" id="resSummaryText"></div>
+              </div>
+              <span id="resRiskBadge" class="status-badge tag-STP">25.8 / 100 (LOW)</span>
+            </div>
+
+            <div class="determination-kv-grid">
+              <div class="kv-box">
+                <div class="kv-box-label">Audited Total (USD)</div>
+                <div class="kv-box-val" id="resAmountUSD">$0.00</div>
+              </div>
+              <div class="kv-box">
+                <div class="kv-box-label">Audited Total (INR)</div>
+                <div class="kv-box-val" id="resAmountINR">INR 0.00</div>
+              </div>
+              <div class="kv-box">
+                <div class="kv-box-label">Reconciliation Delta</div>
+                <div class="kv-box-val" id="resVarianceUSD">$0.00</div>
+              </div>
+            </div>
+
+            <div class="section-divider-title">
+              <span>Line-Item Reconciliation Verification</span>
+              <span id="resPiiBadge" class="mono" style="font-size:11px; color:var(--status-approved-fg);">0 PII Tokens Masked</span>
+            </div>
+            <div class="line-items-wrapper" style="margin-bottom:16px;">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Item</th>
+                    <th style="text-align:right;">Billed vs PO Rate</th>
+                    <th style="text-align:right;">Billed vs Accepted Qty</th>
+                    <th style="text-align:right;">Variance</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="resItemDiffsBody"></tbody>
+              </table>
+            </div>
+
+            <div class="section-divider-title">
+              <span>Isolation Forest Marginal Feature Attribution (0–100 Scale)</span>
+              <span class="mono" style="font-size:11px;">7D StandardScaler + 200 Trees</span>
+            </div>
+            <div id="featureBarsContainer" class="xai-list"></div>
+
+            <div class="section-divider-title">
+              <span>Triggered Governance &amp; Compliance Signals</span>
+            </div>
+            <ul id="resFlagsList" class="flags-list"></ul>
+
+            <div class="telemetry-strip" id="resTelemetryStrip">
+              <span>PII Gate: 0.05ms</span>
+              <span>3-Way Match: 0.12ms</span>
+              <span>ML Inference: 1.40ms</span>
+              <span>Total: 1.62ms</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Bottom Panel: Immutable Corporate Audit Ledger -->
+    <section class="panel">
+      <div class="panel-header">
+        <div class="panel-title-group">
+          <h2>3. Immutable Corporate Audit Ledger</h2>
+          <p>Real-time log of all processed invoices with tier filtering, search, and full JSON dossier inspection.</p>
+        </div>
+
+        <div class="ledger-controls">
+          <div class="filter-tabs" id="filterChipsContainer">
+            <button type="button" class="filter-chip active" data-tier="ALL">All Entries</button>
+            <button type="button" class="filter-chip" data-tier="TIER_1_STP_AUTO_APPROVED">Tier 1 STP</button>
+            <button type="button" class="filter-chip" data-tier="TIER_2_MANAGER_REVIEW">Tier 2 Manager</button>
+            <button type="button" class="filter-chip" data-tier="TIER_3_DIRECTOR_SIGNOFF">Tier 3 Director</button>
+            <button type="button" class="filter-chip" data-tier="REJECTED_DISCREPANCY">Rejected</button>
+            <button type="button" class="filter-chip" data-tier="FROZEN_FRAUD_RISK">Frozen Fraud</button>
+          </div>
+
+          <div style="display:flex; gap:8px; align-items:center;">
+            <input type="text" id="ledgerSearchInput" class="input-control mono" style="width:210px; height:30px;" placeholder="Search Invoice ID or Vendor...">
+            <button type="button" class="btn btn-subtle btn-sm" onclick="clearLedgerHistory()">Clear Ledger</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-body" style="padding:0;">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th style="padding-left:20px;">Audit ID</th>
+              <th>Timestamp (UTC)</th>
+              <th>Invoice ID</th>
+              <th>Vendor Name</th>
+              <th>Governance Tier</th>
+              <th style="text-align:right;">Total (USD)</th>
+              <th style="text-align:right;">Total (INR @ 86.50)</th>
+              <th style="text-align:right;">Variance ($)</th>
+              <th style="text-align:right;">ML Risk Score</th>
+              <th style="text-align:right; padding-right:20px;">Dossier</th>
+            </tr>
+          </thead>
+          <tbody id="ledgerTableBody">
+            <tr>
+              <td colspan="10" style="text-align:center; padding:28px; color:var(--text-muted);">
+                No audit entries recorded yet. Submit an invoice above or click "Run 5-Scenario Batch".
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Slide-Over Audit Dossier Drawer -->
+  <div id="detailModalBackdrop" class="modal-backdrop" onclick="closeDetailModal(event)">
+    <div class="dossier-drawer" onclick="event.stopPropagation()">
+      <div class="dossier-header">
+        <div>
+          <h3 id="modalTitle" style="font-size:14px; font-weight:700;">Audit Dossier Certificate</h3>
+          <p id="modalSubtitle" class="mono" style="font-size:11.5px; color:var(--text-muted);"></p>
+        </div>
+        <button type="button" class="btn btn-outline btn-sm" onclick="closeDetailModal()">Close</button>
+      </div>
+      <div class="dossier-body">
+        <div class="section-divider-title"><span>Executive Determination Summary</span></div>
+        <p id="modalSummaryText" style="font-size:13px; margin-bottom:16px; color:var(--text-secondary);"></p>
+
+        <div class="section-divider-title"><span>Cryptographic Audit Payload (RFC-Compliant JSON)</span></div>
+        <pre id="modalJsonPayload" class="json-pre"></pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/js/dashboard.js"></script>
+    </div>
+</body>
+</html>
