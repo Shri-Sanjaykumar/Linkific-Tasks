@@ -1,0 +1,148 @@
+%============================================================================
+% Standard Overleaf LaTeX Technical Report — 3-Page Internship Reflection Report
+% Candidate: Shri Sanjaykumar V (VIT Vellore, M.Tech Integrated SWE, CGPA: 9.12/10.0)
+%============================================================================
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{navy}{RGB}{23,54,93}
+\definecolor{slate}{RGB}{51,65,85}
+\definecolor{rowbg}{RGB}{248,250,252}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\fontsize{8.5}{10}\selectfont\textbf{\textcolor{navy}{LINKIFIC AI/ML INTERNSHIP --- CAPSTONE REFLECTION REPORT}}}
+\fancyhead[R]{\fontsize{8.5}{10}\selectfont\textcolor{slate}{Shri Sanjaykumar V (VIT Vellore)}}
+\fancyfoot[L]{\fontsize{8}{10}\selectfont\textcolor{slate}{FinDoc-AuditEngine v3.0 $|$ Verified PyTests: 28 Passed (Day 29) / 33 Passed (Day 30)}}
+\fancyfoot[R]{\fontsize{8.5}{10}\selectfont\textbf{\textcolor{navy}{Page \thepage\ of 3}}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\titleformat{\section}{\color{navy}\fontsize{12}{14}\selectfont\bfseries}{}{0em}{}[\vspace{-6pt}\textcolor{navy}{\rule{\textwidth}{0.6pt}}\vspace{-2pt}]
+\titleformat{\subsection}{\color{slate}\fontsize{10.5}{13}\selectfont\bfseries}{}{0em}{}
+
+\begin{document}
+
+\begin{center}
+    {\fontsize{16}{20}\selectfont\bfseries\textcolor{navy}{Comprehensive Internship Reflection Report (Days 1--30)}}\\[4pt]
+    {\fontsize{10.5}{13}\selectfont\textbf{FinDoc-AuditEngine v3.0 --- Financial Reconciliation, Regex PII Masking \& Explainable Anomaly Scoring Prototype}}\\[6pt]
+\end{center}
+
+\begin{tabularx}{\textwidth}{@{}lXlX@{}}
+\toprule
+\textbf{Candidate:} & Shri Sanjaykumar V & \textbf{Institution:} & VIT Vellore (M.Tech Int. SWE, CGPA: 9.12/10.0) \\
+\textbf{Organization:} & Linkific (AI/ML Engineering Internship) & \textbf{Verified Tests:} & Day 29: \texttt{28 passed} $|$ Day 30: \texttt{33 passed} \\
+\bottomrule
+\end{tabularx}
+
+\section{1. Executive Summary of the 30-Day Internship Journey}
+Over the course of this 30-day AI/ML Software Engineering Internship at Linkific, my primary growth was learning how to architect, validate, test, and document an end-to-end applied AI software prototype rather than stopping at isolated notebook experiments.
+
+Drawing motivation from my practical experience managing purchase orders and vendor sponsorships (\textbf{INR 60+ Lakhs}) for VIT's Riviera \& Gravitas festivals and my prior Generative AI internship at TForce India Private Limited, I focused the final capstone week on building \textbf{FinDoc-AuditEngine v3.0}---a working FastAPI reference prototype for Accounts Payable (AP) auditing. The prototype demonstrates how regex-based pre-inference PII masking, deterministic 3-Way Line-Item Reconciliation (Invoice vs.\ Purchase Order vs.\ Goods Receipt Note), a 7-feature \texttt{StandardScaler + IsolationForest} model trained on a reproducible seeded synthetic baseline ($N=1{,}000$), and local single-feature perturbation attribution work together inside a clean, testable web application.
+
+\section{2. 30-Day Technical Progression Matrix}
+\begin{tabularx}{\textwidth}{@{}p{1.35in}p{0.65in}p{1.75in}X@{}}
+\toprule
+\textbf{Phase} & \textbf{Days} & \textbf{Core Technical Domains} & \textbf{Engineering Deliverables \& Outcomes} \\
+\midrule
+\textbf{Phase I: Data Foundations} & Days 1--5 & Modular Python, Type Hints, NumPy, Pandas, EDA & Built reusable data cleaning pipelines, statistical outlier filters, and structured CLI modules. \\
+\addlinespace[3pt]
+\textbf{Phase II: Classical ML} & Days 6--10 & Supervised \& Unsupervised ML, \texttt{IsolationForest} & Practiced feature scaling, train/test separation, tree ensembles, and multivariate anomaly scoring. \\
+\addlinespace[3pt]
+\textbf{Phase III: NLP \& Extraction} & Days 11--15 & Tokenization, Embeddings, Regex Entity Parsing & Engineered structured field extractors and confidence-scored text classification workflows. \\
+\addlinespace[3pt]
+\textbf{Phase IV: RAG \& Agents} & Days 16--23 & ChromaDB/FAISS, LangGraph, Multi-Agent Workflows & Built grounded retrieval pipelines, ReAct tool-calling engines, and stateful LangGraph workflows. \\
+\addlinespace[3pt]
+\textbf{Phase V: Production \& RAI} & Days 24--26 & FastAPI, Docker, Cost Optimization, PII Guardrails & Implemented rate limiting, correlation-ID logging, multi-provider SLA routing, and regex PII masking. \\
+\addlinespace[3pt]
+\textbf{Phase VI: Capstone \& Review} & Days 27--30 & \texttt{FinDoc-AuditEngine v3.0}, Code Review, Polish & Delivered the 4-stage AP audit prototype, 12-slide deck, walkthrough video, and verified PyTest suites (\texttt{28 passed} / \texttt{33 passed}). \\
+\bottomrule
+\end{tabularx}
+
+\section{3. Core Technical Skills Acquired}
+\begin{enumerate}[leftmargin=0.22in, itemsep=3pt]
+    \item \textbf{Combining Deterministic Domain Rules with Unsupervised Anomaly Scoring:} Learned when to apply deterministic rule logic (\texttt{ReconciliationMatcher} enforcing configured $\$0.01$ unit-rate and $\$0.05$ subtotal rules) versus statistical isolation (\texttt{AnomalyScorer} surfacing unusual multi-feature combinations such as offshore Net-1 rush payments).
+    \item \textbf{Distinguishing Synthetic Baselines from Calibrated Production Models:} Designed a reproducible seeded synthetic dataset ($N=1{,}000$, \texttt{random\_state=42}) to fit the prototype's 7-feature \texttt{IsolationForest} and implemented local perturbation attribution:
+    \[
+        \Delta R_k(\mathbf{x}) = \max\!\left(0,\; R(\mathbf{x}) - R\!\left(\mathbf{x}^{(k \leftarrow \mu_k)}\right)\right)
+    \]
+    Crucially, I learned to communicate clearly that the resulting $0\text{--}100$ score is an \textit{engineered anomaly-risk indicator} for the prototype rather than a calibrated probability of fraud.
+    \item \textbf{Schema Validation, Custom Exceptions \& Automated Verification:} Built Pydantic v2 cross-field validators (\texttt{@model\_validator}), structured \texttt{FinDocAuditException} JSON error handlers, and automated PyTest suites where all collected tests pass (\texttt{28 passed} in Day 29; \texttt{33 passed} in Day 30).
+\end{enumerate}
+
+\newpage
+\section{4. Major Engineering Challenges Overcome}
+\begin{enumerate}[leftmargin=0.22in, itemsep=4pt]
+    \item \textbf{Challenge 1 --- Decoupling Frontend DOM Table Edits from Static Preset Objects:}
+    \begin{itemize}[leftmargin=0.18in, itemsep=1pt]
+        \item \textit{Root Cause:} In early iterations of the dashboard, submitting an audit reused the preset Purchase Order's line-item array, so manual edits to SKU rates or dock rejected quantities in the HTML table did not alter backend reconciliation.
+        \item \textit{Engineering Fix:} Implemented \texttt{collectLineItemsFromDOM()} in \texttt{dashboard.js} to construct independent \texttt{InvoicePayload} and \texttt{PurchaseOrderRecord} line-item arrays directly from live \texttt{<input>} cells, verified by a dedicated multi-line PyTest regression test.
+    \end{itemize}
+    \item \textbf{Challenge 2 --- Preventing Dollar Magnitude Dominance in Isolation Trees:}
+    \begin{itemize}[leftmargin=0.18in, itemsep=1pt]
+        \item \textit{Root Cause:} Raw USD invoice totals ($\$432$ to $\$49{,}500$) spanned orders of magnitude compared to bounded ratios ($[0,1]$), skewing random split thresholds.
+        \item \textit{Engineering Fix:} Applied logarithmic compression $\ln(1 + \text{Total}_{\text{USD}})$ and standardized all 7 features via \texttt{StandardScaler} prior to fitting the 200-tree \texttt{IsolationForest}.
+    \end{itemize}
+    \item \textbf{Challenge 3 --- IEEE 754 Floating-Point Rounding in Multi-Line Tax Arithmetic:}
+    \begin{itemize}[leftmargin=0.18in, itemsep=1pt]
+        \item \textit{Root Cause:} Binary floating-point products occasionally differed by fractions of a cent on multi-SKU invoices with $18\%$ GST.
+        \item \textit{Engineering Fix:} Enforced two-decimal rounding at line-item boundaries and configured a deterministic $\$0.05$ \texttt{SUBTOTAL\_TOLERANCE} across Pydantic validation and 3-way matching.
+    \end{itemize}
+    \item \textbf{Challenge 4 --- Maintaining Factual & Test-Count Consistency Across Deliverables:}
+    \begin{itemize}[leftmargin=0.18in, itemsep=1pt]
+        \item \textit{Root Cause:} Adding Day 29 and Day 30 route verification tests increased collected test counts from $25/30$ to $28/33$.
+        \item \textit{Engineering Fix:} Audited and synchronized every README, slide, PDF report, and terminal screenshot to report exact verified PyTest counts (\texttt{28 passed} in Day 29; \texttt{33 passed} in Day 30) and honest prototype boundaries.
+    \end{itemize}
+\end{enumerate}
+
+\section{5. Honest Prototype Assessment \& Current Limitations}
+\begin{tabularx}{\textwidth}{@{}p{1.65in}p{1.85in}X@{}}
+\toprule
+\textbf{Subsystem} & \textbf{Current Prototype Implementation} & \textbf{Production Requirement (Future Work)} \\
+\midrule
+\textbf{Audit Ledger Storage} & In-memory Python list (\texttt{AUDIT\_LEDGER}); resets on process restart. & Durable PostgreSQL tables (\texttt{SQLAlchemy 2.0 + asyncpg}) + Redis idempotency keys. \\
+\addlinespace[3pt]
+\textbf{Anomaly Detection Model} & 200-tree \texttt{IsolationForest} trained on $1{,}000$ seeded synthetic records. & Evaluation, threshold calibration, and drift monitoring (\texttt{EvidentlyAI} PSI) on authorized real invoices. \\
+\addlinespace[3pt]
+\textbf{Risk Score Semantics} & Engineered $0\text{--}100$ anomaly indicator from tree path depth. & Platt scaling / isotonic regression against labeled historical audit outcomes. \\
+\addlinespace[3pt]
+\textbf{Privacy Scrubber} & 6 compiled regex patterns (PAN, Aadhaar format, Account, Card, Phone, Email). & Hybrid regex + context-aware NER (\texttt{Presidio}) for unstructured vendor names and addresses. \\
+\addlinespace[3pt]
+\textbf{Raw Invoice Parser} & Regex text parser (\texttt{/api/v1/audit/parse-raw}) over plain text strings. & Optical OCR + layout-aware multimodal PDF table extraction (\texttt{LayoutLMv3}). \\
+\bottomrule
+\end{tabularx}
+
+\newpage
+\section{6. Key Lessons Learned}
+\begin{enumerate}[leftmargin=0.22in, itemsep=4pt]
+    \item \textbf{Precision in Technical Claims Builds Engineering Credibility:} Describing a prototype accurately---stating that the ledger is in-memory, the ML baseline is synthetic, and test pass rate is distinct from code coverage---makes technical defenses significantly stronger during mentor and panel reviews.
+    \item \textbf{Automated Tests Must Be Re-Verified After Every Change:} Whenever API endpoints or documentation checks are added, running \texttt{python -m pytest tests -q} and updating screenshots immediately prevents documentation drift.
+    \item \textbf{High-Contrast Institutional UI Improves Live Demonstrations:} Designing a clean light-theme tabular workbench made SKU unit-rate variances, GRN dock rejections, and perturbation attribution bars immediately readable during live walkthroughs.
+\end{enumerate}
+
+\section{7. 90-Day Post-Internship Personal Learning Roadmap Overview}
+\begin{tabularx}{\textwidth}{@{}p{1.25in}p{1.85in}X@{}}
+\toprule
+\textbf{Timeline} & \textbf{Primary Engineering Theme} & \textbf{Concrete Deliverables \& Measurable Targets} \\
+\midrule
+\textbf{Month 1 (Days 1--30)} & Durable Persistence, Auth \& Optical Document Extraction & Replace in-memory \texttt{AUDIT\_LEDGER} with async PostgreSQL + Alembic migrations; add Redis idempotency keys, OAuth2/JWT RBAC, and optical PDF table extraction. \\
+\addlinespace[4pt]
+\textbf{Month 2 (Days 31--60)} & Applied ML Calibration, MLOps \& Coverage Gating & Practice probability calibration (Brier score, PR-AUC) on public anomaly datasets; integrate MLflow tracking, EvidentlyAI PSI drift checks, and \texttt{pytest-cov} ($\ge 85\%$ line coverage) in CI. \\
+\addlinespace[4pt]
+\textbf{Month 3 (Days 61--90)} & Hybrid RAG, Stateful LangGraph Agents \& System Design & Build hybrid BM25 + dense vector retrieval with RAGAS evaluation, async task queues (Celery/Kafka), and complete end-to-end system design case studies. \\
+\bottomrule
+\end{tabularx}
+
+\end{document}

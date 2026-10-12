@@ -1,0 +1,84 @@
+%============================================================================
+% Standard Overleaf LaTeX Document — 90-Day Personal Learning Roadmap (2 Pages)
+% Candidate: Shri Sanjaykumar V (VIT Vellore, M.Tech Integrated SWE, CGPA: 9.12/10.0)
+%============================================================================
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{navy}{RGB}{23,54,93}
+\definecolor{slate}{RGB}{51,65,85}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\fontsize{8.5}{10}\selectfont\textbf{\textcolor{navy}{LINKIFIC AI/ML INTERNSHIP --- 90-DAY PERSONAL LEARNING ROADMAP}}}
+\fancyhead[R]{\fontsize{8.5}{10}\selectfont\textcolor{slate}{Shri Sanjaykumar V (VIT Vellore)}}
+\fancyfoot[L]{\fontsize{8}{10}\selectfont\textcolor{slate}{FinDoc-AuditEngine v3.0 $|$ Day 29: 28 passed $|$ Day 30: 33 passed}}
+\fancyfoot[R]{\fontsize{8.5}{10}\selectfont\textbf{\textcolor{navy}{Page \thepage\ of 2}}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\titleformat{\section}{\color{navy}\fontsize{11.5}{14}\selectfont\bfseries}{}{0em}{}[\vspace{-6pt}\textcolor{navy}{\rule{\textwidth}{0.6pt}}\vspace{-2pt}]
+
+\begin{document}
+\begin{center}
+    {\fontsize{15.5}{19}\selectfont\bfseries\textcolor{navy}{90-Day Personal Learning \& Engineering Roadmap (Months 1--3)}}\\[3pt]
+    {\fontsize{10}{12}\selectfont\textbf{Transitioning FinDoc-AuditEngine v3.0 from Prototype to Production-Grade Engineering}}\\[5pt]
+\end{center}
+
+\section{Month 1 (Weeks 1--4 / Days 1--30): Durable Persistence, Auth \& Optical OCR}
+\begin{tabularx}{\textwidth}{@{}p{1.05in}p{1.55in}p{2.25in}X@{}}
+\toprule
+\textbf{Week} & \textbf{Focus Domain} & \textbf{Concrete Engineering Tasks} & \textbf{Measurable Weekly Deliverable} \\
+\midrule
+\textbf{Week 1 (Days 1--7)} & Relational Persistence \& Async ORM & Replace in-memory \texttt{AUDIT\_LEDGER} list with \textbf{PostgreSQL} (\texttt{SQLAlchemy 2.0 + asyncpg}) and \textbf{Alembic} migrations. & Containerized FastAPI + PostgreSQL service where audit records persist across restarts. \\
+\addlinespace[4pt]
+\textbf{Week 2 (Days 8--14)} & Idempotency \& Concurrency & Integrate \textbf{Redis} idempotency keys (\texttt{X-Idempotency-Key}, 24h TTL) and vendor velocity counters. & Concurrency test suite verifying zero duplicate ledger writes under parallel requests. \\
+\addlinespace[4pt]
+\textbf{Week 3 (Days 15--21)} & Authentication \& RBAC & Add \textbf{OAuth2 + JWT} role-based access control (\texttt{Auditor}, \texttt{Manager}, \texttt{Director}) and SHA-256 row hash-chaining. & Protected API endpoints with role-based integration tests. \\
+\addlinespace[4pt]
+\textbf{Week 4 (Days 22--30)} & Optical OCR \& PDF Parsing & Upgrade \texttt{/api/v1/audit/parse-raw} from regex text parsing to optical PDF extraction (\textbf{Tesseract / LayoutLMv3}) + \textbf{Presidio} NER. & PDF upload endpoint extracting multi-line SKU tables with measured F1 accuracy. \\
+\bottomrule
+\end{tabularx}
+
+\section{Month 2 (Weeks 5--8 / Days 31--60): Applied ML Calibration, MLOps \& Coverage Gating}
+\begin{tabularx}{\textwidth}{@{}p{1.05in}p{1.55in}p{2.25in}X@{}}
+\toprule
+\textbf{Week} & \textbf{Focus Domain} & \textbf{Concrete Engineering Tasks} & \textbf{Measurable Weekly Deliverable} \\
+\midrule
+\textbf{Week 5 (Days 31--37)} & Public Dataset Benchmarking & Benchmark \texttt{IsolationForest}, \texttt{LOF}, and supervised \texttt{XGBoost}/\texttt{LightGBM} on public tabular anomaly datasets. & Reproducible benchmark report comparing ROC-AUC, PR-AUC, and Recall@K. \\
+\addlinespace[4pt]
+\textbf{Week 6 (Days 38--44)} & Probability Calibration & Apply \textbf{Platt Scaling} and \textbf{Isotonic Regression} (\texttt{CalibratedClassifierCV}) and compare Perturbation XAI vs.\ \texttt{TreeSHAP}. & Calibration module with Brier score plots and SHAP fidelity comparison. \\
+\addlinespace[4pt]
+\textbf{Week 7 (Days 45--52)} & MLflow \& Drift Telemetry & Track models in \textbf{MLflow} and compute weekly \textbf{Population Stability Index (PSI)} across all 7 features with \textbf{EvidentlyAI}. & Automated drift CLI flagging $\text{PSI} > 0.20$ and triggering retraining. \\
+\addlinespace[4pt]
+\textbf{Week 8 (Days 53--60)} & Coverage Gating \& ONNX & Add \texttt{pytest-cov} ($\ge 85\%$ coverage gate) in GitHub Actions CI, export to \textbf{ONNX Runtime}, and run \textbf{Locust} load benchmarks. & Published p50/p95/p99 latency report with hardware specs and CI coverage badge. \\
+\bottomrule
+\end{tabularx}
+
+\newpage
+\section{Month 3 (Weeks 9--12 / Days 61--90): Hybrid RAG, Stateful LangGraph Agents \& System Design}
+\begin{tabularx}{\textwidth}{@{}p{1.05in}p{1.55in}p{2.25in}X@{}}
+\toprule
+\textbf{Week} & \textbf{Focus Domain} & \textbf{Concrete Engineering Tasks} & \textbf{Measurable Weekly Deliverable} \\
+\midrule
+\textbf{Week 9 (Days 61--67)} & Hybrid BM25 + Dense RAG & Combine sparse \textbf{BM25} and dense vector embeddings via \textbf{Reciprocal Rank Fusion (RRF)} and cross-encoder reranking. & Contract QA endpoint citing vendor MSA clauses alongside 3-way match results. \\
+\addlinespace[4pt]
+\textbf{Week 10 (Days 68--75)} & Automated RAG Evaluation & Integrate \textbf{RAGAS} / \textbf{DeepEval} to measure Context Precision, Faithfulness, and Answer Relevance on 50 test queries. & Evaluation pipeline verifying Faithfulness $\ge 0.90$ and prompt-injection filtering. \\
+\addlinespace[4pt]
+\textbf{Week 11 (Days 76--82)} & Stateful LangGraph Agents & Build cyclic \textbf{LangGraph} workflows with persistent Postgres checkpointing (\texttt{PostgresSaver}) for HITL dispute resolution. & Human-in-the-loop agent workflow with state pause/resume and audit trail. \\
+\addlinespace[4pt]
+\textbf{Week 12 (Days 83--90)} & Async Queues \& System Design & Decouple heavy batch jobs with \textbf{Celery + Redis / Kafka}, solve 60+ DSA problems, and write 4 system design case studies. & Finalized public portfolio, system design blueprints, and mock interview completion. \\
+\bottomrule
+\end{tabularx}
+
+\end{document}

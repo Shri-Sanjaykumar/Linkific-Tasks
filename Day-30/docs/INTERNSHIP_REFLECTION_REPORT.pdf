@@ -1,681 +1,130 @@
 %PDF-1.4
-%âãÏÓ
+%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R /F5 6 0 R
+>>
 endobj
 2 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
 endobj
 3 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
 endobj
 4 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding >>
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
 endobj
 5 0 obj
-<< /Type /Pages /Kids [8 0 R 11 0 R] /Count 2 >>
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
 endobj
 6 0 obj
-<< /Length 17538 >>
-stream
-0.060 0.090 0.160 rg 0.00 814.00 595.28 28.00 re f
-BT /F2 8.20 Tf 0.950 0.970 1.000 rg 1 0 0 1 38.00 824.00 Tm (LINKIFIC ENTERPRISE AI/ML ENGINEERING INTERNSHIP  |  SHRI SANJAYKUMAR V \(VIT VELLORE\)) Tj ET
-BT /F3 8.00 Tf 0.750 0.820 0.920 rg 1 0 0 1 395.16 824.00 Tm (Day 30 Deliverable: 3-Page Reflection Report) Tj ET
-0.40 w 0.700 0.750 0.820 RG 38.00 36.00 m 557.00 36.00 l S
-BT /F1 7.80 Tf 0.350 0.400 0.480 rg 1 0 0 1 38.00 24.00 Tm (FinDoc-AuditEngine v3.0  |  github.com/Shri-Sanjaykumar/Linkific-Tasks  |  linkedin.com/in/shri-sanjaykumar-v-588bab28a) Tj ET
-BT /F2 8.00 Tf 0.200 0.250 0.330 rg 1 0 0 1 530.25 24.00 Tm (Page 1) Tj ET
-BT /F2 14.00 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 790.00 Tm (Comprehensive Internship Reflection Report \(Days 1–30\)) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 767.00 Tm (Candidate: Shri Sanjaykumar V) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 755.50 Tm (Academic Institution: Vellore Institute of Technology \(VIT\), Vellore – M.Tech Integrated in Software Engineering \(CGPA: 9.12 /) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 744.00 Tm (10.0\)) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 732.50 Tm (Organization: Linkific – AI / Machine Learning Engineering Internship) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 721.00 Tm (Capstone Prototype: FinDoc-AuditEngine v3.0 – Financial Document Reconciliation, Regex PII Masking & Explainable) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 709.50 Tm (Anomaly Scoring Prototype) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 698.00 Tm (Verified Automated Tests: Day 29: 28 passed \(python -m pytest tests -q\) | Day 30: 33 passed \(python -m pytest tests -q\) – *all) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 686.50 Tm (collected tests passed*) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 657.00 Tm (1. Executive Summary of the 30-Day Internship Journey) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 654.00 m 557.00 654.00 l S
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 637.00 Tm (Over the course of this 30-day AI/ML Software Engineering Internship at Linkific, my primary growth was learning how to) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 625.50 Tm (structure, validate, test, and document an end-to-end applied AI software prototype rather than stopping at isolated notebook) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 614.00 Tm (experiments.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 597.50 Tm (Drawing motivation from my practical experience managing purchase orders and vendor sponsorships for VIT's Riviera &) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 586.00 Tm (Gravitas festivals and my prior Generative AI internship at TForce India Private Limited, I focused the final capstone week on) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 574.50 Tm (building FinDoc-AuditEngine v3.0–a working FastAPI reference prototype for Accounts Payable \(AP\) auditing. The prototype) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 563.00 Tm (demonstrates how regex-based pre-inference PII masking, deterministic 3-Way Line-Item Reconciliation \(Invoice vs. Purchase) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 551.50 Tm (Order vs. Goods Receipt Note\), a 7-feature StandardScaler + IsolationForest model trained on a reproducible seeded synthetic) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 540.00 Tm (baseline, and local single-feature perturbation attribution can work together inside a clean, testable web application.) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 510.50 Tm (2. 30-Day Technical Progression Summary) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 507.50 m 557.00 507.50 l S
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 490.50 Tm (| Phase | Days | Core Focus Areas | Key Learning & Engineering Deliverables |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 479.00 Tm (| :--- | :--- | :--- | :--- |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 467.50 Tm (| Phase I: Software & Data Foundations | Days 1–5 | Modular Python, Type Annotations, NumPy/Pandas Data Cleaning &) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 456.00 Tm (Exploratory Analysis | Structured reusable data preprocessing pipelines, statistical outlier handling, and clean CLI entry points.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 444.50 Tm (|) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 433.00 Tm (| Phase II: Classical Machine Learning | Days 6–10 | Supervised & Unsupervised Learning \(scikit-learn\), Cross-Validation &) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 421.50 Tm (Anomaly Detection | Practiced feature scaling, train/validation separation, tree ensembles, and IsolationForest anomaly) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 410.00 Tm (scoring. |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 398.50 Tm (| Phase III: NLP & Text Extraction | Days 11–15 | Tokenization, Embeddings, Regex Pattern Extraction & Document) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 387.00 Tm (Classification | Built structured field extractors and text classification pipelines with confidence thresholds. |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 375.50 Tm (| Phase IV: RAG & Context Grounding | Days 16–20 | Vector Indexing, Semantic Retrieval, Context Grounding & Hallucination) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 364.00 Tm (Guardrails | Explored retrieval-augmented generation workflows and factual-preservation checks. |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 352.50 Tm (| Phase V: Responsible AI, FastAPI & Testing | Days 21–25 | Regex PII Masking, FastAPI Microservices, Pydantic v2) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 341.00 Tm (Validation & GitHub Actions CI | Built REST endpoints with strict request schemas, custom error handlers, and automated) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 329.50 Tm (PyTest suites. |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 318.00 Tm (| Phase VI: Capstone Prototype & Review | Days 26–30 | FinDoc-AuditEngine v3.0 Prototype, Code Review Refactoring,) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 306.50 Tm (Polish, Slides, Video & Reflection | Integrated the 4-stage AP audit prototype, refined the light-theme UI, recorded the demo) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 295.00 Tm (walkthrough, and verified all collected PyTests \(28 passed in Day 29; 33 passed in Day 30\). |) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 265.50 Tm (3. Technical Skills Acquired) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 262.50 m 557.00 262.50 l S
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 245.50 Tm (1. Combining Deterministic Domain Rules with Unsupervised ML:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 234.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 234.00 Tm (Learned) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 88.31 234.00 Tm (when) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 112.86 234.00 Tm (to) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 123.09 234.00 Tm (use) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 140.48 234.00 Tm (deterministic) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 194.66 234.00 Tm (logic) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 216.14 234.00 Tm (\(ReconciliationMatcher) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 312.25 234.00 Tm (for) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 325.54 234.00 Tm (exact) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 350.09 234.00 Tm (unit-price) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 390.48 234.00 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 408.38 234.00 Tm (dock) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 430.37 234.00 Tm (quantity) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 465.14 234.00 Tm (arithmetic\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 510.64 234.00 Tm (versus) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 222.50 Tm (statistical) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 92.39 222.50 Tm (anomaly) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 129.71 222.50 Tm (scoring) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 161.92 222.50 Tm (\(AnomalyScorer) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 230.42 222.50 Tm (for) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 243.72 222.50 Tm (surfacing) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 283.60 222.50 Tm (unusual) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 318.38 222.50 Tm (multi-feature) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 372.06 222.50 Tm (combinations) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 428.81 222.50 Tm (such) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 450.80 222.50 Tm (as) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 463.07 222.50 Tm (offshore) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 498.87 222.50 Tm (rush) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 211.00 Tm (payments\).) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 199.50 Tm (2. Understanding Synthetic Baselines vs. Production Calibration:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 188.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 188.00 Tm (Designed) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 93.42 188.00 Tm (a) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 101.09 188.00 Tm (reproducible) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 154.27 188.00 Tm (seeded) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 187.00 188.00 Tm (synthetic) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 225.86 188.00 Tm (dataset) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 258.60 188.00 Tm (\(N=1,000,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 301.81 188.00 Tm (random_state=42\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 379.28 188.00 Tm (to) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 389.51 188.00 Tm (train) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 409.96 188.00 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 425.31 188.00 Tm (prototype's) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 472.58 188.00 Tm (7-feature) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 176.50 Tm (IsolationForest) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 114.89 176.50 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 132.79 176.50 Tm (implemented) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 188.01 176.50 Tm (single-feature) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 246.30 176.50 Tm (perturbation) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 297.95 176.50 Tm (attribution) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 340.91 176.50 Tm (\($\\Delta) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 375.67 176.50 Tm (R_k) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 394.59 176.50 Tm (=) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 402.52 176.50 Tm (\\max\(0,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 435.75 176.50 Tm (R\(\\mathbf{x}\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 496.11 176.50 Tm (-) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 165.00 Tm (R\(\\mathbf{x}^{\(k) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 126.15 165.00 Tm (\\leftarrow) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 166.54 165.00 Tm (\\mu_k\)}\)\)$\).) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 218.95 165.00 Tm (Crucially,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 259.33 165.00 Tm (I) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 264.45 165.00 Tm (learned) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 297.69 165.00 Tm (to) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 307.92 165.00 Tm (distinguish) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 353.93 165.00 Tm (an) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 366.72 165.00 Tm (engineered) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 415.31 165.00 Tm (0–100) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 443.20 165.00 Tm (prototype) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 484.11 165.00 Tm (risk) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 500.98 165.00 Tm (indicator) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 538.30 165.00 Tm (from) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 153.50 Tm (a) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 59.67 153.50 Tm (calibrated) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 102.11 153.50 Tm (production) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 147.62 153.50 Tm (fraud) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 171.15 153.50 Tm (probability.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 142.00 Tm (3. API Design, Input Validation & Automated Testing \(FastAPI + Pydantic v2 + PyTest\):) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 130.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 130.50 Tm (Implemented) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 107.73 130.50 Tm (cross-field) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 152.21 130.50 Tm (validators) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 194.13 130.50 Tm (\(@model_validator\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 277.09 130.50 Tm (to) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 287.32 130.50 Tm (enforce) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 320.56 130.50 Tm (subtotal) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 355.33 130.50 Tm (math) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 378.34 130.50 Tm (within) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 404.42 130.50 Tm (a) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 412.09 130.50 Tm ($0.05) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 437.66 130.50 Tm (floating-point) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 492.89 130.50 Tm (tolerance,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 119.00 Tm (structured) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 95.46 119.00 Tm (domain) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 128.19 119.00 Tm (exceptions) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 174.72 119.00 Tm (\(FinDocAuditException\),) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 276.46 119.00 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 294.36 119.00 Tm (automated) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 340.39 119.00 Tm (API/unit) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 375.17 119.00 Tm (tests.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 107.50 Tm (4. Pre-Inference Privacy Masking \(FinancialPrivacyScrubber\):) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 96.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 96.00 Tm (Built) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 72.45 96.00 Tm (regex) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 98.02 96.00 Tm (masking) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 134.83 96.00 Tm (for) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 148.12 96.00 Tm (6) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 155.79 96.00 Tm (configured) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 201.31 96.00 Tm (patterns) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 237.10 96.00 Tm (\(Indian) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 267.79 96.00 Tm (PAN,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 291.82 96.00 Tm (12-digit) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 324.54 96.00 Tm (Aadhaar) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 361.87 96.00 Tm (format,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 393.06 96.00 Tm (bank) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 415.57 96.00 Tm (account) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 450.34 96.00 Tm (numbers,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 491.24 96.00 Tm (credit) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 516.30 96.00 Tm (cards,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 84.50 Tm (phone) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 80.13 84.50 Tm (numbers,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 121.04 84.50 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 138.94 84.50 Tm (emails\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 171.14 84.50 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 189.04 84.50 Tm (learned) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 222.28 84.50 Tm (where) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 249.89 84.50 Tm (regex) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 275.46 84.50 Tm (rules) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 297.95 84.50 Tm (succeed) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 334.77 84.50 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 352.67 84.50 Tm (where) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 380.28 84.50 Tm (context-aware) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 440.62 84.50 Tm (NER) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 462.60 84.50 Tm (is) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 471.80 84.50 Tm (required.) Tj ET
-endstream
+<<
+/BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font
+>>
 endobj
 7 0 obj
-<< /Type /Annot /Subtype /Link /Rect [38.00 22.00 458.62 31.80] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Shri-Sanjaykumar/Linkific-Tasks) >> >>
+<<
+/Contents 13 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 12 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 8 0 obj
-<< /Type /Page /Parent 5 0 R /MediaBox [0 0 595.276 841.890] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 6 0 R /Annots [7 0 R] >>
+<<
+/Contents 14 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 12 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 9 0 obj
-<< /Length 34533 >>
-stream
-0.060 0.090 0.160 rg 0.00 814.00 595.28 28.00 re f
-BT /F2 8.20 Tf 0.950 0.970 1.000 rg 1 0 0 1 38.00 824.00 Tm (LINKIFIC ENTERPRISE AI/ML ENGINEERING INTERNSHIP  |  SHRI SANJAYKUMAR V \(VIT VELLORE\)) Tj ET
-BT /F3 8.00 Tf 0.750 0.820 0.920 rg 1 0 0 1 395.16 824.00 Tm (Day 30 Deliverable: 3-Page Reflection Report) Tj ET
-0.40 w 0.700 0.750 0.820 RG 38.00 36.00 m 557.00 36.00 l S
-BT /F1 7.80 Tf 0.350 0.400 0.480 rg 1 0 0 1 38.00 24.00 Tm (FinDoc-AuditEngine v3.0  |  github.com/Shri-Sanjaykumar/Linkific-Tasks  |  linkedin.com/in/shri-sanjaykumar-v-588bab28a) Tj ET
-BT /F2 8.00 Tf 0.200 0.250 0.330 rg 1 0 0 1 530.25 24.00 Tm (Page 2) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 786.00 Tm (4. Major Engineering Challenges Overcome) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 783.00 m 557.00 783.00 l S
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 766.00 Tm (1. Decoupling Frontend Table Edits from Static Preset Objects:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 754.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 754.50 Tm (*Challenge:*) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 105.69 754.50 Tm (In) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 115.92 754.50 Tm (early) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 138.42 754.50 Tm (iterations) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 178.30 754.50 Tm (of) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 188.53 754.50 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 203.87 754.50 Tm (web) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 223.30 754.50 Tm (dashboard,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 271.89 754.50 Tm (submitting) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 316.37 754.50 Tm (an) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 329.16 754.50 Tm (audit) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 351.66 754.50 Tm (reused) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 382.34 754.50 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 397.69 754.50 Tm (preset) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 425.81 754.50 Tm (PO's) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 448.02 754.50 Tm (line-item) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 485.34 754.50 Tm (array,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 511.41 754.50 Tm (which) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 743.00 Tm (meant) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 80.12 743.00 Tm (manual) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 112.85 743.00 Tm (edits) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 134.84 743.00 Tm (to) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 145.07 743.00 Tm (SKU) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 166.54 743.00 Tm (rates) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 189.55 743.00 Tm (or) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 200.29 743.00 Tm (dock) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 222.27 743.00 Tm (rejected) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 257.56 743.00 Tm (quantities) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 299.49 743.00 Tm (in) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 309.20 743.00 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 324.55 743.00 Tm (browser) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 359.82 743.00 Tm (table) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 382.33 743.00 Tm (did) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 397.16 743.00 Tm (not) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 412.50 743.00 Tm (affect) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 437.56 743.00 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 452.91 743.00 Tm (backend) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 490.24 743.00 Tm (calculation.) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 731.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 731.50 Tm (*Solution:*) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 97.51 731.50 Tm (Wrote) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 124.61 731.50 Tm (collectLineItemsFromDOM\(\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 242.17 731.50 Tm (in) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 251.89 731.50 Tm (dashboard.js) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 307.12 731.50 Tm (to) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 317.35 731.50 Tm (construct) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 357.23 731.50 Tm (separate) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 395.58 731.50 Tm (InvoicePayload) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 460.53 731.50 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 720.00 Tm (PurchaseOrderRecord) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 146.59 720.00 Tm (item) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 166.52 720.00 Tm (arrays) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 194.64 720.00 Tm (directly) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 226.33 720.00 Tm (from) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 247.29 720.00 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 262.63 720.00 Tm (live) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 278.99 720.00 Tm (HTML) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 306.59 720.00 Tm (<input>) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 339.84 720.00 Tm (cells) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 360.80 720.00 Tm (in) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 370.51 720.00 Tm (each) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 393.02 720.00 Tm (row,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 412.95 720.00 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 430.86 720.00 Tm (verified) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 463.07 720.00 Tm (this) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 479.94 720.00 Tm (behavior) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 517.78 720.00 Tm (with) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 536.69 720.00 Tm (a) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 708.50 Tm (dedicated) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 94.45 708.50 Tm (multi-line) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 133.81 708.50 Tm (regression) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 179.31 708.50 Tm (test.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 697.00 Tm (2. Preventing Dollar Magnitude Dominance in Multivariate Isolation Trees:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 685.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 685.50 Tm (*Challenge:*) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 105.69 685.50 Tm (Raw) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 126.65 685.50 Tm (USD) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 148.63 685.50 Tm (invoice) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 179.82 685.50 Tm (totals) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 204.36 685.50 Tm (\($432) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 230.44 685.50 Tm (to) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 240.67 685.50 Tm ($49,500\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 279.54 685.50 Tm (spanned) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 317.39 685.50 Tm (several) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 349.60 685.50 Tm (orders) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 378.23 685.50 Tm (of) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 388.46 685.50 Tm (magnitude) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 433.97 685.50 Tm (compared) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 477.44 685.50 Tm (to) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 487.67 685.50 Tm (bounded) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 674.00 Tm (variance) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 89.32 674.00 Tm (ratios) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 114.38 674.00 Tm (\(0.0) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 132.79 674.00 Tm (to) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 143.02 674.00 Tm (1.0\).) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 662.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 662.50 Tm (*Solution:*) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 97.51 662.50 Tm (Applied) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 130.75 662.50 Tm (logarithmic) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 177.78 662.50 Tm (compression) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 232.49 662.50 Tm ($\\ln\(1) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 258.05 662.50 Tm (+) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 265.98 662.50 Tm (\\text{Total}_{\\text{USD}}\)$) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 385.74 662.50 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 403.64 662.50 Tm (standardized) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 458.87 662.50 Tm (all) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 470.63 662.50 Tm (7) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 478.30 662.50 Tm (features) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 514.10 662.50 Tm (via) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 651.00 Tm (StandardScaler) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 117.96 651.00 Tm (prior) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 138.92 651.00 Tm (to) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 149.15 651.00 Tm (fitting) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 173.70 651.00 Tm (IsolationForest.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 639.50 Tm (3. Handling Floating-Point Rounding in Multi-Line Tax Calculations:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 628.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 628.00 Tm (*Challenge:*) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 105.69 628.00 Tm (Standard) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 145.58 628.00 Tm (IEEE) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 169.11 628.00 Tm (754) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 187.01 628.00 Tm (binary) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 214.62 628.00 Tm (floating-point) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 269.85 628.00 Tm (products) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 307.69 628.00 Tm (occasionally) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 360.35 628.00 Tm (differed) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 393.59 628.00 Tm (by) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 405.86 628.00 Tm (fractions) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 443.18 628.00 Tm (of) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 453.41 628.00 Tm (a) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 461.09 628.00 Tm (cent,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 483.59 628.00 Tm (causing) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 517.85 628.00 Tm (false) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 616.50 Tm (subtotal) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 86.78 616.50 Tm (validation) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 128.19 616.50 Tm (errors.) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 605.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 605.00 Tm (*Solution:*) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 97.51 605.00 Tm (Enforced) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 136.89 605.00 Tm (two-decimal) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 188.52 605.00 Tm (rounding) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 226.87 605.00 Tm (at) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 237.10 605.00 Tm (line-item) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 274.42 605.00 Tm (boundaries) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 322.49 605.00 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 340.39 605.00 Tm (configured) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 385.90 605.00 Tm (a) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 393.58 605.00 Tm ($0.05) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 419.15 605.00 Tm (SUBTOTAL_TOLERANCE) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 593.50 Tm (across) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 81.65 593.50 Tm (Pydantic) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 119.49 593.50 Tm (validation) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 160.91 593.50 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 178.81 593.50 Tm (3-way) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 205.91 593.50 Tm (matching.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 582.00 Tm (4. Maintaining Exact Consistency Across Tests, Docs, and Deliverables:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 570.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 570.50 Tm (*Challenge:*) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 105.69 570.50 Tm (Adding) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 136.89 570.50 Tm (new) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 156.32 570.50 Tm (route) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 179.84 570.50 Tm (verification) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 226.37 570.50 Tm (tests) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 248.36 570.50 Tm (increased) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 290.80 570.50 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 306.14 570.50 Tm (test) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 323.53 570.50 Tm (count) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 348.59 570.50 Tm (\(28) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 364.44 570.50 Tm (passed) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 396.66 570.50 Tm (in) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 406.37 570.50 Tm (Day) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 425.29 570.50 Tm (29) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 438.08 570.50 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 455.98 570.50 Tm (33) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 468.77 570.50 Tm (passed) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 500.99 570.50 Tm (in) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 510.70 570.50 Tm (Day) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 529.62 570.50 Tm (30\),) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 559.00 Tm (creating) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 87.28 559.00 Tm (a) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 94.95 559.00 Tm (mismatch) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 136.87 559.00 Tm (with) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 155.79 559.00 Tm (earlier) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 183.90 559.00 Tm (documentation) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 246.80 559.00 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 264.70 559.00 Tm (screenshots.) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 547.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 547.50 Tm (*Solution:*) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 97.51 547.50 Tm (Audited) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 131.27 547.50 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 149.17 547.50 Tm (synchronized) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 205.93 547.50 Tm (all) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 217.68 547.50 Tm (documentation,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 283.14 547.50 Tm (PDFs,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 311.26 547.50 Tm (slides,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 339.89 547.50 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 357.79 547.50 Tm (terminal) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 393.06 547.50 Tm (screenshots) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 445.22 547.50 Tm (to) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 455.45 547.50 Tm (reflect) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 483.06 547.50 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 498.40 547.50 Tm (exact) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 522.95 547.50 Tm (verified) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 536.00 Tm (pytest) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 79.10 536.00 Tm (output) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 107.24 536.00 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 125.14 536.00 Tm (honest) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 155.32 536.00 Tm (prototype) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 196.23 536.00 Tm (scope.) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 506.50 Tm (5. Key Achievements & Honest Prototype Assessment) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 503.50 m 557.00 503.50 l S
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 486.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 486.50 Tm (Working) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 88.29 486.50 Tm (End-to-End) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 137.39 486.50 Tm (Prototype) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 179.32 486.50 Tm (\(FinDoc-AuditEngine) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 266.75 486.50 Tm (v3.0\):) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 292.31 486.50 Tm (Demonstrates) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 352.13 486.50 Tm (3-way) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 379.23 486.50 Tm (line-item) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 416.54 486.50 Tm (matching,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 458.98 486.50 Tm (regex) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 484.55 486.50 Tm (PII) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 498.36 486.50 Tm (masking,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 475.00 Tm (7-feature) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 91.38 475.00 Tm (synthetic-baseline) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 167.56 475.00 Tm (anomaly) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 204.89 475.00 Tm (scoring) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 237.09 475.00 Tm (with) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 256.01 475.00 Tm (perturbation) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 307.66 475.00 Tm (explanations,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 364.42 475.00 Tm (dual-currency) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 422.70 475.00 Tm (\(USD/INR\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 469.21 475.00 Tm (display,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 502.96 475.00 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 520.86 475.00 Tm (CSV) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 463.50 Tm (export.) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 452.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 452.00 Tm (Verified) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 85.75 452.00 Tm (Automated) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 132.79 452.00 Tm (Test) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 153.25 452.00 Tm (Suite:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 179.33 452.00 Tm (All) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 192.11 452.00 Tm (28) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 204.89 452.00 Tm (collected) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 243.76 452.00 Tm (tests) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 265.74 452.00 Tm (in) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 275.46 452.00 Tm (Day) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 294.37 452.00 Tm (29) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 307.16 452.00 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 325.07 452.00 Tm (all) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 336.82 452.00 Tm (33) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 349.61 452.00 Tm (collected) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 388.47 452.00 Tm (tests) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 410.46 452.00 Tm (in) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 420.17 452.00 Tm (Day) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 439.09 452.00 Tm (30) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 451.88 452.00 Tm (pass) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 473.87 452.00 Tm (via) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 488.18 452.00 Tm (python) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 518.36 452.00 Tm (-m) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 531.64 452.00 Tm (pytest) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 440.50 Tm (tests) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 73.99 440.50 Tm (-q.) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 429.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 429.00 Tm (Clear) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 76.54 429.00 Tm (Documentation) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 140.96 429.00 Tm (of) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 151.19 429.00 Tm (Prototype) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 193.13 429.00 Tm (Limitations:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 242.21 429.00 Tm (Explicitly) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 280.55 429.00 Tm (documented) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 333.73 429.00 Tm (that) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 351.63 429.00 Tm (AUDIT_LEDGER) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 424.74 429.00 Tm (is) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 433.94 429.00 Tm (an) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 446.73 429.00 Tm (in-memory) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 492.73 429.00 Tm (Python) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 523.92 429.00 Tm (list) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 417.50 Tm (\(non-persistent) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 115.91 417.50 Tm (across) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 145.56 417.50 Tm (restarts\),) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 184.42 417.50 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 199.76 417.50 Tm (IsolationForest) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 262.65 417.50 Tm (uses) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 284.64 417.50 Tm (a) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 292.31 417.50 Tm (synthetic) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 331.17 417.50 Tm (baseline) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 367.99 417.50 Tm (rather) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 394.58 417.50 Tm (than) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 415.04 417.50 Tm (real) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 432.94 417.50 Tm (company) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 472.82 417.50 Tm (invoices,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 511.16 417.50 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 406.00 Tm (/api/v1/audit/parse-raw) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 147.62 406.00 Tm (performs) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 186.47 406.00 Tm (regex) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 212.03 406.00 Tm (text) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 229.42 406.00 Tm (parsing) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 262.15 406.00 Tm (rather) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 288.73 406.00 Tm (than) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 309.20 406.00 Tm (optical) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 338.34 406.00 Tm (OCR.) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 376.50 Tm (6. Core Lessons Learned) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 373.50 m 557.00 373.50 l S
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 356.50 Tm (1. Precision in Technical Communication Matters as Much as Code: Overstating a prototype as a "deployed production) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 345.00 Tm (platform" or calling a synthetic baseline "historical company data" undermines credibility during technical review. Clearly stating) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 333.50 Tm (assumptions, test methods, and limitations builds engineering trust.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 322.00 Tm (2. Automated Tests Must Evolve with the Codebase: Whenever new endpoints or features are added, test counts and) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 310.50 Tm (documentation should be re-verified immediately before packaging deliverables.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 299.00 Tm (3. UI Clarity Supports Technical Demonstrations: Replacing decorative dark-mode styling with a clean, high-contrast tabular) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 287.50 Tm (layout made it much easier to demonstrate SKU rate variances and risk attributions during live walkthroughs.) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 258.00 Tm (7. Summary of the 90-Day Personal Learning Roadmap) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 255.00 m 557.00 255.00 l S
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 238.00 Tm (To transition the skills practiced during this internship toward production-grade engineering over the next three months) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 226.50 Tm (\(detailed week-by-week in) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 215.00 Tm ([PERSONAL_LEARNING_ROADMAP_90_DAYS.md]\(./PERSONAL_LEARNING_ROADMAP_90_DAYS.md\)\):) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 203.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 203.50 Tm (Month) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 80.12 203.50 Tm (1) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 87.80 203.50 Tm (\(Days) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 114.38 203.50 Tm (1–30) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 137.16 203.50 Tm (–) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 144.59 203.50 Tm (Database) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 186.52 203.50 Tm (Persistence,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 239.70 203.50 Tm (Auth) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 261.18 203.50 Tm (&) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 269.87 203.50 Tm (Optical) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 301.06 203.50 Tm (Document) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 345.54 203.50 Tm (Parsing\):) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 384.91 203.50 Tm (Replace) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 421.21 203.50 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 436.56 203.50 Tm (in-memory) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 482.56 203.50 Tm (AUDIT_LEDGER) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 192.00 Tm (with) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 70.92 192.00 Tm (PostgreSQL) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 123.59 192.00 Tm (\(SQLAlchemy) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 182.89 192.00 Tm (2.0) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 198.23 192.00 Tm (+) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 206.16 192.00 Tm (asyncpg\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 246.05 192.00 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 263.95 192.00 Tm (Redis) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 290.02 192.00 Tm (idempotency) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 344.73 192.00 Tm (keys;) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 368.77 192.00 Tm (add) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 386.67 192.00 Tm (OAuth2/JWT) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 441.89 192.00 Tm (authentication;) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 504.28 192.00 Tm (integrate) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 180.50 Tm (optical) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 81.15 180.50 Tm (OCR) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 104.15 180.50 Tm (/) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 109.26 180.50 Tm (layout-aware) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 164.48 180.50 Tm (PDF) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 185.44 180.50 Tm (extraction.) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 169.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 169.00 Tm (Month) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 80.12 169.00 Tm (2) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 87.80 169.00 Tm (\(Days) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 114.38 169.00 Tm (31–60) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 142.27 169.00 Tm (–) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 149.70 169.00 Tm (Applied) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 182.94 169.00 Tm (ML) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 198.28 169.00 Tm (Evaluation,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 246.35 169.00 Tm (Calibration) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 292.87 169.00 Tm (&) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 301.57 169.00 Tm (MLOps\):) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 339.40 169.00 Tm (Practice) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 375.19 169.00 Tm (probability) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 419.67 169.00 Tm (calibration,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 466.71 169.00 Tm (precision-recall) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 157.50 Tm (evaluation) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 96.49 157.50 Tm (on) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 109.28 157.50 Tm (public) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 135.87 157.50 Tm (benchmark) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 183.93 157.50 Tm (datasets,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 223.82 157.50 Tm (MLflow) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 255.51 157.50 Tm (experiment) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 303.57 157.50 Tm (tracking,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 340.90 157.50 Tm (EvidentlyAI) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 389.47 157.50 Tm (drift) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 407.37 157.50 Tm (monitoring,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 455.43 157.50 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 473.33 157.50 Tm (pytest-cov) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 517.81 157.50 Tm (coverage) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 146.00 Tm (gating) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 79.62 146.00 Tm (in) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 89.33 146.00 Tm (Docker/CI) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 132.79 146.00 Tm (pipelines.) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 134.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 134.50 Tm (Month) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 80.12 134.50 Tm (3) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 87.80 134.50 Tm (\(Days) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 114.38 134.50 Tm (61–90) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 142.27 134.50 Tm (–) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 149.70 134.50 Tm (Hybrid) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 178.84 134.50 Tm (RAG,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 203.89 134.50 Tm (Stateful) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 237.65 134.50 Tm (Agent) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 264.24 134.50 Tm (Workflows) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 309.22 134.50 Tm (&) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 317.92 134.50 Tm (System) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 351.15 134.50 Tm (Design\):) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 387.96 134.50 Tm (Build) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 410.97 134.50 Tm (hybrid) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 438.57 134.50 Tm (BM25) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 465.16 134.50 Tm (+) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 473.09 134.50 Tm (Dense) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 502.24 134.50 Tm (retrieval) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 123.00 Tm (pipelines) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 90.86 123.00 Tm (with) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 109.78 123.00 Tm (RAGAS) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 144.54 123.00 Tm (evaluation,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 191.59 123.00 Tm (asynchronous) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 251.42 123.00 Tm (task) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 270.85 123.00 Tm (queues) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 303.58 123.00 Tm (\(Celery) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 335.78 123.00 Tm (/) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 340.90 123.00 Tm (Kafka\),) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 372.60 123.00 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 390.50 123.00 Tm (practice) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 425.27 123.00 Tm (backend/AI) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 473.86 123.00 Tm (system) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 505.55 123.00 Tm (design) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 535.21 123.00 Tm (for) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 111.50 Tm (technical) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 90.86 111.50 Tm (interviews.) Tj ET
-endstream
+<<
+/Contents 15 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 12 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 10 0 obj
-<< /Type /Annot /Subtype /Link /Rect [38.00 22.00 458.62 31.80] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Shri-Sanjaykumar/Linkific-Tasks) >> >>
+<<
+/PageMode /UseNone /Pages 12 0 R /Type /Catalog
+>>
 endobj
 11 0 obj
-<< /Type /Page /Parent 5 0 R /MediaBox [0 0 595.276 841.890] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 9 0 R /Annots [10 0 R] >>
+<<
+/Author (\(anonymous\)) /CreationDate (D:20261012200933+05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261012200933+05'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
+>>
 endobj
 12 0 obj
-<< /Type /Catalog /Pages 5 0 R >>
+<<
+/Count 3 /Kids [ 7 0 R 8 0 R 9 0 R ] /Type /Pages
+>>
+endobj
+13 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 5132
+>>
+stream
+Gb!#_>AkIkP(*//W/!fB3@ch4^B?M,)W+"?[\Js!%i,^q5^-->a5*OXZL)>15CQIX;p1IY-"Gsd#4TQIG-b<KWp6W7g'.p9YfiY1%e.XM5$cfK4"slhm1Bk@=)^>bq0#Z\Z,-#SN-l8j?3EiKo'M*4Z":rV&BD5s^^&j'?>'M8Q7'Gkl;-G9QWQN^ZQ)/73+0A:Z%@"YJ2j6`bOeP@^/f'hK]WdR7`$i*oSTh\_A4"^%$q#BCb:p'H1-]01tZli$!_9FnKZ9WK%W@be3?_-GTq#BOjL;Mm65P8#^h]CNcfRo!oIrZijg-*G)RUM0X,s<`rRRmMgq7Y3-9O$"qjFl)a!ipaDq1PD(?g%)nkmP%JX9n2g1#?3M!.0:V=b/DP80qEH'D_^.%%sqoNF7\M(VNY1!Bn.aQgo"t(L/gEo5Q<_(MbD[RSTKL+6U-R>B+j4@c"76q6MCM%6P%>>28ZLgR:fR?BH33_:La]kY;K!Q0:R%ZXk:DUpq=SU;3:1Kn!ES+[DO!;Vs(3B1uX0Ds`fSC,!_6+WQ<2;XQL;=>Dg#8L:K*]qki\74g0=n\IEiS'k759/q@hMu=S$"tLBZb@e^dr.V9n@3AYTcDl34Aj>K%S$7C/O>GU>3%*PDZc20TZ[0Z",.k-C5[=pMNL-q8YZU'BbAh_DT.YV8$4aC01gJ^f2r1,?5/t`KCVK'GjE0pJ*B^_p8l-gOW/F-@<0i??:Z]p`=GApeA0Qn]kLkOp_1QoJjg6A_F\']>i.=08g:Q.k^8cJg][>4%Ic#1cubo-b-%qM@0ViN%0D4goKH%^0]3b)\L,1hq4%Bg.9%fXJCtjZTc6nSVVr:D9OX5ouE>C_8Vg9#/_YHVG[gb\AW\j[hi:GO`6c*R7rL.#m1j,8<ND#Q]UFKKItl$(lq.*:%^Yaq#d.:?Y>T2HC)#Ym1"cnBsrS,,0R;PX9p%cLP4O=3gA4'c^;_skTVhZn7fDNnS<oc]:)1$d.t5i327F3im7Ld?]V`/&\f<*,$7dG=h=@+HI(`W2eF?>%!#Hg%.4gZBGc-OoD\Y4bj@*#(@=Y"MWe6aM<MN8.:N[Ij$Z=@erRJh,FW2*a:,$n9C$M<jOl]PhbJ"_l\'q2@"f2SaRu+V"&a.^(FGIr`:Mr-LD]/X2Ui.H0J02)h1sS,nFlfqZnq*7%lSO84/F!5VUR0&1SZ"*-<*[Do=PuT*nU%go=Q,Y-Ie!X1SGkh-J6%2=U&c>rM@,g5G")3^pcjB<K-k?,M+9Vli1AHi=OnTgU+jBQKM7IPk]]mG1ZrC^U'^iQuu)\4JuqHJ_R7C\CLW\hMHEja[-<BH-m^A<oF0,N1-iBV1STDE(AO\8iKUs[KFA_[Yc19)@R7.#7JJ";8\Dai]?7Jo#M>O&mJ3bphoff'-GII7ifTXR2=k#,3"?4]\&PUVFk\PZ;A+X7:sLr.Q=1C(lgdc?QG$D5g@mW1lFPYr9]\3j;Z1:2SaCX(o]3n<cZ$`k#0P7N1rZ118fMq)KPYh`No.m$RKk=<8=,\>g'50AU-]f#$F;:FJAQaBJ:'$7r/Nh>VXH3qsZkWP+\_$TH^M(>uS^qaYo73+d8aqS,KO[W(1$*-If+h'iG'%0j71L-9Ol>-q](5YC^E09U.+%@BK;,9fD)LRk^.93$(B.1g^T_)H*^O.7E83fls;+Y*n]Z#?E7lP9MNc*dCiW'NMubXHY9%/%@*SQD-dX9T+k0mD*!SPC&:0)b>i;kG"ZZc]@W.mq=)3f5c;sF\*-uDiN[273?M:CIJoS':Jq<HHfG]E1d>,^&]N9L)PKS\T+=+("E_qWLun]?m-9?Nb8<j@DX*G;\VF2V4nLU:^mf0%=b$n;Rs,Z$uM%UL,fG`;Q@*%kr(^TR1tOD1^oFKYGKTDPnoUiN'B"MPY2,UShO1ddW9+m2\QIus+2bI^Nr0Mr-"+Ai_mT='+@n2^lW:%"#`6QO=J'd.HM8`#Z7q)J6+krc$l8:o*?*e.5XM36tX?'f1Q%]&d)%I0M,duN.s(Ci%AHp)ij)'JVscT'*]/U`Pn"UFNkHj)`5_r("-<eK9YIqBS2_?L6[.>Ke-1R@*5n9+u,2,%9'k!'D,&ZCrA17c,DGJE'^lt4&bKMJW(o8$^PUlN.$-a^0Vckca04\f65"#M!pZ2@M"(oZh,Va]M%6fj\?7j19b3D)_3f`M$6gO,ci0W[2Z*equ#K?m'U1K+)2'(O^c.nKjlJ^g<9Prs-fAh(GP<C7k\7>^Vb;@dg+VFUjU8n$u*;IZrM:_c/(deS=2Xs;/m,R3b/djI`I]@6_[]*%4"oL\e"*AJtd[L3+Y,3):13?9P^Lu5Ssf4V!L0(hEi[%`:GeUSdA\Tg;rZLb=;[<UH-1:_%7fVYIYl1oLNN]$)G"fV,'=7hXMR+XH#'R<6bZA2$%pj-f)QQL9?YIq3(qus+-c""kosDT'5h@YChcsYRClTc![[#Woh"pY_ZkCOVq(s,]*Ib<;WMVWIB/X':(>d2K0lM^3M`LR=>@U$m$p'@rV3D:gpleJ1AoAd6pR.iKf=".Mu0OXS^@je1W:?4.Q&b?a-hf.q9E%a[.eBYP4.#V1/BM4Gu1ZoC&qF(ZrDME5AJ%'SESU(Mflh3;U1`q="X!Or/Pc9US6'<P`<]N8f'#.gPl8Z_DPR'Z*/YF0)R3'PL>sqS3^gT35HN."@i+9aqgd<Tu?6),kn5_\8^$=Ot89`h%Zf<3dr*`J%8bRlt+4MK6O2FQjJR>:Z*W#tKcR)+3tg2o;X5,5[C8Q6B>^P<Ie#e*^G+eSjhW;3B$!?eS>orolFi,2:.%X=6Z<5B=*1IJKP`e%2T(L'7u_rqc],/0?[pIh0+QR.pNpN&(X(npr7^a:'E$-n43^(l?'dbGEp/M_/nedNqih_)0Y4)`9=<XK$NfC/0]*8.&nEk^_ar(<?`Hm@mD8orVU*@T'"p=<^b&4HY1Eb:R9R'u7d2YGJ9L!?'L$hbap!SrI@^\iN'f4J1t%f'56DJn>+\ZqM_apc:S8KM3cTHC`I.^<bLm$2t6.5^]VddHG3B)Ru']kq+)H.e>,:>l8&=^Nh<p&ATVr`_;l5QK@:mZAt2T@L0n^\u%sen#n%BDIesP$N?YEYqBXg?7"F67hN##kE"C(CsTqLc>i58a7Y9&s(&Ub_7/EADp@q\Y.UYAB1LU-$soBLW3>F("H+HoX^ldsNIPuB0IECO*4:gi&^To`^)m(.hOrmg"@`/+NOfu3PHpX9FQ)=:Y(JTQbBo-nYr2JP^"=]MN5#>\06E(7Uof2T@".aR9tN-:>kc>MpTO=e;I(s2#RS3%f`oa5l/[VjZH\`Q,Vj"&2+?ml,ZaEc?&\?Y@J"hL<r)f/eBld'?cYR0<V/J6M&dJkXBX>28[#eKi#bG5qhS.*f,9>C?b%l%&(bqYkKB33+)Zs`gm1'L[j>C_4+;Sp,9bR5HJu658"H7]%n"a)6K1L"fY2>V'"Q:<]D8;]R/q/(OW\R8X&@W^A<M*/el;(Gj:GI&R4ZepA776h9IhU@XNVo3>o$27?JW^YeSO-E-qoDmSmID,$)9D_QDi#oWIPM&i".E!J,VS)[]jNAO$:Hq7^Xj-<VJ_eV3\]KGm+'FY)J.p+!CJuk6V"_%LML5p\FqB3psjKc<X+G_i4H"`iqF%_>@E5/8MPi:5c_c<_F'3]es5#9^9NLh1s+=e%tP>.:s7LI'.bb:bq[S`OsCna&QCY;_+Vf@]C./;qYs8Ce^rsB>;\.F[EEP\U4p3IN_MR2X:-@b\"YDAiW>C14/JW<L*OJ3r?nWK&2bV$11m%",>oj`-1PBM(<7B2cjJt.Wkp0(&Rp@.@'__?&7(9\h^uu>]EE[3[V/FM_HrgWO8F/Ftji)?1_Q[)'bI?R"Fr-Nhoj7m^UbRMrbStr.67(`dD(Spq""-E*a98``/W^5Jh%!O9D0T`_g?$GuiD,@D_NFkYAIDjr2gQeEsCOR9-9X^u4MC)L,J"]ji6hj](&#YlTRU*FP!SmDcI9??65",4.6LL`Kq0me`Bfm:Vdp0B!"<(Ra67iNd5)du?7:5D!0`-%%'b.)Uu'*]AUoOl^\]A5:I"l,1JZ1nF?pjo?lLMU<SUM!\WVeR#4Jh1mEpWtn,.=&^_('j\$$:T<auR=%,Kl:2<j_XN!;<Q<F"#EN,co!.Rm6F&)ZIE@nC$9<:-3VCE(EfThJC<O1!H&3IbAHn&Z<#$[;UNK(Jql2lRW0!#T>5NUTr-h3'fRF_,hgWRs8m51\J(XI0=kRjHM;W>p)#[_PhZs+?=/%o=N;e$`AV.%LZEI?$l?)@3Y%6eYq\V`iRG'^Eb+4KVI,HGPE/JN1\n9W6gJO:@<N4\npNDT<GTdBqpl4[6a`u2lmi"RH%EusqVV:S?9!O9A%7Xu<(rd(['69\A)8e;=&(@R&,]ZN]HO7r[,,7UcrN%b&PW^nCd^ne&rMs!O_/Tb;ML$(3^bhg#a)2>p>F1_]#L4BO.D9P/Hm_huX$7F\VE4;YqE"UnAKOZYb+<:L2dm(tVVYtkJ+Aig6np#rRc2$YE6D0,i<,%81(0LiH.XlY]!^a*`3lA4b9f8/RB`RV%<U9](lkYW_7%tP#K7J2l=kHuoD/)$2pEK*bE[X^UOM#GW'?/FH9h3IG8'M%k47[&A\[a>06:TlnAjrk[[4(V]uE&38H.IW_Rf*h]i8'm*-INcBC>bgKMOe`<3!PdlCmpS@9oPoQKIM,G"Q%omS9a:g*p%l\N?Q)BdV=5k0AX+UmY%\OZO6AOnuec*E7K`]PlI#ZEmik[jq!PXsDT5lqDD)YHeS,df.[_ZDSXM].pS-D9Ds>_QiFH6If.VRbE!sq]q'Y#lN>YeK+!.N&qSNSh,-CA8riM*1sb9SQQH9X3o2\UPmN6I@"hn1HV5a9Re(B!WEmCqWhYpe)APi_uK`7lh,2u\(+h0_!UsJeX+DRcJK+na?a28h?7[`_+V/C0^_,=!rUfUP&>GRW\+L"bJ^$h*K8AZ]_87/>u<p1#b"E:-)rL!>>lgPr30(+I@$2.W+[<Ff4cgiW&tc@?`2&+^a\=@97@c@4lk<Y=4-1Q99n'EZ_;L_mAOfKL=SYTUJ#K*`>qN\rX&U*B$g?XR8;'2`k`)PcZJp\!e_%M_mb&'\Ho6NDl(<fCrl%A5B-1C)3d>c~>endstream
+endobj
+14 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 5246
+>>
+stream
+Gb!#^>ArQ3P((`\W/&3J]-h34^C59$lY\e^1R$S3mQ%n0YlQH(2ER)#-E/7sm#PKf--Jo^\21I*i1PXC6Ldr)f(H)L_#b!\o/"Jh50VsGe-=ZYfb/+^GVD47amA6W;*Dr(c\!p/M<fI",l,j>,@\WX*="hLgC=<-L`:T4'nBO0I@)lrj%kI*[LKP_:/2h6/Rj!s3Q*)Tn)H,)Qb\unE]E4U%!\HLbZM/'GX=3RhXN-q0M9&[>dEuBbeCmZ4d,NZd2sD"g^(d<,CUIgjPd>n&7_kTeYb;Al];s6KB+oEig.>"g$n+B$f:gAL]m3d<8_NN6OpgN'.<DSo4J8+6e`^/RHK[YY,QdI.C;WVq[ML)b%qk6&m-3<2iPP(=c+2X6h<F]c\T(ShMYKb'KI5A1u$d*J:UE'f8p<nklYURFup+%10J\C'$Z=LI+g+s:LVI(P;t;+dQE)Q@B-:b^XEUoH-%gJ0_NW_;&Tf9h?L1IKZ"89r@9oM\1[<GB34`lTY;VuCe*?kmPol@7V0D6GZ\llaU;8tS7Y$ePa`%4=M^;..p,E+K46-le9kYb1sqD@6;*d2MIn!3N,@a#mRmqMdqf+81JADbH,^o3mMRY^o0L9.(F%iX7c1F<'FE)F`Eb*p:=`*^SuB3f@/^W]b;`d<)b=o`YfANZ$.gm0rA0\$-OdpVPKB99'iRAU'N1(KJQ`G\l&)HMGZZcDW.M$G<QX;b="N06AP;>S,sie/HAETl;l>J60+kbWX*)E`CQ55k$<``tRHDC5UUlTs&s4hl@;`,R5#>7b#)_Jn=>#_:#5>2iKnKWU1*koc00](]$Qcfa_^3c!)e>er/\rahjK-^YlrWe&_!Y?V="Q\@d=g9_j@sMoWrSdjq?fUk,qYN10,bE:<8/e/'n%`@FC(l'T8Sq*V.l&92l<'2Y8N5M#HDO0K6p&F,L-!M;U&+LQ6NGi<5O>[=nX>A$mLJZ;:)A.N^LZBd)n(AI"c<,6*eoMaVPfs`E:8\;!lM.XC.3++o?r^nlP_@ZE.PtZq*W7Me^@_opgJVe,kq@)bDHScpDYCp61)I/!&"9dllngM9O'*WK9g<T)JQ-bJ`[H$Vdt^8u4[dNaZj_;;U&S.QK'nG)Ne"]Pch4]t)tapKq($kp&r9[jeqm/Pk98/T74cNu./KCR3kPh-t%G?Wt0nm$C=bQ#\+<\!!f(gBWJAig">[p&)7].ompb>@+,lZ1lcZ.Ws[i,kg8)6+7lo]$C=[d*M8<@n8+C+VX&m'JEK)CQ2`DUordqYR[V_OtS<VH]LFO=f*Y'gtp9\O7RSb/*->B5-U(+VB-SC?iGC9\:]8eM[)VjX4t8^48eiI<iEENGj_1Fei[)&6_pa\+B$3WaG&'PN#'2aG&Q`ked8(k@#'$qL*Ul3QZsRaJT84c!dS+H1))e(*(/9[!EqaG::XJ,>cmN#*?2V%$7f/i?qdj?XL[?o[Uj=E2ag4@?DK\LS()'Ud)=j8G&5g*Z-ILY5l8i#>*Jp_+dS9l.2o8k?1<g=:#DZ=1ukQ\#Z8C+.kRQR9i17g.CioL;G@ZdN8kR1E5.`pF'n+h`b`a(K`V5;q@"^q;kUTU56$isN?<V&lV0tZjR0_Q.\C<5,kAkAWTp7abW,IS*G(='U""&'=dEqI8P%C0g]*D2J%fbIbm-5tlVDW%RJc<"p>.UIQQ+:eWWAr4LaF!=[4naReM1-"fj_:+9'6<R\]F^X>GohpC`Pb5GS9'%BJ(dAbe5(D4<d;_fN\<,74c2TTe^%#nmNt,L3=bN&tL6ufFgQi7AV^/;36VL:OkU6Us_pWP]]3r8Dm\/;]7i!4O[sJ[&alsU)8OGPS_+V'36"b^ZJ3fRB/>q!ccA@Yt.?OW(aWM?HNIo,n&37',jc:o)E,Ir&27""=Bt,:sr&bBW;L@&&^L.3W(;$A9Ft04<+%.a-oj664`ZHLkl_shoh=1YHoN6CrIHN(`Qs-bjT8OJIALGOAeB\1_D$dd0#XB`TK*J`-6Xh](,M'N4\UHT1IK-CNGtZ,-/\W2u`qcm'!<uH%HP&Uo`13ZIbS=6EMBGr2ers90jaHTqkjJBi;A)dH**ABY('?_G\IFlJq&.j9%"%@$DpM%Z]MCA1?."Oim;5Y1KCUa"YUacfX\V[g?g"gj:4:)BR7seHb9^RjjKU2sID8?VOM:*qbWS,JkbO=UL?ZDk/.cKU>`B$Jn0MQ]mp745^I'3mZ^fHIaE13\8[%5b.?20eSO&"oTY+'3FpJ9s]cnR(H^6*\VPW#iP8jS+u]l._t.M0aX9kHgam(_Kc*E)hA\"`+lQ\"8kVt*8;WFjR(#+g-1AR!$m3Yq]c`/NpjqPilH.M#QKi)fAEa>j+)e[e6*g%`,iAfD)>Ja>h:9>i,n+-*q=XHFXKTiM66!<`D6tY^3j^2ru:Ddl%<K>fXWj]]BaW<C6L=W[o++g)Mu)F`/BTI)RSK0PJX7S`l9Y=V!Z4@%:eQQ:;.;AD+:?=S>E=6I)un-]q.qB-hQ9TjK9NkWod8k-9Z]F7&tE8f%Zlgr4q0Hn4RBn).>FC]jO?5hulh)ZO*-o1jh_!1Q%jI,Xj!E;J6n!QShUog:n.T\\jg^Nqi=;fmur#d/Rl,3u3\<L^@XtLZAc,f`jX4!S7V>(q`XEMk"Qn0*3m5:edUI9JI".="XB_LmCY)2o#ft),3CJ5r*1_0Q\kUNT!=CZE+46#:AEHrPqtUjP+]b])`6)E6l4%i'k%,cZcjEEn<ZRrLZu$[dT.gO_$)kkIb28RcWg6ML9eo0ctLhmWO*PkC"1@9%A52W(b;Le[J-Y=B%CU\&`aY8"QAX2(j2\#Dml`cm%j]G[2K4XOre3R7'h$HWT[-:I3,L96:DK2G]QG_Y7bfEPBbr#0>^k=k3()q"MKYbe"tKa\\2dd.WD:FuCfEok)4.#qR?#$DR[IP^ZanI'@IWfWP7o>3lgq`9@/3327h=)N-/A&k43pg'R9@N]j%ocQm!S/Mk-<G!Lm9Rfm'Q,K;f>rTdp?6Qb7XFPNVS9mSfAr8>*q$<dPW2r\W<#:1r5FqH,E$?\8)(lVIo!WPfM=cjKer.V'V%*OThkfo8B;F<4Xl4JV8BO@h#Ys[lnmGgo74:KR8%WAeTIjS2qEkTbD@P50UZ$g;qQk+$.\\7g_jNaBqj*p)[kdnS<pQG[U"c[r!%FQeC:CDB^Sj?BMp7+#kV[:U/ks]7b;K<p"8A4>.?A"^8[Q1.-5sU%cXdu@_hubX2gq`.i<k(&l_Mg[q%>nNEGtp&=IYGZ7+gL(I69M(Ln`B!'ajf!S14dgHSc^*>4=@*OiuTNBW]0Er<tdC__"V4M46fh7-3_8l9=5T\OPd38\On+t1$N3UZ,PF[@[XJU"6pUNkCk1gi\soK8[/sBM:N2HR'MD.=JBY=Y`C<sgO/L8$r4!hFmRZm,g@/P.Zjb1</E#hHtDf;Dk^A$k0GnpqYA%qC,S,fSR%d^DFTs7-bVQWd)-VpCrpHH6;oQd;K.C%FAmg4]N?1P.G#o?h.QV$K%tkH$m#"$%)i3-eDWpi>OWkrRl%i+D_1_T2,P`1-h\MVX&3UWTjSBZ(7I+c6)-@%obHs?_(,44Vq=IM-s%65Quo7X'0-Yh<,Iui"`#fh)fXf.g6LuIb15D%^pO^p&XCB!`_`#EN&(d=Q)metTjORE/ogeQlf;6f[K!+H1AM&GZ,/+PE&/Ak0.+`417kd]\/q8O=]\.2YatL%F]S^s^fpT^L"'%jNf.`WfB5uQNF%MEL,kJ;o/u[r%_q_B:fP$-Zr,PJ@OFa$;=L^gN"rD![pmlq+^l?m@0@irI4+`=R"X<R=GZ-!@)s+5kPug]+Tt5QMUhZ=4W3+YY=C\'%W&XD/\3&u1Xo06^l%QEAnX9&5pSKIRZZuj#'T3(BL_7n[dV`rN3p$C4JgSNK3Ab):A[P*:(M+#`&;V^GOD4q:?W7e&%qAhD**F<.J!0fO9>ZX^aE!P=H/PS8srEeZ,@]@7TO9Fpd[=,3Nk$ibJ=3g=91<=q>[2!S.kZCBFqW8KY%8)S/-L1h%1#$M<j2*N67!6)g<F)qX5>rqSmAra$nqR<s_]HM.7EqA6U=8S#>m?0KSd?$\:94kkR+JhntR'2V8$g1J%t.R7<<TYR42P]ZaK;p7Ik$?/41Be><UB/@C%n=_Au$9WOk="KTXHleXLW)6b$!L89tF`TBHW"'N*VVDUYe$S3aR,,Ld?-u:f7Ybj0eQndu)Bh2BpM7ThR5u_!u-00U$H<Eu_ZF*hpjY9Pc&jeo<[N$DeA+Sa7mMS*q203AMf-[o+^MVsk;dV4tm>O5;`F_BEf,WF_9`4+.]!Y$ja*FZ:[&Y5gnoSq7%"!k)B>s@lj[*iGp;&^W3+qK5p%Bnq5*+$%\*&tF5:/>d43la^dSn_spQPke;1M!da;@OB()Vg96+$]!%.f4Hg.c0aBe7QFOuCE`V`L$I>SO2PfeHpra6B5K81:8\E76hM&B1ka;K8O1#+M8b0mV(j?sZ?7m:@FU:^@LLVLd:F\`l/jp4m(rmTB`VcR[i=@mH"b&qfIMF!T?G>@m44QPf,*,B4F3o%Af^!?qc>^r+pK^eM:\D:abkES`V7*U$[RXT6Sr4\>[s%;FR.>_/3*RiXYN:k7%qflX)RDmI8^6JPR=]kod#]gp(*[.9sCoLW];3A9eSR]^Y#@^F5_]01p&fe-\,1onh(N^9ip;eqMlYjI#s_a^@SIt1c<*7+"_k'2qZYD"gcL1E+[4p[RQhemM?4e&rIIoEcB&oXt.qc9GCQ-9GH*R<<4L2/8=^R[?X,sSrL:J@,G8W!%nP!6NZ@a)ih[<L5L:hGq.6`cUAg0e&9<)`.3>2amI/8D`2()(1l7+l[.O&&Pr:0.k,52J-1EhE*I,faem;=0:3[NK2Z,`:Rer7Gr#^g>^=":u&2238L<LJ)Lf&b[j95-l45k@^-rT:MR%K[JJp`AsGoc6bK:dnaW.!<3E\rH*)be'[8qU]:2ho>Tntre1+*ca+Me3B9==\s_nmJB@/67-G4-%"2;W4:"MGN8$isi"@PZ]r*^;aW-6W,2Ek^'u,8\]LLbK@6L_hCL4je>@R/[RWDtZU+Rmg%g;Kc3o6pn\/U!7Joa/Xg#poe20"c+5Wl4`Jq_9.,eG_lF<d_9B%(rZX;asZS&2j3/=6tIf`X17_jeCs/?Mk,?_C,MgJQT!"^JMu]&J$A/P%)VPNc9AiKP*bkiT%jWBAkfPi7S$]5D0XOpHJ71jn%*QA]3Php!k1_4\M:_Mt)&dJj4a#\)i~>endstream
+endobj
+15 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 4252
+>>
+stream
+Gb!#^CN%ruZMj2u;-73.A]JQW9e$tR!fC?[N1;;ZP._5?#[1b1l7pu:l#,5&@Xn;EOjq9,j`ku^0(t2FA3[*[EN8:\?#[R[\,Md2!:T)iG3+>A_0cQ,^]KmaiGsD<gIX3@Kckn*))0qY&kIqEhbN%Sg\LKjA"i5*]E$Pn@2RGZZRZPkLH.XcCGKP\\:Y'SkIPXI!qW00Fs>9`kX>p*Pt%-S[7"MXP!"LY0ZS8e7ETZgUG5@Z(aIWFZaVXg($9uhq*(Eu5*4/f+AMtR`e.;]HL-/gSSZX8eE?GWdiBDO!ft9<Q_bumS@J(SaYC?(f-`,$LD*7c=U51amXTS&(tJZK0WSd^r)A:iMqpk6VlsQb-#WK_\ZQGaMk#=9lR1W+4<qNLiaAhKK_]V_j"O';@'=?iY@EpL=sG>0L\IHiZsTMNJP24s/93jLs1'V:MZ0tL8\!a1U,Kdrgf3O,IfEF44!@[EXtkC6[8&7;1F(:M]pJtCr;<X&!5?d2jRB7!LH1!;jEmP@#B&%]Rh"F)_2f)_LPncgE-@4[_)L9]JBP%nds"(;]takD2ee;M0S6rW0sGG26/A:oQ<Tg'U"%47].&l&bi)>8QFY^W7PD%sXd)iIgb+jErWGh\WoPpRAm7*8Wu-UedN5PmEaq@UMf@Edc/D%,_V,p2j89eE&lP"XQs(+1NAWtbg+[cILYhE&GS#$-WQGcM&tc?=.[ct_KL>ocB2ko^@i7rs)O.Xgpmn;umSSn=fEYQ_5c[=g]&`IGj._'cXh+N?Sk\kU+&DO"gUFSeFr&Hh>$+I8V/,mPL4-I7)G%E_7$_bai-17-.&9:+p,0)8H@I+?)dG!M[Gi7\;)f^pF[P:PaWD7_hWpo!iX2QBVd9XmMD>t\@8rIph4oN?/u7SqnqG/=h7P';UVpY[&p8r%kHXf%%/rn>2oR(=Xf@#W:f?DlY!i].>)AJ;UL:(Lb$YF.XHXnC.][UVF>[BjB;s=(<bcX#dg[fd*PQS%SJ0cNbuql"\jh*Yne8DO?%kpOn9jgZ6h3^Cs#!rdWpDH;[W.8`b?Uj[63B;I.Z+C%KbPAl8rY.i)CTib49*TF;6<lAaN+eZ]1&-)&MW=CYt?2WX1;?7$*>8Yc<cH]-lT>.NW5q*n6Zt8?\PI-)s(<4]7FCZ@ZCS^#%j1YiEG=\CA:,/B.RJC>eMU$JscA:gDL@$a*ceA*C?IDGtL!90NFPTmQeeb?,*&Z2Kk;5bM)(uemc&TVb1.;N<LJb't,<mo,MeV)*B<q[m6@a]0^(l<sCkX40C/j)4.3.A:JpnSYPp<0ZiiHgaK.ncT0?]cgjMiEt,E);"NHR;WkT:^^LR7<bVY:OlRgc(1t=/JPoEsB>UG_9.j.ok*-k\%Q+/W5cgbAXo5XqD(E;5M@D/]*@s18)\tE7E\>h-&NfOrjonss4'm(OWF$`KXnukA(GhFY7D\YO1,=R3_!+dhR\2RHC$OuJbW&Tb.sUkfR2U?7$O6$KBUKca/rTWs\gO\u6,LL;!t$#eI29hFg,Ob9I8%Bi,'*p"@k8DN;Wc7`Yg=Ru@BJ`.04BG*!E"GS$e+0ZC"B"@/B[$^-.Y"(cOko,Z^W\B>R?6hB-Jg_l;]-Z[kMbDiu>=WcJ)Z[QAZ_=GX/q-0/e7T9f:&a34k^+5(+E2^Psn%duU8bfAEHtL)2edagZimm:,k")(W&TF(Dn296KBchq&]M;)s7HE3O,;fIrJrCWPudF&c*h;+W4o^#\_B+CKZX4gUHHJ0-hJjW=^0q1fahb]Au]L\0Da%0dDXK]QQ9fHBn)?iY#)3<$^ghhgNO]@dmBSp)kMnX)O3g=\)iMsXV*#T7p)IVeAUJa:!eVfqEhah*PD@qi-<&3SjH2Pa3qiOf8bAoSN'E?V49NE."&+K8:)Y75WAXLZ0B7N+81NuUC`4a+K4RL+]eq9eTBJ^9hejlXJJ\p)gZr+N^EBN0<#<22ml4G]\f<eT-1hS@aS?"dH[3S,dgk)!J-FF0g12e556DB8<c1-ChjADO74ntO1)\Z')ZL"kGfh\^<N4YNN^iY?VsPbrNF-[KP%IL4FT.a=rRSlnKffI74Z]7r96WN76Q/lZ$)!C#Jr#eBf:3Se)YS9WC(AJ?pb8Y4#f^.usX2icVoV1DhoqZRa-Dk9>QnB8darb[%.EIBk'+kpn$*ot2j[YcdYR;S)X88#Vm13TL6p3GFn^!&[$LO$JN@KRZmi2:1`Z;Js.Kj)Y`Ob*'ga5CBd`BpBHB@OG0BL`Pd=Aa(8UhOS&-7=n,L0<]>;p9pZP!W\]Pff^o2fOPAme/YC_gFZ9R""pulDIP?4ZQ&6;&@%8^;:]W?;WjsW^S(G`pB,/US>u;p9+t25ERUFE!@E`3q&5<WuV!E:;%N@;`'6=%'*B'g-(P7,3]J$[6?aa\2k9,E=SVdVd2faUG8]mC:eXPg\]0C`gC[DA]Hb(I]&ctf7G0UT$P8>r(gd\bP^;=.-%]`ZVuTc_bKbQ\8cqh3JmdJ_Tf;9F+G4aN8^;i@aXu@.GTkHPm#V">;k]VAlF/;2K?[jW%3(F0cN+/^B$7]WH0Mu^?auKN$?88aXa3sPhFO\??'_:^f2Vfdc@/Rbqjoka0>4P8su,(l>XT>]m`aq4!!h$5\')gY2A,Y#:VBVeKPeY[%%,,giA&@KlATN>-p[,UjGc%7=BiS3O]d&QDN'#_8n%*A.)nS\AjeO3:h"oCBi^gk7r^86t7][Ck%=AA]+#\Gs10#(9#%\_=C4V],<8Cp!BO'l=b7c\.ZgHc"YejbBoAF[/";nl<7Vjb,Xt5C?um>m1)7A)1I@qhIJOUI1)GY9+0u&e%<&:HtL386_nE\<VKdGFZ@JBe5(Dj%8$?XmNa1S8A$6ODr4HRE%UG&eH1J"57?YLQf'<7=HnJg#WhcWd4)*CC%*To3gAsOk5RP+rOehY%]7/0;_kAlAX10#bLO#_jVik(P]],LX1Q0<g_XYB9)][/I--,g,)6J_j65C:W_2@%STT0sH_gBp?3id3"\OF:[3c#<;_$2Y'T#YD&o7K4$DkE\Bk9s[,uOCT1hnZ/3u.=#?<L9Iir?V_OQ#kOf!T!,p-Qm!1&X\ACEru.;@hJ"@pKgSp4_kf2>2*f8n)SYas(LU.^'/WS[:dM&HEZHW-7QkCM2ETg$0K\6u@U^FUd-UKR8KV6b66>VuI0!-WEB.rDV=&CTXD4$s7E8i3s&o6O*?_U3#<%2fJu9nDtZTMO+RQ9qZ>8,!_RhXm2\*@):;RPhF`/e5@'DeP6H#2l+_K'A,qTfO\9a-6>QMS,c4[cl3,'lJC*qR@577WL@ZSIR)M$*t`'O6_)&\cD/GWq9@B@@4s1AD;Yq[[#_X_[XJ#rMpsrE%V^:[K+[L7Aj@!;+@Dmircp&PQR#:%e!SrULLW@n.mJhl&2[)$doTl"r8!Y-mrrW>e@0)hfrbO72_\sGJ_?LDNUf)T0f;BQEIkjeZ,d=P6b,J>F'.3q85EQ;K:!rjG=^5aqM_LqjBgbeUgP5/cgLn;G\ZQ&!$rTZ82i+0J_@YqRtN5ZWk_OM$[IN\85]W"'KO%1&fJ-RZdO#rEhR5sYeFeO$sfR8>?EBA\o4I#eI"FZMh!Q6HtllT"1"G'G)4+S/J568*B0cQFEP0!og>"^nR^ia8uDq>R0a@eHOF>Q[ADdS2Aa)fk.joe@3JOqF:"(PT'#rs140</k#-CoER7-^^.?%dEPT4-kP5)>($A1Al`*kP]!QoR=!,;:^Ggl-9+E`$oD6K)'FZA-LUOna<7'jhf=pQ1DT=e]X];c4_m)412]5lXEGqXYUD54Sf3MG_>9aIM_S,#qO;BD6&$&CVL7s6H^WU;u44i@'m'jPrR42FN/58J14)/4F<2g%)]'7j..&<-5Wk`e^dObXKF%A0s>45".A3\CWOf/:)DbK+;DTIuOO?bc2gN4*OEk!/99oU)Ta$;k?`!_u/lc]b#NCP(?)-r6I>N1/)EIKqH3;[tX!Vco8m-!U=B#BZOL4B*^bKXu5?fAF`On&*b4T71NHrM,m`1uB%N#;%bPQ51D$KH>%'D]k/r8=hRm?].9Qj`0o(-0)2^H\DuI'gZ0R,X:CnK;20,/M[#-ufNO8qmPgRjrtE8"GOT\5AmUA7=VaU4EKa5o,;KGpIQ7,4Q?9l;VfJS`$rcrPW?S]l1H0>H>.,`8_m)4pBV&opp<2qp(sc\e90l/Qf$1Ze8N?rf#$-q<"h0\3AYn>(=iBh'%Dub_:N0)PJ**a02P2qJ<RVICd(,R&$jV_TDfYItf!`~>endstream
 endobj
 xref
-0 13
+0 16
 0000000000 65535 f 
-0000000015 00000 n 
-0000000112 00000 n 
-0000000214 00000 n 
-0000000319 00000 n 
-0000000428 00000 n 
-0000000492 00000 n 
-0000018083 00000 n 
-0000018270 00000 n 
-0000018450 00000 n 
-0000053036 00000 n 
-0000053224 00000 n 
-0000053406 00000 n 
+0000000061 00000 n 
+0000000132 00000 n 
+0000000239 00000 n 
+0000000351 00000 n 
+0000000456 00000 n 
+0000000571 00000 n 
+0000000690 00000 n 
+0000000895 00000 n 
+0000001100 00000 n 
+0000001305 00000 n 
+0000001375 00000 n 
+0000001656 00000 n 
+0000001728 00000 n 
+0000006952 00000 n 
+0000012290 00000 n 
 trailer
-<< /Size 13 /Root 12 0 R >>
+<<
+/ID 
+[<f3daef1243f88126958596524ebb5df1><f3daef1243f88126958596524ebb5df1>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 11 0 R
+/Root 10 0 R
+/Size 16
+>>
 startxref
-53456
+16634
 %%EOF

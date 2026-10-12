@@ -1,111 +1,105 @@
 %PDF-1.4
-%גדֿ׃
+%“‹ ReportLab Generated PDF document (opensource)
 1 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R
+>>
 endobj
 2 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
 endobj
 3 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
 endobj
 4 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding >>
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
 endobj
 5 0 obj
-<< /Type /Pages /Kids [8 0 R] /Count 1 >>
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
 endobj
 6 0 obj
-<< /Length 9823 >>
-stream
-0.060 0.090 0.160 rg 0.00 814.00 595.28 28.00 re f
-BT /F2 8.20 Tf 0.950 0.970 1.000 rg 1 0 0 1 38.00 824.00 Tm (LINKIFIC ENTERPRISE AI/ML ENGINEERING INTERNSHIP  |  SHRI SANJAYKUMAR V \(VIT VELLORE\)) Tj ET
-BT /F3 8.00 Tf 0.750 0.820 0.920 rg 1 0 0 1 388.94 824.00 Tm (Day 30 Deliverable: 90-Day Learning Roadmap) Tj ET
-0.40 w 0.700 0.750 0.820 RG 38.00 36.00 m 557.00 36.00 l S
-BT /F1 7.80 Tf 0.350 0.400 0.480 rg 1 0 0 1 38.00 24.00 Tm (FinDoc-AuditEngine v3.0  |  github.com/Shri-Sanjaykumar/Linkific-Tasks  |  linkedin.com/in/shri-sanjaykumar-v-588bab28a) Tj ET
-BT /F2 8.00 Tf 0.200 0.250 0.330 rg 1 0 0 1 530.25 24.00 Tm (Page 1) Tj ET
-BT /F2 14.00 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 790.00 Tm (Personal Learning Roadmap – Next 90 Days \(Post-Internship Development Plan\)) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 767.00 Tm (Candidate: Shri Sanjaykumar V \(M.Tech Integrated in Software Engineering, VIT Vellore\)) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 755.50 Tm (Current Baseline \(End of Day 30\): Completed the FinDoc-AuditEngine v3.0 working prototype \(FastAPI, Pydantic v2,) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 744.00 Tm (deterministic 3-way reconciliation, regex PII masking, 7-feature synthetic-baseline IsolationForest with perturbation attribution,) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 732.50 Tm (and PyTest suite\).) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 721.00 Tm (90-Day Goal: Systematically address the current prototype's limitations \(persistence, authentication, real-world ML) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 709.50 Tm (evaluation/calibration, optical OCR, and asynchronous scaling\) while strengthening core Software & AI Engineering) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 698.00 Tm (fundamentals.) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 668.50 Tm (Month 1 \(Days 1–30\): Durable Persistence, API Security & Document OCR) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 665.50 m 557.00 665.50 l S
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 648.50 Tm (| Week | Days | Focus Area | Concrete Learning & Implementation Tasks | Measurable Weekly Target |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 637.00 Tm (| :--- | :--- | :--- | :--- | :--- |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 625.50 Tm (| Week 1 | Days 1–7 | Relational Persistence \(PostgreSQL + SQLAlchemy 2.0 + Alembic\) | Replace the prototype's in-memory) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 614.00 Tm (AUDIT_LEDGER Python list with persistent PostgreSQL tables \(invoices, purchase_orders, audit_decisions\) and schema) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 602.50 Tm (migrations. | Working async CRUD layer where audit history survives server restarts; verified by integration tests. |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 591.00 Tm (| Week 2 | Days 8–14 | Idempotency, Caching & Concurrency \(Redis\) | Add Redis-backed idempotency keys) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 579.50 Tm (\(X-Idempotency-Key\) and sliding-window velocity counters to detect duplicate or split-invoice submissions. | Benchmark) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 568.00 Tm (concurrent requests using locust or httpx.AsyncClient with zero duplicate ledger writes. |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 556.50 Tm (| Week 3 | Days 15–21 | API Security \(OAuth2 / JWT, RBAC & Rate Limiting\) | Implement user authentication and role-based) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 545.00 Tm (access control \(Auditor, Finance_Manager, Director\) to secure approval endpoints and ledger exports. | Protected API routes) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 533.50 Tm (with unit tests verifying 401 Unauthorized and 403 Forbidden role boundaries. |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 522.00 Tm (| Week 4 | Days 22–30 | Optical OCR & Context-Aware PII Redaction \(Tesseract / LayoutLM & Presidio\) | Upgrade) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 510.50 Tm (/api/v1/audit/parse-raw from regex-only text parsing to actual PDF/image OCR table extraction, and pair regex PII rules with) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 499.00 Tm (Named Entity Recognition \(NER\). | End-to-end sample PDF invoice ingestion test extracting line items and masking) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 487.50 Tm (names/addresses. |) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 458.00 Tm (Month 2 \(Days 31–60\): Rigorous ML Evaluation, Calibration, MLOps & Containerization) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 455.00 m 557.00 455.00 l S
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 438.00 Tm (| Week | Days | Focus Area | Concrete Learning & Implementation Tasks | Measurable Weekly Target |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 426.50 Tm (| :--- | :--- | :--- | :--- | :--- |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 415.00 Tm (| Week 5 | Days 31–37 | Benchmarking on Public Financial Anomaly Datasets & Score Calibration | Evaluate IsolationForest,) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 403.50 Tm (LocalOutlierFactor, and XGBoost on public labeled fraud/anomaly datasets; study Platt scaling and isotonic regression for) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 392.00 Tm (probability calibration. | Reproducible evaluation notebook reporting ROC-AUC, PR-AUC, and Brier score calibration curves. |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 380.50 Tm (| Week 6 | Days 38–44 | Experiment Tracking & Model Registry \(MLflow\) | Log model hyperparameters, StandardScaler) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 369.00 Tm (artifacts, feature medians, and evaluation metrics in MLflow instead of fitting on synthetic data at app startup. | Versioned) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 357.50 Tm (model artifact loaded deterministically from an MLflow registry path at startup. |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 346.00 Tm (| Week 7 | Days 45–52 | Data Drift Monitoring \(EvidentlyAI & Population Stability Index\) | Build a scheduled drift evaluation) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 334.50 Tm (script that computes PSI and Kolmogorov-Smirnov statistics across the 7 input features over time. | Automated HTML/JSON) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 323.00 Tm (drift report flagging simulated distribution shifts \($\\text{PSI} > 0.20$\). |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 311.50 Tm (| Week 8 | Days 53–60 | Code Coverage \(pytest-cov\), Docker Multi-Stage Builds & CI Gates | Measure actual line and branch) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 300.00 Tm (coverage using pytest-cov, containerize the FastAPI + PostgreSQL stack with docker-compose, and enforce coverage checks) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 288.50 Tm (in GitHub Actions. | Verified pytest --cov=app report \(>= 85% measured line coverage\) running automatically on every PR. |) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 259.00 Tm (Month 3 \(Days 61–90\): Hybrid RAG, Asynchronous Workflows & Interview Readiness) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 256.00 m 557.00 256.00 l S
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 239.00 Tm (| Week | Days | Focus Area | Concrete Learning & Implementation Tasks | Measurable Weekly Target |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 227.50 Tm (| :--- | :--- | :--- | :--- | :--- |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 216.00 Tm (| Week 9 | Days 61–67 | Hybrid Retrieval \(BM25 + Dense Vector Search\) & Evaluation \(RAGAS\) | Combine keyword search) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 204.50 Tm (\(BM25\) with vector embeddings \(Qdrant / pgvector\) to retrieve procurement policy clauses for flagged invoices; measure) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 193.00 Tm (faithfulness. | Policy-grounded explanation module evaluated on a 30-question test set. |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 181.50 Tm (| Week 10 | Days 68–75 | Asynchronous Task Queues \(Celery / RabbitMQ\) | Offload batch invoice processing and report) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 170.00 Tm (generation to background worker queues with retry and dead-letter handling. | Async batch audit endpoint with job-status) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 158.50 Tm (polling \(PENDING -> COMPLETED\). |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 147.00 Tm (| Week 11 | Days 76–82 | Data Structures, Algorithms & Backend System Design | Practice 45+ medium/hard DSA problems) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 135.50 Tm (\(graphs, heaps, dynamic programming\) and review 4 core system design architectures. | Documented system design notes) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 124.00 Tm (and timed coding problem solutions. |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 112.50 Tm (| Week 12 | Days 83–90 | Portfolio Consolidation & Mock Technical Interviews | Conduct full mock technical interviews) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 101.00 Tm (covering all projects \(FinDoc-AuditEngine, LEGITIFY, CampusLLM, FinTrack, Solar Forecasting\), refine documentation, and) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 89.50 Tm (finalize applications. | Clean, reproducible GitHub portfolio with verified READMEs and architecture guides. |) Tj ET
-endstream
+<<
+/Contents 11 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 10 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 7 0 obj
-<< /Type /Annot /Subtype /Link /Rect [38.00 22.00 458.62 31.80] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Shri-Sanjaykumar/Linkific-Tasks) >> >>
+<<
+/Contents 12 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 10 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 8 0 obj
-<< /Type /Page /Parent 5 0 R /MediaBox [0 0 595.276 841.890] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 6 0 R /Annots [7 0 R] >>
+<<
+/PageMode /UseNone /Pages 10 0 R /Type /Catalog
+>>
 endobj
 9 0 obj
-<< /Type /Catalog /Pages 5 0 R >>
+<<
+/Author (\(anonymous\)) /CreationDate (D:20261012200933+05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261012200933+05'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
+>>
+endobj
+10 0 obj
+<<
+/Count 2 /Kids [ 6 0 R 7 0 R ] /Type /Pages
+>>
+endobj
+11 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 3351
+>>
+stream
+Gau0F>Ar9+&q801R&@gW'/LhTn&#1]>e8TL9q&TJF+=5o,;D(q8^rof;_QFW59P*R@`sV;Rmd;^U.ERK0&I(MKY[ZoYl.::JG1iZ3l?ISbjGLYaFi.[:1jf]*7T$`GTMO#O.7VY+NY/n3-[Z'esg"_i?3_T%QH_9=aP6[!4sXum>f8E*?5<7#f^<2"*+JsF97PF(raeqKWa6j8L4_4_3@f"n6ulGi3\mCJh^u2Xp%O@>/K[j654a>!8eD%\@6D6_X'A.IPKW,55;e,E>Ti=e/\3i\IjK)5qZj^Z^\d`!ZVJo'RAWs(m3/U@#P3K@fhh0r@\C(%Z0YnJE"Xi@q,F-`:_lmIZ.MEm95Ibr&%D9Jg)34,TRL?fBG*E$uF:)2=4L?P:\rp&.fODNEl>'f%S+l,+d2jd;k%PU\]=n;&J'd7]ig?>"a<GBspr1fYo7tj7j@FhNTSMpH5.<Mdh=3fu#O+p<Vt,#_t^HIm5^CGBSKurGOAuW3n`U+aM3tCToIa[nhC56FZ1m;S2aXdEP!u\=plc\pC;q.cIF>_e?Yd5;N4jAh7*#H(inr;U&+t"l+o\rCA7#qqN?B4eKPlQ=WB<\0WDRit#4TG7Yumi!?Q>S7hcG#83dSn6T,3n#9b60,RqcnXV!&AP)WafUtW]<n(cp3"a8W;PdXM!e[>-S7-^C0'%XNYVW<OjQbN>Y(^2INCXNROn]qRMd;.#DjQUm8u`Ru#IZe&b?S[fRHs9Ip8k^,Mm,u`<EiOfk>\VBo$6HV0D>GJ(V,%G-SYsJ_Z_+>@dG3b`'FsMlk)]C8INKH7R5WU69Xfh;nrbmb\10+B#8dFC!*)Z;K8O9Og%2DBZBLUYIU#%>LKUYJ9(u4e&tW0!\I;@\S?Yu<l42>E%LN@RQReu"h&T[!K$_tJDpA+$KJo.,=%CWPLotJdGBTC%gU2IiNX2dnho^a!u]nHf1u@2o45@:>EAG(mG+cLAA.`^83<LO?bHcj83<N%8A,>S83I!;TXFm=7/*otiq%>D&)mk?9hM_e.Z@3b$t_!mq6embK&WFr<ug;P605Y!`F^3BNF+L8d%hg+*#XNJP7m'Pm5m;,,e_Bg9l)l^\RA&U\R*)k\1BL5BEfh.WH)$Q3;oNs[>)0>9ABf)cpb4k*ifZb_dU6&l2^1-Rr*La[c=I/b_!jW0_5*51QT0?&JF.]=k2Xb01(?M+am`/3B45M_:G?^7QcK'i4T94*sBjF_'D`$;[W/K6"6S=g:&l0F)?>)J[jUWbNH-Xc,9nU<ZkP5dDV\<0?-#qKj92W<3nrbBkkY%V&-3eWjT(XWcDWhJN"b(bgWk,+;u3/4MF;2jfsC"U=cGV[p]fMn"\7_1QNhZKQ'V62T#qX$Mp0,kTaU7".:^#"6;U:AUWI;h2;d:*#-!_`IX)_E%kj@=Eo\#Qa:!2qT/4+:',2"@&FV>(IbK^UK=+0-B_!;M9%.'N>+@l.!3/\($HZr,*>P`8I])teUuS8;gsB>a2bAKrIRns+K5rl[Xo0YnKkM/qkX&+Ml\f7FA=QXfbe#qGM[a0>/Pjb9U<(EK0E?u8H8@qoU9>,G%fG;47EG$C/lN"\!P\_0,kC]@h]DZ;$$t_T!uNZhNpS3TZdK1)FCnuH1L(XI.hE'HLg%eH971qLU^OPKd\)(9#Dn*Mft;UW('iTl+(=`T;P&UH)5i_=.f?6kNO6b(+`enfp1*+YtU.5bP>PsD6h#9Tg"6qN9,7G)5<f5#8D2r6\[!'JeP$V]Q<pH+_4>(r[1?))g>+t0BBPqQ`N`3<(#8nU!o?n9GUU4DaL=;GhG!7\LbHdQ3`oH9nsNX_%S_#^kBmJ&XsX9/S,5i7NMX>d2nD17O\!0iiSGQj?)5d4,*c-9mORNeOFo9q\O'NT[B3;Elet!Nsd9PfJ>f<](W9-1m(,(-VKg0acrZ#X50]G!Jdh;Q2^j>O\N?D%,>90+1us;euRccH-5\U(m%rBJr*EkPi`#'FK?P4A2/JVg;H)!6V]asG904K'`B$.F]F_NGe.K9+0oA&!a'FqAAWl#O4^#fJZ[E5"T;ug'?Kqn>7Kt:Z''@lKrDRDeS$k1hS'.>+K`f1jK8n4g"euN#>irVcILY-bk-Q(L!YoPAnJ3tA1X9-$*;L:1N`t7<qVD2j!I,75Op!5O&2Sa/6O;4F!F:F<G3`0*\NBRf-HQ`lbScWMqhY*PF`q3VDP6/CBdEYq>I=+9;=_>'\fO8P[$!J<KT$C-'^=1=OsU:m#R%'(OR'TQE>YPLY](s`A^Ocn6SlFkNgZgGk1LH"P<)ia*e2YX&=kdUud1U:">Eme]SFC7OTBHKg4H\5OHaAR5'%m+)pC9EtSQSK&;$L%=+NZ)&qJ\[PVW8Kh5aVXbeI5'\SRDgO#o]qaKHO>0qOnIbl:NT5_o8]f2RZH#qrs8lS4#<1W-dc**<cnUp7_$`Y!&A3mcnkmSQ9P\g0?b_!*J2u7aE=%lT#06a3l2GEgrC`Q:&)i2PJnAKTh0JPFkQ5D;1Bn-n_5m3+Y"%LY&"[leh7Ti#lR[6^.foi8QhJ.#oelXV@>R".OH)[E'']1aZrWt^W2XuH^[KQ:ZT(KO=2)K$jC6uumn-5b3,q;'LR+=aIl.*ln>Z'2#rcb-Y\fUfbGG$U#?!,s(Kd0dlUEr+07XS05WRt>$`uPthHRWusCsIK[Aj<X/2<IFVGqcI#R]M[T"4,N>fb)Qpgt]O,`4N_`%3aD`.E+t8dYMlJH"3UP/RE0R8+m8kCo`FR)KP]H^<EVTD@il,BNm=$,,Z5MG7Y'=;@S8Vlpo7OVpjrTi47bM4iI:;0!6Hu4QU%6`#^nt&`f/-L6C"0*G[AfD$+:X<LF/.3XBFKGbI3EpX55;att3p0%nLi0C@<:U/,[-.6[%.k:B9H)-aBTcEK$n9%%7(ra&g'XY]Z$rQW\qXbis>LRSsH)`H6greu0!S^>q5qj$M[W1247*rAm)Tls%,?[UQR0d@.2;1i_OfCn/PY;cl(CpADKp>P6Uf6;#"13:$^rg\Q)]B`r@ofdRR[RY:8%'FB^Ub/*+fLM(gSG9AHp0n6,V?E?F>d3$`E$L0pO'K$;/;MXFr6r^XZh%[oS0)$1iV_0ko_R%]YNJserr]e,p%fYG-D,aVr:f6<Modi(L"h`,0qV4=Qe/-263`='Yq7X=R[+]7pd`Sf42akO+>4"lZ;gQiqaJDHYk+'Bk/2m:)kde`=F8j9W=@XIh5q"Y@4aOL<^1VaO9'W5YN?fC_&8Po\h\.+`!3eYD2;Nu\Eb*k^9us:)ol6V\/R;RiN<W+8*=,1W]QH$r5a740^a?9E&?[qK?5FZRl0#-k4><Mpt/)sCJ:`lgQdUVfQ:K3&q\(;3;>_:>jtA~>endstream
+endobj
+12 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 4436
+>>
+stream
+Gb!#^D/\GoP5_%[;.$KbhME,`>A@OVkB:1c4&1"RcM#Naq*I`]c&!]\8BPX"m`-E,P&*.@'2KqU((G?uMPQ-2Wi)kgOpr1/@%72V%,g_/S6aiV4)he3gERcp:>k.*jH#L>NX_QbK.nR5'87!1-\%Y6^9-#IrsnQD#Au?%*>/Ocq!?E0gELMHig.N?/3=2h34:sUHm!=b%BKQj&pi.Rf.1guY4jThmM5M@NY@(b#3U*'^pW^Y^q0F<$&1m2EgFN6">87^/ZIkV5D9\Dq-;L#>Yi'K$9l7=%,X^HEkR#SWgW\h\%fiJhsaJ":VO:Jk(YPq4^nT>_/S$.\NFRY`A3e>e5t'ZG6$dLosVBl5>H%irT)=>VcP5kJ;9=.<tcZ2nEl#k"$\JhVD'g3I=HY3%^E]>]#Tm0OLUlf$Vi6;$ls81flhGYqoZ3-@bCcSIWjsA8-7*WcmGn/iZWYMJu50u>-&Ucfgb$/W(jEr9_0+`<3_\N9S!s%q,0a\.`b#p;ID)Q'N30>S/VXMD$;5K0/R2`k?:EJ02I/]#tS)fOd%SmVlW`q0,D*q4D,;h/<<jMQ1p.U<2@&8O'#/"+-1O1Kg,$CGC*>Fm*R6%#so8,iD)Oa4!;9)J7PnZgBi]@NpfD%U<mp*#ChJglYfl%%^Db$[G(@H&CubV^jl#V3spdV\#0^`iWS+X0<uUffY2FNMZTMqKD*N8i6g%lPM]ZA&!$)lcO[$kCp.X-(I9Q.k2jC/6kohmA:P4G!TW;I[2=.!?jB!i(,*65EN.l$A<c6^?YG2q)0iueS89JA=>J.Z,%'o20skl/V<\$tq!idlg\+jarL-S`8if`ci"`./3+j[I1GeYoJ1\k0l.1]M4oIAtZ,lttV%G3t3)A'6rmn(;H7`BG#Bq8N0SO_5lZ7\-W$IMC9fZ!p]Tr)Ok;85[:#VUWWgHg?RueXZA2'sI\0m8K&^N`1pAO2f>H&)S$@6in@pn/CG3M=aHsG/?/!1`L]bHVY>sE7EgH07_DD.K8R&8b5ST6&1Brm$T>%qAIPm*@eY#s,[d;N*YL$3n;S3<-\_Nud$p%c17]#^R!f+4=qbEU/O)JC`YRVj7IPlQ"k7[E*L`YTF-rR#ioB/#K"iHi+H6tHFdP*X5G7jo+P=(r(-$VVUN.?s,$C!%*1GN<>eZm4RR.Fk\[DgAP8lEh;q>(I?-U"N\,Hh`+G;97Ru@Z_DT+Nj?2W'C4CkS.p3ePDWPp!]D9R&9-Jr!HE@K)]?f/82%c^CZ9<^1JKB*BJR_+7+Po@`(:C5k"m\6A,Bc3sGo_j>uf$Q6MjZ'QMSo<*G\8I+X<;q_Gg8+&)5/O3P!UJAC\K^@5+O^`iddobs=9r--UL<pP"DS!7Xs1X*2rAX@n?06aK:/"oDg!kg$e8u>R/`k>Ym[6='Gk0d?e8uY_PATIF<6]/L:Qnu`+?aH&$9DSXJPH,OO%![g([bG\tmW(qF$kUq0R)#.hpaeFheJ9au8XAp:]a:T08MbM`YsPqBUDTd4LqC,MWCo7TXFMoPc]rs:B"*pX1lRH9^5OI`i*r;OV]9LX2LB@X,p+`!bsYI,$m)ob62LkD<+rZE(OqZ+f3D5V%1Ac3.V#Zd7Yr,I9Kt5>[JAZRqg*]1Nm1;X9frY0;+MZWHk/U_4@U%2e;q=b%&1,JH8@gsSh*e0!)p>e9$7[pU*>Y$Yqu2s;Zbd\P\!P3c-(&=KHtZOd)<8I'o&nZP?UW=qmpfPD$hTt.VZmZPNii]9N0N"_G]t/NO>c+8$=1:/!6P6jU8djQgMYVl7/BHOkr&Jn/?<V%opp/"`L+`X$d2)\i/[+#'n(7_HlVB2Qg'Z#lCWR1LZ`kPtRST!,.h0N+]u*/eNH1I%`o`M`":4Y1(X7r$n<L6W<5lA.]R`#Hu>\LSYcS5sTM6I_9.[4cC^tcmt(T.:&sOfQAth_gcTcD@soM'Jm,Wb9`>Z.)[r<0P+]9R?j*#9rPlk*e_0r<Bl6>SjRng>qdCKMugZIO@Cm55[1<K_gmk?(lSUK?;$"U'H5LS-qsh=TO!&[$it6i$L1j6nR%b\,fs!>-oRMCh2fOdb9f9eIq;0a^I.5b=4\'1Mr4]]--bIM/"*O.Ak=k\&q_^;^Q`dV)D>)E)P7*.\X*=9X>7^mLOXdMqXle7QFZ,q4'9hMEYleB.i?g6>jg6^K%rY)Bp5:^G(e@g^I6!d!ZA"a7:l%?WJ)g(]H;)#h`<83s/_##8?$3H]QkAW>_`_+rP)LP?j^5J@]e,/2+NokXA-j\&h'J[q-JtqDK@Xh3DGeJ=M>>%`e1&V^b=MYmOUD6`cMaqefY).]"Si'5Rc!#)TL:uCWa"mj]]$*1PF7,:9iL`XhE]LqJ*Apm?nD&0!@F7*bqQ/*+#,ZXbX>`C8.joV&jBKe9kM:7QjXB)qAn=Ui$+`QduZ6$7g)@p5f/4Y&>21_C<aum26rBZPV?6+&pJKj%"Yp_T7.tNe"b/#XjL2[aVSd!^dtsVBt_C1RC4Tl1!sPEs'Z&AI?=$jqIcp@hNqeAfIRL#3S\Mjl,b>BjuQW/D'h2D$>0u:[FOgIf.9pM/2qUdg?qKClU3PZn,_2P7gu6kqQ?ggjkssNMR>#SmXl__kBX<30n<WTGe9Ab)GJ2T(ho8oi!"@TW#1H^"f=ecS`"(m%H'M9fAXo/LErFcSbhe-Ql8gh8UZKgX1QHSpt8q^kmm1]s\H%VXK1.o`=skEP2!EcR3-<*n^c`KcS]^W#iT*nVANB*=sS,hld=t&gqYTi\a67!,N9MJbKp5HrUQi+d$EP`S:E5$c!5s&r#1hAEa\*g%j44.i](kD#mUjYU@tj-0]R=pjDK(n-bbm>VQX4>PUIuPY%=YOIt.%@jA81aX-kM)Z=a!df_(B;r^bVFY\,/-&l-E$I%.+Rjjquq@$=hV<Z9Cn^N>o^;O9qRVc72\1,V`/4k*#<*`M>I*)47UM8GcWM1cihjW#"&"tSsPf4Wg7oPf'r#RI`j<*?`2k=8u=7kks;:51jO%$o2a@9V!7;oM"MqF0`eg+LqSF8f^hM`V\66lAa@r%AX6GbT[]#Ceq0ZM'?L.fW<%H$i]B>_?B&>um7%&jSr0,79+)KtugF9<E21%K[k9_J"9^?ZB_H5EcnXiJD)?mtu)ItV%8`Hj>LhJjagiDo22Od9?]PuK)nnl-XgfX=:2RguSq*6`5+j4E<rZR(dh?*61.?4CPn2V$NfcP\8&OBi7$JBUE7S`QMqZC`%Q,`=ZDg*p9)Y#gN:c'bU-]j\&b=r'/1.9k7`B%X#Vi*6.E8u<#becmJ&rO-JUe#-$<,uT@aWGuBJkW[=BYA(KM:Q]BS_GLj;;Z9;gD.b/sk$,Y0o5RE'qJP!q=8S0=0F;3NkTH;eD^GXPH'9Ci\'E0U8WNQ^Vj(i?H?,KDHt,[T+$9$90OJ9L00Aa:8@:&4-8](98QtK5UN<Sq;R9YcpTbb8&a;]P[tr?"-H=VZ(Q5XJqBMJC85iGH[G+K7.ub$],F$2s*#Mkg&DW@?/N#\&G3]l!\uu#+BaYE-iC)+J<cp[]0j%]"Oqe],SQohLA*h;N.&nu.&@*e@[L96P:7"YGSTAM."e\:-"_K$$[_P(3_Gu.Ql=DXKX!Z=6NN^N)o=chgI]27ZKOnV"!N&CF;)Kl(L-_D174tBF\U6<Gn6a/a*U06B@g<J!L'W(H6/,;N?(b2e4>sSVHnSXE</]]V2l/T0),9UI_'=@"!6>%>>kFQ*U+B1H.n8,0\2h;d]:Qgn,Yf2gYh@iQWIs$!&PJPI^b7BQ$!2'M^XC(amGs\?GFDtE(g&jD1h-hFZSUZriI!O?T1>b0X5iT"jI1YOG!mqX]Ys:r*1pO-r0G=&IJs=XWchfVkq_5DIFbYT1@^.o``XsD/!][T,?7us`D^jRa<`K-b/J'HqsK-f)-/Rin8"BU)DVo^K4aX'a(Y74#&:=7^fNUIL.\UnSMmNQN>tG6\*"gjOnZ>#W1`jCH>(J6f+_&N$*8oj;_"B:4eip0-<,(^lZk?a4Ut^!"Xn!]l^j43+K2s"YfG!1HW+0f?u3oGa7\o'#p"\q*P#]WZ]b(h/^:P9[]Lb.S;*L?D5=h=&H'UfaS8MFb(6#S#bLUkD?urr',UDRc(I!5J,OM;3?Fk5>u+l+p%DkkFnTBo"7Ud?ZS0c^b_BL)1&Tp9s*6bt_@O0Br>=G/O,M-@g[nqc=@q_L0`f_UN@5io6R@]G,u&o^r<<'BS^S%X<h#KP"Hh6Ti>X,/aCttp7\qQlVh-65/_XYBHm!+Z'o?0uZl=U4bS_u:YKj7L6<q065Rm+:]`DFZMVLX2]-0-\*hZH(Mmu!iaB+L,Y]bkWXLtJqR_4bL$b\!nJVVj67rY1ui.Op'V-(#DFfeHt]'[lkf;ipe@Zd5+<g*2i2#j+am`UR3ZO+tHnRJX!A)?R6q7LAV^?lTW21B8bG(Vq,#K-\P6.GrASGYTNT/[Y~>endstream
 endobj
 xref
-0 10
+0 13
 0000000000 65535 f 
-0000000015 00000 n 
-0000000112 00000 n 
-0000000214 00000 n 
-0000000319 00000 n 
-0000000428 00000 n 
-0000000485 00000 n 
-0000010360 00000 n 
-0000010547 00000 n 
-0000010727 00000 n 
+0000000061 00000 n 
+0000000122 00000 n 
+0000000229 00000 n 
+0000000341 00000 n 
+0000000446 00000 n 
+0000000561 00000 n 
+0000000766 00000 n 
+0000000971 00000 n 
+0000001040 00000 n 
+0000001320 00000 n 
+0000001386 00000 n 
+0000004829 00000 n 
 trailer
-<< /Size 10 /Root 9 0 R >>
+<<
+/ID 
+[<5e256a8c7f4d81a36d9893cbb58bb4d2><5e256a8c7f4d81a36d9893cbb58bb4d2>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 9 0 R
+/Root 8 0 R
+/Size 13
+>>
 startxref
-10776
+9357
 %%EOF

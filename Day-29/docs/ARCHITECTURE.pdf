@@ -1,368 +1,111 @@
 %PDF-1.4
-%âãÏÓ
+%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R /F5 6 0 R
+>>
 endobj
 2 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
 endobj
 3 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
 endobj
 4 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding >>
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
 endobj
 5 0 obj
-<< /Type /Pages /Kids [8 0 R 11 0 R] /Count 2 >>
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
 endobj
 6 0 obj
-<< /Length 18603 >>
-stream
-0.060 0.090 0.160 rg 0.00 814.00 595.28 28.00 re f
-BT /F2 8.20 Tf 0.950 0.970 1.000 rg 1 0 0 1 38.00 824.00 Tm (LINKIFIC ENTERPRISE AI/ML ENGINEERING INTERNSHIP  |  SHRI SANJAYKUMAR V \(VIT VELLORE\)) Tj ET
-BT /F3 8.00 Tf 0.750 0.820 0.920 rg 1 0 0 1 375.61 824.00 Tm (Day 29 Deliverable: System & 7-D XAI Architecture) Tj ET
-0.40 w 0.700 0.750 0.820 RG 38.00 36.00 m 557.00 36.00 l S
-BT /F1 7.80 Tf 0.350 0.400 0.480 rg 1 0 0 1 38.00 24.00 Tm (FinDoc-AuditEngine v3.0  |  github.com/Shri-Sanjaykumar/Linkific-Tasks  |  linkedin.com/in/shri-sanjaykumar-v-588bab28a) Tj ET
-BT /F2 8.00 Tf 0.200 0.250 0.330 rg 1 0 0 1 530.25 24.00 Tm (Page 1) Tj ET
-BT /F2 14.00 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 790.00 Tm (FinDoc-AuditEngine v3.0 – Prototype Architecture & Technical Specification) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 767.00 Tm (Project Classification: Internship Capstone Working Prototype / Production-Oriented Reference Implementation) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 755.50 Tm (Currency Display: USD \($\) and INR \(1 USD = 86.50 INR configured conversion rate\)) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 744.00 Tm (Verified Automated Tests: Day 29: 28 passed \(python -m pytest tests -q\) | Day 30: 33 passed \(python -m pytest tests -q\) – *all) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 732.50 Tm (collected tests passed*) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 703.00 Tm (1. Architectural Overview & Prototype Scope) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 700.00 m 557.00 700.00 l S
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 683.00 Tm (FinDoc-AuditEngine v3.0 is a modular FastAPI prototype designed to demonstrate how deterministic procurement accounting) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 671.50 Tm (rules can be combined with pre-inference regex privacy masking and unsupervised anomaly scoring.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 655.00 Tm (flowchart LR) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 643.50 Tm (A["Client / Web Workbench<br/>\(Structured JSON or<br/>Raw Invoice Text\)"] --> B["Stage 1: Regex PII) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 632.00 Tm (Masking<br/>\(FinancialPrivacyScrubber\)<br/>6 Configured Patterns"]) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 620.50 Tm (B --> C["Stage 2: 3-Way Matcher<br/>\(ReconciliationMatcher\)<br/>Invoice vs. PO vs. GRN"]) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 609.00 Tm (C --> D["Stage 3: Anomaly Scorer<br/>\(AnomalyScorer\)<br/>7-D Synthetic Baseline IF<br/>+ Perturbation Attribution"]) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 597.50 Tm (D --> E["Stage 4: Governance Router<br/>\(ApprovalRouter\)<br/>5 Approval Tiers"]) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 586.00 Tm (E --> F["Prototype Storage<br/>\(In-Memory AUDIT_LEDGER<br/>Python List + CSV Export\)"]) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 556.50 Tm (2. Detailed Stage Breakdown) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 553.50 m 557.00 553.50 l S
-BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 534.50 Tm (Stage 1: Regex-Based Pre-Inference Privacy Masking \(app/core/privacy.py\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 521.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 521.50 Tm (FinancialPrivacyScrubber.scrub_text\(\):) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 212.53 521.50 Tm (Scans) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 240.66 521.50 Tm (input) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 263.16 521.50 Tm (strings) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 292.81 521.50 Tm (against) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 325.03 521.50 Tm (6) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 332.70 521.50 Tm (configured) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 378.21 521.50 Tm (regular) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 409.40 521.50 Tm (expression) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 456.44 521.50 Tm (patterns) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 492.24 521.50 Tm (before) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 520.88 521.50 Tm (logging) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 510.00 Tm (or) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 62.74 510.00 Tm (downstream) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 115.40 510.00 Tm (processing:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 498.50 Tm (1. EMAIL \([A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,7}\)) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 487.00 Tm (2. PAN \(Indian Permanent Account Number format: [A-Z]{5}[0-9]{4}[A-Z]{1}\)) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 475.50 Tm (3. CREDIT_CARD \(16-digit card sequences\)) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 464.00 Tm (4. ACCOUNT \(8–18 digit numbers preceded by account, acct, iban, acc, or bank\)) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 452.50 Tm (5. PHONE \(10-digit Indian mobile numbers starting with 6–9, optional +91\)) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 441.00 Tm (6. AADHAAR \(12-digit format [1-9]\\d{3}\\s?\\d{4}\\s?\\d{4}\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 429.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 429.50 Tm (Invoice-Text) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 104.66 429.50 Tm (Parser) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 134.31 429.50 Tm (\(POST) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 164.99 429.50 Tm (/api/v1/audit/parse-raw\):) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 266.22 429.50 Tm (Applies) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 298.95 429.50 Tm (regex) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 324.51 429.50 Tm (extraction) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 366.95 429.50 Tm (on) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 379.74 429.50 Tm (raw) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 397.12 429.50 Tm (text) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 414.51 429.50 Tm (memos) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 447.22 429.50 Tm (to) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 457.45 429.50 Tm (populate) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 495.30 429.50 Tm (Invoice) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 527.01 429.50 Tm (ID,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 541.32 429.50 Tm (PO) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 418.00 Tm (Number,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 89.83 418.00 Tm (Vendor) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 122.05 418.00 Tm (Name,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 151.70 418.00 Tm (Country) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 186.47 418.00 Tm (code,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 211.53 418.00 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 229.43 418.00 Tm (USD) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 251.41 418.00 Tm (total) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 271.36 418.00 Tm (while) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 294.87 418.00 Tm (masking) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 331.68 418.00 Tm (matched) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 369.52 418.00 Tm (PII) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 383.33 418.00 Tm (tokens) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 412.99 418.00 Tm (into) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 430.38 418.00 Tm (indexed) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 465.15 418.00 Tm (surrogates) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 406.50 Tm (\([EMAIL_01],) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 108.25 406.50 Tm ([PAN_02]\).) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 155.80 406.50 Tm (*Note:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 183.93 406.50 Tm (This) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 203.86 406.50 Tm (endpoint) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 241.71 406.50 Tm (performs) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 280.56 406.50 Tm (regex-based) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 334.26 406.50 Tm (invoice-text) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 383.34 406.50 Tm (parsing) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 416.06 406.50 Tm (on) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 428.85 406.50 Tm (character) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 469.75 406.50 Tm (strings;) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 501.96 406.50 Tm (it) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 509.12 406.50 Tm (does) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 531.62 406.50 Tm (not) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 395.00 Tm (integrate) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 90.35 395.00 Tm (an) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 103.14 395.00 Tm (optical) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 132.29 395.00 Tm (character) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 173.19 395.00 Tm (recognition) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 220.75 395.00 Tm (\(OCR\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 249.87 395.00 Tm (engine) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 280.05 395.00 Tm (for) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 293.34 395.00 Tm (scanned) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 330.68 395.00 Tm (images/PDFs.*) Tj ET
-BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 376.50 Tm (Stage 2: Deterministic 3-Way Reconciliation \(app/services/matcher.py\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 363.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 363.50 Tm (ReconciliationMatcher.match\(\):) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 181.34 363.50 Tm (Enforces) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 220.20 363.50 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 235.55 363.50 Tm (configured) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 281.06 363.50 Tm (SKU-level) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 324.51 363.50 Tm (pricing,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 356.72 363.50 Tm (dock) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 378.71 363.50 Tm (quantity,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 416.04 363.50 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 433.95 363.50 Tm (subtotal) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 468.72 363.50 Tm (rules) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 491.22 363.50 Tm (between) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 528.55 363.50 Tm (an) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 352.00 Tm (InvoicePayload) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 116.94 352.00 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 134.85 352.00 Tm (a) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 142.52 352.00 Tm (PurchaseOrderRecord:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 340.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 340.50 Tm (Unit) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 70.92 340.50 Tm (Rate) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 92.90 340.50 Tm (Check:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 124.09 340.50 Tm (Flags) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 149.14 340.50 Tm (RATE_VARIANCE) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 228.38 340.50 Tm (if) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 235.54 340.50 Tm (invoice_item.unit_price) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 331.66 340.50 Tm (-) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 337.28 340.50 Tm (po_item.unit_price) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 415.00 340.50 Tm (>) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 422.93 340.50 Tm ($0.01.) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 329.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 329.00 Tm (Dock) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 75.52 329.00 Tm (GRN) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 98.52 329.00 Tm (Net) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 115.39 329.00 Tm (Quantity) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 152.21 329.00 Tm (Check:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 183.39 329.00 Tm (Computes) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 227.88 329.00 Tm (net) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 243.22 329.00 Tm (accepted) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 283.11 329.00 Tm (units) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 305.10 329.00 Tm ($Q_{\\text{net}}) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 374.73 329.00 Tm (=) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 382.66 329.00 Tm (Q_{\\text{received}}) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 469.15 329.00 Tm (-) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 317.50 Tm (Q_{\\text{rejected}}$) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 141.56 317.50 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 159.47 317.50 Tm (flags) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 181.45 317.50 Tm (QTY_SHORTAGE) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 259.67 317.50 Tm (if) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 266.83 317.50 Tm (billed) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 290.86 317.50 Tm (quantity) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 325.64 317.50 Tm (exceeds) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 362.45 317.50 Tm ($Q_{\\text{net}}$.) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 306.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 306.00 Tm (Subtotal) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 88.31 306.00 Tm (Tolerance:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 134.33 306.00 Tm (Enforces) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 173.19 306.00 Tm (SUBTOTAL_TOLERANCE) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 285.66 306.00 Tm (=) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 293.59 306.00 Tm (0.05) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 314.05 306.00 Tm (\($0.05\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 345.76 306.00 Tm (to) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 355.99 306.00 Tm (prevent) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 389.23 306.00 Tm (binary) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 416.84 306.00 Tm (floating-point) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 472.06 306.00 Tm (rounding) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 294.50 Tm (discrepancies) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 110.80 294.50 Tm (on) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 123.59 294.50 Tm (tax) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 138.42 294.50 Tm (calculations) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 189.03 294.50 Tm (from) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 209.99 294.50 Tm (causing) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 244.25 294.50 Tm (false) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 266.24 294.50 Tm (rejections.) Tj ET
-BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 276.00 Tm (Stage 3: 7-Feature Unsupervised Anomaly Scoring & Perturbation Attribution \(app/services/anomaly_detector.py\)) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 263.00 Tm (> Important Model Scope Statement:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 251.50 Tm (> *The Isolation Forest model \(n_estimators=200, StandardScaler, random_state=42\) is trained on a reproducible seeded) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 240.00 Tm (synthetic baseline of 1,000 transaction-like records to demonstrate financial anomaly scoring. Its thresholds and risk behavior) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 228.50 Tm (would require evaluation and calibration against representative, authorized real-world data before production use.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 217.00 Tm (Furthermore, the displayed 0–100 risk score is an engineered anomaly-risk indicator derived from tree isolation depth, not a) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 205.50 Tm (calibrated probability of fraud.*) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 189.00 Tm (| Index | Feature Key | Mathematical Definition | Synthetic Baseline Role |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 177.50 Tm (| :--- | :--- | :--- | :--- |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 166.00 Tm (| 0 | log_total_usd | $\\ln\(1 + \\text{Total}_{\\text{USD}}\)$ | Compresses heavy-tailed invoice dollar totals so magnitude does) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 154.50 Tm (not dominate bounded ratios. |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 143.00 Tm (| 1 | price_variance_ratio | $\\Delta P_{\\text{USD}} / \\max\(\\text{Subtotal}_{\\text{PO}}, 1\)$ | Captures relative unit-price) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 131.50 Tm (markup above PO contract rates. |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 120.00 Tm (| 2 | qty_shortage_ratio | $Q_{\\text{short}} / \\max\(Q_{\\text{billed}}, 1\)$ | Captures fraction of billed units missing or rejected) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 108.50 Tm (at the receiving dock. |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 97.00 Tm (| 3 | tax_rate_deviation | $|\\tau_{\\text{inv}} - 0.18|$ | Captures deviation from the standard 18% GST benchmark. |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 85.50 Tm (| 4 | line_item_concentration | $\\max_i\(\\text{LineTotal}_i\) / \\text{Subtotal}_{\\text{inv}}$ | Distinguishes single-SKU lump-sum) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 74.00 Tm (charges from multi-line orders. |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 62.50 Tm (| 5 | jurisdiction_risk_weight | 0.05 \(Domestic/Standard\) to 1.00 \(BZ, KY, VG, PA\) | Encodes configured vendor country risk tier.) Tj ET
-endstream
+<<
+/BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font
+>>
 endobj
 7 0 obj
-<< /Type /Annot /Subtype /Link /Rect [38.00 22.00 458.62 31.80] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Shri-Sanjaykumar/Linkific-Tasks) >> >>
+<<
+/Contents 12 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 11 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 8 0 obj
-<< /Type /Page /Parent 5 0 R /MediaBox [0 0 595.276 841.890] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 6 0 R /Annots [7 0 R] >>
+<<
+/Contents 13 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 11 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 9 0 obj
-<< /Length 9865 >>
-stream
-0.060 0.090 0.160 rg 0.00 814.00 595.28 28.00 re f
-BT /F2 8.20 Tf 0.950 0.970 1.000 rg 1 0 0 1 38.00 824.00 Tm (LINKIFIC ENTERPRISE AI/ML ENGINEERING INTERNSHIP  |  SHRI SANJAYKUMAR V \(VIT VELLORE\)) Tj ET
-BT /F3 8.00 Tf 0.750 0.820 0.920 rg 1 0 0 1 375.61 824.00 Tm (Day 29 Deliverable: System & 7-D XAI Architecture) Tj ET
-0.40 w 0.700 0.750 0.820 RG 38.00 36.00 m 557.00 36.00 l S
-BT /F1 7.80 Tf 0.350 0.400 0.480 rg 1 0 0 1 38.00 24.00 Tm (FinDoc-AuditEngine v3.0  |  github.com/Shri-Sanjaykumar/Linkific-Tasks  |  linkedin.com/in/shri-sanjaykumar-v-588bab28a) Tj ET
-BT /F2 8.00 Tf 0.200 0.250 0.330 rg 1 0 0 1 530.25 24.00 Tm (Page 2) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 790.00 Tm (|) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 778.50 Tm (| 6 | payment_urgency_index | $\\min\(1.0, 15.0 / \\max\(\\text{payment\\_days}, 1\)\)$ | Flags rush wire demands \(Net-1 to Net-3\)) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 767.00 Tm (vs. standard Net-30. |) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 750.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 750.50 Tm (Local) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 76.55 750.50 Tm (Perturbation) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 129.22 750.50 Tm (Attribution:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 175.75 750.50 Tm (For) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 192.11 750.50 Tm (each) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 214.61 750.50 Tm (feature) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 245.81 750.50 Tm ($k) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 258.08 750.50 Tm (\\in) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 270.35 750.50 Tm (\\{0,\\dots,6\\}$,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 330.74 750.50 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 346.09 750.50 Tm (scorer) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 374.20 750.50 Tm (replaces) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 411.53 750.50 Tm ($x_k$) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 438.63 750.50 Tm (with) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 457.55 750.50 Tm (its) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 469.30 750.50 Tm (synthetic) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 508.16 750.50 Tm (baseline) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 739.00 Tm (median) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 84.72 739.00 Tm ($\\mu_k$) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 122.56 739.00 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 140.47 739.00 Tm (computes) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 182.91 739.00 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 198.25 739.00 Tm (marginal) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 236.08 739.00 Tm (score) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 261.13 739.00 Tm (difference) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 304.09 739.00 Tm ($\\Delta) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 335.79 739.00 Tm (R_k) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 354.71 739.00 Tm (=) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 362.64 739.00 Tm (\\max\(0,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 395.87 739.00 Tm (R\(\\mathbf{x}\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 456.23 739.00 Tm (-) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 461.85 739.00 Tm (R\(\\mathbf{x}^{\(k) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 727.50 Tm (\\leftarrow) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 92.39 727.50 Tm (\\mu_k\)}\)\)$) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 139.18 727.50 Tm (to) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 149.41 727.50 Tm (surface) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 182.13 727.50 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 197.48 727.50 Tm (top) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 212.83 727.50 Tm (contributing) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 262.94 727.50 Tm (features) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 298.73 727.50 Tm (in) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 308.45 727.50 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 323.80 727.50 Tm (UI.) Tj ET
-BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 709.00 Tm (Stage 4: Governance Routing & In-Memory Prototype Ledger \(app/services/router.py & app/routers/audit.py\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 696.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 696.00 Tm (ApprovalRouter.route_decision\(\):) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 189.54 696.00 Tm (Assigns) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 224.31 696.00 Tm (one) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 242.21 696.00 Tm (of) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 252.44 696.00 Tm (5) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 260.11 696.00 Tm (governance) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 310.74 696.00 Tm (tiers) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 330.68 696.00 Tm (\(TIER_1_STP_AUTO_APPROVED,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 684.50 Tm (TIER_2_MANAGER_REVIEW,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 181.34 684.50 Tm (TIER_3_DIRECTOR_SIGNOFF,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 316.81 684.50 Tm (REJECTED_DISCREPANCY,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 442.05 684.50 Tm (or) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 673.00 Tm (FROZEN_FRAUD_RISK\).) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 661.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 661.50 Tm (In-Memory) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 98.52 661.50 Tm (Prototype) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 140.45 661.50 Tm (Audit) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 163.97 661.50 Tm (Ledger) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 195.17 661.50 Tm (\(AUDIT_LEDGER\):) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 276.96 661.50 Tm (Decisions) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 319.39 661.50 Tm (are) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 335.24 661.50 Tm (stored) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 363.36 661.50 Tm (in) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 373.08 661.50 Tm (an) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 385.87 661.50 Tm (in-memory) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 431.87 661.50 Tm (Python) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 463.07 661.50 Tm (list) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 476.87 661.50 Tm (during) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 504.99 661.50 Tm (runtime) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 538.22 661.50 Tm (for) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 650.00 Tm (dashboard) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 98.03 650.00 Tm (filtering) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 130.24 650.00 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 148.14 650.00 Tm (CSV) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 169.61 650.00 Tm (export) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 197.74 650.00 Tm (\(GET) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 222.27 650.00 Tm (/api/v1/audit/export/csv\).) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 620.50 Tm (3. Current Prototype Limitations & Planned Future Work) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 617.50 m 557.00 617.50 l S
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 600.50 Tm (| Area | Current Prototype Implementation | Planned Production Improvement \(Future Work\) |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 589.00 Tm (| :--- | :--- | :--- |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 577.50 Tm (| Audit Ledger Storage | Held in an in-memory Python list \(AUDIT_LEDGER\); records are lost when the server process) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 566.00 Tm (restarts. | Migrate to durable PostgreSQL \(SQLAlchemy 2.0 + asyncpg\) tables with Redis idempotency keys. |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 554.50 Tm (| ML Training Data & Calibration | Fit on a seeded synthetic baseline of 1,000 records; outputs an uncalibrated 0–100 anomaly) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 543.00 Tm (indicator. | Train and validate on authorized historical enterprise AP data; calibrate probabilities and monitor drift \(EvidentlyAI) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 531.50 Tm (PSI\). |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 520.00 Tm (| Document Ingestion | Accepts structured JSON or performs regex invoice-text parsing \(/api/v1/audit/parse-raw\). | Integrate) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 508.50 Tm (optical OCR and layout-aware document extraction \(LayoutLMv3 / PDF table parsing\). |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 497.00 Tm (| PII Masking Coverage | Uses 6 deterministic regex patterns; may miss non-standard formats or free-form names/addresses. |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 485.50 Tm (Combine regex rules with context-aware Named Entity Recognition \(Presidio / Transformer NER\). |) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 474.00 Tm (| Security & Access Control | Local prototype endpoints without user authentication or role-based authorization. | Add OAuth2 /) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 462.50 Tm (JWT authentication, role-based access control \(RBAC\), and TLS termination. |) Tj ET
-endstream
+<<
+/PageMode /UseNone /Pages 11 0 R /Type /Catalog
+>>
 endobj
 10 0 obj
-<< /Type /Annot /Subtype /Link /Rect [38.00 22.00 458.62 31.80] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Shri-Sanjaykumar/Linkific-Tasks) >> >>
+<<
+/Author (\(anonymous\)) /CreationDate (D:20261012200933+05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261012200933+05'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
+>>
 endobj
 11 0 obj
-<< /Type /Page /Parent 5 0 R /MediaBox [0 0 595.276 841.890] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 9 0 R /Annots [10 0 R] >>
+<<
+/Count 2 /Kids [ 7 0 R 8 0 R ] /Type /Pages
+>>
 endobj
 12 0 obj
-<< /Type /Catalog /Pages 5 0 R >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 5517
+>>
+stream
+Gb!#_CNJ5iZMj2ud5@2[;Do<7pETFXhQ-F6BZ@;7P*2g#.-6%O8E-!^'G-Gpc2,34C65/\Mg?Z7gtFEi#ia6F1`E8fK0!\=JZetV$,E#RS6Y9N)_de4D@m82QZ,,NqJqhPdD<-(ok\(sQ3T]ro]>;]Y\9)I9qn+8$kpu.iYXS^5.N@42i6X+QULF&h04Ad]'_U;&C[mhblKPQejYgpnY"]@KTSAmVbtTEBbCkEL>bHpE674ZS3]XJZUhAe/d-g!@E=%')?hsP_41\V,RUK/Gkr&-J&:]Y./WI'^H[k<nVLj:b&7j3;<$o[cr\YB`3saGD9k#>od'1;n3+VfA:]E_QtBJM`G6b(C37ur$bE<J,0a`I*)>`\P<<FG#8ajH3j$Ws"Fl2b!./EeMhn3mL!XHG-<M0?kU,ng,qP>YB5?8?Er9R@mHHs1(_:R$Ab29Q1sPX0i!`)Wie<4B<;DHsWhYnGdh')lrMBe1lKK,S*+E\cWF;lYVitf*&1kbl9.$s#V]_pKUR+&b@qrr%)_F?7M<B>SE]u5j9d1?>B-DOeESZ@#P?F*4cKG?IrbL/R[GerlAf1sq)DrpWrZGi9Km!Oh#K\_-pa:^fQUYil99!_%%HEo>^GYFOfr^h*WuYKYZ.<i,*(.O%Qj'Fp]SD@ugX]3QM=,;eDqiCIO[6X;2q!N@m.3\-WHoI$_tB1LA]4#pkK5\'"FSM'8nWJ.C(;sk$c?E_`:Ra)B/Sd`NP`k>KQk3s_2E39b?p<Pq"&0gaSiS<`.>Oq'O)4i'!QMN(p<8)`u#"Q[\p^c/7K@B4aH.6)Y*KQ[mk'E]6;10&)Uc0;$I^I*\LnOi.>RHe*Fl`<-u]lBUYZXE!TU`dnJb5LDdjZO@^d^.#fu""kY/(#j!Ld"p&),1.nI@R>OGW1'hP#@g2s0`Y%oj(WdQ="`$Wmb23OaAbRkpd?4\EOO-\sCNNd=1gA2O1bogJ9mK(c#KQs!U3'"NR>1)J`&:\O974q6Hk2&%BWbtKnQj1UFYjk=;pST"B\RSn0UVc\T09<3o>'3b8-^,qfKLp`O)((8UJ!.dh`=MAIM^5,aL?LHho`(EgbUIo(.F5_3hLj^NU]97Q(HKsra=d_1DdN1Q3O\nn\=[F@o9W0>Q/Qj)G%,0a<7QAs)i:/<@d!:B1IAr=0(1PQTPUWX_c)Hjlkf%T50/JG-.C2oZa;+#*MaImIf)=a$(DDXeaS9et1d^7^lFh<\7QE.8>GN`kC/6#D$!9a%R2&iO4J9D7J'c9W^rVV8=n)`:pG.Rfi;(g8#gcXrk"K#CUik%iNUDmY)XgqCLQ=&B0b58k#44MJ-2]AObs2\DI&XD?&lt%@nQ5TsH'TR<8s]Eo0eG)['F4<Dh-tYId:^DYpM!^dBSa9L_<rd:pV[.'8E^^"D$0X1EVFO:*dLUYBgT;Mo.if^T#Y*3/;1"&s^*UhZs5lF2/_"R`O@XZg+5rS!jh"^f\;YImB]G(&dIe%-WYQoK=LSfaVUMbcR&!2mQ^P)E3m>NaU4g[A:^7GSM:+3qI8S'1E0\**^\*V:&?XL5a#$=LCoW11roi+%1qpN%t<Y.9#X(+@=*V^rD*Zjkmoid$8mRgMU;"cDl@.Z!X8Kq\!i<\;p<`MupE:oU_Q9`l*94cd)V)L2,$nLO/'G0mf(r73"Z)@<k]!bY3T-tXVNMha6CdG'c?V)r+D@hGbp/cTO@eooW;lKKhBfbWol`**1F"@RO&i00Z8+Xi]=+p,oLR:5BXCFUTolV2j<lM,7lh[?,*=M%c]a5RM^iqRDIU38gS3hN%;?Top3-^j/pl;.M*a1o&k&@73"dEOPkDgS.n0W_#I2,rHZqabqS0Q.seD?D73_]LfM@F\!:C<54GMOt+S9f%URq*ICp&TVMLV_h"%$(F(;<MDa_WJW=\rEQR#&I.h.gGB<qAeQf>8?^B2/*>;0Xsk0;gEr,9d6tqnfOHsj]i4`q:FrhTq($'S62-.s&3=Nm`5YuN^[H7t%u^'EFkZkgm=/kfTA9A+<VuBgs/hNm5JJ+r85\mPX)[JiDYCY"`F;_>9!Nc!f_Q+VMK+_UHC_*+Q#tJ/U+,`%88*nNA1*EciG+L6R=GS[$'bsi$L6aE=8VNOf(M=X[3"pPrOZ(jRDefKOG_87<-6hYa5d*)dm%VIQ0u#sBGsGJW!FPV?P_i4Zbr['DW0ZJ@sZ]le*ENq?@TI'2GVL9)2=o5OO#R[9:mA1&?q7M0Rh[@Y2C<Y]/so3HW\7#9[c@UCoYOpB%8V1DnjmPD3qd+%pCjfY^QE:qWb`H*4<X'M_1IgE>5a"nM3Z>Z9gS?ZdGt//+,@]E/qa>NAoV)o(DHOUh(/,8"C"4@HQH-He7L=na*$:DA9+p]j68se(albd4"p-5)r+cs55Q2o'8BF@eq-#]On:5%Pdlo""G%q:s]2ZA9sn=7E.aEak43H%,llbUQ_O'6BU"bR:G?e-s39KVk]SQ32SL(`t?K%RZZE!5um1T<#Xd,&/@LJ&tU9.3Tp!&N-o7]+`u%jT0eauF`B#S_ag#I>eh(KfJ/nj.hW@(n;nY@!Ya$5P"Q_2h$gd3MVLl><t[j'gBG];R0$QT6^3>lSqW7XK]#cY=cSh&oPDAR$=hk)qWELDeYca:l:*QJ.Z[o!L7H'pQg?R<B2Jja%HfiG--VcBlR]Er*\1&.'oT%JM<gpU>7/G]dQfRm_N4^#ObAh&$rXgbB1/_0;oLK?<:,%V33M!C(@Z#VW?iLkY#"qiQb[WrHboqs!DS\YNY4Bafh(Z!U7dFQ5XX!VLo'u5+B1(%A'e:#a;(l_FdDAU@[%9=n:5't\^cN!NDiO*,?e$+k6K!UNPlu;dlTZU3DV#-"=sX8A(BLInCr_Aba'g"PX5qXdpiZ/E!p"g1mO2NaEM7))!;ho:K*4?]ONLHio"0^p8Zc!9BacYR+%o`*d13r:="V"Ai+#L,%Lc</fGYsN+Yi--Ebn'8;79PdB2+@BuEkm$hE^[BAXW8X8Y,_hYN='')K*c:M25gXm3["!>dJ]AdrP1)4o`5m.@o\X4-ZpB$mCTE92tjM'Pa8,)tXm/ffR&bkX`ehr'2X1ju]GEl_[%Qpe8!%QhQprl-msRVZb-dhH1,hE?p'cd36\p93D38bftQaR(H@jiMlnd9SMm@UjK'hP)VXGk([Uf?jk0mam]Fa%,n.eg1TiUEp9i+/)sj`etO5r'K*%"IF)(2%=3O@.h8Fs*cbKGMO?ahJQKBE>0YF[G#$(mK:JG9bCb!G0HCEb`_nX=;oe<FsA*1I)(ia9H`HPZj<M#feD0sLH!-:@H[2nG^Xko7sg"u5U2`RcqDi1NTR79QO8KR[_tFU*2QUs^a/%VEHF9,L':q[+eGuJPQcZ`OnDjeKb[AA.7eaq!K@3"1_EM>QjB9K5Sr^ET$TI7r$tqS^>6=`L:9ok5OZF&^';&p_5OqgoV%`F/^c"k(B=I=h@HP100gg7nhe>#F06:HjVpm3#Eh=7!Gd!hkW\N0hbALI2/F4Qd7Tc]$geer<nBAG>nh[-2VQkIaYg:BU*DUf.&Z5&Y4!-$c!Oc5Yh/bc2-7\7/R&Hh>?IW^g.a7'5Z8!XH-#"CQ3MBb;I'EM?%J+gdiZjPF>KLm+C&l:QY7#^qV)c;]j[=f&h:H5IPEZrA#rsfDZ\p(6Ob;86Ror=5iX'UoOA(<1_"_NPG&&-Z&ET>Bl/(:GIO:TUnI"A"]']$?upJ</K2Y<18[U,Cm@tQEKNcp4otUadkkm2ApJ@FNh]hN%#@ohVcQ/2/"1bLSW$TN+taN[S+/J^e6sSrlk[TW7[F]'E5rbL'#e2nO^Ptj1g]8:JQ2dj7q5CY(R-^NL1U1_]Hr;6$T[5kqPU'WC#$G_+q>clP!1%R>IbAGB8_]\\6'"s@j9l`*@pUrju;[0pe<9:.CSL\XYA?.Wf*j73,&uI0LW't2VY6,P_OG3&a=3\n1;mk[hK6T(;$Q9A'!eQG)TiEcr,9C7)"%Ba&.f917u?McpcUJjnInqN&#[F-fYR&KW-.`VO@P(.s0n9#s_0>=[egSFsYI6BtlUs=0()Gr2We2aBTUo>K/WAYO(h;gXBu/:!cZsHZOfhNFr(+0IlMFE/8*AhOF;C@9Yo,hpY9V_#Kc9/_c^@dJZ[AdjD4p[+3QTYA3ndT!Z`WpC-'F`3g*n,8\"<,%\`Aa,gbAM:mXCC/hTHjg(@N/AKE(]#=3iVXoY>5Qk[&f":^+q\cFJa7*pJFNYh^[X1R)BfedhJWSdA_q*d/T9tAnl-D'=HR`YZTfM.Q`[4PXF)2lN0HB*<L@Yg@Q^:?QFeJs74Pk)8daa1lgHOi09fubl?$l%P`:[rIrk=%;29R[1U:Z-KgHFoPl0+"\X>oB`0%p?'TkhU;^3*,/Gi#kp@m7S'd6hWA2iB4L^hTmUIko"&_I,Po^2C*gmi756;+l[G0J%poQ4>WC"^KfZ>)m"qXUg%a8nm+fVV^Z)Y\T`W1ueAhW'Wj!7\N/^*4+-<`j_<XAf8f0>s>WR.h`(.YWglfN9OlLmL1i\#t7=&&[G+h1#toj,"`__N.gBp:Wa]Oc.]H4T6SWkbAMcI!sV6g1YT1LhjtjXB]$CT%#rp-[P8N+EjMQN:!7!2Hm<<YW9*p$gU.<YNo-^l4D`e^,VMW^1DWUj]ol+b0K=E,KTe8P5"b&;W)^K9L%UL<rSI5-j"]bmQS8'%q=@D?Pg8eq6-^HIgQEuiVk(.s#o0q-GrZO!k">olCEt`:U-a9BEJX;a(=B8O`nUFF"q.V(4eqB_qeasWM.SoK/,g_7DR(-5mS#,g:6jo^@^+`9c#//>dp>YH-<"2OaiUm,mF1Q]Bg8d;?J4M;b`%gWT&LY]iKHf<]tjjGMFn"$<=G-KNn+%,8@fmN\$edXA%UPT^IEH>2#S<Zei^`cM.o)Mfh-RO7`oTu;;<p&M&ZL?^2*^0N:m5OnB=7[7ZoCHI1W5J`E$bBpC90`s50\\>%2(=S"7A6\?-"gq5)t`hj)AkK_Vl2o#V4[C6O%r]t]fenS5EH]H%DHIE[9*$Mght]%/@X01+CXjj:Z9*hCmiS"oS0Fq)9:&I)=kjX$r7H1Y<dT,4S8k7MTs'Mnt6f6J??H(>c4Y77D^j="7.:m9Y?MQMY6b(j.8_pJ"WU3]s*e>emrP?T_A.3IhTI*?cd<aKA1:oUa037+T4]jN++6Gb-8C=6tYGs6ZaAZquc(rRBO'g#jq?EraGB@t/@IYJ090"Y3"FYC>(d-7.7^P)%*n@X6.Gh;<`r!Qp%Y2=q!kN^[EhgbOm^=.ju0PZ%&%cQIDjlLXb]G>#h%iHVb9i`^#KlLi[N7fJ9D@tX-l6>=sH,:GWUEpRq*4+6NGfV.'i9*^5iVd?dj5t2#1o%kug_]c4l$P"K*gd^HNpYu/1p*;C1/[:$/?;*o\>Vrg6ISA?dfVt6(q5!WXhMiUIBYh[WRSQVT!eKD[4K;#:!8Sj<Tu?'Zc/:74?4;'7+<:)oM>=&]1Ak[\W"s@S9fNQZeP%ea16+CVnH\OlSd-a1pMFG4`t``;+)E6_U8Aarf`e.~>endstream
+endobj
+13 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 4082
+>>
+stream
+GauHND0$UU')q<+d2u78HtUB2hBuP%JMfD[Jo)8o[WZGd.!\8dXdL&-dQ$C_o&$W-D[\=-S>35bjabjD\m%tFW#H-`BRmG(5m6]K'KS/iYR],P^a:gF3e[M)iie91#(tldD7dm_4;WV5ii``cGoHBm5WZoFD#lD.e'W!io8?_Q0FWUtYcrn)a0MD@gIO,N;gA5\"nEYh1-ImoWu7M3rc`M&Wn(np_KKdu@3J,oem_JU$;(OJdl]njarre0.qb)md5&E!HWmZS@h"j/Q0Y6[XsDBp@q9m$9I&cVkhmT8[FB@@Z9>U(CCl9n&uL/qoH2G+.6mL'(Va;S>/()sCu)F>^q,9)F8SSiC.D%3TgYcJ_IpGDGb"(C6ap?KL?!0.>gS9t(6Bj7kTc"RA4_1<BO/*0LNWJ&7o.^@>YrNDpmDE!A2/dXZD<8@lsPJub6+hmaL/@L\)ogY3Ncq2c`9'#YuXALB-M.-]Hb[A?/:1VBQ.N6447Li(WHFkD2Vl;NXWrraqW`TUokla3HV,rfSiB?<VW'f8K?)ZnnNgt]upaPY),j<Xm3^C.eJ;.6&rFngcODSaNKP</`2oe7K,G\0qBYS/AKMuIgM['`F=:Z50/-Jmp^shcelLPHQ@q*B>2E>AFVcn@R1/'(=/>S4o,!ZQ>*^@Mfb`a?pXRX$@(W'"AuapXI\<0i?@:aSH*6G5d#)0b0BMn==uB%1EtIt*PmJc2"R4Cr\NY0KIi4M5$8NE3"o)oC?-=Fo7_Q4_PW6]>Yfk:#d#9%<?.7Dei5Z@"gg+^jZ9A.U]l4JQUFeD(3Cmd`$+*5IgIl]K!sCFKor8"D3.-![7C/d+8]\VmI0lHpQN\4IQWI'eD2MD0422u\us@hEW%jf67O*Ki^Yn&3=Xr8`aQ_-8CCW2.MT<*3^>IC:G=EU72R,TXla=*F<*Bq),8:<_6f;tT@:)HA0''"cI.^/jtmS!1KHqs<_-Rm82(IJiNl#Y(Al6:XoMZsgPQ.HH)X,"+b]=16F%BaY5nHdroFFuU!E:G^0nk;0kYI3,]`uK'asfV3/*G`,Rsu7=RmJtD;=&/A5Y1s95QLg+Zp,8U@9l6VOO^BG;$'3XMW>Hi>o@ah<@]O)#h05Nb<-f$S!"XSd?ggf*rRH]Ki=ths0ZfBTotC,>4ER*tQbR[[bb9_0eEggh]lkC>QB;<I='bWpa:>ggd:.SSjd.I7^mcWO(NOV7Dh4Ruob&Y2]SWeUH%>S^+J,1-I&L2BuFJSmJ9#-!`C6Xl'%2<g,<].&ZYA<c'l>f[5:KiiYms'VJ!?[BUs'[`a[TG/RE,]/nT,3$[)g?]cb`f5YYr@,!#KMmr6EPbB6&Qd=f_YJ:A+(=FsNd<7g.BrLruN_?S7,4!bn_T.[8R]]u!BFPXJef%C<;uVkikg5TXZ\MM.r_OJT[/b(W%[7)(GUsnkn".>h=U`%E[s$m1@3W[UmJGeu?%H6W&4+/^#>S>n&l8Vt?=m"%i#@jf?rDNR*aTB=_^hH),?8P."E&!Go,Q5f@JXhFKI@?^C<T/MWQ*Yh64QZm[%?tZd'@X6E<niCX\q_Z`b7d8SAf$,Ess4=I&*:P!GtY;O"M`0nL4_/]*J?DZG<2?_:W\>pm9@Q54%[Efue4r_>A&_[?Nn`+\HBC7;fKI^PYYnf-V.B.=WTDc%MA(8gQI99ulkr2FXTg:$K4-if*`Wi34k9aAnKJbM5Uj#!+NG`1Vq($ElL8-nc\d<=pu,Ki?699gH:@%EHQZ3g!rJ_>F9TP@r$JU@)H[jLi3^6/92N;8Up=ie^@iH:;75_`?ff@ITXeOO^?U.">h0'cimAP&dqP1V?XHL%k)f'D$iELSQ)WDa!P[<ig%@SqaJsE#7/'\VTRAc&6BNJF70kP@q1#pHps`Umm&p@"K]0?S]9*5Y[iH.g2?^!YY0>I09r?S#]UnG%6Cc*V@B.4I]#7ZgO1ErN&(!NUOXUHi*\Im<Fl/?1cfepTFCu5G!l3?O-Pe)Re:b4^2XEH@p5;H?qfI9a2^.mVcu<>!)/%l<d?a]if8-\K:K8h7N"1Rhd>uJ*kMUrf@'7lt5&Od[Q4$PL'+6rQCs:CY:Vo[/UA/CA6Rq\6WYLLX!<YrR)WYB>]2e@t3NYCJm'!WE5`g!9"WF9[kkY`B[m?EB>XP=Na,G_ib<4@EOjNiFsiG7,]l"$<Moc=s4K9LI>^hO)-7Z7]q?ap#IXMQW:n6'D!=C;s9;XlTF4_gcIN5-P4UB^G=8-QL6Ul>0G4VRoi1`DO%@?CIkr+]/ioGLR*ML3oumOZL1Ij`+5/G#^?lT-&H+M_G-K<r8/.dF?$mV_(m`c.Vr*rcfR!.9b&+a,t"qS/`f44]h8+f1?1mU<q;3N6V3YVGfVJHgRE5Ff.^dG@(7%6\p7ah_m0ktCMa/i,JuXKXeFB'&%"a5g)=)H.K6TdL>sK&467#H8"0Bd%@WgZPqu2!SX9VupA\%ImrD#1iY>rDfp:lmiLG<P)FUVP<Mb?.j_k75aL!OH"s-B8*UtCKK.Ni@6n1H7Ck1ECg$i<#dFb/.\t/Y]2ccWb%?ESnQS"7_OU3CVHG]>_#@ZYo[?P%^np"7r/KAV-97GUE\S.)o0FpIm6qI*]TQrl+;GPAC`KPfZ!LsKg\3*ffYOHO\-/>dd-W7Va<"pSgbM%lPP&$9f3TkMTl``r.P@'+$A[%iT)K_eBYD.Nb'qC(^a2)N):L8Cae;@:a1QfElpQphQa@*oq(=Hl]86'V^-b;L9@LG;WE*7!oXs.a_X.Q9C+\Xn)Z-!f-7$?OIVnd:HQL'/EpBhZ-hnn''<CA/WM1L2M1o+R/4$7ckI&1Nq'KFqL4%\N`PsUm5)@(s=[%T=Tq7:J(L>IQ/IjYh2Y(=P8$]%LO$/g"^1)l.N3_&rV@6_Ap/<,!'9,9!5:g-HP,2qnG1kZ$2a^`naVQlqE`L3CG*GnF#7$=18;M)4=#P,Zr9JWV)'LJ&&9I:`Gc5nq3V94[1+RVJ#ON)=OmLEV]))QW*A,*G`UcE(0e%I"tZ^<J'kGldK$;rG`)=CXig'n+p;O&HJdm-@)&3`hVn'nCO7JUH1,NV2RoEA@pS?ROP<Q2]#o87M;2/VnfgNg=RUhrl@]hRl/36s8R+I4j.c,hI8;8iG+3.o_DXHQVlaYsr<_W%"6Om.eb,`hjt-lZcVLUYS=`I@$dW-=I&=t!?o*-=EnM*2'Sd9ls`6p.G1]2f)cPB$c]6cOBjmp?24?pdI2jUmDN)a5Zh[N\UI*fHX5,&<"%W2aI33/QBiVaOsW8>2.Aa=1u,mgt\=M@Kq[:5,@=K`&Dtk5j.V&j7WRT8UV9.^#e7+FP\iF[mVo69gc0DOR/,)C4qPLH1@X)K@6/a:d^8ckd'92!&].S1G[Jf&>1_%Ne[`[QMmPW`8fFa?6.^b*cMPHVb2A#e3psct'[e!'Lb#+6\k/a'2l,?W@UA)MbAH`A52r,aFGub-TG_A*"0*)q^B(>!,s9[L1l"'u)Mm'+e1Xk"Is#XHJ,Q2"%uT>j0Oc:VTVn14h+*Y+RCDG"%mm]&ZorIV\k&pY*Bpb+.I53.]je&'Fj:#%IR`Y?)G/O]U7]7JF#]H_;n!]j:0nhs)b),8ENDfWPtL,?8)&HdUIBC=tj4S\O3#e+l6hS\NEbe+l6mXdWE2m$._(QRrLPCuf!H\ma]e)G*:>`c)pY'dXSPV4aXEU8F*?<:mJ^i*m))Y31Du=XA][V$%go_Q`b"983hWY2ZgTAW*\Li9p3pAoJ4860ECsK=biIHoLk40EV"[^uUjP!%-O6:YjnmJ%=s,i@F]*YCe9Om15!Hj8RWq)7d<[&g4Bbr6C;$T'&*i7M@`57$__.Zd^48copU?,u_YK@7`]!A1]'di&s'engBj76g4)K_'I9G,+,HF^`Em<WO(\gJ/$N)@Te_/<R&[ZAiW;<22<&)PgVj?@lK)Z7k%>mcr@5*>gTg??0d6a]d.9(:]#T'=5i8o5T9DL<G54V]IJg6Q^N/@8O%an_MSV1k2iP8I/q0`O3X.uU^nkEU<[;c=aNKp5KWaNN<nt]=o>'`Dbl47Wgna*r;`?oKo)XT$XtN?jg'kF01o:V,(7Y6^r:d(#=I&L~>endstream
 endobj
 xref
-0 13
+0 14
 0000000000 65535 f 
-0000000015 00000 n 
-0000000112 00000 n 
-0000000214 00000 n 
-0000000319 00000 n 
-0000000428 00000 n 
-0000000492 00000 n 
-0000019148 00000 n 
-0000019335 00000 n 
-0000019515 00000 n 
-0000029432 00000 n 
-0000029620 00000 n 
-0000029802 00000 n 
+0000000061 00000 n 
+0000000132 00000 n 
+0000000239 00000 n 
+0000000351 00000 n 
+0000000456 00000 n 
+0000000571 00000 n 
+0000000690 00000 n 
+0000000895 00000 n 
+0000001100 00000 n 
+0000001169 00000 n 
+0000001450 00000 n 
+0000001516 00000 n 
+0000007125 00000 n 
 trailer
-<< /Size 13 /Root 12 0 R >>
+<<
+/ID 
+[<934c959ff52a8836cea9ebddc97b2bd9><934c959ff52a8836cea9ebddc97b2bd9>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 10 0 R
+/Root 9 0 R
+/Size 14
+>>
 startxref
-29852
+11299
 %%EOF

@@ -1,161 +1,86 @@
 %PDF-1.4
-%âãÏÓ
+%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 5 0 R
+>>
 endobj
 2 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
 endobj
 3 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
 endobj
 4 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding >>
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
 endobj
 5 0 obj
-<< /Type /Pages /Kids [8 0 R] /Count 1 >>
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
 endobj
 6 0 obj
-<< /Length 10983 >>
-stream
-0.060 0.090 0.160 rg 0.00 814.00 595.28 28.00 re f
-BT /F2 8.20 Tf 0.950 0.970 1.000 rg 1 0 0 1 38.00 824.00 Tm (LINKIFIC ENTERPRISE AI/ML ENGINEERING INTERNSHIP  |  SHRI SANJAYKUMAR V \(VIT VELLORE\)) Tj ET
-BT /F3 8.00 Tf 0.750 0.820 0.920 rg 1 0 0 1 383.59 824.00 Tm (Day 30 Final Practical: Panel Presentation Guide) Tj ET
-0.40 w 0.700 0.750 0.820 RG 38.00 36.00 m 557.00 36.00 l S
-BT /F1 7.80 Tf 0.350 0.400 0.480 rg 1 0 0 1 38.00 24.00 Tm (FinDoc-AuditEngine v3.0  |  github.com/Shri-Sanjaykumar/Linkific-Tasks  |  linkedin.com/in/shri-sanjaykumar-v-588bab28a) Tj ET
-BT /F2 8.00 Tf 0.200 0.250 0.330 rg 1 0 0 1 530.25 24.00 Tm (Page 1) Tj ET
-BT /F2 14.00 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 790.00 Tm (Final Practical – Multi-Stakeholder Presentation & Portfolio Guide) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 767.00 Tm (Presenter: Shri Sanjaykumar V \(M.Tech Integrated in Software Engineering, VIT Vellore – CGPA: 9.12/10.0\)) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 755.50 Tm (Companion Presentation & Video Files in docs/:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 744.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 744.00 Tm (PowerPoint) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 101.60 744.00 Tm (Presentation) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 155.80 744.00 Tm (\(.pptx\):) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 732.50 Tm ([FinDoc_AuditEngine_Presentation_Slides.pptx]\(./FinDoc_AuditEngine_Presentation_Slides.pptx\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 452.38 732.50 Tm (\(12) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 468.24 732.50 Tm (Widescreen) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 519.36 732.50 Tm (16:9) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 721.00 Tm (Slides\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 709.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 709.50 Tm (Landscape) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 99.56 709.50 Tm (Slide) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 122.57 709.50 Tm (Deck) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 146.09 709.50 Tm (\(.pdf\):) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 172.68 709.50 Tm ([FinDoc_AuditEngine_Slide_Deck.pdf]\(./FinDoc_AuditEngine_Slide_Deck.pdf\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 493.28 709.50 Tm (\(12) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 509.13 709.50 Tm (Designed) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 698.00 Tm (16:9) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 72.46 698.00 Tm (Slides\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 686.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 686.50 Tm (Recorded) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 94.44 686.50 Tm (Demo) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 121.53 686.50 Tm (Video) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 147.62 686.50 Tm (\(.mp4\):) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 675.00 Tm ([FinDoc_AuditEngine_Demo_Walkthrough.mp4]\(./FinDoc_AuditEngine_Demo_Walkthrough.mp4\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 452.35 675.00 Tm (\(HD) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 471.25 675.00 Tm (720p) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 494.27 675.00 Tm (Walkthrough\)) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 663.50 Tm (Verified Automated Tests: Day 29: 28 passed \(python -m pytest tests -q\) | Day 30: 33 passed \(python -m pytest tests -q\) – *all) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 652.00 Tm (collected tests passed*) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 622.50 Tm (1. Tailored Presentation Strategy by Audience \(10–12 Minute Structure\)) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 619.50 m 557.00 619.50 l S
-BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 600.50 Tm (Track A: Presenting to Mentors) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 587.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 587.50 Tm (Focus:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 82.17 587.50 Tm (Practical) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 120.00 587.50 Tm (domain) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 152.72 587.50 Tm (motivation,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 199.76 587.50 Tm (iterative) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 234.53 587.50 Tm (improvements) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 294.85 587.50 Tm (from) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 315.81 587.50 Tm (code) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 338.31 587.50 Tm (review) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 367.45 587.50 Tm (through) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 401.20 587.50 Tm (final) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 420.63 587.50 Tm (polish,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 449.78 587.50 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 467.68 587.50 Tm (honest) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 497.86 587.50 Tm (engineering) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 576.00 Tm (reflection.) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 564.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 564.50 Tm (Key) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 70.41 564.50 Tm (Points:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 553.00 Tm (1. Inspired by real procurement workflows \(managing purchase orders and vendor sponsorships for VIT's Riviera & Gravitas) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 541.50 Tm (festivals\).) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 530.00 Tm (2. Evolved into a clean, self-contained FastAPI working prototype with an institutional light-theme workbench \(1 USD = 86.50) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 518.50 Tm (INR\).) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 507.00 Tm (3. Demonstrates three representative scenarios clearly: a clean auto-approved invoice \(INV-1001\), a contract price) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 495.50 Tm (discrepancy \(INV-1004\), and a high-risk anomaly \(INV-1005\).) Tj ET
-BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 477.00 Tm (Track B: Presenting to Team Members) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 464.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 464.00 Tm (Focus:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 82.17 464.00 Tm (Code) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 106.71 464.00 Tm (organization,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 161.94 464.00 Tm (API) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 179.33 464.00 Tm (contracts,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 221.77 464.00 Tm (testing) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 251.43 464.00 Tm (workflow,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 292.32 464.00 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 310.23 464.00 Tm (reproducibility.) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 452.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 452.50 Tm (Key) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 70.41 452.50 Tm (Points:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 441.00 Tm (1. Modular directory structure separating app/core \(config, logging, regex privacy scrubber\), app/services \(3-way matcher,) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 429.50 Tm (anomaly scorer, router\), and app/routers \(audit, mentor_prep, portfolio\).) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 418.00 Tm (2. Fail-fast Pydantic v2 schema validators \(@model_validator\) enforcing $0.05 subtotal tolerances and valid GRN quantities.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 406.50 Tm (3. Reproducible automated test suite \(python -m pytest tests -q -> 28 passed in Day 29; 33 passed in Day 30 – all collected) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 395.00 Tm (tests passed\).) Tj ET
-BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 376.50 Tm (Track C: Presenting to the Technical Panel) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 363.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 363.50 Tm (Focus:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 82.17 363.50 Tm (Mathematical) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 139.43 363.50 Tm (logic,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 163.46 363.50 Tm (synthetic) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 202.32 363.50 Tm (baseline) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 239.14 363.50 Tm (scope,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 268.80 363.50 Tm (perturbation) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 320.45 363.50 Tm (attribution,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 365.96 363.50 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 383.86 363.50 Tm (transparent) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 432.95 363.50 Tm (discussion) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 478.46 363.50 Tm (of) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 488.69 363.50 Tm (prototype) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 352.00 Tm (limitations.) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 340.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 340.50 Tm (Key) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 70.41 340.50 Tm (Points:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 329.00 Tm (1. Hybrid Design: Deterministic 3-way matching enforces configured SKU price/quantity rules, while the 7-feature) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 317.50 Tm (IsolationForest surfaces unusual multi-feature patterns.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 306.00 Tm (2. Accurate Model Scope: The IsolationForest is trained on a seeded synthetic baseline of 1,000 records \(random_state=42\),) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 294.50 Tm (and its 0–100 output is an engineered anomaly-risk indicator rather than a calibrated probability of fraud.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 283.00 Tm (3. Prototype Limitations & Future Work: Clearly explain that AUDIT_LEDGER is an in-memory Python list \(requiring) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 271.50 Tm (PostgreSQL for persistence\), FinancialPrivacyScrubber and /parse-raw use regex rules \(requiring NER and optical OCR for) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 260.00 Tm (production\), and model thresholds require real-world calibration.) Tj ET
-endstream
+<<
+/Contents 10 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 9 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 7 0 obj
-<< /Type /Annot /Subtype /Link /Rect [38.00 22.00 458.62 31.80] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Shri-Sanjaykumar/Linkific-Tasks) >> >>
+<<
+/PageMode /UseNone /Pages 9 0 R /Type /Catalog
+>>
 endobj
 8 0 obj
-<< /Type /Page /Parent 5 0 R /MediaBox [0 0 595.276 841.890] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 6 0 R /Annots [7 0 R] >>
+<<
+/Author (\(anonymous\)) /CreationDate (D:20261012200933+05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261012200933+05'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
+>>
 endobj
 9 0 obj
-<< /Type /Catalog /Pages 5 0 R >>
+<<
+/Count 1 /Kids [ 6 0 R ] /Type /Pages
+>>
+endobj
+10 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 3182
+>>
+stream
+Gb!#^D/\Gm')nJ00cpmPftq@n/ie\.0&7ebmO"nPHabsW5X7tPRuKgN8]k0XqVr)2abaLXBsp`gIL-RR,)=LW4Yn<!*,r]qs/#t8%hgo^Fi!`Y1'9IC!DLesA?tr@Y?BmP&3ub=bXi!FUrD2W]cSTgqt/KQDNqr4!&n?n]mF_`Ja9Y`YBOO&^i9Sk0[Fn%-j8[&60q"4kHKFc,gTnpH"odjF1CeR(s]2;MZ29!)dK=(6Ob9"#,UE^-jag"UpQ\l>UXi(M%&:YjB%^r7j@uGp[a^';8V>6m1S/`;::9f1>f\W4CM+6L`Ih!(Yjr;hM^44KDMf9S'YBS[L_DP(,4nA=2)8F$Ei>D>j]#dHq7@A00<e[9G]CI(?_,jbWn]9X-pZ_)W=*0KgaEWc?o&+3.]DCk=T4dd(B%IUI,kPf/mplk3U60p%CsN_N6dls2(/9;aneS.;2@YT1+JA:.:1tm^Rm;VG_K^5.s0qs7",\">9;:E;'^BIt*6&!Y.o0#Bt0[FdFU;NaZ"bOh*tE;F9)mGO/-Z.nfb^GDE6.>o'd<p8O.o._S$G11;,#\DB@;HCTm%c/on5gKj3Y*rJ>T;N3*@N=H3?]Q.p-/N00XH3s1p_(1.b`ara[?=G-/*+O<DNGLM"8RUl5Y3E<QSTj!S7O.%.ZYp)t%@K<I?Q%'\9U3mWK4?H3l[`>D(1luu=OLp8^[V0@0!qY@MiIZW,5U78@a?K3A*pVLN!9bbSB`\H#0_(^58LjpUD>Y:)&uXW'm2@)TWt@%LL\%"DfE4ELR19JNPV^f`]MAeQ!GdEr;t-,7:UoJ)!HJ6$Kpn_IBN$\SEp'%lJ+8^qbNejkFM=5i;OOakE)]+a-88nG1[AgOm!h)/p"_6(*D]EgUSaQGbj5c?9$.VdP1jU@tTT%^$d_DE'\1nHPiBqQ87fS"k+3J\Y;c[gtK=0]ZBd(>fb&3/ZVcRBm_+Qq?]Pe`4Tb84[!sl=_ef71d\SiC?#L1eC(h\d[!,c\a\p[pV2*ja!/%LPOpa@Tn(K10J<p2qVN:4[;=UM7KN,8i4](fO>,RO]CUJ*=SkkK#YuiZQq&bd"%K!g0fb4,-NPpIGQ$0tSS+[BH36ZmCWqL&K2llNdOK+*ZieWeER7"s>^sY^?T^<>WjM&5m<]nCWIbKaKsG/jgJAE67Eqr:,)DuCC5E*dCLF#>!NF3Q1bJsg66"3X<`@aNjh`Qp^h!]X--=L'T%e*N]R>bqE[@D)HP/9h@8ZULm,oUrTI)lTG#(Wn0Su1cr"7aK04_\r6\.U=8jVl0?%GIs?`UQ^[Ar.cl'khYD@Kk<(L6Mk)/<==FMSCfV+YZ?4Y9NC8qSRX1eO6k-k4Cb-6E.^".*IG:igj`mknGZbK[I2B5#A&Ec^pI8Mu6bb6D8Opd,O;>nEPX<PGQ8%BG"HRNn.^0UU2_WKNPT+uuRVfV?iuL9*j9/$&$:7(<tT!F15<`X5q4WU_$L0jiSI?!r6V4&_C.U+?&Ln7d7Yha8$]d+QEUG]DE%H_/7(O'1+8bIeC@IM[`,F/5e!MBRI>ErPV^j"(d9MNVbK9F\5O=,1RmJQGnFH!,n6;SuCh3ZIHo28&_>G9+`k_PB]V.;:5=6)eRR9G$#5\P-)Z^coJXnAs`I!tG\n?hC`[2o)7>GeSJjb4+.CkIE/1$4nkQNIKO*7MFhdS7=:mVc-LW,g6X'S$"uEOkrrE;0pNapg9MGa=l/F2nbZ$d2gidX\g.-UWTT99LUT#MEN1l#6QGTikKV6$"AZ9Y5c()j]l@sc8B-!@qq98JQWXT0N`@)"`h?#bB[53Ue5,E/PhY%M0TVP25`Rd"-%C"9!5hfkmC+aX6C<U3Fh6l#5(liBKA*HqmUqV"h3^tF`0>[XI\%+E4Q9X<OOoE/>r*HAkD`*].ZuH\@]-.,*\CY^+M:/cWX\YqgREBCk=?QEVKctqbLbV;_IY?N#TBUOjPZ=dY\a)?H7sN?!tKWa`ESaim:sZs//[2k1=g83ib0'1SrPqlhlOU\q2i-C20$q3EVQAjtaoA'[]59rpg-)<$]'jBV#r>I%U6).jsQ(]C;.sST('e^+Q`d,qT&;JfOX[Zi,B'>8KQG[X7MIDl_mPpO&kf_g.hlqfI#krd.E!`lntmU($s;3s44@!k#[P?!rZ%`;E3cS:EVP^J,n9kJV7`;]Y"80%(f.Q*^oE2kG&B\WFc,</Ead;;4]=S*gBf<f:ZdQ(&>#24(3$RYh_eD3Zi_:<b\AFtO-LF>'6IAcBJVNrSiKhL60D."(.;]dr`1ePqI.D<Q.$ps>`fKG9/?]9,b.OIM&`L+(\JbUY/$`udN'*;lH=N@W@UNi!&j$^"q9q/Ln=S1)8j:_0M3;0f;7;l/**\aA=VB:M`#A7[6^6W&oeg9%(0etV$*QqfLAhF@D-Q)`,82&rH,70OCQ/'MEqNmjhaaT?[=jmOE?%(TMHb`W?c6)8[KLWc\8\37lP5hA0jSSGk`;eRd><EpKd/Ued`V!p70'%ZCVhfKm0Nj0V'b*J;=iOQVe'4J>P^RAV*a@rConj-2NdU3kj<^OrM0l9C:V,gOO:k-(69_0`\g*iJIKobc!OSM33(M)cj!S^oX41gQ'n-2Xgg:i&6qPLSkC2.S#Y@UIG41jDkV!I6nnSiMsG&mN[Unc8_JhCTK^k,,VW1a=(0G^hb21DM-[Hq:sN1F`(s*V9(pJIA'^CeI`LUiV\e%f1bK'/n`l&T&Ch]YfD)a>a]2V?XZ[c<@i?s?.Nn`PJU(FPRBNiHo9fMCrgWMt$lrGMrT!PUJKRUF_6%7=WM"3kG""OHtS9'=luc#n1\aUgSDm;"XtD3$a>eBgtGO<sNZ5r].>T!fGd7[SV5kE=NSFjrRQ]DMaHm<7"X";8"8g1O=!rn6f#j7%0c%ZZ8Kk@ZK]R%.DfN'@_@!5APn5?n\,I!"o=d=4B03^:3WkOS:^rT*>3Vot8/?%8/b^leh6[]gMnJ=*a]pg)=0.%q;:Pc5sH>9>mGG(&F:Pj%)a@f,a$(5K[<?qE-p#j^`*T7A$1F<HM],lOAW%PXM/#8RF]j,'.BU`4DM./X4\H:H<-pA,`74]qR)JZF4i_:f@LY'TcL7X%!2]ApYM:MFKba):4@F(#m8PbkB>TT:Dq)]q]mS-aHcAg6V<\@L:/eN@G<^M>-h9:n;-Kf+&nnMu2*a8H5i$[_mY@sJGf~>endstream
 endobj
 xref
-0 10
+0 11
 0000000000 65535 f 
-0000000015 00000 n 
-0000000112 00000 n 
-0000000214 00000 n 
-0000000319 00000 n 
-0000000428 00000 n 
-0000000485 00000 n 
-0000011521 00000 n 
-0000011708 00000 n 
-0000011888 00000 n 
+0000000061 00000 n 
+0000000122 00000 n 
+0000000229 00000 n 
+0000000341 00000 n 
+0000000446 00000 n 
+0000000561 00000 n 
+0000000765 00000 n 
+0000000833 00000 n 
+0000001113 00000 n 
+0000001172 00000 n 
 trailer
-<< /Size 10 /Root 9 0 R >>
+<<
+/ID 
+[<1d491e1b6d95f17900c51bf879b0992e><1d491e1b6d95f17900c51bf879b0992e>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 8 0 R
+/Root 7 0 R
+/Size 11
+>>
 startxref
-11937
+4446
 %%EOF

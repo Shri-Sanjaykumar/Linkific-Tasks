@@ -1,0 +1,62 @@
+%============================================================================
+% Standard Overleaf LaTeX Document — System & 7-Feature ML Architecture Guide
+% Candidate: Shri Sanjaykumar V (VIT Vellore, M.Tech Integrated SWE, CGPA: 9.12/10.0)
+%============================================================================
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{navy}{RGB}{23,54,93}
+\definecolor{slate}{RGB}{51,65,85}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\fontsize{8.5}{10}\selectfont\textbf{\textcolor{navy}{FINDOC-AUDITENGINE V3.0 --- SYSTEM ARCHITECTURE SPECIFICATION}}}
+\fancyhead[R]{\fontsize{8.5}{10}\selectfont\textcolor{slate}{Shri Sanjaykumar V (VIT Vellore)}}
+\fancyfoot[L]{\fontsize{8}{10}\selectfont\textcolor{slate}{Working Prototype \& Reference Implementation $|$ Day 29: 28 passed $|$ Day 30: 33 passed}}
+\fancyfoot[R]{\fontsize{8.5}{10}\selectfont\textbf{\textcolor{navy}{Page \thepage}}}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\titleformat{\section}{\color{navy}\fontsize{11.5}{14}\selectfont\bfseries}{}{0em}{}[\vspace{-6pt}\textcolor{navy}{\rule{\textwidth}{0.6pt}}\vspace{-2pt}]
+
+\begin{document}
+\begin{center}
+    {\fontsize{15.5}{19}\selectfont\bfseries\textcolor{navy}{FinDoc-AuditEngine v3.0 --- System \& 7-Feature ML Architecture}}\\[3pt]
+    {\fontsize{10}{12}\selectfont\textbf{Working Prototype Combining Regex PII Masking, 3-Way Matching \& Seeded Synthetic Isolation Forest}}\\[5pt]
+\end{center}
+
+\section{1. Architectural Scope \& Prototype Boundaries}
+\textbf{FinDoc-AuditEngine v3.0} is a working prototype and production-oriented reference implementation built with FastAPI, Pydantic v2, and scikit-learn.
+\begin{itemize}
+    \item \textbf{In-Memory Audit Ledger (\texttt{AUDIT\_LEDGER}):} Held in a Python list in RAM for fast demonstration and CSV export; records reset when the process restarts.
+    \item \textbf{Reproducible Synthetic Baseline (=1{,}000$, \texttt{seed=42}):} The 200-tree \texttt{IsolationForest} is trained on a seeded synthetic baseline to demonstrate anomaly scoring. Production deployment requires calibration on real historical company invoices.
+    \item \textbf{Engineered \text{--}100$ Risk Indicator:} Represents an engineered anomaly-risk indicator derived from isolation tree path depth, not a calibrated probability of fraud.
+\end{itemize}
+
+\section{2. 4-Stage Pipeline Specification}
+\begin{tabularx}{\textwidth}{@{}p{1.35in}p{1.75in}p{1.65in}X@{}}
+\toprule
+\textbf{Pipeline Stage} & \textbf{Module \& Class} & \textbf{Core Mechanism} & \textbf{Contract \& Guarantees} \\
+\midrule
+\textbf{Stage 1: Privacy Gate} & \texttt{app/core/privacy.py}\newline \texttt{FinancialPrivacyScrubber} & 6 compiled regex rules & Masks PAN, Aadhaar format, Bank Account, Card, Phone, Email into \texttt{[TOKEN\_NN]}. \\
+\addlinespace[4pt]
+\textbf{Stage 2: 3-Way Match} & \texttt{app/services/matcher.py}\newline \texttt{ReconciliationMatcher} & Deterministic SKU rules & Checks $\Delta P_i \le \.01$, {\text{inv},i} \le Q_{\text{rec},i} - Q_{\text{rej},i}$, and $\.05$ subtotal tolerance. \\
+\addlinespace[4pt]
+\textbf{Stage 3: Anomaly + XAI} & \texttt{anomaly\_detector.py}\newline \texttt{AnomalyScorer} & \texttt{StandardScaler} + 200-tree \texttt{IsolationForest} & Evaluates 7 features + single-feature perturbation $\Delta R_k(\mathbf{x}) = \max(0, R(\mathbf{x}) - R(\mathbf{x}^{(k \leftarrow \mu_k)}))$. \\
+\addlinespace[4pt]
+\textbf{Stage 4: Tier Router} & \texttt{app/services/router.py}\newline \texttt{ApprovalRouter} & 5 governance queues + RAM ledger & Routes to Tier 1 STP, Tier 2 Manager, Tier 3 Director, Rejected Discrepancy, or Frozen Fraud Risk. \\
+\bottomrule
+\end{tabularx}
+
+\end{document}

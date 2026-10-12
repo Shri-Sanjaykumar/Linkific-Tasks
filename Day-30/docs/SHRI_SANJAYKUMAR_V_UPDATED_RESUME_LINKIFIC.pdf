@@ -1,480 +1,191 @@
-%PDF-1.4
-%âãÏÓ
+%PDF-1.3
+%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+<<
+/F1 2 0 R /F2 3 0 R /F3 7 0 R /F4 18 0 R
+>>
 endobj
 2 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
 endobj
 3 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
 endobj
 4 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding >>
+<<
+/A <<
+/S /URI /Type /Action /URI (mailto:v.shrisanjaykumar@gmail.com)
+>> /Border [ 0 0 0 ] /Rect [ 262.9603 796.5 395.1519 808.2 ] /Subtype /Link /Type /Annot
+>>
 endobj
 5 0 obj
-<< /Type /Pages /Kids [26 0 R] /Count 1 >>
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.linkedin.com/in/shri-sanjaykumar-v-588bab28a/)
+>> /Border [ 0 0 0 ] /Rect [ 408.4603 796.5 445.1263 808.2 ] /Subtype /Link /Type /Annot
+>>
 endobj
 6 0 obj
-<< /Length 29554 >>
-stream
-BT /F2 18.13 Tf 0.000 0.000 0.000 rg 1 0 0 1 191.36 813.00 Tm (SHRI SANJAYKUMAR V) Tj ET
-BT /F1 9.80 Tf 0.000 0.000 0.000 rg 1 0 0 1 104.69 798.50 Tm (Vellore, India) Tj ET
-BT /F1 9.80 Tf 0.000 0.000 0.000 rg 1 0 0 1 161.88 798.50 Tm (  |  ) Tj ET
-BT /F1 9.80 Tf 0.000 0.000 0.000 rg 1 0 0 1 175.32 798.50 Tm (+91 6369945011) Tj ET
-BT /F1 9.80 Tf 0.000 0.000 0.000 rg 1 0 0 1 249.16 798.50 Tm (  |  ) Tj ET
-BT /F1 9.80 Tf 0.000 0.000 0.000 rg 1 0 0 1 262.60 798.50 Tm (v.shrisanjaykumar@gmail.com) Tj ET
-BT /F1 9.80 Tf 0.000 0.000 0.000 rg 1 0 0 1 396.16 798.50 Tm (  |  ) Tj ET
-BT /F1 9.80 Tf 0.000 0.000 0.000 rg 1 0 0 1 409.60 798.50 Tm (LinkedIn) Tj ET
-BT /F1 9.80 Tf 0.000 0.000 0.000 rg 1 0 0 1 446.65 798.50 Tm (  |  ) Tj ET
-BT /F1 9.80 Tf 0.000 0.000 0.000 rg 1 0 0 1 460.09 798.50 Tm (GitHub) Tj ET
-BT /F2 10.76 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 777.00 Tm (Technical Skills) Tj ET
-0.55 w 0.000 0.000 0.000 RG 30.60 773.80 m 564.70 773.80 l S
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 762.50 Tm (Programming) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 146.20 762.50 Tm (Python, Java, C++, C, JavaScript, TypeScript, SQL) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 750.70 Tm (Core CS) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 146.20 750.70 Tm (Data Structures & Algorithms, Object-Oriented Programming, System Design, Distributed Systems) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 738.90 Tm (Software Engineering) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 146.20 738.90 Tm (FastAPI, REST APIs, Microservices, Pydantic v2, PyTest, SDLC, Agile/Scrum, CI/CD, Software Testing, Git/GitHub) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 727.10 Tm (Cloud & DevOps) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 146.20 727.10 Tm (AWS \(EC2\), Microsoft Azure \(VMs, NSG\), Docker, GitHub Actions, Linux, SSH) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 715.30 Tm (AI & Emerging Tech) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 146.20 715.30 Tm (Generative AI, RAG, Vector Search, Semantic Search, Agentic AI, scikit-learn, Isolation Forest, Explainable AI \(XAI\),) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 146.20 703.50 Tm (Prompt Engineering, OpenAI API, SAP Generative AI Hub SDK, Responsible AI \(PII Redaction\), GitHub Copilot) Tj ET
-BT /F2 10.76 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 688.20 Tm (Experience) Tj ET
-0.55 w 0.000 0.000 0.000 RG 30.60 685.00 m 564.70 685.00 l S
-BT /F2 9.80 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 673.70 Tm (Linkific) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 469.98 673.70 Tm (Aug 2026 – Oct 2026) Tj ET
-BT /F4 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 662.30 Tm (AI/ML Software Engineering Intern – Financial AI & Explainable ML) Tj ET
-BT /F3 8.60 Tf 0.000 0.000 0.000 rg 1 0 0 1 504.00 662.30 Tm (GitHub Portfolio) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 36.20 650.50 Tm (•) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 650.50 Tm (Developed) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 95.15 650.50 Tm (FinDoc-AuditEngine,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 184.90 650.50 Tm (a) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 192.83 650.50 Tm (FastAPI) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 229.26 650.50 Tm (reference) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 272.03 650.50 Tm (prototype) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 314.28 650.50 Tm (for) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 328.00 650.50 Tm (Accounts) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 369.72 650.50 Tm (Payable) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 406.68 650.50 Tm (auditing) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 442.59 650.50 Tm (combining) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 488.52 650.50 Tm (deterministic) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 639.10 Tm (3-Way) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 76.20 639.10 Tm (Reconciliation) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 141.22 639.10 Tm (\(Invoice–PO–GRN\)) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 230.18 639.10 Tm (with) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 249.71 639.10 Tm (a) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 257.64 639.10 Tm (7-feature) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 300.39 639.10 Tm (StandardScaler) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 372.10 639.10 Tm (+) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 380.60 639.10 Tm (Isolation) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 420.56 639.10 Tm (Forest) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 451.61 639.10 Tm (anomaly) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 490.15 639.10 Tm (scoring) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 523.41 639.10 Tm (pipeline.) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 36.20 627.70 Tm (•) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 627.70 Tm (Implemented) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 105.17 627.70 Tm (regex-based) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 160.61 627.70 Tm (pre-inference) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 219.22 627.70 Tm (PII) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 234.12 627.70 Tm (masking) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 274.07 627.70 Tm (\(PAN,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 302.05 627.70 Tm (Aadhaar) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 340.60 627.70 Tm (format,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 372.81 627.70 Tm (bank) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 396.04 627.70 Tm (account,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 434.59 627.70 Tm (phone,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 466.29 627.70 Tm (email\),) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 497.43 627.70 Tm (local) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 616.30 Tm (single-feature) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 107.96 616.30 Tm (perturbation) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 164.08 616.30 Tm (attribution,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 213.51 616.30 Tm (and) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 232.00 616.30 Tm (an) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 245.21 616.30 Tm (interactive) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 291.14 616.30 Tm (web) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 311.20 616.30 Tm (workbench) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 359.78 616.30 Tm (supporting) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 406.77 616.30 Tm (dual-currency) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 466.96 616.30 Tm (\(USD/INR\)) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 514.98 616.30 Tm (inspection.) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 36.20 604.90 Tm (•) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 604.90 Tm (Authored) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 87.91 604.90 Tm (modular) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 124.87 604.90 Tm (Pydantic) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 165.94 604.90 Tm (v2) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 179.17 604.90 Tm (cross-field) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 225.09 604.90 Tm (schema) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 260.99 604.90 Tm (validators,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 306.93 604.90 Tm (structured) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 351.80 604.90 Tm (domain) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 385.59 604.90 Tm (exception) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 428.90 604.90 Tm (handlers,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 470.61 604.90 Tm (and) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 489.10 604.90 Tm (automated) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 593.50 Tm (PyTest) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 78.43 593.50 Tm (verification) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 126.47 593.50 Tm (suites) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 153.93 593.50 Tm (with) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 173.46 593.50 Tm (GitHub) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 205.66 593.50 Tm (Actions) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 239.46 593.50 Tm (CI) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 251.60 593.50 Tm (workflows) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 295.93 593.50 Tm (across) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 326.55 593.50 Tm (30) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 339.76 593.50 Tm (AI/ML) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 367.21 593.50 Tm (internship) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 411.04 593.50 Tm (modules.) Tj ET
-BT /F2 9.80 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 579.10 Tm (TForce India Private Limited) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 471.66 579.10 Tm (May 2026 – Jul 2026) Tj ET
-BT /F4 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 567.70 Tm (Software Engineering Intern – Generative AI) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 36.20 555.90 Tm (•) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 555.90 Tm (Engineered) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 98.50 555.90 Tm (enterprise) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 143.37 555.90 Tm (Generative) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 192.48 555.90 Tm (AI) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 204.10 555.90 Tm (workflows) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 248.43 555.90 Tm (and) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 266.92 555.90 Tm (RAG) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 290.15 555.90 Tm (pipelines) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 330.28 555.90 Tm (using) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 355.62 555.90 Tm (Python,) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 392.25 555.90 Tm (SAP) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 414.95 555.90 Tm (BTP,) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 439.87 555.90 Tm (and) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 459.23 555.90 Tm (SAP) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 481.92 555.90 Tm (Generative) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 533.58 555.90 Tm (AI) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 545.70 555.90 Tm (Hub) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 544.50 Tm (SDK,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 70.63 544.50 Tm (enabling) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 109.18 544.50 Tm (context-grounded) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 185.75 544.50 Tm (retrieval) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 222.18 544.50 Tm (for) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 235.91 544.50 Tm (domain-specific) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 304.53 544.50 Tm (queries.) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 36.20 533.10 Tm (•) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 533.10 Tm (Integrated) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 92.37 533.10 Tm (AI) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 103.99 533.10 Tm (components) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 158.38 533.10 Tm (into) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 176.33 533.10 Tm (backend) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 214.88 533.10 Tm (microservices) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 275.58 533.10 Tm (through) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 310.44 533.10 Tm (RESTful) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 350.39 533.10 Tm (API) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 369.19 533.10 Tm (patterns,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 410.83 533.10 Tm (supporting) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 457.82 533.10 Tm (cross-system) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 521.70 Tm (interoperability) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 109.01 521.70 Tm (and) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 127.50 521.70 Tm (modular) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 164.45 521.70 Tm (service) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 197.18 521.70 Tm (isolation.) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 36.20 510.30 Tm (•) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 510.30 Tm (Executed) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 89.02 510.30 Tm (Python-based) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 150.28 510.30 Tm (testing) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 180.91 510.30 Tm (and) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 199.40 510.30 Tm (evaluation) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 245.34 510.30 Tm (scripts) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 275.42 510.30 Tm (to) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 285.99 510.30 Tm (analyze) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 321.37 510.30 Tm (workflow) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 360.95 510.30 Tm (performance,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 419.56 510.30 Tm (response) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 461.27 510.30 Tm (latency,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 496.65 510.30 Tm (and) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 515.14 510.30 Tm (system) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 498.90 Tm (stability) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 78.91 498.90 Tm (through) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 113.77 498.90 Tm (iterative) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 149.67 498.90 Tm (validation.) Tj ET
-BT /F2 10.76 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 484.00 Tm (Projects) Tj ET
-0.55 w 0.000 0.000 0.000 RG 30.60 480.80 m 564.70 480.80 l S
-BT /F2 9.60 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 469.50 Tm (FinDoc-AuditEngine v3.0 – Financial Reconciliation & Explainable ML Gateway) Tj ET
-BT /F3 8.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 357.45 469.50 Tm (Python, FastAPI, Isolation Forest, XAI, PyTest) Tj ET
-BT /F1 8.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 531.31 469.50 Tm ( | ) Tj ET
-BT /F3 8.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 538.25 469.50 Tm (GitHub) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 36.20 458.00 Tm (•) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 458.00 Tm (Built) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 66.73 458.00 Tm (a) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 74.66 458.00 Tm (full-stack) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 114.78 458.00 Tm (institutional) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 164.94 458.00 Tm (procurement) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 220.90 458.00 Tm (audit) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 244.14 458.00 Tm (engine) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 275.30 458.00 Tm (performing) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 323.34 458.00 Tm (SKU-level) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 368.21 458.00 Tm (3-Way) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 398.29 458.00 Tm (Matching,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 442.12 458.00 Tm (unstructured) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 497.56 458.00 Tm (OCR) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 521.31 458.00 Tm (invoice) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 446.60 Tm (parsing,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 81.03 446.60 Tm (and) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 99.52 446.60 Tm (7-D) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 117.46 446.60 Tm (unsupervised) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 176.60 446.60 Tm (anomaly) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 215.14 446.60 Tm (detection) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 256.34 446.60 Tm (with) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 275.87 446.60 Tm (Single-Feature) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 340.81 446.60 Tm (Perturbation) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 395.20 446.60 Tm (XAI) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 413.15 446.60 Tm (\(+pts) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 437.18 446.60 Tm (risk) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 454.59 446.60 Tm (attribution\)) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 502.11 446.60 Tm (and) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 520.60 446.60 Tm (5-tier) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 435.20 Tm (governance) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 96.88 435.20 Tm (routing.) Tj ET
-BT /F2 9.60 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 421.80 Tm (LEGITIFY – Security & Compliance Analysis Platform) Tj ET
-BT /F3 8.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 373.04 421.80 Tm (Python, DevSecOps, AppSec, GitHub API) Tj ET
-BT /F1 8.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 531.31 421.80 Tm ( | ) Tj ET
-BT /F3 8.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 538.25 421.80 Tm (GitHub) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 36.20 410.30 Tm (•) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 410.30 Tm (Engineered) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 98.50 410.30 Tm (an) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 111.70 410.30 Tm (automated) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 159.23 410.30 Tm (security) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 194.60 410.30 Tm (platform) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 231.55 410.30 Tm (to) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 242.12 410.30 Tm (analyze) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 277.50 410.30 Tm (source-code) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 332.41 410.30 Tm (repositories,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 386.78 410.30 Tm (detect) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 415.30 410.30 Tm (configuration) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 472.33 410.30 Tm (vulnerabilities) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 532.51 410.30 Tm (using) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 398.90 Tm (DevSecOps) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 97.92 398.90 Tm (practices,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 141.21 398.90 Tm (and) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 159.70 398.90 Tm (automate) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 201.95 398.90 Tm (policy-driven) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 257.90 398.90 Tm (compliance) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 308.59 398.90 Tm (workflows) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 352.92 398.90 Tm (across) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 383.54 398.90 Tm (repository) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 427.89 398.90 Tm (assets.) Tj ET
-BT /F2 9.60 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 385.50 Tm (CampusLLM – Personalized University Assistant) Tj ET
-BT /F3 8.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 315.88 385.50 Tm (Python, Next.js, React, RAG, Vector Search, OpenAI API) Tj ET
-BT /F1 8.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 531.31 385.50 Tm ( | ) Tj ET
-BT /F3 8.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 538.25 385.50 Tm (GitHub) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 36.20 374.00 Tm (•) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 374.00 Tm (Architected) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 97.37 374.00 Tm (a) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 105.30 374.00 Tm (RAG) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 128.52 374.00 Tm (assistant) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 168.65 374.00 Tm (combining) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 214.58 374.00 Tm (vector) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 243.09 374.00 Tm (embeddings,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 300.12 374.00 Tm (semantic) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 340.77 374.00 Tm (search,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 374.56 374.00 Tm (and) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 393.05 374.00 Tm (intelligent) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 435.82 374.00 Tm (query) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 462.22 374.00 Tm (routing) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 493.90 374.00 Tm (for) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 362.60 Tm (source-grounded,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 121.69 362.60 Tm (source-cited) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 176.07 362.60 Tm (university) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 218.83 362.60 Tm (responses) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 265.29 362.60 Tm (with) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 284.83 362.60 Tm (~3-second) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 331.58 362.60 Tm (average) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 368.54 362.60 Tm (end-to-end) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 417.12 362.60 Tm (pipeline) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 452.50 362.60 Tm (latency.) Tj ET
-BT /F2 9.60 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 349.20 Tm (FinTrack – Personal Finance & Group Settlement Platform) Tj ET
-BT /F3 8.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 344.71 349.20 Tm (Python, React, Node.js, Firebase, REST APIs) Tj ET
-BT /F1 8.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 517.14 349.20 Tm ( | ) Tj ET
-BT /F3 8.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 524.08 349.20 Tm (Live Demo) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 36.20 337.70 Tm (•) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 337.70 Tm (Architected) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 97.37 337.70 Tm (a) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 105.30 337.70 Tm (modular) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 142.25 337.70 Tm (full-stack) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 182.37 337.70 Tm (platform) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 219.33 337.70 Tm (with) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 238.86 337.70 Tm (REST) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 266.83 337.70 Tm (APIs) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 289.54 337.70 Tm (across) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 320.16 337.70 Tm (5+) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 333.63 337.70 Tm (modules,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 374.81 337.70 Tm (optimizing) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 420.21 337.70 Tm (a) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 428.14 337.70 Tm (graph-based) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 484.11 337.70 Tm (multi-party) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 326.30 Tm (debt-settlement) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 112.72 326.30 Tm (algorithm) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 154.42 326.30 Tm (and) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 172.91 326.30 Tm (integrating) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 219.90 326.30 Tm (the) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 235.75 326.30 Tm (OpenAI) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 270.61 326.30 Tm (API) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 288.56 326.30 Tm (for) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 302.29 326.30 Tm (natural-language) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 376.22 326.30 Tm (spending) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 417.41 326.30 Tm (insights.) Tj ET
-BT /F2 9.60 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 312.90 Tm (Solar Energy Forecasting) Tj ET
-BT /F3 8.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 314.96 312.90 Tm (Python, scikit-learn, XGBoost, LSTM, NASA POWER API) Tj ET
-BT /F1 8.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 531.31 312.90 Tm ( | ) Tj ET
-BT /F3 8.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 538.25 312.90 Tm (GitHub) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 36.20 301.40 Tm (•) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 301.40 Tm (Built) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 66.73 301.40 Tm (an) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 79.94 301.40 Tm (end-to-end) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 128.52 301.40 Tm (ML) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 144.36 301.40 Tm (pipeline) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 179.74 301.40 Tm (benchmarking) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 242.04 301.40 Tm (5) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 249.96 301.40 Tm (models) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 283.22 301.40 Tm (\(Linear) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 315.43 301.40 Tm (Regression,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 368.75 301.40 Tm (Random) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 407.29 301.40 Tm (Forest,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 439.50 301.40 Tm (XGBoost,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 482.80 301.40 Tm (Gradient) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 521.87 301.40 Tm (Boosting,) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 44.60 290.00 Tm (LSTM\)) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 75.74 290.00 Tm (using) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 101.09 290.00 Tm (MAE/RMSE) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 154.40 290.00 Tm (on) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 167.61 290.00 Tm (multivariate) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 218.81 290.00 Tm (NASA) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 247.32 290.00 Tm (POWER) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 285.85 290.00 Tm (weather) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 322.29 290.00 Tm (features) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 359.25 290.00 Tm (for) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 372.98 290.00 Tm (automated) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 420.51 290.00 Tm (7-day) Tj ET
-BT /F1 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 446.91 290.00 Tm (forecasting.) Tj ET
-BT /F2 10.76 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 275.10 Tm (Education) Tj ET
-0.55 w 0.000 0.000 0.000 RG 30.60 271.90 m 564.70 271.90 l S
-BT /F2 9.80 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 260.60 Tm (Vellore Institute of Technology, Vellore) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 476.11 260.60 Tm (Aug 2023 – Present) Tj ET
-BT /F3 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 249.20 Tm (M.Tech Integrated in Software Engineering) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 488.93 249.20 Tm (CGPA: 9.12/10.0) Tj ET
-BT /F2 9.10 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 237.80 Tm (Relevant Coursework: ) Tj ET
-BT /F1 9.10 Tf 0.000 0.000 0.000 rg 1 0 0 1 127.70 237.80 Tm (Data Structures & Algorithms, Object-Oriented Programming, Software Engineering, System Design, Distributed Systems, DBMS, Computer Networks) Tj ET
-BT /F2 10.76 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 223.30 Tm (Certifications) Tj ET
-0.55 w 0.000 0.000 0.000 RG 30.60 220.10 m 564.70 220.10 l S
-BT /F2 9.30 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 208.80 Tm (Cloud Infrastructure Certified AI Foundations Associate) Tj ET
-BT /F3 9.30 Tf 0.000 0.000 0.000 rg 1 0 0 1 537.31 208.80 Tm (Oracle) Tj ET
-BT /F2 9.30 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 197.60 Tm (Agentic AI Certified Foundations Associate) Tj ET
-BT /F3 9.30 Tf 0.000 0.000 0.000 rg 1 0 0 1 537.31 197.60 Tm (Oracle) Tj ET
-BT /F2 9.30 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 186.40 Tm (Software Engineer Role Certification) Tj ET
-BT /F3 9.30 Tf 0.000 0.000 0.000 rg 1 0 0 1 513.54 186.40 Tm (HackerRank) Tj ET
-BT /F2 9.30 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 175.20 Tm (SQL \(Advanced\) Skill Certification) Tj ET
-BT /F3 9.30 Tf 0.000 0.000 0.000 rg 1 0 0 1 513.54 175.20 Tm (HackerRank) Tj ET
-BT /F2 9.30 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 164.00 Tm (Java \(Basic\) Skill Certification) Tj ET
-BT /F3 9.30 Tf 0.000 0.000 0.000 rg 1 0 0 1 513.54 164.00 Tm (HackerRank) Tj ET
-BT /F2 10.76 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 149.80 Tm (Leadership & Extracurriculars) Tj ET
-0.55 w 0.000 0.000 0.000 RG 30.60 146.60 m 564.70 146.60 l S
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 135.30 Tm (Vice Chairperson & Core Member, VIT Health Club) Tj ET
-BT /F2 9.30 Tf 0.000 0.000 0.000 rg 1 0 0 1 498.16 135.30 Tm (2024 – Present) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 40.60 124.10 Tm (Led 'Hack the Hospital' with 600+ participants, coordinating workshops, teams, stakeholders, timelines, and deliverables.) Tj ET
-BT /F2 9.50 Tf 0.000 0.000 0.000 rg 1 0 0 1 30.60 111.90 Tm (Purchase Manager & Sponsorship Team, Riviera & Gravitas Tech Festivals, VIT) Tj ET
-BT /F2 9.30 Tf 0.000 0.000 0.000 rg 1 0 0 1 498.16 111.90 Tm (2025 – Present) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 40.60 100.70 Tm (Secured INR 60+ lakhs in sponsorships; managed procurement, sponsor deliverables, negotiations, and cross-functional coordination.) Tj ET
-endstream
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Shri-Sanjaykumar)
+>> /Border [ 0 0 0 ] /Rect [ 458.4347 796.5 488.6211 808.2 ] /Subtype /Link /Type /Annot
+>>
 endobj
 7 0 obj
-<< /Type /Annot /Subtype /Link /Rect [262.60 796.50 396.16 808.30] /Border [0 0 0] /A << /Type /Action /S /URI /URI (mailto:v.shrisanjaykumar@gmail.com) >> >>
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
 endobj
 8 0 obj
-<< /Type /Annot /Subtype /Link /Rect [409.60 796.50 446.65 808.30] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://www.linkedin.com/in/shri-sanjaykumar-v-588bab28a/) >> >>
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Shri-Sanjaykumar/Linkific-Tasks)
+>> /Border [ 0 0 0 ] /Rect [ 503.6172 649.6 564.316 660.2 ] /Subtype /Link /Type /Annot
+>>
 endobj
 9 0 obj
-<< /Type /Annot /Subtype /Link /Rect [460.09 796.50 490.59 808.30] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Shri-Sanjaykumar) >> >>
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Shri-Sanjaykumar/LEGITIFY)
+>> /Border [ 0 0 0 ] /Rect [ 538.1752 469.3 564.316 479.7 ] /Subtype /Link /Type /Annot
+>>
 endobj
 10 0 obj
-<< /Type /Annot /Subtype /Link /Rect [504.00 660.30 564.70 670.90] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Shri-Sanjaykumar/Linkific-Tasks) >> >>
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Shri-Sanjaykumar/campusLLM)
+>> /Border [ 0 0 0 ] /Rect [ 538.1752 408.5 564.316 418.9 ] /Subtype /Link /Type /Annot
+>>
 endobj
 11 0 obj
-<< /Type /Annot /Subtype /Link /Rect [538.25 467.50 564.70 478.00] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Shri-Sanjaykumar/Linkific-Tasks/tree/main/Day-30) >> >>
+<<
+/A <<
+/S /URI /Type /Action /URI (https://fin-track-mauve-sigma.vercel.app/)
+>> /Border [ 0 0 0 ] /Rect [ 524.1724 347.7 564.316 358.1 ] /Subtype /Link /Type /Annot
+>>
 endobj
 12 0 obj
-<< /Type /Annot /Subtype /Link /Rect [538.25 419.80 564.70 430.30] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Shri-Sanjaykumar/LEGITIFY) >> >>
+<<
+/A <<
+/S /URI /Type /Action /URI (https://github.com/Shri-Sanjaykumar/solar-energy-forecasting)
+>> /Border [ 0 0 0 ] /Rect [ 538.1752 286.9 564.316 297.3 ] /Subtype /Link /Type /Annot
+>>
 endobj
 13 0 obj
-<< /Type /Annot /Subtype /Link /Rect [538.25 383.50 564.70 394.00] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Shri-Sanjaykumar/campusLLM) >> >>
+<<
+/A <<
+/S /URI /Type /Action /URI (https://catalog-education.oracle.com/pls/certview/sharebadge?id=FC6E3F8AB9971E72946BD9ED3DB8104F0CC00597A44F35DB500F11EAB2565425)
+>> /Border [ 0 0 0 ] /Rect [ 30.959 153.8 280.0966 165.2 ] /Subtype /Link /Type /Annot
+>>
 endobj
 14 0 obj
-<< /Type /Annot /Subtype /Link /Rect [524.08 347.20 564.70 357.70] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://fin-track-mauve-sigma.vercel.app/) >> >>
+<<
+/A <<
+/S /URI /Type /Action /URI (https://catalog-education.oracle.com/ords/certview/sharebadge?id=99707AD7CBDB65050635C8B57090D5A13D6371C49A3FED415C0215AF843E7A04)
+>> /Border [ 0 0 0 ] /Rect [ 30.959 141.6 224.2136 153 ] /Subtype /Link /Type /Annot
+>>
 endobj
 15 0 obj
-<< /Type /Annot /Subtype /Link /Rect [538.25 310.90 564.70 321.40] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Shri-Sanjaykumar/solar-energy-forecasting) >> >>
+<<
+/A <<
+/S /URI /Type /Action /URI (https://drive.google.com/file/d/17mM6JOFQRAaN-D9ZETAm1oF__SpRy2-6/view?usp=sharing)
+>> /Border [ 0 0 0 ] /Rect [ 30.959 129.4 193.9268 140.8 ] /Subtype /Link /Type /Annot
+>>
 endobj
 16 0 obj
-<< /Type /Annot /Subtype /Link /Rect [30.60 206.80 269.99 218.10] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://catalog-education.oracle.com/pls/certview/sharebadge?id=FC6E3F8AB9971E72946BD9ED3DB8104F0CC00597A44F35DB500F11EAB2565425) >> >>
+<<
+/A <<
+/S /URI /Type /Action /URI (https://drive.google.com/file/d/13Z6KOukU2_8xBA6i6l2sajIgJlxwzsSy/view?usp=sharing)
+>> /Border [ 0 0 0 ] /Rect [ 30.959 117.2 183.4834 128.6 ] /Subtype /Link /Type /Annot
+>>
 endobj
 17 0 obj
-<< /Type /Annot /Subtype /Link /Rect [537.31 206.80 564.70 218.10] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://catalog-education.oracle.com/pls/certview/sharebadge?id=FC6E3F8AB9971E72946BD9ED3DB8104F0CC00597A44F35DB500F11EAB2565425) >> >>
+<<
+/A <<
+/S /URI /Type /Action /URI (https://drive.google.com/file/d/1vM0O20uitDqHrypwxGs9cyIz43h6hnWH/view?usp=sharing)
+>> /Border [ 0 0 0 ] /Rect [ 30.959 105 165.2192 116.4 ] /Subtype /Link /Type /Annot
+>>
 endobj
 18 0 obj
-<< /Type /Annot /Subtype /Link /Rect [30.60 195.60 216.56 206.90] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://catalog-education.oracle.com/ords/certview/sharebadge?id=99707AD7CBDB65050635C8B57090D5A13D6371C49A3FED415C0215AF843E7A04) >> >>
+<<
+/BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
 endobj
 19 0 obj
-<< /Type /Annot /Subtype /Link /Rect [537.31 195.60 564.70 206.90] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://catalog-education.oracle.com/ords/certview/sharebadge?id=99707AD7CBDB65050635C8B57090D5A13D6371C49A3FED415C0215AF843E7A04) >> >>
+<<
+/Annots [ 4 0 R 5 0 R 6 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 
+  15 0 R 16 0 R 17 0 R ] /Contents 23 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 22 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
 endobj
 20 0 obj
-<< /Type /Annot /Subtype /Link /Rect [30.60 184.40 188.73 195.70] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://drive.google.com/file/d/17mM6JOFQRAaN-D9ZETAm1oF__SpRy2-6/view?usp=sharing) >> >>
+<<
+/PageMode /UseNone /Pages 22 0 R /Type /Catalog
+>>
 endobj
 21 0 obj
-<< /Type /Annot /Subtype /Link /Rect [513.54 184.40 564.70 195.70] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://drive.google.com/file/d/17mM6JOFQRAaN-D9ZETAm1oF__SpRy2-6/view?usp=sharing) >> >>
+<<
+/Author (anonymous) /CreationDate (D:20261012200932+05'00') /Creator (anonymous) /Keywords () /ModDate (D:20261012200932+05'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (unspecified) /Title (untitled) /Trapped /False
+>>
 endobj
 22 0 obj
-<< /Type /Annot /Subtype /Link /Rect [30.60 173.20 178.36 184.50] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://drive.google.com/file/d/13Z6KOukU2_8xBA6i6l2sajIgJlxwzsSy/view?usp=sharing) >> >>
+<<
+/Count 1 /Kids [ 19 0 R ] /Type /Pages
+>>
 endobj
 23 0 obj
-<< /Type /Annot /Subtype /Link /Rect [513.54 173.20 564.70 184.50] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://drive.google.com/file/d/13Z6KOukU2_8xBA6i6l2sajIgJlxwzsSy/view?usp=sharing) >> >>
-endobj
-24 0 obj
-<< /Type /Annot /Subtype /Link /Rect [30.60 162.00 159.81 173.30] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://drive.google.com/file/d/1vM0O20uitDqHrypwxGs9cyIz43h6hnWH/view?usp=sharing) >> >>
-endobj
-25 0 obj
-<< /Type /Annot /Subtype /Link /Rect [513.54 162.00 564.70 173.30] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://drive.google.com/file/d/1vM0O20uitDqHrypwxGs9cyIz43h6hnWH/view?usp=sharing) >> >>
-endobj
-26 0 obj
-<< /Type /Page /Parent 5 0 R /MediaBox [0 0 595.276 841.890] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 6 0 R /Annots [7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 16 0 R 17 0 R 18 0 R 19 0 R 20 0 R 21 0 R 22 0 R 23 0 R 24 0 R 25 0 R] >>
-endobj
-27 0 obj
-<< /Type /Catalog /Pages 5 0 R >>
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 8540
+>>
+stream
+Gau`Y=``@fP(*//^lq,lMs7gR0`//_0%6SJ_rc2U,P2&3M^1c*TEda2U18ZM7KVC26)">dg"&V@'[^I_6WTp2n''c'McdpPs3j[VrHoL]oTD^L7$lL;=.l;2f?oN"n*p'&Wc#Od^E=`gn-ai#fmhuDb<62nGcZHhj!)NTFLd7"XF@]>McQ`oIm*bf^]+2Vksb7!&(0LRU<ESjrujQ\#2;>)K6c[K4Z5*([*k(r*U":;2kT8Eje#"T`B$Z3aSh_K$,T4Pr)ja4-]5Y-D/2C@_1Q\+)"Yg>'?<^$c6*$ATjf^E`tK!ZpNOD^-?oZFF))t]7Tk:XI.6;8Y9qm851p3t%?nVln"@CsZ8sH6Q/$lAD3F16DDk(P6X"@/H9fJ&qYe#M6nf0BRn2O3lkY4<aJ7:0J,<ambY]*?Ht.URk!4q%nN&0aq"7e[d,K\]GDfNp!uFE>(*>ehlc!WE8ucj6^WN!PG#o2,IJEA^l-=hlS<&uMOAZ[1L(ml_>Wa8[,_K4>O`e=5o$XGF7@#9G[/,mGGob>6<CcN::M^F`g-jXCOPK1e5P1O8'^nWO]eFe`"O$;DS*7t><Sg]sAs3rg_=Km@pM,a<g]IUS)/+ll61:;tZ?Wr#cnR5sKoj%rGKFkj_),8&>laZd`ubV4_LWFqKQmVV`P>*F5$@;'Xg2e2J9<S+)8>I\qlQcj8f:"_6;F]_pA0\\O5,b?.Q]8KQ&hN=aBPnSI%E1:E\rEc+bX&WeLk]^Q*6Oh(9W0j*IrT7fS9N;m/jB<r2-R$k&sZ:2NANF*=LKtmcn.CD,/qfR4fJn?G:b##E=)97h,[KEf(Tq^o[q]Z+@+X^KHRF/T>,g>KPLM%7.!CbJ>kG')=YjRju&(;-9iD$s\d9BtO)-H7G1?i0Dp=mn)W9(WB*LG[DIY>P.,4PI`b;5GP.b"\o=8?s^KJ>nTo2!6oVAGC"^-3De.UG"MpgDmH`"CL>n/W@&f]`^"2PP'VSl:5UAk#nl)\bY:XqSKO#m'eg;^8\F[Q70bi.(/d]^lM54I#$0N1;_$RfV`.cHIp/]!DF6GT$7rbs4m]M]T:S2Q%]Gd"XjQY5lu8*uUsoW*_:K,f*-3JmYW./\m]Udm2^D3C"h7[G!;0@Cr:HDZ^IZi\H$DQ!\Q_S]8'h.i]5::)BodW;%t[Yg)/t?9ZA3f,jM`qFrWg:jMIVIM&HQJkP03*FAB:4j*Z<Q-a,[A]KsBPE%ftQPq<\V['ZV+/8(#^/^0SFHE)I#L<h\p.,<dd0&&+co9F"Vg!-)V;cN;)p%("o>8Xle4#`M^a,?*P:J"7=dNs%_M5dj"m7pN0FTcWRg\%(A&kkjS_``FRB,4rRjLV(TUjU5EA9m0#<_Qa0s]"A'_'Sk:k_h6U:?(AX'aBf%M2)BQkhgF.B(#`[R&?X:5,HcDlV72\a*J6W7,!aop9d.K,8Ua>_V)?'8,T,D0N@,=;=:B2.#1cY[NY2[Y)stR)bs#[_8a_e"jSpV>b(Xr/eRb>F+<l%p*1R>gq6I(m`oZ0$ZU9-#`Q)heA4:O(;i\<jfda9Kp@O;m\pL[U:]>Wc7aYZHNN*ioh&c1#.Q:R`0jktLe2[UU#OdeRDW;<Vhedd-i$N2CiKsu0%E0?Qeq)4gaNE&t3T53=?k0m)*ps=17O\S^Z6O3WAJfAKKfp9l>#C:\j)IWElM4d9:6WQm<qo";p=*D<(`2pdbAEQ3iF2P'EsTc,Cnqjh[iV;bWLq6R(^rP2q1J,,QgtAn^N(p?r-Ta)onfR4HDJ8?7GY_?SJ/FM.L%K8%T#rF2j%Lb7.5g`dCZc"5CN'Ma[[5$7^r3JG,tZ8k&p;m==ZE_)IF68F'iNJ;P[HY8"K<4."^[-C\kZ/Ok]JrJUE""RRo3gMLb26haZd?eQeGd<^)c.$N?!<mp*1_^%M2=(C0[(#M<[>>Kd>mqmZ0g>8o^#Tfk5dV\CKK#.WjqcKF;4-3cMb(e`(E=<2q+b_kRpH?-T$B2/,LT.Yl]Ne;Gj"n2g!/-Zko):I5-5SlcpJH@HO6^>F[eL*]B.l!"a_,\S)D,iK*F2(uj.[^I>ic+;:1JYk6S7#a8%V\%"drJMHdug-ac-AUI&X%C1gs6mgPE9JUM/^K_\1?`ok`\M-$4ng"+Ob@PPnbQ<COu$'/mnLq=.?;4l6usLm_!>W6,blqWBBuHEk`H100ho6Z:jt"pp;U#/C12aM)ehd)(:>p%aa[:S/$6ZQ?q$dkO7p?<u5f4s02G!`u<bV*BrQYXLVVc;Rlj;bQon*bQB"J`/]U\p>jpTR.OVnC/?49)7sXH@\$Ka<LW!_=q!!Z!f#[C!;aatBM)ZWE(&p&P<+We";mh&1j3d%o#&Tr-o:"!;O!Xr^L*##)8rcsD593EB=!#MQqi7?B!h2I[e4oHGSliFbA7f/+[2Vpd_hVm[^k;>-bCa%3l?T,lD]Q@r/L`$Eg>,g=S,[!!Rel'.t<]sF"2\5P]@4rEu+hKT:HQ>8IR^>!SSm"5>X8%0JSA#chd.bT:DOf?#J>PfRT82NMjnp2G"04$-FKNLT$!@/uq]%'9Sa?lPbur!3_RF_f@TsJEbIa9KJq_3JC(=d'3k#jD@Jn\<St&[V(ZaZ'o_d^bm^"$s:\?be-W5S8*^2MhJO51+R6_:Y(f$@EqNW&:3ZCAli7MXW+#XAgfSBi2#W&:U7NO]fEW3SK%_Jb6=Dt'!*&B2CXre.0E&uM]^k4FRkW;2M*h=3]P2]!tVoVqlAiAOu%n3+6/X:LFZ`UjJjP([6l*">(+*=DTdq"IkZ`Dit8Q^?':hU]*af7_$Das>3RjD^OPhKeaoEYhHgbpDTuXPI!hs"U>G`)%se@O"9ZA.ZU541Vn;*"X9c7dF!/$B4lE2Bn+$eP2Ch.J!m-2Ic5%AD$RH6SR"<+9Z.q%=(s!f/LZJs;a`Z`eJh4bGb;eEfS_j4fo&u.](1OE,YhgYOek&e@1V*;FY_iEjh*C"o8p0s@V(s1\Yj?MC8[@GE=CT+X[A(_5+&fqFc2:;j*#t2b[YMLiMKS>9HplZ:RRRNQMAC!6(toC#];F@/;uX^O*(:^+;@`0+X.pnC0\Tr,=go2qKqWm_R=Q-]@7#aboe(#l8uAM_NWs-\#U)b_'<W$/bc(brO%9RO$Qk#O#;1\b(YL>U(9B+T%3_?@U;RIL,=aBk%?0Vcr1-*J;8B#m+_oFt?@l`7+]]pXP`-_)%6-7PG+8LT\9P<%)?[e+TIfB_CeG>%"p?_,7^hU9f._Ie+-E_T<o>4-[e"'5V7u79N6\Kj/no_*3nn1T_=[CL4G2bd3dB)Bj??,nrOU15Oi#S%m@C`>jP>nCO%,Q)V=pI;pBs'CL"F3_kbk5kYe8`qQl*<4[T-?]GAk".e9=II,HD:qQ2;IrB;uH=`?PI"^6p3:1F5?A392C-P;O=ABg_rFEVaE1S5Yt72o$GCWJ#qk^g:FcK'k=W6&;4=Lm8DMk8FEb"6aK<lh-?<,rN#!O;VHCKs0V$bOaiV.1q3;>Wd&YbY&3H`l7LNX0i@hFmeRUo"6^"^pM\2@ug,-MGO;-Zj3hGUAdZ==G_0&O"2<@68L>e(?9ib!'OA6:]`&tf^BMhqZ/N*MoL6_:2[(P=0*hg!lmT8-n,/"HrFVUDBe"!+6GB;N4'lZ-$q9j"!L)=f6Nc3(maunVW_eI8./+P[_TY%==,m\V3Y9d_LabA-.'Q'ol<u*\qm\Y!/F[D!0a'^3KkR2b)IGo/N;Fin<EbVXpsl&#G>5IPQ\HgK!@5P]1UK^St`Tsk`:KPAeR)g/]Y7-,Sr39DJlLqGB:B$04KZ5ZZ,Tiq09Tr8JuK*`>ZQ6ROCn!Kej.=6^+@%gEoY\/.pku9Rmc"#,'"mBe'GDNL8Bf&F9-mi^Xu0DSQJ%@_)/3Eg>`hZTM9KW?R2XWWASuX^[Ydl7q.#^j$X$/Z3V4jSg86$>:[jL*>&sV2#tKA&rkk5orn;pM_cLqK00rHS1a?D1L9le^SmH[+ATnm\Xb",m\(?+dW1kZn5e$&)d)!BZKK%)b6bg4bc7m&@HCG@o,L#3,euEY(;e[24JOn34EBM-MdT^KL/)05T:G)*aE;DJl)S^E<*QB<EnuiUm(o\c@B+uQ9B-IlYTc965it`A6h`@Shuh9Uf8(B&/Ya:b"g""D=P`>4GN9$Yl_BN^("*,==bQQ+m,:01OHntQ5mmg`69-?X@X:cPn$+S\[Ki6`1P_^JSCdkT*g@P9[.i\fK'_rm!#)6Wr:71ZIh@f25su9cpIhF"YnU"io#qq?Tc<qp6AG2D<n+Il#s]0l-j>'=YR;Wp5GSl%[Qi]_8>A's#IsSYIX>"F2tBu_/m@Rpac,[fG&n/p?__ZM-gp.=,>QCo(p>+Zcf\As4`7%=$GG?=`Y[5+$D,5gH7jV(nIBXYHp8Nc]\PZ-J`c@qTqKK'[pWD4'n"p^a.G%["[3@&,1T4RpLN%B53-^!GK/rE<P$MA#%\,\Gc>2J#-9j/ER)QV,N<]BgE%a@O0@B&=.sT3eXTX?'Y8MZs48\(N`Cd$XkR#/aKJe0s3l7]4nLE=%(Ho17!_3;MdONBgXCl(qlTL/?Z=K*NDV%q*`j%&K]$*?&i@Peiob2<(d[To8r,!N5?gA(a]$YF?Go5pC\rFM_iueaL#4$ijfD4N9hN,BtcQ]@AF>%HEBn\bS4/37gn4_KokOr6DI0DA!Z-cE2R72*c'-4-%!^MR:kd_ah#X_4@'W0*55fJi3ZSU"LSho<(7"ha2i*)cm\.)9T%iFUWl+,YOdEDfoJ-CLC1`8,O8YEN`mD12dg6?]qacu/Grm.6mS)080^EXnDNq2NDMsb%"t-ElIn1]E3"(_$Q)3BRr)0^d2IXV[#,aKM-Z5hkLkfS9]``I+oAlu;1r\O0%Q!^di'qCS8Y0S'NL1)V`fq?BYF(f*=DGBpE$jI-.%#*gt]\lI-X!Tn?;\&FQ&FjGoGXTTr=Fc'^`s$7,:NHRQK1ep`$i/rGs(@:9sD#k3hgQ>tQI<`&p[NgKjdSopa7)4SMi](.k+riRcK7MsS_j27f0QFe.&W;D`K40&n1R3=fMq<I1..782+j%Tog7mQh08pe6>#9_M;IqA_-Wba<p`#@>DO65g4=ld$*'oKI15D^s,[4[@lKO7Jb5+`S\_+%Z$n/&+PhR\4_@:7l.g5\0h\=^KS">6Bcc]_OQodq?U.Zg9q"a_c,<_-@M*.De3nE&&9HF0o>N)(<E9#YK<F"K=eM<g>aM]!X,%A&F`a[3U):j*4pNhLupZV)3kY+$9ac"5?!E:Hp:srE<Q%JC/09Hq85gN-oNZ@1RR4H<lL__>)a5m3!JAG1ULK;K>FN:56"=1>QBZoe@F`C"qMd9mQDNn$Ys!6(LY#d2=(kQ!%?oO>52b-n4k_1rqXeipZm3j>tD(/?PU+[77\,[r/G*kpDl=JN`DO.NGKQ>'tXcq+:$c[WgOFr-\RUh,`XX$tBh^',G2\@5O"Z+42Q6C)gQc]NS:ojA6hJ'+fNRX5ml<D.bq97Z.8o([I9^4II\"RK^YR(oVt3d!bV1\];aqatGkL6uQ<\XDi:?%W-(iq;tFq(cKlO&i81-D:Sn#hZ<ACBc:@Im:!;b,;3&DgJ6\om@Co!jk@1=hoi+l=E*gf_GW2^nER3#n[QQHeDOcm`l#^9VH0YR\Z`8$jLO/14@j>a4ou6i?MF8?:0q.Gf@'7G.k[kJr@ms8p4MRVoR6A3.X0W\jdW+d:NFD7Tp5JBFfbc$EF$:"p)$P3%n<^C;]Oit/qCUkjnVL(OAr)ei34DD5c#h>Z&DnAKMJsRc>#tN_4ffNi?n$MGg)t^[R2Iq5%=o*5`t)Ca^F"&PV'f3?#^-Oq'81=ZH[E4Hg%jY0^C'"#^Ed0D%#n%MtFG-MsLsXDm*'=$ebg?S6!2lbp`j0gC/=Qq=$#u@aJjXh7eH'&Gtm+)%IQIFFIJ]<D%7Y#:2R,P&"Me?<8C>aM&pc:_4ed#WX)nihUX*Yg1FGGhDK44D)1uFA2nY$0WU#PO19#CLs+kk]Bq>*l>)79;%=(U#OGN,APsSmW]df&%Pro`c7@6(pInXA:$t@J>RkW8=op+mB;tB\i5NQ>D[nLnM<2\W(,E/*#O^-)F-lB;\kiGXUX2H]=c6\[RinZQO9h(N<@\-8r>YQc7k=sk/(iN!Co]b2@SQ]`FnhO.4%tUTf#q6amY/(C,n>=ZP2W%'q5=>o8n`lEP\)`i-6j(EV<liJFN8l6]LWe(E!-9fm!9([$p4n:]T@<VpuZ]!=e'#ArK:fj5STMAjg-['B#&O,Ys;eh,GNZ;'d0$#b;]QG&oa*OY4`B=tGC_O`9_Bk]-(YO08>8rqYjBZE0OndHf?ES#=Zge(&/SrpCj]/kCiTiMk]mYrb)B&W'fPm&1W1qg:Mu?arIk_Q(hD.XFtelK1:IZ*7s5C&?.A)[!-UeF@@6!Uf,VQ7pjp`e)/3e&)bIJaoUF+[WD'KIS&W:WHYQ!H`r;jhc6)Js:Xo346o=!;d>C,G]!03-=CPNY;1q[05ZW%,fhWKU\e65aa%?"Xm'3%^;C4X9`E-YGb_']RDMeI@V+E1;VLDF<a0>$\)+N\gC.n<&02(:m5?_aNU@D*61YSLl]+DB\G4\+>j[d4K&7[H(a]A_+sc+aVq>p?@M#?(oQoN&"kM:ZPO!D+*n5gKUB+d)@%YBLdk@<\3F]Hd,!3@GXUecdh`.J7fpR\iZkR1[!/C8&FSQ&l34;,?8<H$P2)tdQla(d9m-iB\jYoRdgTVgM6n7"gFfZG''f(`%4i6o*Op5Kj.M/h?E__+ffHWe8X3#h7H`!mmCJ#Vgu!P.geQWg0HZr(&EA0>"6=q11Soa,mp?P:C%WGBlDt#IinFgB6#d[WTiXK?NP%E74^RG^O=ULoC^<T%Q16VGDOCdg8DsrHIUZ0A%<1CZL3=O@p';,#p1-=+^WLrcQiiB#I0P&f6,2Jr%2KC-#/5`/',1'J-]a>Fc8o[*LF`+n9ZFjXo_j-'eJW3fH7V@m&9V4QD,mHH;3EIGCfoaR7&Hq'NapYEkrq@KWh_4*V2U1jgMreckV0c&!,HC0q^-\r'YC3dbOA<adlL.:D83RlH=)!h@_MXiJ+76j3#Z]jN)I$T#oEKtAO>54J+Iql<]DS9DR*m+po(iCmnGFW]Y(eqMZ<AX;h6@Xq:*nja$;+2EVcU$0E.14!f5"N;kCkdL5$%i9PNm)^]h)T6G&%nPSF^8"8HSHCZ`'>'k?D1&"`F[ebSH:U):E8$,]Z)3R,[h7(XaQ+)r)K](!8FS#Rm/6aQorjskn/<pm!A@tWHAQJ[KI"ZUBef]R==GS3ef&5It)X2@p.RW*7!",ha0!VLd@=H&SMKj^g6>S6(PHB$NY])_N[(!_duH&("!cIiNQ=6I#96%fB5=63/ACc8XNGob2D&L)U(q_PVs'1ZePBgXcujn`Ad3fd.F"LQI8=IHmSg0qbnB]lir@KJpkLYa&+*C%m8m[b32gU@Y,hOQKrFpf[6e[@BmYRhHY4XPB>@q(?91WLaSV6[EOJA`lV]4T(ORtO`VV.b\\ei,!DlYgAa?oc4*p0h;crS[[Sq(d0u:mfbr4s+Zr>tF>Bp9N9H;#nr5Ejq(SMX)bVn#;-:/+@>eC%iqICijI/G.'1)`9ZlU2*EjX?.lSZ"Y;QDs+?*.T\746%2^MrEo0kg3\!l"PPM$8iJqA`rlJ&KaM=@MArXZIm$m^'=M^ies+&%VT#,Ej)SAO]Ug8;)/\3A%IM7-I1k3X^N7C@dG*$)_N8+A?&QA1P1>Hn5EPLH,dHY1g7GFHY)3.Fh/SG(V3dUheFFAr+_X$q\7&pi$Sj/f&gk%u?3-8<NqJ(LFj%N8(rs*1==',?9EgK2_TDY5/=o.er@2^tC`Fof"H1-2Ij3!stj7;8.H6X2\+]U^/q[,!YBJ2;_WW[8/b#0dDT$ef;5%RP7mDgljSFbU*j87R)hm1a%cYerJg9u.mmBit;7rPW([!EYhG'4c%ifh$cNLo7lm/9;#kN$Dd%(+DkGdq-J4l5A?d4$+2QT]'+%Qt"07b]I2c9p3@%qtEcOLT"j6fM)d`X"_8:'H;`iF3;J@&Bu[qk^C'=d.q8Ki#s4;5+D/K;DApWN0/abs5_$[Dt(^rCF`1$Fhd!^r-#\/BtUp0f<fXG2YapXHP@@E*ARX3\-B8kj(@6e)9`domrfMYMPRL$FSMeD,C]M]?)E>&u%,5bnr.CDNYP0[`hTP&V--CTOS^5RVfXZ1FSp9i8&/L=/UY3o5IHUZSEYDm;m*Q`<,:lMh'r$XgX!fPe/EY9kkc`8W)TK=4-ci$<u!%:*!U9AFhXhaR1fj-#M72EgJXTh8]JhQT-&]0$3E[-6GYdpOijc3UE\b=<5&MFpd8_/=o#p#05Y(4!:-.]i^<W/?f_T+\<n88Ye*D>b6>QXXW72!)l#<ho,2;o4X"kJ"[q1l=%<Ts%O&>9E:,R5j"s"d=`a#G5tdHe,Y?IRU+GZQ;ci_Q@<Q@3=dOT(E4g6)^%L^6(o$Q6u2qgJI?s+2Hf3h;T,DP^_dP\3WRXIV85gRE3@prDL^p6Y%[Db'2A.\Poi!0n.RB9c3Heqr?(A=2Y-~>endstream
 endobj
 xref
-0 28
+0 24
 0000000000 65535 f 
-0000000015 00000 n 
-0000000112 00000 n 
-0000000214 00000 n 
-0000000319 00000 n 
-0000000428 00000 n 
-0000000486 00000 n 
-0000030093 00000 n 
-0000030267 00000 n 
-0000030464 00000 n 
-0000030639 00000 n 
-0000030830 00000 n 
-0000031038 00000 n 
-0000031223 00000 n 
-0000031409 00000 n 
-0000031591 00000 n 
-0000031792 00000 n 
-0000032060 00000 n 
-0000032329 00000 n 
-0000032598 00000 n 
-0000032868 00000 n 
-0000033090 00000 n 
-0000033313 00000 n 
-0000033535 00000 n 
-0000033758 00000 n 
-0000033980 00000 n 
-0000034203 00000 n 
-0000034508 00000 n 
+0000000061 00000 n 
+0000000123 00000 n 
+0000000230 00000 n 
+0000000342 00000 n 
+0000000522 00000 n 
+0000000725 00000 n 
+0000000906 00000 n 
+0000001021 00000 n 
+0000001216 00000 n 
+0000001405 00000 n 
+0000001596 00000 n 
+0000001783 00000 n 
+0000001989 00000 n 
+0000002262 00000 n 
+0000002534 00000 n 
+0000002761 00000 n 
+0000002988 00000 n 
+0000003213 00000 n 
+0000003333 00000 n 
+0000003640 00000 n 
+0000003710 00000 n 
+0000003972 00000 n 
+0000004033 00000 n 
 trailer
-<< /Size 28 /Root 27 0 R >>
+<<
+/ID 
+[<251c518f13c117dea31b4a46bd715b59><251c518f13c117dea31b4a46bd715b59>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 21 0 R
+/Root 20 0 R
+/Size 24
+>>
 startxref
-34558
+12665
 %%EOF

@@ -1,168 +1,119 @@
 %PDF-1.4
-%âãÏÓ
+%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+<<
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 6 0 R /F5 7 0 R
+>>
 endobj
 2 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
 endobj
 3 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
 endobj
 4 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding >>
+<<
+/BaseFont /Courier /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font
+>>
 endobj
 5 0 obj
-<< /Type /Pages /Kids [8 0 R 11 0 R] /Count 2 >>
+<<
+/A <<
+/S /URI /Type /Action /URI (https://www.linkedin.com/in/shri-sanjaykumar-v-588bab28a/)
+>> /Border [ 0 0 0 ] /Rect [ 104.9725 769.7498 395.6725 779.9498 ] /Subtype /Link /Type /Annot
+>>
 endobj
 6 0 obj
-<< /Length 9736 >>
-stream
-0.060 0.090 0.160 rg 0.00 814.00 595.28 28.00 re f
-BT /F2 8.20 Tf 0.950 0.970 1.000 rg 1 0 0 1 38.00 824.00 Tm (LINKIFIC ENTERPRISE AI/ML ENGINEERING INTERNSHIP  |  SHRI SANJAYKUMAR V \(VIT VELLORE\)) Tj ET
-BT /F3 8.00 Tf 0.750 0.820 0.920 rg 1 0 0 1 398.70 824.00 Tm (Day 30 Deliverable: Updated LinkedIn Guide) Tj ET
-0.40 w 0.700 0.750 0.820 RG 38.00 36.00 m 557.00 36.00 l S
-BT /F1 7.80 Tf 0.350 0.400 0.480 rg 1 0 0 1 38.00 24.00 Tm (FinDoc-AuditEngine v3.0  |  github.com/Shri-Sanjaykumar/Linkific-Tasks  |  linkedin.com/in/shri-sanjaykumar-v-588bab28a) Tj ET
-BT /F2 8.00 Tf 0.200 0.250 0.330 rg 1 0 0 1 530.25 24.00 Tm (Page 1) Tj ET
-BT /F2 14.00 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 790.00 Tm (Updated LinkedIn Profile Guide – Shri Sanjaykumar V) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 767.00 Tm (Target Profile:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 755.50 Tm ([https://www.linkedin.com/in/shri-sanjaykumar-v-588bab28a/]\(https://www.linkedin.com/in/shri-sanjaykumar-v-588bab28a/\)) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 739.00 Tm (> Important Pre-Publication Verification & Confidentiality Check:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 727.50 Tm (> 1. Factual Consistency: Before updating your live LinkedIn profile, verify your current official VIT transcript CGPA \(9.12/10.0\)) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 716.00 Tm (and exact internship dates \(Aug 2026 – Oct 2026\).) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 704.50 Tm (> 2. Defensible Claims Only: All copy-paste sections below describe FinDoc-AuditEngine accurately as a working prototype /) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 693.00 Tm (internship capstone deliverable and avoid unbenchmarked latency claims or raw test counts.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 681.50 Tm (> 3. Company Confidentiality Policy: Confirm with your Linkific mentor which repository links or screenshots are approved for) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 670.00 Tm (public sharing. The FinDoc-AuditEngine codebase uses 100% synthetic demonstration data \(benchmark_invoices.json\) and) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 658.50 Tm (contains no proprietary Linkific code or client data.) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 629.00 Tm (1. Recommended LinkedIn Headline Options \(220-Character Limit\)) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 626.00 m 557.00 626.00 l S
-BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 607.00 Tm (Option A – Recommended \(Balanced SWE + AI/ML\)) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 594.00 Tm (AI/ML Software Engineering Intern @ Linkific | Ex-GenAI Intern @ TForce India | M.Tech Integrated SWE @ VIT Vellore \(9.12) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 582.50 Tm (CGPA\) | Python, FastAPI, RAG, Applied ML & Microservices | Oracle Certified) Tj ET
-BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 564.00 Tm (Option B – Backend & Applied AI Focus) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 551.00 Tm (Software & AI Engineering Intern @ Linkific | Ex-TForce India \(GenAI/RAG\) | M.Tech SWE @ VIT Vellore | Python • FastAPI •) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 539.50 Tm (Java • REST Microservices • RAG • scikit-learn • Cloud) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 510.00 Tm (2. Updated "About" Section \(Copy-Paste Ready\)) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 507.00 m 557.00 507.00 l S
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 490.00 Tm (I am an M.Tech Integrated Software Engineering student at Vellore Institute of Technology \(CGPA: 9.12/10.0\) focused on) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 478.50 Tm (building modular backend microservices, Retrieval-Augmented Generation \(RAG\) workflows, and explainable machine) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 467.00 Tm (learning applications.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 450.50 Tm (Across my internships at Linkific \(AI/ML Software Engineering Intern\) and TForce India Private Limited \(Software Engineering) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 439.00 Tm (Intern – Generative AI\), I have worked on connecting software engineering practices with practical AI workflows:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 422.50 Tm (• Applied Financial AI Prototype \(Linkific\): Built FinDoc-AuditEngine, a FastAPI capstone prototype for Accounts Payable) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 411.00 Tm (reconciliation that combines deterministic 3-Way Matching \(Invoice–PO–GRN\), regex-based PII masking, and a 7-feature) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 399.50 Tm (Isolation Forest anomaly scorer with perturbation-based feature attribution.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 383.00 Tm (• Enterprise RAG & Backend Microservices \(TForce India\): Engineered context-grounded Retrieval-Augmented Generation) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 371.50 Tm (\(RAG\) workflows using Python, SAP BTP, and the SAP Generative AI Hub SDK, integrating AI components into modular) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 360.00 Tm (RESTful services.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 343.50 Tm (• Software & ML Projects: Built LEGITIFY \(automated DevSecOps repository compliance analyzer\), CampusLLM \(university) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 332.00 Tm (RAG assistant with vector search and query routing\), FinTrack \(multi-party graph debt-settlement platform\), and a 5-model) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 320.50 Tm (Solar Energy Forecasting pipeline \(Linear Regression, Random Forest, XGBoost, Gradient Boosting, LSTM\).) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 304.00 Tm (• Leadership & Operations: Served as Purchase Manager for VIT's Riviera & Gravitas festivals \(helping secure INR 60+ Lakhs) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 292.50 Tm (in sponsorships and managing procurement workflows\) and Vice Chairperson of the VIT Health Club \(leading "Hack the) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 281.00 Tm (Hospital" for 600+ participants\).) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 264.50 Tm (Core Technical Stack:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 253.00 Tm (• Languages: Python, Java, C++, C, TypeScript, JavaScript, SQL) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 241.50 Tm (• Backend & Engineering: FastAPI, REST APIs, Microservices, Pydantic v2, PyTest, Docker, GitHub Actions CI/CD, AWS) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 230.00 Tm (\(EC2\), Azure \(VMs, NSG\), Linux) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 218.50 Tm (• AI & Machine Learning: RAG, Vector Search, Agentic AI, scikit-learn, Isolation Forest, XGBoost, LSTM, OpenAI API, SAP) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 207.00 Tm (Generative AI Hub SDK) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 190.50 Tm (Open to Software Engineering \(SDE\) and AI/ML Engineering roles. Contact: v.shrisanjaykumar@gmail.com) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 161.00 Tm (3. Experience Section – Linkific Entry \(Copy-Paste Ready\)) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 158.00 m 557.00 158.00 l S
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 141.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 141.00 Tm (Title:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 74.49 141.00 Tm (AI/ML) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 101.08 141.00 Tm (Software) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 139.94 141.00 Tm (Engineering) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 191.59 141.00 Tm (Intern) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 129.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 129.50 Tm (Employment) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 105.68 129.50 Tm (Type:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 131.25 129.50 Tm (Internship) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 118.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 118.00 Tm (Company:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 96.48 118.00 Tm (Linkific) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 106.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 106.50 Tm (Dates:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 81.15 106.50 Tm (Aug) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 100.07 106.50 Tm (2026) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 123.09 106.50 Tm (–) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 130.52 106.50 Tm (Oct) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 147.39 106.50 Tm (2026) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 95.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 95.00 Tm (Description:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 83.50 Tm (• Developed FinDoc-AuditEngine, a FastAPI capstone prototype for Accounts Payable auditing that combines deterministic) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 72.00 Tm (3-Way Reconciliation \(Invoice vs. Purchase Order vs. Goods Receipt Note\) with a 7-feature StandardScaler + Isolation Forest) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 60.50 Tm (anomaly scoring model trained on a seeded synthetic baseline.) Tj ET
-endstream
+<<
+/BaseFont /Helvetica-BoldOblique /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
+>>
 endobj
 7 0 obj
-<< /Type /Annot /Subtype /Link /Rect [38.00 22.00 458.62 31.80] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Shri-Sanjaykumar/Linkific-Tasks) >> >>
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F5 /Subtype /Type1 /Type /Font
+>>
 endobj
 8 0 obj
-<< /Type /Page /Parent 5 0 R /MediaBox [0 0 595.276 841.890] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 6 0 R /Annots [7 0 R] >>
+<<
+/Annots [ 5 0 R ] /Contents 13 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 12 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
+>>
 endobj
 9 0 obj
-<< /Length 3085 >>
-stream
-0.060 0.090 0.160 rg 0.00 814.00 595.28 28.00 re f
-BT /F2 8.20 Tf 0.950 0.970 1.000 rg 1 0 0 1 38.00 824.00 Tm (LINKIFIC ENTERPRISE AI/ML ENGINEERING INTERNSHIP  |  SHRI SANJAYKUMAR V \(VIT VELLORE\)) Tj ET
-BT /F3 8.00 Tf 0.750 0.820 0.920 rg 1 0 0 1 398.70 824.00 Tm (Day 30 Deliverable: Updated LinkedIn Guide) Tj ET
-0.40 w 0.700 0.750 0.820 RG 38.00 36.00 m 557.00 36.00 l S
-BT /F1 7.80 Tf 0.350 0.400 0.480 rg 1 0 0 1 38.00 24.00 Tm (FinDoc-AuditEngine v3.0  |  github.com/Shri-Sanjaykumar/Linkific-Tasks  |  linkedin.com/in/shri-sanjaykumar-v-588bab28a) Tj ET
-BT /F2 8.00 Tf 0.200 0.250 0.330 rg 1 0 0 1 530.25 24.00 Tm (Page 2) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 790.00 Tm (• Implemented local single-feature perturbation attribution to highlight the top risk drivers behind flagged invoices, alongside) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 778.50 Tm (regex-based pre-inference PII masking for PAN, Aadhaar-formatted numbers, bank accounts, phones, and emails.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 767.00 Tm (• Built an interactive HTML/CSS/JS audit workbench supporting dual-currency \(USD/INR\) line-item inspection, unstructured) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 755.50 Tm (invoice-text parsing, and CSV ledger export, backed by Pydantic v2 validation and automated PyTest suites.) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 726.00 Tm (4. Project Section Entry – FinDoc-AuditEngine \(Copy-Paste Ready\)) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 723.00 m 557.00 723.00 l S
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 706.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 706.00 Tm (Project) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 83.19 706.00 Tm (Name:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 112.84 706.00 Tm (FinDoc-AuditEngine) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 197.20 706.00 Tm (–) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 204.64 706.00 Tm (Financial) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 244.00 706.00 Tm (Reconciliation) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 303.82 706.00 Tm (&) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 312.52 706.00 Tm (Anomaly) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 350.86 706.00 Tm (Scoring) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 384.61 706.00 Tm (Prototype) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 694.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 694.50 Tm (Description:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 683.00 Tm (Built a working FastAPI prototype demonstrating hybrid Accounts Payable auditing: combines deterministic SKU-level 3-Way) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 671.50 Tm (Matching \(Invoice–PO–GRN\), regex-based pre-inference PII masking, and a 7-feature Isolation Forest anomaly indicator with) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 660.00 Tm (perturbation feature explanations and 5-tier approval routing.) Tj ET
-endstream
+<<
+/Contents 14 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 12 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 10 0 obj
-<< /Type /Annot /Subtype /Link /Rect [38.00 22.00 458.62 31.80] /Border [0 0 0] /A << /Type /Action /S /URI /URI (https://github.com/Shri-Sanjaykumar/Linkific-Tasks) >> >>
+<<
+/PageMode /UseNone /Pages 12 0 R /Type /Catalog
+>>
 endobj
 11 0 obj
-<< /Type /Page /Parent 5 0 R /MediaBox [0 0 595.276 841.890] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 9 0 R /Annots [10 0 R] >>
+<<
+/Author (\(anonymous\)) /CreationDate (D:20261012200933+05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261012200933+05'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
+>>
 endobj
 12 0 obj
-<< /Type /Catalog /Pages 5 0 R >>
+<<
+/Count 2 /Kids [ 8 0 R 9 0 R ] /Type /Pages
+>>
+endobj
+13 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 4295
+>>
+stream
+Gb!;gD/\/g')nJ00j*@[mWQk=?#i-"S%!]&D;<d5h?!lkZp`Yb,Z794:;,:%J"U>q-7q;NY?1(>0d)>tB8/4g$tmR<=C?\crPf_jgG,4)fjHlqSq68P&&pPI3Bm9;Un2(Kk<Ts\aGP9U`7`9$-ckRUFtWjVfQJ,,JD@pJXT6<;jR%3*[/+p-*CMU,i:P.mgI6ZtD\A^6D:85;:Tu)Nged]0Oo^3/i%pf7\1VJ^@,a-hN#%#^#d_j%oh]7&_#8$cItmKSMT1])*t:8`#_dicd-4&_j$?&9?.4(CIDR,2:bQq'#](27^(2*k^5[`knM_[AN-'Lg'LW[#[Z+Oii^%Q"TtjTS*SO94Tej\t:?7/GZ\eu6p<C&e=:_qR+hnpu8=:9,Vl,T:O!q+U6lCl-G"UG%Yn49HCo,QcG5WhXii*UMdt7^B,7#J4=]$E:Sf9.S;6QkH<_(6HK#gGW"MW\Z:?Vr0Xe,cJfoILq/SfdcQ0)3!TfROH'7j5'ZQhlmJfmCB;M7Z$<i']3<uscNo:ej98u]H7OQ2"cDZfPn2,]9NOQB_<b`jAEG?@U=)Il?!K6ng+D"I-'c8hBAKJ5u;9'$E*(F4I^Lu$s+ec?_,7)))Vk6f88`2Qq<TS4XB?F>7\QHZi]:b#2:C^qt%$:sEE1ePGAND<fPrD0XsUos!^E@D$!')694@u=3p+,iJmb_fNL>f-=0YRcqXW>rrXXbU`Ue@(IH:[^$c:0n$7$'6f"Q9^i`Je\Z^K/1j6Kd?<63B3<<-kd*K2O;nB9Beb#TT/U9e%$SW_?r=u$(Ro\Ad-tq[/GOOBaQT@=5=i4P!D<BV'-"98]i+u+\L$Y!\`O#MR!U2GPbr<jX$Bp7UF(Pi&E=mQ6]`:/c`BFh]ipJ8tU.?-'t[&5\&B9S\p;(?:`?I,Xa)P^sfZEQqhe0GfaY$-(>M_0/>("8-16C<#ah#MHk\IO!%";+m()7"Tl0`50eG>A%"/[XJ'XT;gQ5iW_Z"eO&R`H,>b83N#+7d,T#s[T^`'daa$/u(Fr>O=&E&;Je1s6\1@Uf!]\L0?]kP(>X2W3!>Gnm.%;Fu0?@1B^<ap@4<[X.&1@oaJ8JHhJ7?LYJk-eI68Hgn.;Ff6Yf&1OX6/LB6eRXOQk\b*_:_oCH-D\pPSM"//jeZO&rFSBHR=Ur-2KTt$E+ZlW5Z[PHt("VK9="+one<KGc[En"^0kpP`J8,f<ZG^d@0Z50<i;aI=o3*-hZP:l]JV_DcU[\=k`B57Vm9HlXCt16]*"FOCQf^dsU7IaEQte7R[gXHVP4h=iaStP&d4o(K=h*NSoi84Ne"'G,(gV"=GX0"E*fL_^6DEZ+B*+/9!.sZD3B$am5`$hfhrE"@u=unf>"<W(:5JqlBli_><Y;jR5]F4W]coDkkZpQaQ.SctXcONIonW<BNO,CV-:p,&9s\[?bqG3He4RBVVeDZ;ZYoqK9$Q/+uQt/P\$Y8HPY_Qgb4UK@BQR:Is+.OM;6gH_.Dh7[6.f`E"fS0p^9Uc;'0q4h`nmo(O?0TOBL+*i_%h_+TSH'tZZg[hXf9KBmch1ZC4dL]u01CM4t#A[V%ojd<EKIq_[t:sfLIeCX]J]dBgFGhKso.kY;%a8np^5-iR_1a_a%Dk":Xb_[s):R=S[^)r=,kF.>::t(XJU75-@R5Uj-]X:qN;`\1*"_U&6@op1%rS^!`]^&qj"8t>XWPOR6^p!Bs1`!_H@]>m@&X%#8Nn9C__Zg^9c8N;B3espDFqhL$e+3Q.OlQ:UKbYQa:g(UE=B*VmK)(t*m3pjcBEK=!;I6:2Gl5WMTcL:Q\fG(bJ>2#H@?bMWkA:YjDfP\?=9>[6I:U\H^_MpRiY^JG^5MnqppYsH<cHG$dK"n!1\*X97OFZ5TMFtPf14)o"^kYo,l@AaL(([]($nW\0Pj)aSIKYgcZk;-ca^S,NLpLnqqq+NO&%05qESUN-.k2u]p\%40E7=dj*Np'qR+#*Y?VH<@JHrl8I*'YanA)Ob"MO4N9V?99KMA%>!/mh`HMG4X5gIEn+at<E:C%H3VnboS2D!!K\O0?H-\oNf29Z3/POaAhZP<4X,#K6"%qBiEMbt+YDm=('&+/,<7cMGBDEfZ%9OdQ/>YPQBA0+)R.6Ee<sI$Od-+.BCQ_m+oZm4Iro14;37Tah1G*=0QjdRh.8qeiM7$R=kNu`M&UtBA-s>Q:gFq_>QXPtq9c0jJrs#+mY!hB$Agr3dG/+;:j@c(Rb4'L_\K)nEbAb,HUbOc;'uZR-@hj4;l-lB@hlGk=-2WR.*SrUNUp_/?ig>>)3oS2i\TJb[1BmG&cTW%bM%*IemaT6::=]Pc<UT0+81I!\W[(5cao5]=>1Wou'Gf?r5\\Sb1Pe&$ar-S4hBmVjJ>6AG*qm7]9's#[CQpZqWPMiOnt50(\/,IYh/BGE_b?oTO6nXVUfECqh.Z$5[159:9:G.W]UpZ1/G7*bCm2Ig"P#uoN9e"'O&^@HX+!q_rt)B&7.=e^OI3AAVK<o0jMJ.MQtK@?N&+1a,U0"B(=KEp\,-KtGjlbI"Zs;q9KIeeCT19^GcQ:smlm+B/]aH0l)G`'I]UG<0"hZ0.RDpie8_#.:F#5O#aV=OWX>?c$g3BT;Aa;4nI2<Va$n2U&Pj5E&[E,"C6',?gM"H%$9Bch([)00\5_+D$X/XeEOUD1>2ME6)q5s_;:Ai0!,/U8P0W-Hm*5bf<Kcb2hK,ah0D)$nBN^_Ffp6+conU,_`l$h?-J&EV6OOleG4"g*3Rq3ApuSD:Dl^`8P6YTgQtJElKGi]5RG;EPO2O6IZ8X:V']!HA;nDa_MnS*>LOt"&Yq2Juh4)UR_0BqlRrRr-PW[\.E%f:Q7,hDq.,!1:p;E4oQ1-ZV(oOE!LbNi6*+sP"gt]P$-n-$>DO$HB@T+"'A<=;t"_MS(epH>[,dB2=5XDV.,(3B7IkQYpVVn:K*0ZpDb/OM'%gFsqR7c2XYqVQ4$_6NE-Y+^="d(Pdb'%pc9<h_,kZ+jORCaPrCVQA/K]njaihjFr1*VYbKYm-o(OLn"e"!@'MS\WgA]-D,1)H`7W!NoWQmFk1E>88VIp]tPg`3sB3)QM/?.1fP;LKQSYl;nlB`*>MqC/b_+ZLW3L#GN1ml"P15n$s:&[=1Z#9.)?.H1Lhr6'H2nD*M\B"2kG)#mNAlAdJG&blX"f)dV)1an`R6II/T9t.JPBtbD'P'G<jD[l<USb=D7hWU-@%gs%/p!n-/$8,Mb4Q^c`a_*hQk)-Z36YX3`'=XBVC7s)P!`P3pZ)IpL\7h?Ab02iZ,<.Q"k<(WWdCNjoh_jr\2>W)P-An1[^>hXW,u/qLW\]3;*/O_?)UfZ^=mVQn\X@Z?;@:pdB8e+mF9*Dd+O&soSeK""g7e\7/i?nNRlA?;r]"6GA5ou0m'"ns55KMFK[dHWmF@n7kh.bL7qQeN59(Nn#;%^\?O^'CB'.'?l'R[SHOtJ=is-b:KV[$)K)0WEN\92)l1mdHj_cd$s"lJFp@?un4\l"f'-&?iqtC:n+%FlEG;kbO?]LY6&VCrU:J3J*At=l@4'p%@hfo*qb5E8qc,nfkoSnL[9sjrmll4;-*1LtHqT*O1P]F/F13N&T"j/kUW9n^Uia8<iRWM"8QVZQ1IO=C-C4`@Q0Y1+oeWCM<>nNAn[<h7_HN%]O@@F2[d/U'H;WkH3EpND6ZYCVp;qm3QgDMTBHFr@5TY1\ALCWTtq^RD[i:9N9"=5TGgB*0\]JaV%QV<:eMi/d&&?-lB?aM4j#6D,7MB_>Nn"O.;::&]JlYbII]+J.!::,3-D9MLTJq_(\>(_#<UcW'9T@s-I=V>NZ'R%\+G*8fa+(7lQ>;NeV=X`jsn''g'QD],,69A!Rs&n../2`"U'5TZP$Cc@mpL7ponG+VYZon@%bh-7Nnb)jJ\PPH6cdTeLS]jk`B%\Sgr9qm4e^%L.QCJs>;D%(aCP\r%`bG;KD')3HJ^*ZZl[!`YY(#)^p'0:lW%`C#aOJ&NN?E7hjJm@B)0Ba#++>)4%F48L3Z*5]?f$2J]c.@\rWF(O],SPas5E/?Dnl5H^4-C^0MrW"\A,\e\\6b-g_qV=V#!K[l>8nG%j>*ij0heu7OSOI:T*FYYJ@R(@bWeh#06b(Z:dXM"&f+Uf^YqY"KnYQfal\0d&Xc_>pWuGT"!_t67"QZELV#g,B,.,cr+D)V2HmlF?Zi(_ja!4jE2bC`L#%8""/[?(BmC!;:di2fA.I<;n4<SeR(qu^MLJCs0=Z@QuI8.Mhg+8UdNl-UfR9!O"=@H<6a//cO&7>B2H(TD*0A>r"fd-4%9~>endstream
+endobj
+14 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 2020
+>>
+stream
+GauHL>BALZ&:WeDm*cj#;hX8Eo1#4FV+i?ARa.>[7G%[kfTIc.BpgtGretZW+@4H"\\4*P`R;6QY'.Ph"pZ-`c#6bc]NN&>$3PH[Ym0P>*u<II\`eJ1[<jTP0gncer&BNV/UH<$..IBeM#eor'?*/.,RXJUKA?)Y308g7LB&^CNIh]Gbtq;?^Zt(T*5-3=WRG,;*aKXNcsHBWd6Y__6561_D_<.uU&JYKj["Rt37c+m-\u9a#NR-?:-q3*oHP^d\Uj_m8'r2*^-Njp58Ws`k+\Z>0mgn7Kh)HD3b.H<D]#CUNHJ^u-C#KDa2V@Vb";t8NQG'*-.K(SB@fHgj&)8&R]FSuS<=mqjlV=d_de((9WB[A-5'1W(oQM9)-+&W'c+!G?SKbT`DU3,2u$!g`lsC=Ju:/46nuN;V.G/#mfc?YK_H3:Xf,gB-'c%*PKZ'=:OVq3Ls3e%UFBcNC$7r5\i_dGIPA0X`c9C69o5mHM.`ssc\Tg-BtIR_PZnEC2b)h"jN!Ki#tZW\,2o7=\OgP$$>DT,&/i_e[n=NI'rBK0VJR'ERC0f`EODXORocD[3TIKC]Wq1oQ&LVVVZl2)3\_F"0l^6QDfU/ef9/a+bLJ=E6n-5Yp!LDb`c0*ZgRN,h-DbHmhP*DPN$YOmbg;^CSk:f/<clNpC"bTqRuLu3H_dSLp<#u8\_rs7AL8Tm2tZ8udqkUV8ig@-9dSoPZ^HiuA5\NSc41FJCJ753'?l8C>=.CY/S%/3m5\Jh.k3.K/&G#`8=,4XD.WUA1_#$YEFA<-$c;K"\_qd4ZeU!V-LG&88Q*Oq9q'olDQ\b5kO[Yfq/K^to72pH/':dH),t`]$@.k%Z^Ts-[$KE!k#5RZ^W\?cj2oM;1]$nUR%f9<]..NpUY97Wk)X%P9%Ktj.9<+LiAFI(VeJ[nUjcau;uUrhCVlk"`l_Z\VmbCSIX5Yc=IJkYG8]@_rj[0s+j!l1if..Z8ZbBHm&6HB(08Ro8?/)P>mN#gBn>capULkB+*nd<oha0%%m[B9\;:_ENa4=-@.paY!r2;a7>aSmdYr772iGu?MIT>(?a`l<HVPUSq#OPI<.#c3#G]Xaooc]s`Y^#\K9Y)J'c5mY$ikR"d;gX`*,nc:1s0HUjT9Ue(H.]e]-qBX:u=bsQ/W`W(!PFrK1iB.%[O7:_6L4qAcJk\GCq?D'SRDNfrg6NPNiAZ(e,+Sc5u^5PaioO)Vj/R#MsgEEp^QEo,^B;+ldnD"Q<c'+P[9&HRX&6int=A!Aa"mMaB!:$Q-h?^`il>Ols`d[_r`Pd!pnZCh$MXB)b;Lmu.Q%k]sZ8G[M?L>//'*BP(#MaE9l;3l4fbE\M&Ar!&os<kuA5&ip"&FQVQtF@I:];mYI2./&;nR?\.`V37)^s7ri`lBlW*jPf<6D2/q&pn7"fLAsm#iF:mH]scrhM*%_5Fr<?k<LdqL10Ori.7oOlfljif/Gj)9`VBnRM3C*@r8X,0.hJ1DY+)P#oGBMTV-D]7L[ILDK]sl_qee;pT"Y,AK\#bVod)c>9032Lb,M7gnVj;4=W6b-SU"+2T>F!GQ9!pKhWe5GK7RKt?6Ef.`P&,@V5SNer3O8q4O8Z8hMbf@Qk+A30$FhF:=T[LO,U$^.!eJ"=r2BOW3&AR5,#nS5d@I@5n^OP]4%%'YYLDn)9%:V'6MpD/:Ut7Yo=f]T<fr=Im'BN*++]__Iu'E\VBWbEB0N4hiFZ8IfdjOcc.X\9g4O8q"Wr_1kT"7p2@tZ\@oPhr\V5D8i2E29s)]r%o<=`:^>!%KdM[S(j`oQl%89;F5VZ4\jb$bi>fRrR?hQ+c1i=(``s=H29RG]X7qTKLE['*BjZW#rq0ai)Vl,rSPNFgKKRL6+Q#CSa-#LY,<dCq]GTENpRWjrpE"?_g&Kd'dDu*m4DWU!G.G^T\1s5DWbD)[lT+.dH&&^FVRH.)V4ngP[uq3_KRY5Y]=K,*W&\7$Q4=\+\ng2"BDW@io?4'<E.Ap(7oX9YP\_bX+P+o>lM[c8hHrHjrC[~>endstream
 endobj
 xref
-0 13
+0 15
 0000000000 65535 f 
-0000000015 00000 n 
-0000000112 00000 n 
-0000000214 00000 n 
-0000000319 00000 n 
-0000000428 00000 n 
-0000000492 00000 n 
-0000010280 00000 n 
-0000010467 00000 n 
-0000010647 00000 n 
-0000013784 00000 n 
-0000013972 00000 n 
-0000014154 00000 n 
+0000000061 00000 n 
+0000000132 00000 n 
+0000000239 00000 n 
+0000000351 00000 n 
+0000000456 00000 n 
+0000000665 00000 n 
+0000000784 00000 n 
+0000000899 00000 n 
+0000001122 00000 n 
+0000001327 00000 n 
+0000001397 00000 n 
+0000001678 00000 n 
+0000001744 00000 n 
+0000006131 00000 n 
 trailer
-<< /Size 13 /Root 12 0 R >>
+<<
+/ID 
+[<0e7d897cec901315381f945ab3a7b805><0e7d897cec901315381f945ab3a7b805>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 11 0 R
+/Root 10 0 R
+/Size 15
+>>
 startxref
-14204
+8243
 %%EOF
