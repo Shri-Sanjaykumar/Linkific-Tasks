@@ -28,7 +28,7 @@ def get_portfolio_overview():
                     "company": "Linkific",
                     "role": "AI/ML Software Engineering Intern",
                     "period": "Aug 2026 – Oct 2026",
-                    "highlight": "Architected FinDoc-AuditEngine v3.0 (3-Way AP Matcher, Pre-Inference PII Shield, 7-D Isolation Forest + Perturbation XAI, 30/30 PyTests)",
+                    "highlight": "Architected FinDoc-AuditEngine v3.0 (3-Way AP Matcher, Pre-Inference PII Shield, 7-D Isolation Forest + Perturbation XAI, 33 passed in Day 30 / 28 passed in Day 29)",
                 },
                 {
                     "company": "TForce India Private Limited",
@@ -73,14 +73,14 @@ def get_portfolio_overview():
                 "phase": "Phase VI (Days 26–30)",
                 "title": "Capstone FinDoc-AuditEngine v3.0 & Panel Defense",
                 "skills": ["3-Way Reconciliation", "7-D Isolation Forest + Perturbation XAI", "Institutional UI"],
-                "outcome": "Production AP audit workbench (<15ms latency, USD/INR @ 86.50, 30/30 PyTests).",
+                "outcome": "Production AP audit workbench (USD/INR @ 86.50, 33 passed in Day 30 / 28 passed in Day 29).",
             },
         ],
         "projects": [
             {
                 "name": "FinDoc-AuditEngine v3.0",
                 "stack": "Python, FastAPI, scikit-learn, 7-D Isolation Forest, Perturbation XAI, Pydantic v2, PyTest",
-                "impact": "SKU-level 3-Way Matching + Pre-Inference PII Scrubbing + 7-D Explainable Anomaly Scoring in <15ms latency.",
+                "impact": "SKU-level 3-Way Matching + Pre-Inference PII Scrubbing + 7-D Explainable Anomaly Scoring (working prototype / reference implementation).",
             },
             {
                 "name": "LEGITIFY – Security & Compliance Platform",
@@ -130,7 +130,7 @@ def get_panel_briefing():
                     "Clean Layered Architecture: Strict separation between app/core (config, logging, privacy), app/services (matcher, anomaly_detector, router), and app/routers (audit, portfolio).",
                     "Fail-Fast Schema Invariants: Pydantic v2 @model_validator(mode='after') enforces subtotal arithmetic (within $0.05 tolerance) and GRN bounds before business logic runs.",
                     "Microsecond Request Telemetry: Every response carries X-Correlation-ID and X-Process-Time-Ms headers plus a 5-stage StageTimingTelemetry breakdown.",
-                    "30/30 Automated PyTest Suite: Runs in <5s covering unit math, 7-D ML monotonicity, PII redaction, custom domain exceptions, and dynamic REST routes.",
+                    "Automated PyTest Suite (All Collected Tests Passed: 28 in Day 29, 33 in Day 30): Runs in <5s covering unit math, 7-D ML monotonicity, PII redaction, custom domain exceptions, and dynamic REST routes.",
                 ],
             },
             "technical_panel": {
@@ -189,6 +189,9 @@ def get_learning_roadmap():
 def list_day30_deliverables():
     """List all Day 30 career, reflection, presentation, and architecture deliverables available for download."""
     catalog = [
+        ("FinDoc_AuditEngine_Presentation_Slides.pptx", "12-Slide Widescreen PowerPoint Presentation (.pptx)", "PPTX"),
+        ("FinDoc_AuditEngine_Slide_Deck.pdf", "12-Slide Widescreen Presentation Deck (16:9 Vector PDF)", "PDF"),
+        ("FinDoc_AuditEngine_Demo_Walkthrough.mp4", "Recorded Demo Walkthrough Video (HD 720p H.264 .mp4)", "MP4"),
         ("SHRI_SANJAYKUMAR_V_UPDATED_RESUME_LINKIFIC.pdf", "Updated ATS Resume (True Vector PDF with Clickable Links)", "PDF"),
         ("SHRI_SANJAYKUMAR_V_UPDATED_RESUME_LINKIFIC.tex", "Updated ATS Resume (LaTeX Overleaf Source Code)", "LaTeX"),
         ("INTERNSHIP_REFLECTION_REPORT.pdf", "Internship Reflection Report (2-3 Page True Vector PDF)", "PDF"),
@@ -226,5 +229,12 @@ def download_deliverable(filename: str):
     target = DOCS_DIR / safe_name
     if not target.exists():
         raise HTTPException(status_code=404, detail=f"Deliverable '{safe_name}' not found.")
-    media_type = "application/pdf" if safe_name.endswith(".pdf") else "text/markdown; charset=utf-8"
+    if safe_name.endswith(".pdf"):
+        media_type = "application/pdf"
+    elif safe_name.endswith(".pptx"):
+        media_type = "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+    elif safe_name.endswith(".mp4"):
+        media_type = "video/mp4"
+    else:
+        media_type = "text/markdown; charset=utf-8"
     return FileResponse(path=str(target), media_type=media_type, filename=safe_name)

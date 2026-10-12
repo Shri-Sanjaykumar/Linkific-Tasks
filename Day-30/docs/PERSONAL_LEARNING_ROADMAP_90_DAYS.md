@@ -1,56 +1,38 @@
-# Personal Learning Roadmap — Next 90 Days (Post-Internship Career Acceleration)
+# Personal Learning Roadmap — Next 90 Days (Post-Internship Development Plan)
 
-**Engineer:** Shri Sanjaykumar V (`M.Tech Integrated in Software Engineering, VIT Vellore — CGPA: 9.12/10.0`)  
-**Baseline Completed (Day 30):** Python, FastAPI, Pydantic v2, PyTest, RAG Pipelines (`TForce India` & `CampusLLM`), DevSecOps (`LEGITIFY`), Classical & Deep Learning (`Solar Forecasting`), and Hybrid Rules + 7-D Explainable ML (`FinDoc-AuditEngine v3.0` at `Linkific`).  
-**90-Day Objective:** Transition from strong single-node AI/ML & Backend Microservices to **Distributed Production AI Systems, Cloud-Native MLOps (Kubernetes/Kafka/vLLM), and High-Scale System Design** ready for top-tier SDE / AI Engineer roles (Visa, Stripe, Enterprise Cloud & FinTech).
-
----
-
-## Roadmap Architecture Overview
-
-```mermaid
-flowchart LR
-    M1["Month 1 (Days 1-30)<br/>Stateful Multi-Agent AI,<br/>Hybrid RAG & Evaluation"] --> M2["Month 2 (Days 31-60)<br/>Cloud-Native MLOps, K8s,<br/>vLLM & Drift Telemetry"]
-    M2 --> M3["Month 3 (Days 61-90)<br/>Distributed Event-Driven FinTech,<br/>AppSec AI & System Design"]
-```
+**Candidate:** Shri Sanjaykumar V (`M.Tech Integrated in Software Engineering, VIT Vellore`)  
+**Current Baseline (End of Day 30):** Completed the `FinDoc-AuditEngine v3.0` working prototype (FastAPI, Pydantic v2, deterministic 3-way reconciliation, regex PII masking, 7-feature synthetic-baseline `IsolationForest` with perturbation attribution, and PyTest suite).  
+**90-Day Goal:** Systematically address the current prototype's limitations (persistence, authentication, real-world ML evaluation/calibration, optical OCR, and asynchronous scaling) while strengthening core Software & AI Engineering fundamentals.
 
 ---
 
-## Phase 1: Days 1–30 (Month 1) — Stateful Agentic Architectures, Hybrid RAG & Rigorous LLM Evaluation
+## Month 1 (Days 1–30): Durable Persistence, API Security & Document OCR
 
-| Week | Days | Core Technical Theme | Actionable Study & Implementation Tasks | Concrete Deliverable / KPI |
+| Week | Days | Focus Area | Concrete Learning & Implementation Tasks | Measurable Weekly Target |
 | :--- | :--- | :--- | :--- | :--- |
-| **Week 1** | Days 1–7 | **Hybrid Retrieval (`BM25 + Dense Vector + Cross-Encoder Reranking`)** | Implement Reciprocal Rank Fusion (RRF) combining sparse `BM25` keyword matching (for exact SKU/PO codes) with dense vector embeddings (`bge-large-en` / `Qdrant`) and `ms-marco` cross-encoder reranking. | Upgrade `CampusLLM` & `FinDoc-AuditEngine` policy search with RRF; benchmark Recall@5 improvement (`>= +18%`). |
-| **Week 2** | Days 8–14 | **Stateful Multi-Agent Workflows (`LangGraph` & Tool Calling)** | Build cyclic, state-persisted agent graphs with deterministic checkpointing, human-in-the-loop (HITL) approval interrupts, and strict JSON Schema tool definitions. | Autonomous Procurement Dispute Resolution Agent that drafts vendor chargeback memos from `FinDoc-AuditEngine` item diffs. |
-| **Week 3** | Days 15–21 | **Automated AI Evaluation (`RAGAS`, `DeepEval` & Golden Datasets)** | Build CI-integrated evaluation harnesses measuring **Faithfulness**, **Context Precision**, **Answer Relevance**, and **Hallucination Rate** across 100+ adversarial test prompts. | GitHub Actions quality gate that fails PRs if faithfulness drops below `0.92` or latency exceeds `P95` budget. |
-| **Week 4** | Days 22–30 | **Multimodal Document AI (`LayoutLMv3` / Vision-Language OCR)** | Replace regex-only text extraction with layout-aware bounding-box table extraction for scanned multi-page PDF GST/VAT invoices and bills of lading. | End-to-end PDF-to-`InvoicePayload` extraction microservice with token-level confidence calibration. |
+| **Week 1** | Days 1–7 | **Relational Persistence (`PostgreSQL` + `SQLAlchemy 2.0` + `Alembic`)** | Replace the prototype's in-memory `AUDIT_LEDGER` Python list with persistent PostgreSQL tables (`invoices`, `purchase_orders`, `audit_decisions`) and schema migrations. | Working async CRUD layer where audit history survives server restarts; verified by integration tests. |
+| **Week 2** | Days 8–14 | **Idempotency, Caching & Concurrency (`Redis`)** | Add Redis-backed idempotency keys (`X-Idempotency-Key`) and sliding-window velocity counters to detect duplicate or split-invoice submissions. | Benchmark concurrent requests using `locust` or `httpx.AsyncClient` with zero duplicate ledger writes. |
+| **Week 3** | Days 15–21 | **API Security (`OAuth2 / JWT`, RBAC & Rate Limiting)** | Implement user authentication and role-based access control (`Auditor`, `Finance_Manager`, `Director`) to secure approval endpoints and ledger exports. | Protected API routes with unit tests verifying `401 Unauthorized` and `403 Forbidden` role boundaries. |
+| **Week 4** | Days 22–30 | **Optical OCR & Context-Aware PII Redaction (`Tesseract / LayoutLM` & `Presidio`)** | Upgrade `/api/v1/audit/parse-raw` from regex-only text parsing to actual PDF/image OCR table extraction, and pair regex PII rules with Named Entity Recognition (NER). | End-to-end sample PDF invoice ingestion test extracting line items and masking names/addresses. |
 
 ---
 
-## Phase 2: Days 31–60 (Month 2) — Cloud-Native MLOps, High-Throughput Inference & Drift Observability
+## Month 2 (Days 31–60): Rigorous ML Evaluation, Calibration, MLOps & Containerization
 
-| Week | Days | Core Technical Theme | Actionable Study & Implementation Tasks | Concrete Deliverable / KPI |
+| Week | Days | Focus Area | Concrete Learning & Implementation Tasks | Measurable Weekly Target |
 | :--- | :--- | :--- | :--- | :--- |
-| **Week 5** | Days 31–37 | **Async Persistence (`PostgreSQL + SQLAlchemy 2.0 + asyncpg + Redis`)** | Migrate in-memory ledgers to partitioned PostgreSQL tables with Alembic migrations, optimistic concurrency locking, and Redis idempotency keys (`24h TTL`). | Zero-duplicate transactional audit ledger supporting `1,000+ concurrent req/sec` under `locust` load testing. |
-| **Week 6** | Days 38–44 | **Model Registry, Versioning & Drift Monitoring (`MLflow` + `EvidentlyAI`)** | Version `StandardScaler + IsolationForest` artifacts in `MLflow`; compute weekly **Population Stability Index (PSI)** and **Wasserstein Distance** across the 7 financial features. | Automated drift alert webhook triggered whenever $\text{PSI} > 0.20$ on vendor price variance or tax distributions. |
-| **Week 7** | Days 45–52 | **High-Throughput Model Serving (`ONNX Runtime` & `vLLM`)** | Export scikit-learn/XGBoost pipelines to `ONNX Runtime` for sub-millisecond C++ execution; benchmark quantized LLM serving (`AWQ`/`GPTQ`) with continuous batching. | Reduce 7-D anomaly + perturbation XAI inference latency from `7.9 ms` to `< 1.8 ms` via vectorized batch perturbation. |
-| **Week 8** | Days 53–60 | **Kubernetes (`EKS/AKS`), Docker Multi-Stage Builds & OpenTelemetry** | Package services into distroless multi-stage Docker images (`<150 MB`), write Helm charts with Horizontal Pod Autoscalers (HPA), and instrument `Prometheus + Grafana` dashboards. | Production K8s deployment manifest with `P50/P95/P99` latency histograms and automated liveness/readiness probes. |
+| **Week 5** | Days 31–37 | **Benchmarking on Public Financial Anomaly Datasets & Score Calibration** | Evaluate `IsolationForest`, `LocalOutlierFactor`, and `XGBoost` on public labeled fraud/anomaly datasets; study Platt scaling and isotonic regression for probability calibration. | Reproducible evaluation notebook reporting ROC-AUC, PR-AUC, and Brier score calibration curves. |
+| **Week 6** | Days 38–44 | **Experiment Tracking & Model Registry (`MLflow`)** | Log model hyperparameters, `StandardScaler` artifacts, feature medians, and evaluation metrics in `MLflow` instead of fitting on synthetic data at app startup. | Versioned model artifact loaded deterministically from an `MLflow` registry path at startup. |
+| **Week 7** | Days 45–52 | **Data Drift Monitoring (`EvidentlyAI` & Population Stability Index)** | Build a scheduled drift evaluation script that computes PSI and Kolmogorov-Smirnov statistics across the 7 input features over time. | Automated HTML/JSON drift report flagging simulated distribution shifts ($\text{PSI} > 0.20$). |
+| **Week 8** | Days 53–60 | **Code Coverage (`pytest-cov`), Docker Multi-Stage Builds & CI Gates** | Measure actual line and branch coverage using `pytest-cov`, containerize the FastAPI + PostgreSQL stack with `docker-compose`, and enforce coverage checks in GitHub Actions. | Verified `pytest --cov=app` report (`>= 85%` measured line coverage) running automatically on every PR. |
 
 ---
 
-## Phase 3: Days 61–90 (Month 3) — Event-Driven FinTech Scale, AppSec AI & Career Execution
+## Month 3 (Days 61–90): Hybrid RAG, Asynchronous Workflows & Interview Readiness
 
-| Week | Days | Core Technical Theme | Actionable Study & Implementation Tasks | Concrete Deliverable / KPI |
+| Week | Days | Focus Area | Concrete Learning & Implementation Tasks | Measurable Weekly Target |
 | :--- | :--- | :--- | :--- | :--- |
-| **Week 9** | Days 61–67 | **Event-Driven Streaming (`Apache Kafka` / `RabbitMQ` + `Celery`)** | Decouple high-volume ERP invoice ingestion from downstream ML scoring and webhook notifications using durable Kafka topics and dead-letter queues (DLQ). | Event-driven `FinDoc-AuditEngine v4.0` handling burst loads of `10,000 invoices/min` with zero message loss. |
-| **Week 10** | Days 68–75 | **AI Security, Adversarial Robustness & OWASP LLM Top 10** | Combine `LEGITIFY` (AppSec) with `FinDoc-AuditEngine`: defend against prompt injection inside invoice descriptions, data poisoning, and model inversion attacks. | Security hardening suite & automated red-team adversarial test harness (`50+ injection payloads blocked`). |
-| **Week 11** | Days 76–82 | **Distributed System Design & Algorithmic Mastery** | Solve 60+ medium/hard DSA problems (Graphs, Dynamic Programming, Heaps, Tries) and author 6 end-to-end system design architectures (Payment Switch, Real-Time Fraud Engine, Distributed Rate Limiter). | Complete System Design & Coding Interview Portfolio repository with benchmarked implementations. |
-| **Week 12** | Days 83–90 | **Open-Source Contribution, Technical Writing & Panel Readiness** | Publish 2 deep-dive engineering articles (*"Perturbation XAI for Unsupervised Financial Anomaly Detection"* and *"Pre-Inference PII Gateways in FastAPI"*) and contribute a PR to an open-source Python/AI library. | Published engineering blog posts, merged OSS pull request, and full interview readiness for tier-1 SDE/AI roles. |
-
----
-
-## 90-Day Success Metrics Summary
-
-1. **System Performance:** Reduce `FinDoc-AuditEngine` P99 inference latency to **`< 3 ms`** via vectorized ONNX batching and scale throughput to **`1,000+ RPS`** backed by PostgreSQL + Redis.
-2. **Engineering Rigor:** Maintain **`>= 95%` test coverage** across all portfolio repositories with automated CI/CD quality and security gates.
-3. **Career Readiness:** Complete **60+ targeted DSA problems**, **6 FinTech/AI system design blueprints**, and **2 published technical articles** showcased on LinkedIn and GitHub.
+| **Week 9** | Days 61–67 | **Hybrid Retrieval (`BM25 + Dense Vector Search`) & Evaluation (`RAGAS`)** | Combine keyword search (`BM25`) with vector embeddings (`Qdrant` / `pgvector`) to retrieve procurement policy clauses for flagged invoices; measure faithfulness. | Policy-grounded explanation module evaluated on a 30-question test set. |
+| **Week 10** | Days 68–75 | **Asynchronous Task Queues (`Celery` / `RabbitMQ`)** | Offload batch invoice processing and report generation to background worker queues with retry and dead-letter handling. | Async batch audit endpoint with job-status polling (`PENDING -> COMPLETED`). |
+| **Week 11** | Days 76–82 | **Data Structures, Algorithms & Backend System Design** | Practice 45+ medium/hard DSA problems (graphs, heaps, dynamic programming) and review 4 core system design architectures. | Documented system design notes and timed coding problem solutions. |
+| **Week 12** | Days 83–90 | **Portfolio Consolidation & Mock Technical Interviews** | Conduct full mock technical interviews covering all projects (`FinDoc-AuditEngine`, `LEGITIFY`, `CampusLLM`, `FinTrack`, `Solar Forecasting`), refine documentation, and finalize applications. | Clean, reproducible GitHub portfolio with verified READMEs and architecture guides. |

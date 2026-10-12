@@ -1,66 +1,72 @@
-# Day 29 Deliverable: FinDoc-AuditEngine v3.0 System Architecture Specification
+# FinDoc-AuditEngine v3.0 — Prototype Architecture & Technical Specification
 
-## 1. High-Level Component Topology
+**Project Classification:** Internship Capstone Working Prototype / Production-Oriented Reference Implementation  
+**Currency Display:** USD (`$`) and INR (`1 USD = 86.50 INR` configured conversion rate)  
+**Verified Automated Tests:** Day 29: `28 passed` (`python -m pytest tests -q`) | Day 30: `33 passed` (`python -m pytest tests -q`) — *all collected tests passed*
+
+---
+
+## 1. Architectural Overview & Prototype Scope
+
+`FinDoc-AuditEngine v3.0` is a modular FastAPI prototype designed to demonstrate how deterministic procurement accounting rules can be combined with pre-inference regex privacy masking and unsupervised anomaly scoring.
 
 ```mermaid
-flowchart TB
-    subgraph Client_Layer ["1. Presentation & Client Layer"]
-        WEB["Institutional Web Workbench\n(index.html + dashboard.css + dashboard.js)"]
-        CLI["CLI Runners\n(run_project.py / run_mentor_demo.py)"]
-        SWAGGER["OpenAPI / Swagger UI\n(/docs)"]
-    end
-
-    subgraph API_Gateway ["2. FastAPI Application & Exception Layer (app/main.py)"]
-        ROUTER_API["REST Router (/api/v1/audit)\n- POST /process\n- POST /parse-raw\n- POST /demo-batch\n- GET /ledger & /summary\n- GET /export/csv"]
-        ERR_HANDLER["RFC 7807 Global Exception Handler\n(FinDocAuditException -> JSONResponse)"]
-    end
-
-    subgraph Core_Domain ["3. Core AI/ML & Reconciliation Services"]
-        PII["Stage 1: FinancialPrivacyScrubber\n(PAN, Aadhaar, Email, Phone, Account)"]
-        MATCH["Stage 2: ReconciliationMatcher\n(Line-Item Invoice vs PO vs Dock GRN)"]
-        ML["Stage 3: AnomalyScorer\n(7D StandardScaler + IsolationForest + Perturbation XAI)"]
-        GOV["Stage 4: ApprovalRouter\n(5 Governance Tiers + Dual USD/INR @ 86.50)"]
-    end
-
-    subgraph Storage_Layer ["4. State & Compliance Export"]
-        LEDGER["Immutable Audit Ledger & PO Registry"]
-        CSV_EXP["CSV Compliance Report Generator"]
-    end
-
-    WEB --> ROUTER_API
-    CLI --> ROUTER_API
-    SWAGGER --> ROUTER_API
-    ROUTER_API --> ERR_HANDLER
-    ROUTER_API --> PII
-    PII --> MATCH
-    MATCH --> ML
-    ML --> GOV
-    GOV --> LEDGER
-    LEDGER --> CSV_EXP
+flowchart LR
+    A["Client / Web Workbench<br/>(Structured JSON or<br/>Raw Invoice Text)"] --> B["Stage 1: Regex PII Masking<br/>(FinancialPrivacyScrubber)<br/>6 Configured Patterns"]
+    B --> C["Stage 2: 3-Way Matcher<br/>(ReconciliationMatcher)<br/>Invoice vs. PO vs. GRN"]
+    C --> D["Stage 3: Anomaly Scorer<br/>(AnomalyScorer)<br/>7-D Synthetic Baseline IF<br/>+ Perturbation Attribution"]
+    D --> E["Stage 4: Governance Router<br/>(ApprovalRouter)<br/>5 Approval Tiers"]
+    E --> F["Prototype Storage<br/>(In-Memory AUDIT_LEDGER<br/>Python List + CSV Export)"]
 ```
 
 ---
 
-## 2. 7-Dimensional ML Feature Vector Specification
+## 2. Detailed Stage Breakdown
 
-| Index | Feature Name | Mathematical Formulation | Normal Operational Range | Anomaly Trigger Condition |
-| :--- | :--- | :--- | :--- | :--- |
-| `0` | **Log Capital Scale** | $\ln(1 + \text{Total}_{\text{USD}})$ | $4.8 - 10.3$ (`$120 - $30k`) | Extreme capital outliers (`> $40,000`) |
-| `1` | **Unit Rate Markup %** | $\frac{|\Delta P_{\text{USD}}|}{\text{Base Spend}} \times 100$ | $0.0\% - 0.5\%$ | Vendor unit price exceeds PO rate (`> 1%`) |
-| `2` | **Dock GRN Shortage %** | $\frac{\Delta Q_{\text{units}}}{Q_{\text{billed}}} \times 100$ | $0.0\%$ | Billed units rejected or missing at dock |
-| `3` | **Tax Deviation** | $\max(0, \text{Tax}\% - 20.0\%)$ | $0.0\%$ | Tax rate exceeds corporate indirect tax ceiling |
-| `4` | **Payment Urgency** | $\min(10, \frac{30}{\max(1, \text{DueDays})})$ | $1.0 - 2.0$ (`Net-30` to `Net-15`) | Rush wire demand (`<= 5 days`, urgency `>= 6.0`) |
-| `5` | **Vendor Risk Profile** | $0.55 \cdot \mathbb{I}_{\text{new}} + 0.45 \cdot \mathbb{I}_{>\$5k} + 0.75 \cdot \mathbb{I}_{\neg\text{PO}}$ | $0.0 - 0.35$ | New vendor high-value spend or missing PO |
-| `6` | **Jurisdiction AML Index** | Lookup in `JURISDICTION_RISK_MAP` | $0.05 - 0.08$ (`IN`, `US`, `DE`, `GB`) | Offshore tax havens (`BZ`, `KY`, `PA`, `VG` $\ge 0.88$) |
+### Stage 1: Regex-Based Pre-Inference Privacy Masking (`app/core/privacy.py`)
+- **`FinancialPrivacyScrubber.scrub_text()`:** Scans input strings against **6 configured regular expression patterns** before logging or downstream processing:
+  1. `EMAIL` (`[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,7}`)
+  2. `PAN` (Indian Permanent Account Number format: `[A-Z]{5}[0-9]{4}[A-Z]{1}`)
+  3. `CREDIT_CARD` (16-digit card sequences)
+  4. `ACCOUNT` (8–18 digit numbers preceded by `account`, `acct`, `iban`, `acc`, or `bank`)
+  5. `PHONE` (10-digit Indian mobile numbers starting with `6–9`, optional `+91`)
+  6. `AADHAAR` (12-digit format `[1-9]\d{3}\s?\d{4}\s?\d{4}`)
+- **Invoice-Text Parser (`POST /api/v1/audit/parse-raw`):** Applies regex extraction on raw text memos to populate Invoice ID, PO Number, Vendor Name, Country code, and USD total while masking matched PII tokens into indexed surrogates (`[EMAIL_01]`, `[PAN_02]`). *Note: This endpoint performs regex-based invoice-text parsing on character strings; it does not integrate an optical character recognition (OCR) engine for scanned images/PDFs.*
+
+### Stage 2: Deterministic 3-Way Reconciliation (`app/services/matcher.py`)
+- **`ReconciliationMatcher.match()`:** Enforces the configured SKU-level pricing, dock quantity, and subtotal rules between an `InvoicePayload` and a `PurchaseOrderRecord`:
+  - **Unit Rate Check:** Flags `RATE_VARIANCE` if `invoice_item.unit_price - po_item.unit_price > $0.01`.
+  - **Dock GRN Net Quantity Check:** Computes net accepted units $Q_{\text{net}} = Q_{\text{received}} - Q_{\text{rejected}}$ and flags `QTY_SHORTAGE` if billed quantity exceeds $Q_{\text{net}}$.
+  - **Subtotal Tolerance:** Enforces `SUBTOTAL_TOLERANCE = 0.05` (`$0.05`) to prevent binary floating-point rounding discrepancies on tax calculations from causing false rejections.
+
+### Stage 3: 7-Feature Unsupervised Anomaly Scoring & Perturbation Attribution (`app/services/anomaly_detector.py`)
+> **Important Model Scope Statement:**  
+> *The Isolation Forest model (`n_estimators=200`, `StandardScaler`, `random_state=42`) is trained on a reproducible seeded synthetic baseline of 1,000 transaction-like records to demonstrate financial anomaly scoring. Its thresholds and risk behavior would require evaluation and calibration against representative, authorized real-world data before production use. Furthermore, the displayed `0–100` risk score is an engineered anomaly-risk indicator derived from tree isolation depth, not a calibrated probability of fraud.*
+
+| Index | Feature Key | Mathematical Definition | Synthetic Baseline Role |
+| :--- | :--- | :--- | :--- |
+| `0` | `log_total_usd` | $\ln(1 + \text{Total}_{\text{USD}})$ | Compresses heavy-tailed invoice dollar totals so magnitude does not dominate bounded ratios. |
+| `1` | `price_variance_ratio` | $\Delta P_{\text{USD}} / \max(\text{Subtotal}_{\text{PO}}, 1)$ | Captures relative unit-price markup above PO contract rates. |
+| `2` | `qty_shortage_ratio` | $Q_{\text{short}} / \max(Q_{\text{billed}}, 1)$ | Captures fraction of billed units missing or rejected at the receiving dock. |
+| `3` | `tax_rate_deviation` | $|\tau_{\text{inv}} - 0.18|$ | Captures deviation from the standard `18%` GST benchmark. |
+| `4` | `line_item_concentration` | $\max_i(\text{LineTotal}_i) / \text{Subtotal}_{\text{inv}}$ | Distinguishes single-SKU lump-sum charges from multi-line orders. |
+| `5` | `jurisdiction_risk_weight` | `0.05` (Domestic/Standard) to `1.00` (`BZ`, `KY`, `VG`, `PA`) | Encodes configured vendor country risk tier. |
+| `6` | `payment_urgency_index` | $\min(1.0, 15.0 / \max(\text{payment\_days}, 1))$ | Flags rush wire demands (`Net-1` to `Net-3`) vs. standard `Net-30`. |
+
+- **Local Perturbation Attribution:** For each feature $k \in \{0,\dots,6\}$, the scorer replaces $x_k$ with its synthetic baseline median $\mu_k$ and computes the marginal score difference $\Delta R_k = \max(0, R(\mathbf{x}) - R(\mathbf{x}^{(k \leftarrow \mu_k)}))$ to surface the top contributing features in the UI.
+
+### Stage 4: Governance Routing & In-Memory Prototype Ledger (`app/services/router.py` & `app/routers/audit.py`)
+- **`ApprovalRouter.route_decision()`:** Assigns one of 5 governance tiers (`TIER_1_STP_AUTO_APPROVED`, `TIER_2_MANAGER_REVIEW`, `TIER_3_DIRECTOR_SIGNOFF`, `REJECTED_DISCREPANCY`, or `FROZEN_FRAUD_RISK`).
+- **In-Memory Prototype Audit Ledger (`AUDIT_LEDGER`):** Decisions are stored in an in-memory Python list during runtime for dashboard filtering and CSV export (`GET /api/v1/audit/export/csv`).
 
 ---
 
-## 3. Corporate Governance Routing Matrix (`1 USD = 86.50 INR`)
+## 3. Current Prototype Limitations & Planned Future Work
 
-| Approval Tier | USD Threshold | INR Threshold (`@ 86.50`) | 3-Way Match Required | Max Risk Level | HITL Required |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| `TIER_1_STP_AUTO_APPROVED` | `< $1,000.00` | `< INR 86,500.00` | `True` (`matched`) | `LOW` (`< 35.0`) | `False` (Autonomous) |
-| `TIER_2_MANAGER_REVIEW` | `$1,000 – $10,000` | `INR 86,500 – 865,000` | `True` (`matched`) | `LOW` / `MEDIUM` | `True` (Manager) |
-| `TIER_3_DIRECTOR_SIGNOFF` | `> $10,000.00` | `> INR 865,000.00` | `True` (`matched`) | `LOW` / `MEDIUM` / `HIGH` | `True` (Director) |
-| `REJECTED_DISCREPANCY` | Any Amount | Any Amount | `False` (`unmatched`) | Any | `True` (Vendor Hold) |
-| `FROZEN_FRAUD_RISK` | Any Amount | Any Amount | Any | `CRITICAL` (`>= 85.0`) | `True` (Security Freeze) |
+| Area | Current Prototype Implementation | Planned Production Improvement (Future Work) |
+| :--- | :--- | :--- |
+| **Audit Ledger Storage** | Held in an in-memory Python list (`AUDIT_LEDGER`); records are lost when the server process restarts. | Migrate to durable **PostgreSQL (`SQLAlchemy 2.0` + `asyncpg`)** tables with **Redis** idempotency keys. |
+| **ML Training Data & Calibration** | Fit on a seeded synthetic baseline of 1,000 records; outputs an uncalibrated `0–100` anomaly indicator. | Train and validate on authorized historical enterprise AP data; calibrate probabilities and monitor drift (**EvidentlyAI PSI**). |
+| **Document Ingestion** | Accepts structured JSON or performs regex invoice-text parsing (`/api/v1/audit/parse-raw`). | Integrate optical OCR and layout-aware document extraction (**LayoutLMv3** / PDF table parsing). |
+| **PII Masking Coverage** | Uses 6 deterministic regex patterns; may miss non-standard formats or free-form names/addresses. | Combine regex rules with context-aware Named Entity Recognition (**Presidio / Transformer NER**). |
+| **Security & Access Control** | Local prototype endpoints without user authentication or role-based authorization. | Add **OAuth2 / JWT** authentication, role-based access control (RBAC), and TLS termination. |

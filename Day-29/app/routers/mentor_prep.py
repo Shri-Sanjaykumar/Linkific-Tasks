@@ -49,7 +49,7 @@ SLIDES_DECK = [
     },
     {
         "slide": 4,
-        "title": "Stage 1: Pre-Inference Responsible AI & Unstructured OCR Document Parser",
+        "title": "Stage 1: Pre-Inference Responsible AI & Regex Invoice-Text Parser",
         "time_mark": "03:30 – 04:45",
         "section": "Privacy & Ingestion",
         "bullets": [
@@ -79,7 +79,7 @@ SLIDES_DECK = [
         "bullets": [
             "7 Continuous Financial Features: (1) ln(1 + Total_USD), (2) Unit Rate Markup Ratio, (3) Dock GRN Shortage Ratio, (4) Tax Deviation from 18% GST, (5) Line Concentration, (6) Jurisdiction Risk Weight, (7) Payment Urgency Index.",
             "Why Log-Compression + StandardScaler: Prevents raw dollar totals ($50,000) from dominating bounded ratios (0.0–1.0) during random split threshold selection.",
-            "Trained on 1,000 Realistic Historical Procurement Records (92% normal multi-tier AP traffic, 8% injected multi-vector anomalies).",
+            "Trained on a reproducible seeded synthetic baseline of 1,000 transaction-like records (92% normal multi-tier AP traffic, 8% injected multi-vector anomalies).",
         ],
         "speaker_notes": "Even if an invoice matches its PO, our 7-dimensional Isolation Forest evaluates whether the transaction is statistically isolated in joint feature space.",
     },
@@ -121,11 +121,11 @@ SLIDES_DECK = [
     },
     {
         "slide": 10,
-        "title": "Testing, Reliability, Observability & CI/CD Verification (30/30 PyTests)",
+        "title": "Testing, Reliability, Observability & CI/CD Verification (28 passed (Day 29) / 33 passed (Day 30))",
         "time_mark": "11:00 – 12:00",
         "section": "Quality Assurance",
         "bullets": [
-            "100% Automated PyTest Pass Rate: Unit tests for 3-way math, ML anomaly monotonicity, perturbation XAI, PII regexes, custom exceptions, and dynamic REST routes.",
+            "All Collected PyTest Tests Passed (28 in Day 29 / 33 in Day 30): Unit tests for 3-way math, ML anomaly monotonicity, perturbation XAI, PII regexes, custom exceptions, and dynamic REST routes.",
             "Custom Exception Hierarchy (FinDocAuditError): Structured JSON error responses with HTTP status codes, correlation IDs, and RFC-3339 UTC timestamps.",
             "GitHub Actions CI/CD (.github/workflows/ci.yml): Automated lint and regression verification on every push.",
         ],
@@ -245,7 +245,7 @@ DEMO_CHECKLIST_AND_VIDEO = {
         {"scene": "Scene 2 (0:35 – 1:20)", "title": "1-Click 5-Scenario Enterprise Batch", "visual": "Click 'Run All 5 Scenarios (Batch)' and highlight Tier 1 STP ($432), Tier 3 Director ($27,000), and Frozen Fraud Risk ($49,500 Offshore).", "narration": "Explain how INV-1005 matches its PO mathematically but is frozen at 99.0/100 CRITICAL risk due to offshore jurisdiction and Net-1 rush payment."},
         {"scene": "Scene 3 (1:20 – 2:10)", "title": "Live Dynamic Line-Item Editing & Perturbation XAI", "visual": "Modify SKU unit rate and dock rejected units in the table, click 'Execute 3-Way Audit & ML Risk Scoring', and zoom into the XAI attribution bars.", "narration": "Show real-time Single-Feature Perturbation XAI attributing exact risk points to Unit Rate Markup and Dock GRN Shortage."},
         {"scene": "Scene 4 (2:10 – 2:40)", "title": "Unstructured OCR Memo Parsing & Pre-Inference PII Shield", "visual": "Open Raw OCR Parser, click 'Parse & Scrub PII', and show masked [EMAIL_01], [PAN_02], [AADHAAR_05] tokens.", "narration": "Demonstrate DPDP Act / GDPR compliance via Stage 1 pre-inference PII redaction."},
-        {"scene": "Scene 5 (2:40 – 3:00)", "title": "PyTest Suite (100% Pass) & CSV Compliance Export", "visual": "Download CSV compliance ledger and show terminal running PyTest suite.", "narration": "Conclude with sub-15ms pipeline telemetry, 100% test coverage, and 90-day production MLOps roadmap."},
+        {"scene": "Scene 5 (2:40 – 3:00)", "title": "PyTest Suite (100% Pass) & CSV Compliance Export", "visual": "Download CSV compliance ledger and show terminal running PyTest suite.", "narration": "Conclude with sub-15ms pipeline telemetry, all collected tests passed (28 passed in Day 29 / 33 passed in Day 30), and 90-day production MLOps roadmap."},
     ],
 }
 
@@ -253,7 +253,7 @@ DEMO_CHECKLIST_AND_VIDEO = {
 @router.get("/slides")
 def get_presentation_slides():
     """Return all 12 presentation slides with speaker notes and timing."""
-    return {"total_slides": len(SLIDES_DECK), "duration_minutes": 15, "slides": SLIDES_DECK}
+    return {"total_slides": len(SLIDES_DECK), "duration_minutes": 12, "slides": SLIDES_DECK}
 
 
 @router.get("/interview-qa")
@@ -272,6 +272,9 @@ def get_checklist_and_video():
 def get_day29_deliverables():
     """List all Day 29 deliverables (PDF and Markdown) for direct download."""
     catalog = [
+        ("FinDoc_AuditEngine_Presentation_Slides.pptx", "12-Slide Widescreen PowerPoint Presentation (.pptx)", "PPTX"),
+        ("FinDoc_AuditEngine_Slide_Deck.pdf", "12-Slide Widescreen Presentation Deck (16:9 Vector PDF)", "PDF"),
+        ("FinDoc_AuditEngine_Demo_Walkthrough.mp4", "Recorded Demo Walkthrough Video (HD 720p H.264 .mp4)", "MP4"),
         ("INTERVIEW_QA.pdf", "10 Technical Interview Questions & Answers (True Vector PDF)", "PDF"),
         ("PRESENTATION_NOTES_AND_SLIDES.pdf", "12-Slide Presentation Deck & 15-Min Speaker Notes (Vector PDF)", "PDF"),
         ("DEMO_PRACTICE_CHECKLIST.pdf", "Live Mentor Demo Practice Checklist & Video Script (Vector PDF)", "PDF"),
@@ -302,5 +305,12 @@ def download_day29_deliverable(filename: str):
     target = DOCS_DIR / safe
     if not target.exists():
         raise HTTPException(status_code=404, detail=f"File '{safe}' not found.")
-    media = "application/pdf" if safe.endswith(".pdf") else "text/markdown; charset=utf-8"
+    if safe.endswith(".pdf"):
+        media = "application/pdf"
+    elif safe.endswith(".pptx"):
+        media = "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+    elif safe.endswith(".mp4"):
+        media = "video/mp4"
+    else:
+        media = "text/markdown; charset=utf-8"
     return FileResponse(path=str(target), media_type=media, filename=safe)

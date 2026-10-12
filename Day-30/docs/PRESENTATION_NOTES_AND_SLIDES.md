@@ -1,112 +1,52 @@
-# Day 29 Deliverable: Presentation Slide Deck & Speaker Notes (10–15 Min Mentor Defense)
+# 10–12 Minute Presentation Guide & Speaker Notes — FinDoc-AuditEngine v3.0
 
-**Title:** FinDoc-AuditEngine v3.0 — Enterprise 3-Way Financial Reconciliation & Explainable ML Audit Gateway  
-**Presenter:** Shri Sanjaykumar V (AI/ML Intern, Linkific Technology Solutions Pvt Ltd)  
-**Total Duration:** 12–15 Minutes (10 Mins Presentation + Live Demo, 3–5 Mins Mentor Q&A)
-
----
-
-## Time Allocation & Pacing Roadmap
-
-| Time Window | Section / Activity | Slides Covered |
-| :--- | :--- | :--- |
-| **00:00 – 01:30** | Problem Statement, Business Impact & Dual-Currency Context | Slides 1 – 2 |
-| **01:30 – 04:00** | 4-Stage System Architecture, PII Guardrail & 3-Way Matching Math | Slides 3 – 5 |
-| **04:00 – 06:30** | 7-Feature Isolation Forest ML Engine & Perturbation XAI | Slides 6 – 8 |
-| **06:30 – 10:30** | **LIVE MENTOR DEMO** (Dynamic Custom Inputs, Raw Text PII, 5-Case Batch) | Slide 9 + Live Browser/CLI |
-| **10:30 – 12:00** | Testing Rigor (25/25 PyTest), Engineering Challenges & Future Roadmap | Slides 10 – 12 |
-| **12:00 – 15:00** | Technical Defense & Mentor Q&A | Open Q&A |
+**Companion Files in `docs/`:**  
+- **PowerPoint Presentation (`.pptx`):** [`FinDoc_AuditEngine_Presentation_Slides.pptx`](./FinDoc_AuditEngine_Presentation_Slides.pptx) (12 Widescreen 16:9 Slides with Speaker Notes)  
+- **Landscape Slide Deck (`.pdf`):** [`FinDoc_AuditEngine_Slide_Deck.pdf`](./FinDoc_AuditEngine_Slide_Deck.pdf) (12 Designed 16:9 Slides)  
+- **Recorded Demo Walkthrough Video (`.mp4`):** [`FinDoc_AuditEngine_Demo_Walkthrough.mp4`](./FinDoc_AuditEngine_Demo_Walkthrough.mp4) (HD 720p Walkthrough of Dashboard, 3 Scenarios, Terminal Logs & Tests)
 
 ---
 
-## Slide-by-Slide Content & Verbatim Speaker Notes
+## Recommended 10–12 Minute Presentation Timeline
 
-### Slide 1: Title & Executive Value Proposition
-- **Visuals:** Project title, Linkific branding, architecture badge (`FastAPI + Scikit-Learn IsolationForest + Institutional Workbench`), fixed FX peg (`1 USD = 86.50 INR`).
-- **Speaker Notes:**
-  > "Good morning/afternoon mentors. Today I am presenting **FinDoc-AuditEngine v3.0**, an enterprise-grade financial document processing and multi-tier audit gateway built at Linkific. Our goal was to solve a critical problem in modern Accounts Payable: how to automate high-volume invoice approvals without exposing the company to unit-rate overcharges, dock delivery shortages, PII leaks, or offshore wire fraud."
+| Time Segment | Duration | Presentation Section | Slides Covered | Key Demonstration / Narrative Focus |
+| :--- | :--- | :--- | :--- | :--- |
+| **Part 1** | **1 Min** (`00:00–01:00`) | **Problem & Solution** | Slides 1–2 | Why 3-Way Invoice–PO–GRN reconciliation, regex PII masking, and anomaly scoring are useful together. |
+| **Part 2** | **2 Min** (`01:00–03:00`) | **System Architecture** | Slides 3–5 | FastAPI pipeline: regex privacy masking, deterministic 3-way matcher, seeded synthetic Isolation Forest (`N=1,000`), approval router, and in-memory prototype ledger. |
+| **Part 3** | **5 Min** (`03:00–08:00`) | **Live Demonstration (3 Scenarios)** | Slides 6–8 | Live walkthrough of **Scenario 1 (`INV-1001` Clean Match)**, **Scenario 2 (`INV-1004` Price Discrepancy)**, and **Scenario 3 (`INV-1005` Critical-Risk Anomaly)** + terminal output. |
+| **Part 4** | **2 Min** (`08:00–10:00`) | **Testing & Challenges** | Slides 9–10 | Show `python -m pytest tests -q` (`28 passed` in Day 29 / `33 passed` in Day 30 — all collected tests passed) and explain the DOM decoupling & scaling fixes. |
+| **Part 5** | **1–2 Min** (`10:00–12:00`) | **Limitations & Future Work** | Slides 11–12 | Discuss in-memory ledger limitation, synthetic ML baseline calibration needs, security/RBAC controls, and PostgreSQL/OCR roadmap. |
 
-### Slide 2: The Business Problem in Enterprise Accounts Payable
-- **Bullet Points:**
-  - Manual AP review costs `$12–$18` per invoice and introduces 5–10 day settlement delays.
-  - Naive rule-based automation misses subtle multivariate anomalies (e.g., new vendor + rushed Net-1 due date + offshore jurisdiction).
-  - LLM-only approaches hallucinate arithmetic and leak sensitive tax IDs (PAN / Aadhaar).
-- **Speaker Notes:**
-  > "When enterprises process thousands of vendor invoices, pure manual review is too slow, while naive automation is dangerous. Furthermore, sending raw financial documents directly to external LLMs risks arithmetic hallucination and PII exposure. FinDoc-AuditEngine solves this by combining deterministic 3-way mathematical reconciliation with an unsupervised Isolation Forest ML model and pre-inference PII redaction."
+---
 
-### Slide 3: End-to-End 4-Stage Architecture
-```mermaid
-flowchart LR
-    A["1. Ingestion & PII Gate\n(PAN/Aadhaar/Email Masking)"] --> B["2. 3-Way Matcher\n(Invoice vs PO vs Dock GRN)"]
-    B --> C["3. 7D Isolation Forest\n+ Perturbation XAI"]
-    C --> D["4. Governance Router\n(USD & INR @ 86.50)"]
-```
-- **Speaker Notes:**
-  > "Every invoice—whether entered dynamically in our workbench, parsed from raw unstructured text, or submitted via REST API—passes through four stages in under 2 milliseconds: Stage 1 scrubs PII tokens; Stage 2 runs deterministic line-item 3-way matching; Stage 3 executes our 7-feature Isolation Forest scorer with perturbation explainability; and Stage 4 routes the transaction into the appropriate corporate governance tier in both USD and INR."
+## Detailed Speaker Script by Section
 
-### Slide 4: Stage 1 — Responsible AI & Pre-Inference Privacy Scrubber
-- **Key Highlights:**
-  - Pre-compiled regex detection for **Indian PAN**, **Aadhaar**, **Email**, **Phone**, **Credit Card**, and **Bank Account**.
-  - Replaces raw tokens with deterministic surrogates (`[PAN_01]`, `[EMAIL_01]`).
-- **Speaker Notes:**
-  > "Before any data touches our ML layer or audit logs, `FinancialPrivacyScrubber` sanitizes sensitive identifiers. We also exposed this via `/api/v1/audit/parse-raw`, allowing auditors to paste unstructured invoice text and watch PII redaction happen live."
+### 1. Problem and Solution (1 Minute — Slides 1–2)
+- *"Hello everyone. Today I am presenting `FinDoc-AuditEngine v3.0`, our internship capstone prototype for Accounts Payable reconciliation and anomaly detection."*
+- *"In procurement, finance teams must verify that every Vendor Invoice matches both the contractual Purchase Order (PO) and the warehouse Goods Receipt Note (GRN). Pure rule-based checks catch explicit unit-price or quantity mismatches, but they cannot flag an invoice that matches a PO on paper while exhibiting unusual risk signals—such as an offshore vendor demanding a 1-day rush payment just below a $50,000 sign-off limit."*
+- *"Our prototype addresses this by combining pre-inference regex PII masking, deterministic 3-way SKU reconciliation, and a 7-feature Isolation Forest anomaly scorer with local perturbation explanations."*
 
-### Slide 5: Stage 2 — Deterministic 3-Way Reconciliation Engine
-- **Key Highlights:**
-  - Line-item verification across **Invoice**, **ERP Purchase Order (PO)**, and **Dock Goods Receipt Note (GRN)**.
-  - Exact calculation of `unit_price_delta_usd` and `accepted_qty = grn_received - grn_rejected`.
-  - Produces structured `ItemReconciliationDiff` records for every SKU.
-- **Speaker Notes:**
-  > "We never rely on probabilistic models for basic arithmetic. Our `ReconciliationMatcher` checks every line item SKU against the committed PO rate and the physical dock GRN acceptance count. If 10 monitors are billed but 2 were rejected as damaged at the loading dock, the engine flags the exact 2-unit shortage and calculates the dollar and rupee variance."
+### 2. Architecture (2 Minutes — Slides 3–5)
+- *"Every request to `POST /api/v1/audit/process` passes through four modular stages:"*
+  1. *"First, `FinancialPrivacyScrubber` applies 6 regex patterns to mask sensitive identifiers like Indian PAN cards, Aadhaar-formatted numbers, bank accounts, phones, and emails before logging."*
+  2. *"Second, `ReconciliationMatcher` performs deterministic 3-way matching across SKU unit prices and net accepted dock quantities (`received minus rejected`) within a `$0.05` subtotal tolerance."*
+  3. *"Third, `AnomalyScorer` transforms 7 engineered features through `StandardScaler` and a 200-tree `IsolationForest` trained on a reproducible seeded synthetic baseline of 1,000 records. It outputs a `0–100` engineered anomaly-risk indicator and calculates single-feature perturbation attributions."*
+  4. *"Fourth, `ApprovalRouter` assigns the invoice to one of five governance queues and records the decision in our prototype's in-memory `AUDIT_LEDGER` list, displaying totals in both USD and INR (`1 USD = 86.50 INR`)."*
 
-### Slide 6: Stage 3 — Dynamic 7-Feature Isolation Forest ML Engine
-- **7 Continuous Features Extracted:**
-  1. `log_amount`: $\ln(1 + \text{USD})$
-  2. `price_markup_pct`: % overcharge over PO commitment
-  3. `qty_shortage_pct`: % of billed units rejected/missing at dock
-  4. `tax_rate_deviation`: excess over standard corporate tax band
-  5. `payment_terms_urgency`: $30 / \text{due\_days}$ (catches Net-1 rush wire fraud)
-  6. `vendor_risk_weight`: counterparty tenure & uncommitted PO status
-  7. `jurisdiction_risk_index`: continuous sovereign AML index (`IN`/`US` = 0.05, `AE` = 0.30, `BZ`/`KY`/`PA` = 0.90–0.95)
-- **Speaker Notes:**
-  > "To make the project 100% dynamic for any real-world input, we engineered 7 continuous behavioral features scaled via `StandardScaler` and scored by a 200-tree `IsolationForest` trained on 1,000 historical AP transactions. Because the model evaluates ratios and continuous indices rather than hardcoded rules, it generalizes to any vendor, amount, or line-item structure."
+### 3. Live Demonstration — Three Representative Scenarios (5 Minutes — Slides 6–8)
+- **Scenario 1 — Clean Invoice (`INV-1001`, `OfficeDepot India Pvt Ltd`, `$432.00` / `INR 37,368.00`):**
+  - *"Let's load Scenario 1 in the dashboard. Two ergonomic chairs are billed at `$180.00` each, matching `PO-9001` exactly with zero dock rejections. Price variance is `$0.00`, the engineered risk indicator is low (`25.0/100`), and the router assigns `TIER_1_STP_AUTO_APPROVED`."*
+- **Scenario 2 — Price Discrepancy (`INV-1004`, `Overcharge Technologies`, `$5,400.00` / `INR 467,100.00`):**
+  - *"Next, let's test Scenario 2. Here, 10 enterprise SSD arrays are billed at `$450.00/unit`, whereas `PO-9004` specifies `$400.00/unit`. The deterministic 3-way matcher immediately flags `RATE_VARIANCE` with a `+$500.00` (`INR 43,250.00`) overcharge and blocks auto-approval in `REJECTED_DISCREPANCY`. We can also edit any cell in the line-item table live to see variances recompute dynamically."*
+- **Scenario 3 — Critical-Risk Anomaly (`INV-1005`, `Shadow Island Holding BZ`, `$49,500.00` / `INR 4,281,750.00`):**
+  - *"Finally, Scenario 3 demonstrates why we pair rules with anomaly scoring. `INV-1005` bills `$49,500` and matches `PO-9005` on price and quantity. However, the 7-D Isolation Forest scores it at `99.0/100 (CRITICAL)` because of the combination of an offshore jurisdiction (`BZ`), a `Net-1` rush payment window, and an amount just under `$50,000`. The perturbation bars show those exact features driving the score, and the router places the invoice in `FROZEN_FRAUD_RISK`."*
 
-### Slide 7: Perturbation-Based Explainable AI (XAI)
-- **Key Highlights:**
-  - Replaces each feature $x_i$ with its compliant baseline median $\bar{x}_i$ and measures $\Delta S_i = S(x^{(-i)}) - S(x)$.
-  - Renders horizontal point-contribution bars in the UI so human reviewers see the exact drivers behind every risk score.
-- **Speaker Notes:**
-  > "In financial auditing, a black-box score isn't enough. We implemented single-feature perturbation attribution: for every invoice, we measure how much each of the 7 features shifts the Isolation Forest decision function away from the compliant median, displaying the top 5 risk drivers in real time."
+### 4. Testing and Engineering Challenges (2 Minutes — Slides 9–10)
+- *"In the terminal, running `python -m pytest tests -q` verifies that all collected tests pass (`28 passed` in Day 29 and `33 passed` in Day 30), covering matching math, regex masking, error handling, and dynamic multi-line API requests."*
+- *"Two key engineering challenges we solved were: (1) decoupling the frontend line-item table from static preset objects via `collectLineItemsFromDOM()` so every user edit is evaluated dynamically, and (2) applying $\ln(1 + \text{Total}_{\text{USD}})$ and `StandardScaler` so large dollar amounts do not overshadow bounded variance ratios."*
 
-### Slide 8: Stage 4 — Multi-Tier Governance & Dual Currency Standard
-- **Policy Matrix (`1 USD = 86.50 INR`):**
-  - **Tier 1 STP Auto-Approved:** `< $1,000` (`< INR 86,500`), Matched, Low Risk (`< 35.0`)
-  - **Tier 2 Finance Manager Review:** `$1,000 – $10,000` (`INR 86,500 – 865,000`), Matched, Low/Medium Risk
-  - **Tier 3 Executive Director Signoff:** `> $10,000` (`> INR 865,000`), Matched
-  - **Rejected (Discrepancy):** Unmatched PO/GRN or Price/Qty Variance
-  - **Frozen (Fraud Risk):** Critical ML Risk (`>= 85.0`) or Offshore AML Hold
-
-### Slide 9: Live Demonstration (Workbench + CLI)
-- **Demo Flow (4 Minutes):**
-  1. Show Institutional Light Workbench at `http://127.0.0.1:8000/dashboard`.
-  2. Click **"Run 5-Scenario Batch"** to populate the ledger across all 5 governance tiers.
-  3. Click **"New Blank"** or edit line items live (change `Inv Rate` from `$350` to `$450` or `GRN Rej` from `0` to `1`) and show real-time variance pre-calculation and dynamic ML attribution.
-  4. Open **"Paste Raw Text / PII"**, scrub an unstructured invoice containing a PAN and email, and export the CSV compliance report.
-
-### Slide 10: Institutional UI/UX & Defensive Error Handling
-- **Key Highlights:**
-  - High-contrast Swiss accounting grid (`Plus Jakarta Sans` + `IBM Plex Mono` tabular numerals).
-  - Custom `FinDocAuditException` hierarchy returning RFC 7807 Problem Details JSON (`404`, `422`, `403`, `500`).
-
-### Slide 11: Quality Assurance — 25/25 Automated PyTest Suite & CI/CD
-- **Test Coverage Breakdown:**
-  - 10 Core Engine & Dynamic ML Perturbation tests (`test_audit_engine.py`)
-  - 2 Domain Exception & RFC 7807 handler tests (`test_error_handling.py`)
-  - 8 Frontend Portal, Raw Parser, Demo Batch & CSV Export tests (`test_frontend_routes.py`)
-  - 5 End-to-End Benchmark & Dynamic Custom Scenario Regression tests (`test_regression.py`)
-
-### Slide 12: Production Roadmap & Q&A
-- **Future Enhancements:**
-  - PostgreSQL + `pgvector` semantic duplicate detection.
-  - Multimodal VLM/OCR PDF table extraction upstream.
-  - Active learning feedback loop from Manager/Director signoff overrides.
+### 5. Limitations and Future Work (1–2 Minutes — Slides 11–12)
+- *"To conclude, we want to be clear about the current prototype's limitations and how we would evolve it for production:"*
+  1. *"First, `AUDIT_LEDGER` is currently an in-memory Python list that resets on restart; production requires durable **PostgreSQL** storage and **Redis** idempotency keys."*
+  2. *"Second, our `IsolationForest` is fit on a seeded synthetic baseline of 1,000 records, and its `0–100` score is an uncalibrated anomaly indicator. Production deployment requires evaluation and threshold calibration on authorized historical company invoices plus drift monitoring."*
+  3. *"Third, `/api/v1/audit/parse-raw` performs regex invoice-text parsing; integrating optical OCR (`LayoutLMv3`) and **OAuth2/RBAC** security controls are key next steps."*

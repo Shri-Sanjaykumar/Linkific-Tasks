@@ -1,70 +1,58 @@
-# Day 29 Deliverable: Mentor Live Demo Practice Checklist & Video Script
+# Live Mentor Demo Practice Checklist & Video Walkthrough Guide
 
-**Project:** FinDoc-AuditEngine v3.0  
-**Target Demo Duration:** 10–15 Minutes  
-**Verification Status:** 25/25 Automated Tests Passing | Localhost Server Active (`http://127.0.0.1:8000`)
+**Companion Media & Slide Files in `docs/`:**  
+- **Recorded Video Walkthrough (`.mp4`):** [`FinDoc_AuditEngine_Demo_Walkthrough.mp4`](./FinDoc_AuditEngine_Demo_Walkthrough.mp4)  
+- **PowerPoint Slide Deck (`.pptx`):** [`FinDoc_AuditEngine_Presentation_Slides.pptx`](./FinDoc_AuditEngine_Presentation_Slides.pptx)  
+- **Landscape Slide Deck (`.pdf`):** [`FinDoc_AuditEngine_Slide_Deck.pdf`](./FinDoc_AuditEngine_Slide_Deck.pdf)
 
 ---
 
-## 1. Pre-Demo Environment Readiness Checklist (T-Minus 10 Minutes)
+## 1. Pre-Demo Verification Checklist (5 Minutes Before Presenting)
 
-- [x] **1. Verify Python & Dependencies:** Python 3.14.3 environment active with `fastapi`, `uvicorn`, `scikit-learn`, `pydantic`, `pytest`.
-- [x] **2. Run Pre-Flight PyTest Suite:**
+- [x] **1. Rerun PyTest Suite Locally:**
   ```powershell
-  cd C:\projects\linkific\internship\Day-29
-  python -m pytest tests -v
+  python -m pytest tests -q
   ```
-  *Confirm output reads `25 passed` in `< 2.0s`.*
-- [x] **3. Launch Localhost Server via Application-Control Safe Runner:**
+  - Verify output matches **Day 29: `28 passed`** / **Day 30: `33 passed`** (*all collected tests passed*).
+- [x] **2. Start the Local FastAPI Server:**
   ```powershell
   python run_server.py
   ```
-  *Confirm Uvicorn is listening on `http://127.0.0.1:8000`.*
-- [x] **4. Open Browser Tabs in Advance:**
-  - Tab 1: **Institutional Audit Workbench** — `http://127.0.0.1:8000/dashboard`
-  - Tab 2: **Swagger OpenAPI Specification** — `http://127.0.0.1:8000/docs`
-  - Tab 3: **System Health & Model Telemetry** — `http://127.0.0.1:8000/health`
-- [x] **5. Terminal Window Arrangement:** Keep PowerShell open alongside the browser so mentors can see live server logs (`Privacy Gate`, `Reconciliation`, `ML Scorer`, `Governance Router`) stream on every click.
+  - Confirm `http://127.0.0.1:8000` loads the Institutional Editorial Light UI and `http://127.0.0.1:8000/health` returns `"status": "healthy"`.
+- [x] **3. Open Presentation & Video Assets:**
+  - Open [`FinDoc_AuditEngine_Presentation_Slides.pptx`](./FinDoc_AuditEngine_Presentation_Slides.pptx) (or use Tab 2's built-in Slide Deck & 15:00 Timer in the browser).
+  - Have a terminal window visible alongside the browser to show live structured logs during the 3 invoice scenarios.
 
 ---
 
-## 2. Five-Act Live Mentor Demo Script (Step-by-Step)
+## 2. Step-by-Step 5-Minute Live Demo Script (3 Representative Scenarios)
 
-### Act 1: System Telemetry & Institutional UI Tour (1.5 Minutes)
-1. Show `http://127.0.0.1:8000/health` to confirm `IsolationForest_v2.0`, `Perturbation_Marginal_XAI_7D`, and `pegged_usd_to_inr: 86.5`.
-2. Switch to `http://127.0.0.1:8000/dashboard`. Point out the clean institutional light grid, `IBM Plex Mono` tabular numerals, and the 5-column KPI strip at the top.
+### Step A: Scenario 1 — Clean Invoice (`INV-1001`) [1.5 Minutes]
+1. In the web workbench at `http://127.0.0.1:8000`, click **`Scenario 1: Clean STP ($432)`**.
+2. Point out that `SKU-A101` bills `2` units at `$180.00`, matching `PO-9001` (`$180.00`) and the GRN (`2 received, 0 rejected`).
+3. Click **`Execute 3-Way Audit & ML Risk Scoring`**.
+4. Highlight the result: **`TIER_1_STP_AUTO_APPROVED`**, `$0.00` price variance, engineered risk indicator `25.0 / 100 (LOW)`, and show the matching terminal log line.
 
-### Act 2: One-Click 5-Scenario Enterprise Batch Execution (2 Minutes)
-1. Click **"Run 5-Scenario Batch"** in the top-right command bar.
-2. Point out how the KPI strip immediately updates:
-   - **Total Invoices Audited:** `5`
-   - **Disbursed Capital (USD):** `$32,292.00`
-   - **Disbursed Capital (INR):** `INR 2,793,258.00`
-   - **Straight-Through Rate (STP):** `20.0%`
-   - **Held / Blocked Exceptions:** `2`
-3. Use the **Filter Tabs** (`Tier 1 STP`, `Tier 2 Manager`, `Tier 3 Director`, `Rejected`, `Frozen Fraud`) in the bottom ledger and click **"Inspect"** on `INV-1005` to show the slide-over cryptographic JSON Audit Dossier.
+### Step B: Scenario 2 — Price Discrepancy (`INV-1004` + Dynamic Table Edit) [2 Minutes]
+1. Click **`Scenario 4: Price Discrepancy ($5.4k)`** (`INV-1004` from `Overcharge Technologies`).
+2. Point out that `SKU-D404` bills `10` units at **`$450.00`** against a PO contract rate of **`$400.00`**.
+3. Click **`Execute 3-Way Audit & ML Risk Scoring`**.
+4. Highlight the result: **`REJECTED_DISCREPANCY`** (`Authorized = False`), `+$500.00 USD` (`INR 43,250.00`) price variance, and the Perturbation Attribution bar highlighting `Unit Rate Markup Ratio`.
+5. **Live Dynamic Proof:** Change the Invoice Rate or `GRN Rej` cell directly in the table and click **`Execute`** again to show the variance and risk indicator updating dynamically.
 
-### Act 3: Proving 100% Dynamic Execution on Arbitrary Custom Inputs (3 Minutes)
-1. Click **"New Blank"** or **"Synthesize Random Invoice"** in Panel 1.
-2. Add a second line item using **`+ Add Line Item`**:
-   - Row 1: `SKU-SRV`, `Dell PowerEdge Server`, Inv Rate `$4,200`, PO Rate `$4,000` (`+$200` overcharge), Qty `2`, GRN Recv `2`, GRN Rej `0`.
-   - Row 2: `SKU-NIC`, `100GbE Fiber Transceiver`, Inv Rate `$300`, PO Rate `$300`, Qty `5`, GRN Recv `5`, GRN Rej `2` (`2 damaged at dock`).
-3. Point out the **Live Pre-Audit Calculation Strip** updating as you type:
-   - `Projected Rate Variance` and `Projected Dock Shortage` turn crimson before submission.
-4. Click **"Execute 3-Way Reconciliation & Isolation Forest Audit"**.
-5. In Panel 2, show the **Per-Item Reconciliation Verification Table** (flagging `RATE_VARIANCE` on Row 1 and `QTY_SHORTAGE` on Row 2) and the **Perturbation Feature Attribution Bars** dynamically calculated for your custom input.
+### Step C: Scenario 3 — Critical-Risk Anomaly (`INV-1005`) [1.5 Minutes]
+1. Click **`Scenario 5: Offshore Fraud ($49.5k)`** (`INV-1005` from `Shadow Island Holding BZ`).
+2. Point out that the price (`$49,500`) and quantity (`1`) match `PO-9005` on paper.
+3. Click **`Execute 3-Way Audit & ML Risk Scoring`**.
+4. Highlight why the hybrid design matters: even though 3-way matching passes, the 7-D Isolation Forest scores the invoice at **`99.0 / 100 (CRITICAL)`** due to offshore jurisdiction (`BZ`), `Net-1` rush payment terms, and `$49,500` scale, routing it to **`FROZEN_FRAUD_RISK`**.
 
-### Act 4: Unstructured Free-Text Parsing & PII Redaction (1.5 Minutes)
-1. Click **"Paste Raw Text / PII"** in Panel 1.
-2. Paste:
-   `Invoice INV-7742 from Horizon Cybernetics Pvt Ltd; PO: PO-7742; Total: $890.00; Country: IN; Contact: priya.billing@horizon.in; Tax PAN: ABCDE1234F; Account: 987654321099`
-3. Click **"Extract Fields & Scrub PII"**. Show the green confirmation banner proving that 3 PII tokens (`EMAIL`, `PAN`, `ACCOUNT`) were masked and the form fields were populated automatically.
-4. Click **"Execute 3-Way Reconciliation & Isolation Forest Audit"** to watch it route to `TIER_1_STP_AUTO_APPROVED`.
+---
 
-### Act 5: Compliance CSV Export & CLI Mentor Demo Runner (2 Minutes)
-1. Click **"Export CSV"** in the top command bar to download `FinDoc_Audit_Compliance_Ledger.csv`.
-2. Switch to the terminal and run the automated CLI mentor script:
-   ```powershell
-   python run_mentor_demo.py
-   ```
-   Show the 5-stage formatted terminal walkthrough and 25/25 test verification.
+## 3. Recorded Video Walkthrough Summary (`FinDoc_AuditEngine_Demo_Walkthrough.mp4`)
+
+The recorded `.mp4` video in `docs/FinDoc_AuditEngine_Demo_Walkthrough.mp4` (`1280x720` H.264) captures:
+- **00:00 – 00:06:** Dashboard UI & 4-Stage Prototype Architecture Overview
+- **00:06 – 00:12:** Scenario 1 (`INV-1001` Clean Invoice -> `TIER_1_STP_AUTO_APPROVED`) + Terminal Log
+- **00:12 – 00:18:** Scenario 2 (`INV-1004` Price Discrepancy `+$500` -> `REJECTED_DISCREPANCY`) + Terminal Log
+- **00:18 – 00:24:** Scenario 3 (`INV-1005` Offshore Critical Anomaly `99.0/100` -> `FROZEN_FRAUD_RISK`) + Perturbation Bars
+- **00:24 – 00:30:** Terminal PyTest Execution (`Day 29: 28 passed`, `Day 30: 33 passed`) & Prototype Limitations

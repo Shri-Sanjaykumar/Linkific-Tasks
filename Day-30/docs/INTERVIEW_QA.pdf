@@ -16,7 +16,7 @@ endobj
 << /Type /Pages /Kids [8 0 R 11 0 R 14 0 R] /Count 3 >>
 endobj
 6 0 obj
-<< /Length 11843 >>
+<< /Length 14743 >>
 stream
 0.060 0.090 0.160 rg 0.00 814.00 595.28 28.00 re f
 BT /F2 8.20 Tf 0.950 0.970 1.000 rg 1 0 0 1 38.00 824.00 Tm (LINKIFIC ENTERPRISE AI/ML ENGINEERING INTERNSHIP  |  SHRI SANJAYKUMAR V \(VIT VELLORE\)) Tj ET
@@ -24,97 +24,146 @@ BT /F3 8.00 Tf 0.750 0.820 0.920 rg 1 0 0 1 382.27 824.00 Tm (Day 29 Deliverable
 0.40 w 0.700 0.750 0.820 RG 38.00 36.00 m 557.00 36.00 l S
 BT /F1 7.80 Tf 0.350 0.400 0.480 rg 1 0 0 1 38.00 24.00 Tm (FinDoc-AuditEngine v3.0  |  github.com/Shri-Sanjaykumar/Linkific-Tasks  |  linkedin.com/in/shri-sanjaykumar-v-588bab28a) Tj ET
 BT /F2 8.00 Tf 0.200 0.250 0.330 rg 1 0 0 1 530.25 24.00 Tm (Page 1) Tj ET
-BT /F2 14.00 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 790.00 Tm (Day 29 Deliverable: 10 Technical Interview Questions & Answers \(FinDoc-AuditEngine v3.0\)) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 767.00 Tm (Project: FinDoc-AuditEngine – Enterprise 3-Way Financial Reconciliation, Dynamic ML Anomaly Attribution & Multi-Tier) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 755.50 Tm (Governance Gateway) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 744.00 Tm (Candidate: Shri Sanjaykumar V) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 732.50 Tm (Organization: Linkific Technology Solutions Pvt Ltd) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 721.00 Tm (Target Duration: 10–15 Minute Technical Defense & Mentor Q&A) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 691.50 Tm (Question 1: Walk me through the end-to-end architecture and request lifecycle of FinDoc-AuditEngine when an arbitrary invoice is submitted.) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 688.50 m 557.00 688.50 l S
-BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 669.50 Tm (Answer:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 656.50 Tm (When a client or ERP webhook submits an invoice payload to POST /api/v1/audit/process \(or extracts fields via POST) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 645.00 Tm (/api/v1/audit/parse-raw\), the request passes through a 4-stage deterministic + probabilistic pipeline instrumented with) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 633.50 Tm (sub-millisecond stage telemetry:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 617.00 Tm (1. Stage 1 – Pre-Inference Responsible AI Privacy Gate \(FinancialPrivacyScrubber\):) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 605.50 Tm (Before any feature extraction or database persistence occurs, pre-compiled regular expressions scan unstructured text and) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 594.00 Tm (metadata fields for Indian PAN numbers \([A-Z]{5}[0-9]{4}[A-Z]{1}\), 12-digit Aadhaar IDs, emails, phone numbers, credit) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 582.50 Tm (cards, and bank account numbers. Sensitive tokens are replaced with deterministic surrogates \([PAN_01], [EMAIL_01]\),) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 571.00 Tm (preventing PII leakage into downstream ML logs.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 559.50 Tm (2. Stage 2 – Deterministic 3-Way Reconciliation Engine \(ReconciliationMatcher\):) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 548.00 Tm (Cross-verifies the Vendor Invoice against the ERP Purchase Order \(PO\) and Dock Goods Receipt Note \(GRN\) at the individual) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 536.50 Tm (line-item level \(item_id\). For every item, it computes:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 525.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 525.00 Tm (Unit) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 70.92 525.00 Tm (Rate) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 92.90 525.00 Tm (Delta:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 119.49 525.00 Tm ($\\Delta) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 151.19 525.00 Tm (P_i) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 167.05 525.00 Tm (=) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 174.98 525.00 Tm (P_{\\text{inv},) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 235.12 525.00 Tm (i}) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 244.59 525.00 Tm (-) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 250.21 525.00 Tm (P_{\\text{po},) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 308.83 525.00 Tm (i}$) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 513.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 513.50 Tm (Accepted) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 92.91 513.50 Tm (Dock) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 116.43 513.50 Tm (Quantity:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 155.80 513.50 Tm ($Q_{\\text{acc},) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 224.64 513.50 Tm (i}) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 234.11 513.50 Tm (=) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 242.04 513.50 Tm (\\max\(0,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 275.27 513.50 Tm (Q_{\\text{grn\\_recv},) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 363.02 513.50 Tm (i}) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 372.50 513.50 Tm (-) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 378.12 513.50 Tm (Q_{\\text{grn\\_rej},) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 458.71 513.50 Tm (i}\)$) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 502.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 502.00 Tm (Quantity) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 88.82 502.00 Tm (Shortage:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 131.27 502.00 Tm ($\\Delta) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 162.97 502.00 Tm (Q_i) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 179.84 502.00 Tm (=) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 187.77 502.00 Tm (\\max\(0,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 221.00 502.00 Tm (Q_{\\text{billed},) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 291.88 502.00 Tm (i}) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 301.36 502.00 Tm (-) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 306.98 502.00 Tm (Q_{\\text{acc},) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 370.70 502.00 Tm (i}\)$) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 490.50 Tm (It also checks for unlisted/phantom line items and header total discrepancies, returning a structured MatchResult with per-item) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 479.00 Tm (diff records \(ItemReconciliationDiff\).) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 467.50 Tm (3. Stage 3 – Multivariate ML Anomaly Scoring & Perturbation XAI \(AnomalyScorer\):) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 456.00 Tm (Extracts a 7-dimensional continuous feature vector \(log-transformed amount, percentage rate markup, percentage dock) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 444.50 Tm (shortage, tax rate deviation, payment window urgency ratio, vendor onboarding profile, and sovereign AML jurisdiction index\).) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 433.00 Tm (The vector is standardized via StandardScaler and evaluated by a 200-tree IsolationForest trained on 1,000 historical AP) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 421.50 Tm (transactions. Using single-feature perturbation attribution, the engine measures how much replacing each feature with its) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 410.00 Tm (compliant baseline median shifts the Isolation Forest decision function, producing a calibrated 0–100 risk score and top-5) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 398.50 Tm (explainable feature contributions.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 387.00 Tm (4. Stage 4 – Multi-Tier Corporate Governance Router \(ApprovalRouter\):) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 375.50 Tm (Combines deterministic reconciliation status, calibrated ML risk level, and corporate authority thresholds \(pegged at 1 USD =) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 364.00 Tm (86.50 INR\) to route the invoice into one of five tiers \(TIER_1_STP_AUTO_APPROVED, TIER_2_MANAGER_REVIEW,) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 352.50 Tm (TIER_3_DIRECTOR_SIGNOFF, REJECTED_DISCREPANCY, or FROZEN_FRAUD_RISK\) and appends the cryptographic) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 341.00 Tm (AuditDecision to the immutable ledger.) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 311.50 Tm (Question 2: Why did you choose an unsupervised IsolationForest with a 7-feature continuous pipeline instead of a supervised classifier like XGBoost or Logistic Regression?) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 308.50 m 557.00 308.50 l S
-BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 289.50 Tm (Answer:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 276.50 Tm (In enterprise Accounts Payable auditing, supervised fraud classification suffers from three fundamental production bottlenecks:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 265.00 Tm (1. Extreme Class Imbalance & Label Scarcity: Fraudulent or structurally anomalous invoices represent < 0.5% of enterprise) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 253.50 Tm (volume, and verified audit labels take months of forensic accounting to confirm.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 242.00 Tm (2. Adversarial & Novel Fraud Patterns: Supervised models only recognize historical fraud signatures they were trained on. If a) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 230.50 Tm (vendor invents a new billing scheme \(e.g., splitting items, manipulating net-1 due dates, or routing through a newly) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 219.00 Tm (incorporated offshore jurisdiction\), a supervised model often fails to generalize.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 207.50 Tm (3. Why Isolation Forest Works Best Here: IsolationForest isolates observations by randomly selecting one of the 7) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 196.00 Tm (standardized features and randomly selecting a split value between the minimum and maximum of that feature. Anomalous) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 184.50 Tm (invoices \(such as an unvetted vendor billing $49,500 from Belize or a 25% unit price markup\) sit in sparse regions of the 7D) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 173.00 Tm (feature space and require significantly shorter average path lengths $E\(h\(x\)\)$ from the root node to isolate. By pairing) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 161.50 Tm (StandardScaler with IsolationForest\(n_estimators=200\) and continuous behavioral ratios \(rather than hardcoded scenario) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 150.00 Tm (rules\), the model dynamically scores any unseen real-world invoice in < 1.5 ms.) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 120.50 Tm (Question 3: How does your Explainable AI \(XAI\) Feature Contribution calculation work, and why is it necessary for financial auditors?) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 117.50 m 557.00 117.50 l S
-BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 98.50 Tm (Answer:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 85.50 Tm (A raw anomaly score \(e.g., 70.0 / 100\) is unactionable for a Finance Manager or external SOX auditor–they must know *why*) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 74.00 Tm (the model flagged the transaction.) Tj ET
+BT /F2 14.00 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 790.00 Tm (10 Technical Interview Questions & Answers – FinDoc-AuditEngine v3.0) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 767.00 Tm (Prepared For: Linkific Day 29 & Day 30 Technical Review & Mentor Panel) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 755.50 Tm (Candidate: Shri Sanjaykumar V \(M.Tech Integrated in Software Engineering, VIT Vellore\)) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 744.00 Tm (Verified Test Suite Status: Day 29: 28 passed \(python -m pytest tests -q\) | Day 30: 33 passed \(python -m pytest tests -q\) – *all) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 732.50 Tm (collected tests passed*) Tj ET
+BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 703.00 Tm (Question 1: System Architecture) Tj ET
+0.50 w 0.150 0.230 0.350 RG 38.00 700.00 m 557.00 700.00 l S
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 688.00 Tm (Q: Walk us through the end-to-end architecture of FinDoc-AuditEngine v3.0 when an invoice is submitted.) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 676.50 Tm (Answer:) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 665.00 Tm (When POST /api/v1/audit/process receives an invoice and Purchase Order payload, it executes a 4-stage sequential pipeline:) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 653.50 Tm (1. Pydantic v2 Schema Validation \(app/models.py\): Validates data types, positive quantities/prices, date ordering, and verifies) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 642.00 Tm (that line-item subtotals plus tax match total_amount_usd within a $0.05 tolerance.) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 630.50 Tm (2. Pre-Inference Regex PII Masking \(app/core/privacy.py\): FinancialPrivacyScrubber scans contact/tax fields against 6) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 619.00 Tm (configured regex patterns \(PAN, Aadhaar format, Bank Account, Credit Card, Phone, Email\) and replaces matches with) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 607.50 Tm (indexed surrogates \([PAN_01]\).) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 596.00 Tm (3. Deterministic 3-Way Reconciliation \(app/services/matcher.py\): ReconciliationMatcher compares each invoice SKU against) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 584.50 Tm (the PO unit price and Goods Receipt Note \(GRN\) net accepted quantity \(received - rejected\).) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 573.00 Tm (4. 7-D Isolation Forest & Approval Routing \(app/services/anomaly_detector.py & app/services/router.py\): AnomalyScorer) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 561.50 Tm (computes a 0–100 engineered anomaly-risk indicator and perturbation feature attributions, after which ApprovalRouter assigns) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 550.00 Tm (one of 5 governance tiers and appends the result to the prototype's in-memory AUDIT_LEDGER list.) Tj ET
+BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 520.50 Tm (Question 2: Why Isolation Forest Was Selected) Tj ET
+0.50 w 0.150 0.230 0.350 RG 38.00 517.50 m 557.00 517.50 l S
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 505.50 Tm (Q: Why did you choose an unsupervised IsolationForest model alongside deterministic 3-way matching rules?) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 494.00 Tm (Answer:) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 482.50 Tm (Deterministic 3-way matching rules are ideal for enforcing known contract constraints–such as catching when a vendor bills) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 471.00 Tm ($450/unit against a $400/unit PO–because accounting rules require exact arithmetic. However, deterministic rules cannot flag) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 459.50 Tm (an invoice that matches its PO on price and quantity yet exhibits unusual multi-feature characteristics \(for example, INV-1005:) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 448.00 Tm (a $49,500 invoice from a high-risk offshore jurisdiction BZ demanding a Net-1 rush payment just below a $50,000 sign-off) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 436.50 Tm (threshold\). We selected IsolationForest because in procurement auditing, labeled fraud examples are rare, and isolation trees) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 425.00 Tm (effectively isolate unusual multivariate combinations without requiring labeled training classes.) Tj ET
+BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 395.50 Tm (Question 3: Feature Engineering & Scaling) Tj ET
+0.50 w 0.150 0.230 0.350 RG 38.00 392.50 m 557.00 392.50 l S
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 380.50 Tm (Q: Which features are used by AnomalyScorer, and why did you apply $\\ln\(1 + \\text{Total}_{\\text{USD}}\)$ and) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 369.00 Tm (StandardScaler?) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 357.50 Tm (Answer:) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 346.00 Tm (We engineered 7 continuous features:) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 334.50 Tm (1. log_total_usd: $\\ln\(1 + \\text{Total}_{\\text{USD}}\)$) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 323.00 Tm (2. price_variance_ratio: price variance divided by PO subtotal) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 311.50 Tm (3. qty_shortage_ratio: missing/rejected dock units divided by billed units) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 300.00 Tm (4. tax_rate_deviation: $|\\text{tax\\_rate} - 0.18|$) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 288.50 Tm (5. line_item_concentration: largest line item share of invoice subtotal) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 277.00 Tm (6. jurisdiction_risk_weight: country risk factor \(0.05 domestic to 1.00 offshore tax haven\)) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 265.50 Tm (7. payment_urgency_index: urgency score for short payment windows \(Net-1 to Net-3\)) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 249.00 Tm (We apply $\\ln\(1 + x\)$ to compress heavy-tailed invoice dollar amounts \($400 to $50,000+\) and wrap the model in) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 237.50 Tm (StandardScaler \($\\mu=0, \\sigma=1$\) so that raw dollar magnitude does not dominate bounded ratios \(0.0–1.0\) when) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 226.00 Tm (IsolationForest draws random split thresholds and when we compute perturbation distances.) Tj ET
+BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 196.50 Tm (Question 4: Risk-Score Interpretation & Synthetic Baseline Scope) Tj ET
+0.50 w 0.150 0.230 0.350 RG 38.00 193.50 m 557.00 193.50 l S
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 181.50 Tm (Q: Is the model trained on actual historical Linkific invoices, and does a score of 99.0/100 mean a 99% probability of fraud?) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 170.00 Tm (Answer:) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 158.50 Tm (No to both–and this is an important distinction:) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 147.00 Tm (•) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 147.00 Tm (Synthetic) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 92.40 147.00 Tm (Baseline:) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 132.79 147.00 Tm (The) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 151.20 147.00 Tm (IsolationForest) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 214.09 147.00 Tm (model) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 241.70 147.00 Tm (is) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 250.90 147.00 Tm (trained) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 281.59 147.00 Tm (at) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 291.82 147.00 Tm (startup) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 322.50 147.00 Tm (on) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 335.29 147.00 Tm (a) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 342.96 147.00 Tm (reproducible) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 396.14 147.00 Tm (seeded) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 428.87 147.00 Tm (synthetic) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 467.73 147.00 Tm (baseline) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 504.55 147.00 Tm (of) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 514.78 147.00 Tm (1,000) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 135.50 Tm (transaction-like) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 116.42 135.50 Tm (records) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 149.65 135.50 Tm (\(random_state=42\)) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 230.19 135.50 Tm (created) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 263.43 135.50 Tm (to) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 273.66 135.50 Tm (demonstrate) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 327.35 135.50 Tm (financial) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 363.65 135.50 Tm (anomaly) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 400.97 135.50 Tm (scoring.) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 435.74 135.50 Tm (Before) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 465.40 135.50 Tm (any) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 482.79 135.50 Tm (production) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 124.00 Tm (deployment,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 104.67 124.00 Tm (the) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 120.02 124.00 Tm (model) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 147.62 124.00 Tm (and) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 165.53 124.00 Tm (its) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 177.29 124.00 Tm (thresholds) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 222.28 124.00 Tm (would) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 248.87 124.00 Tm (need) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 271.89 124.00 Tm (to) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 282.12 124.00 Tm (be) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 294.91 124.00 Tm (trained,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 328.15 124.00 Tm (evaluated,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 373.15 124.00 Tm (and) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 391.06 124.00 Tm (calibrated) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 433.50 124.00 Tm (on) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 446.28 124.00 Tm (representative,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 509.69 124.00 Tm (authorized) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 112.50 Tm (real-world) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 94.94 112.50 Tm (invoice) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 126.12 112.50 Tm (data.) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 101.00 Tm (•) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 101.00 Tm (Engineered) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 101.61 101.00 Tm (Anomaly-Risk) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 160.90 101.00 Tm (Indicator:) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 201.30 101.00 Tm (The) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 219.71 101.00 Tm (0–100) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 247.60 101.00 Tm (score) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 272.65 101.00 Tm (is) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 281.85 101.00 Tm (a) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 289.53 101.00 Tm (piecewise-linear) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 358.03 101.00 Tm (mapping) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 395.87 101.00 Tm (of) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 406.10 101.00 Tm (the) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 421.44 101.00 Tm (Isolation) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 458.26 101.00 Tm (Forest) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 89.50 Tm (decision_function) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 125.64 89.50 Tm (margin) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 156.31 89.50 Tm (combined) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 198.75 89.50 Tm (with) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 217.66 89.50 Tm (rule) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 235.56 89.50 Tm (adjustments.) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 290.27 89.50 Tm (It) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 297.94 89.50 Tm (is) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 307.14 89.50 Tm (an) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 319.93 89.50 Tm (engineered) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 368.52 89.50 Tm (anomaly-risk) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 423.21 89.50 Tm (indicator) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 460.54 89.50 Tm (used) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 483.04 89.50 Tm (to) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 493.27 89.50 Tm (prioritize) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 78.00 Tm (human) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 82.68 78.00 Tm (review,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 114.38 78.00 Tm (not) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 129.72 78.00 Tm (a) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 137.39 78.00 Tm (calibrated) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 179.83 78.00 Tm (statistical) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 220.22 78.00 Tm (probability) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 264.70 78.00 Tm (of) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 274.93 78.00 Tm (fraud.) Tj ET
 endstream
 endobj
 7 0 obj
@@ -124,7 +173,7 @@ endobj
 << /Type /Page /Parent 5 0 R /MediaBox [0 0 595.276 841.890] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 6 0 R /Annots [7 0 R] >>
 endobj
 9 0 obj
-<< /Length 19965 >>
+<< /Length 14367 >>
 stream
 0.060 0.090 0.160 rg 0.00 814.00 595.28 28.00 re f
 BT /F2 8.20 Tf 0.950 0.970 1.000 rg 1 0 0 1 38.00 824.00 Tm (LINKIFIC ENTERPRISE AI/ML ENGINEERING INTERNSHIP  |  SHRI SANJAYKUMAR V \(VIT VELLORE\)) Tj ET
@@ -132,213 +181,141 @@ BT /F3 8.00 Tf 0.750 0.820 0.920 rg 1 0 0 1 382.27 824.00 Tm (Day 29 Deliverable
 0.40 w 0.700 0.750 0.820 RG 38.00 36.00 m 557.00 36.00 l S
 BT /F1 7.80 Tf 0.350 0.400 0.480 rg 1 0 0 1 38.00 24.00 Tm (FinDoc-AuditEngine v3.0  |  github.com/Shri-Sanjaykumar/Linkific-Tasks  |  linkedin.com/in/shri-sanjaykumar-v-588bab28a) Tj ET
 BT /F2 8.00 Tf 0.200 0.250 0.330 rg 1 0 0 1 530.25 24.00 Tm (Page 2) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 790.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 790.00 Tm (Perturbation-Based) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 133.82 790.00 Tm (Marginal) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 171.65 790.00 Tm (Attribution:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 218.18 790.00 Tm (For) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 234.54 790.00 Tm (any) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 251.93 790.00 Tm (incoming) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 291.29 790.00 Tm (7-dimensional) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 351.11 790.00 Tm (feature) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 382.31 790.00 Tm (vector) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 409.92 790.00 Tm ($x) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 422.19 790.00 Tm (=) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 430.12 790.00 Tm ([x_1,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 452.62 790.00 Tm (x_2,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 472.57 790.00 Tm (\\dots,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 497.63 790.00 Tm (x_7]$,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 525.25 790.00 Tm (we) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 539.56 790.00 Tm (first) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 778.50 Tm (compute) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 89.84 778.50 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 105.19 778.50 Tm (raw) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 122.56 778.50 Tm (Isolation) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 159.38 778.50 Tm (Forest) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 188.01 778.50 Tm (decision) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 224.32 778.50 Tm (score) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 249.37 778.50 Tm ($S\(x\)$.) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 281.58 778.50 Tm (Then,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 307.66 778.50 Tm (for) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 320.95 778.50 Tm (each) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 343.46 778.50 Tm (feature) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 374.65 778.50 Tm ($i) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 384.37 778.50 Tm (\\in) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 396.64 778.50 Tm (\\{1..7\\}$,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 437.08 778.50 Tm (we) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 451.40 778.50 Tm (construct) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 491.28 778.50 Tm (a) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 498.95 778.50 Tm (counterfactual) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 767.00 Tm (vector) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 79.61 767.00 Tm ($x^{\(-i\)}$) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 122.30 767.00 Tm (where) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 149.91 767.00 Tm (feature) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 181.10 767.00 Tm ($i$) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 195.93 767.00 Tm (is) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 205.13 767.00 Tm (replaced) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 242.97 767.00 Tm (by) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 255.25 767.00 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 270.59 767.00 Tm (historical) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 309.44 767.00 Tm (compliant) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 351.37 767.00 Tm (median) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 384.09 767.00 Tm ($\\bar{x}_i$,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 436.80 767.00 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 454.70 767.00 Tm (compute) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 492.54 767.00 Tm ($S\(x^{\(-i\)}\)$.) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 755.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 755.50 Tm (The) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 70.41 755.50 Tm (marginal) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 108.24 755.50 Tm (anomaly) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 145.56 755.50 Tm (impact) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 175.22 755.50 Tm ($\\Delta) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 206.92 755.50 Tm (S_i) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 222.77 755.50 Tm (=) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 230.70 755.50 Tm (\\max\(0,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 263.93 755.50 Tm (S\(x^{\(-i\)}\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 308.65 755.50 Tm (-) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 314.27 755.50 Tm (S\(x\)\)$) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 341.87 755.50 Tm (quantifies) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 383.81 755.50 Tm (exactly) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 415.00 755.50 Tm (how) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 434.43 755.50 Tm (much) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 459.48 755.50 Tm (feature) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 490.67 755.50 Tm ($i$) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 505.50 755.50 Tm (pushed) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 538.24 755.50 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 744.00 Tm (transaction) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 99.55 744.00 Tm (toward) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 129.72 744.00 Tm (outlier) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 157.33 744.00 Tm (territory.) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 732.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 732.50 Tm (We) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 68.36 732.50 Tm (combine) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 105.68 732.50 Tm (these) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 130.74 732.50 Tm (marginal) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 168.57 732.50 Tm (isolation) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 204.88 732.50 Tm (shifts) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 228.91 732.50 Tm (with) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 247.82 732.50 Tm (normalized) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 295.37 732.50 Tm (structural) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 335.76 732.50 Tm (deviations) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 379.73 732.50 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 397.63 732.50 Tm (allocate) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 431.90 732.50 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 447.24 732.50 Tm (calibrated) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 489.68 732.50 Tm (0–100) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 517.58 732.50 Tm (risk) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 721.00 Tm (points) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 79.10 721.00 Tm (proportionally) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 136.88 721.00 Tm (across) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 166.53 721.00 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 181.88 721.00 Tm (features.) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 220.23 721.00 Tm (This) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 240.17 721.00 Tm (allows) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 268.28 721.00 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 283.63 721.00 Tm (UI) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 295.39 721.00 Tm (to) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 305.62 721.00 Tm (render) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 334.76 721.00 Tm (a) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 342.43 721.00 Tm (transparent) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 391.53 721.00 Tm (breakdown) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 439.08 721.00 Tm (\(e.g.,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 462.61 721.00 Tm (+28.4) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 488.44 721.00 Tm (pts) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 503.27 721.00 Tm (from) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 709.50 Tm (Jurisdiction) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 100.57 709.50 Tm (AML) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 122.04 709.50 Tm (Index,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 149.66 709.50 Tm (+21.2) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 175.49 709.50 Tm (pts) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 190.32 709.50 Tm (from) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 211.28 709.50 Tm (Vendor) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 243.50 709.50 Tm (Onboarding) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 294.13 709.50 Tm (Profile\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 325.82 709.50 Tm (for) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 339.11 709.50 Tm (any) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 356.50 709.50 Tm (arbitrary) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 392.80 709.50 Tm (input.) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 680.00 Tm (Question 4: How did you ensure the system handles completely dynamic, arbitrary real-world inputs rather than only fixed demo scenarios?) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 677.00 m 557.00 677.00 l S
-BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 658.00 Tm (Answer:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 645.00 Tm (We architected both the frontend workbench and backend engines to be 100% input-agnostic and continuous:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 633.50 Tm (1. Dynamic Multi-Line Table Editor in the DOM: Every cell in the 3-way reconciliation table \(Item Code, Description, Invoice) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 622.00 Tm (Unit Rate, PO Rate, Billed Qty, GRN Received, GRN Rejected\) is a live editable input. Users can add unlimited line items \(+) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 610.50 Tm (Add Line Item\), delete rows, toggle whether an ERP Purchase Order exists, change settlement dates, or adjust tax amounts.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 599.00 Tm (2. Real-Time Client-Side Pre-Calculation: As the user types in any cell, recalculateDynamicTotals\(\) immediately computes the) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 587.50 Tm (subtotal, tax, USD total, INR total \(@ 86.50\), projected rate variance, and dock shortage before submission.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 576.00 Tm (3. Unstructured Free-Text Parser \(POST /api/v1/audit/parse-raw\): Users can paste raw invoice text containing emails, PANs,) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 564.50 Tm (Aadhaar numbers, and dollar figures; the backend dynamically scrubs PII and extracts structured invoice fields into the) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 553.00 Tm (workbench.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 541.50 Tm (4. Continuous Ratio Features: Because the ML engine operates on ratios \(price_markup_pct, qty_shortage_pct, log_amount,) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 530.00 Tm (payment_terms_urgency\), it evaluates a $312.50 4-item stationery invoice or a $185,000 12-item server invoice with equal) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 518.50 Tm (mathematical rigor.) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 489.00 Tm (Question 5: How does the 3-Way Reconciliation Engine handle partial dock deliveries, damaged goods, and multi-item price variances simultaneously?) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 486.00 m 557.00 486.00 l S
-BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 467.00 Tm (Answer:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 454.00 Tm (In ReconciliationMatcher.match\(\), we build an $O\(N\)$ hash map of the Purchase Order line items keyed by item_id. For each) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 442.50 Tm (billed line item on the invoice:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 431.00 Tm (1. Unlisted / Phantom Item Check: If inv_item.item_id is absent from po_item_map, the entire line item total) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 419.50 Tm (\(inv_item.total_price_usd\) and quantity are flagged as UNLISTED_ITEM variance.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 408.00 Tm (2. Unit Price Verification: We compute price_diff = round\(inv_item.unit_price_usd - po_item.unit_price_usd, 2\). If |price_diff| >) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 396.50 Tm ($0.01, the rate variance price_diff * inv_item.quantity is accumulated.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 385.00 Tm (3. Dock GRN Acceptance Math: Physical dock receipts often include damaged units rejected by warehouse QA. We compute) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 373.50 Tm (accepted_qty = max\(0, grn_received - grn_rejected\). If inv_item.quantity > accepted_qty, the vendor is billing for unaccepted) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 362.00 Tm (goods \(qty_diff = inv_item.quantity - accepted_qty\), and we add qty_diff * po_item.unit_price_usd to the financial variance) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 350.50 Tm (while recording an explicit ItemReconciliationDiff row \(MATCHED, RATE_VARIANCE, QTY_SHORTAGE, or) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 339.00 Tm (RATE_AND_QTY_VARIANCE\).) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 309.50 Tm (Question 6: Why did you redesign the UI/UX away from dark neon gradients toward a high-contrast institutional light grid?) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 306.50 m 557.00 306.50 l S
-BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 287.50 Tm (Answer:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 274.50 Tm (Enterprise financial software used by Controllers, AP Clerks, and Internal Auditors \(such as Stripe, Ramp, Mercury, and SAP) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 263.00 Tm (Concur\) prioritizes information density, scannability, and typographic precision over decorative gradients:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 251.50 Tm (1. High-Contrast Editorial Light Palette \(#F8FAFC / #FFFFFF\): Reduces eye strain during long audit sessions and provides) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 240.00 Tm (clear visual hierarchy using 1px solid #E2E8F0 hairline borders rather than heavy drop-shadows.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 228.50 Tm (2. Tabular Monospace Typography \(IBM Plex Mono\): Financial figures, unit prices, variances, and exchange conversions use) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 217.00 Tm (font-variant-numeric: tabular-nums so decimals align vertically across every table column and KPI strip.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 205.50 Tm (3. Semantic Accounting Badges: Uses restrained, high-legibility status tags \(Forest Green #15803D on #F0FDF4 for STP,) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 194.00 Tm (Ochre #B45309 on #FFFBEB for Manager Review, Brick Crimson #B91C1C on #FEF2F2 for Rejected/Frozen\) that) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 182.50 Tm (immediately communicate compliance posture without visual noise.) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 153.00 Tm (Question 7: How is Responsible AI and PII Privacy enforced before data reaches the ML engine or audit ledger?) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 150.00 m 557.00 150.00 l S
-BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 131.00 Tm (Answer:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 118.00 Tm (Financial invoices routinely contain sensitive counterparty PII–such as Indian Income Tax PAN numbers, Aadhaar numbers,) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 106.50 Tm (corporate emails, phone numbers, and beneficiary bank accounts.) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 95.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 95.00 Tm (FinancialPrivacyScrubber) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 158.85 95.00 Tm (executes) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 198.22 95.00 Tm (at) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 208.46 95.00 Tm (Stage) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 235.05 95.00 Tm (1) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 242.73 95.00 Tm (\(Pre-Inference\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 307.14 95.00 Tm (using) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 331.69 95.00 Tm (pre-compiled) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 387.41 95.00 Tm (regex) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 412.98 95.00 Tm (patterns.) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 83.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 83.50 Tm (It) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 59.67 83.50 Tm (replaces) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 97.00 83.50 Tm (every) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 122.05 83.50 Tm (detected) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 159.90 83.50 Tm (PII) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 173.71 83.50 Tm (token) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 198.77 83.50 Tm (with) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 217.68 83.50 Tm (an) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 230.47 83.50 Tm (indexed) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 265.25 83.50 Tm (surrogate) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 306.67 83.50 Tm (\([PAN_01],) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 354.22 83.50 Tm ([EMAIL_01],) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 407.41 83.50 Tm ([AADHAAR_01]\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 477.96 83.50 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 495.86 83.50 Tm (returns) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 527.05 83.50 Tm (both) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 72.00 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 67.35 72.00 Tm (sanitized) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 106.21 72.00 Tm (string) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 131.26 72.00 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 149.16 72.00 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 164.51 72.00 Tm (exact) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 189.05 72.00 Tm (pii_redactions_made) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 276.49 72.00 Tm (count.) Tj ET
+BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 786.00 Tm (Question 5: Local Explainability \(Single-Feature Perturbation Attribution\)) Tj ET
+0.50 w 0.150 0.230 0.350 RG 38.00 783.00 m 557.00 783.00 l S
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 771.00 Tm (Q: How do you generate the feature contribution bars shown in the dashboard?) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 759.50 Tm (Answer:) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 748.00 Tm (For an invoice feature vector $\\mathbf{x} \\in \\mathbb{R}^7$ with risk score $R\(\\mathbf{x}\)$, we iterate over each feature $k) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 736.50 Tm (\\in \\{0,\\dots,6\\}$ and construct a counterfactual vector $\\mathbf{x}^{\(k \\leftarrow \\mu_k\)}$ where feature $k$ is replaced by) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 725.00 Tm (its synthetic normal baseline median $\\mu_k$. We re-evaluate the scorer and measure the marginal drop $\\Delta R_k =) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 713.50 Tm (\\max\(0, R\(\\mathbf{x}\) - R\(\\mathbf{x}^{\(k \\leftarrow \\mu_k\)}\)\)$. This shows the human reviewer which specific inputs \(e.g.,) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 702.00 Tm (Unit Rate Markup Ratio or Payment Window Urgency\) contributed most to the elevated anomaly indicator.) Tj ET
+BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 672.50 Tm (Question 6: Deterministic 3-Way Reconciliation Logic & Floating-Point Precision) Tj ET
+0.50 w 0.150 0.230 0.350 RG 38.00 669.50 m 557.00 669.50 l S
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 657.50 Tm (Q: How does ReconciliationMatcher handle partial dock rejections and floating-point tax math?) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 646.00 Tm (Answer:) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 634.50 Tm (For each invoice line item, ReconciliationMatcher looks up the corresponding SKU in the Purchase Order:) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 623.00 Tm (•) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 623.00 Tm (It) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 59.67 623.00 Tm (calculates) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 103.13 623.00 Tm (net) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 118.48 623.00 Tm (accepted) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 158.37 623.00 Tm (warehouse) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 205.93 623.00 Tm (units) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 227.91 623.00 Tm (as) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 240.19 623.00 Tm ($Q_{\\text{net}}) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 309.81 623.00 Tm (=) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 317.74 623.00 Tm (\\max\(0,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 350.97 623.00 Tm (Q_{\\text{received}}) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 437.46 623.00 Tm (-) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 443.08 623.00 Tm (Q_{\\text{rejected}}\)$.) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 538.27 623.00 Tm (If) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 611.50 Tm (billed_quantity) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 113.36 611.50 Tm (>) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 121.29 611.50 Tm (Q_net,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 151.47 611.50 Tm (it) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 158.63 611.50 Tm (records) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 191.86 611.50 Tm (a) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 199.53 611.50 Tm (QTY_SHORTAGE) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 277.75 611.50 Tm (variance) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 315.07 611.50 Tm (equal) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 340.13 611.50 Tm (to) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 350.37 611.50 Tm ($\(Q_{\\text{billed}}) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 431.74 611.50 Tm (-) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 437.36 611.50 Tm (Q_{\\text{net}}\)) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 504.93 611.50 Tm (\\times) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 600.00 Tm (P_{\\text{po}}$.) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 588.50 Tm (•) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 588.50 Tm (If) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 59.67 588.50 Tm (invoice.unit_price) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 133.30 588.50 Tm (-) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 138.92 588.50 Tm (po.unit_price) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 194.15 588.50 Tm (>) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 202.08 588.50 Tm ($0.01,) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 230.21 588.50 Tm (it) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 237.37 588.50 Tm (records) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 270.60 588.50 Tm (a) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 278.27 588.50 Tm (RATE_VARIANCE) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 357.51 588.50 Tm (equal) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 382.57 588.50 Tm (to) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 392.80 588.50 Tm ($Q_{\\text{billed}}) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 471.12 588.50 Tm (\\times) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 577.00 Tm (\(P_{\\text{inv}}) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 117.52 577.00 Tm (-) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 123.14 577.00 Tm (P_{\\text{po}}\)$.) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 565.50 Tm (•) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 565.50 Tm (To) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 65.29 565.50 Tm (avoid) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 89.84 565.50 Tm (IEEE) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 113.36 565.50 Tm (754) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 131.27 565.50 Tm (binary) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 158.88 565.50 Tm (floating-point) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 214.10 565.50 Tm (rounding) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 252.46 565.50 Tm (false) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 274.45 565.50 Tm (positives) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 312.79 565.50 Tm (\(such) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 337.84 565.50 Tm (as) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 350.12 565.50 Tm (3) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 357.79 565.50 Tm (*) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 363.93 565.50 Tm (19.99) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 389.50 565.50 Tm (*) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 395.64 565.50 Tm (1.18\),) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 421.72 565.50 Tm (line) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 438.59 565.50 Tm (totals) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 463.14 565.50 Tm (are) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 478.99 565.50 Tm (rounded) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 515.30 565.50 Tm (to) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 525.53 565.50 Tm (2) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 554.00 Tm (decimal) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 86.25 554.00 Tm (places) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 115.40 554.00 Tm (and) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 133.30 554.00 Tm (checked) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 170.12 554.00 Tm (against) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 202.34 554.00 Tm (a) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 210.01 554.00 Tm (configured) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 255.52 554.00 Tm (SUBTOTAL_TOLERANCE) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 367.99 554.00 Tm (=) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 375.92 554.00 Tm (0.05) Tj ET
+BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 396.38 554.00 Tm (\($0.05\).) Tj ET
+BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 524.50 Tm (Question 7: Pre-Inference PII Protection & Its Scope) Tj ET
+0.50 w 0.150 0.230 0.350 RG 38.00 521.50 m 557.00 521.50 l S
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 509.50 Tm (Q: How does your privacy scrubber work, and what are its limitations?) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 498.00 Tm (Answer:) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 486.50 Tm (FinancialPrivacyScrubber uses 6 compiled regular expressions to mask standard patterns for Emails, Indian PAN cards) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 475.00 Tm (\([A-Z]{5}[0-9]{4}[A-Z]{1}\), 12-digit Aadhaar-formatted numbers, Bank Account numbers following account keywords, 16-digit) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 463.50 Tm (Credit Cards, and 10-digit Indian phone numbers, replacing them with tokens like [PAN_01].) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 452.00 Tm (Its limitation is that regex matching only detects strings conforming to those exact syntactic patterns–it will not catch) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 440.50 Tm (unformatted account numbers, person names, or physical addresses, nor does /api/v1/audit/parse-raw perform optical OCR on) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 429.00 Tm (scanned PDF images. In a production system, we would pair regex rules with a transformer-based Named Entity Recognition) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 417.50 Tm (\(NER\) service such as Microsoft Presidio.) Tj ET
+BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 388.00 Tm (Question 8: API Error Handling & Validation) Tj ET
+0.50 w 0.150 0.230 0.350 RG 38.00 385.00 m 557.00 385.00 l S
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 373.00 Tm (Q: How does the application handle invalid payloads or missing resources?) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 361.50 Tm (Answer:) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 350.00 Tm (We use two layers of defense:) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 338.50 Tm (1. Pydantic v2 Validation \(HTTP 422\): Catches negative prices, zero quantities, inverted PO/invoice dates, grn_rejected_qty >) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 327.00 Tm (grn_received_qty, or subtotal mismatches exceeding $0.05 before the route handler runs.) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 315.50 Tm (2. Domain Exception Hierarchy \(app/exceptions.py\): Custom exceptions \(ReconciliationMismatchError,) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 304.00 Tm (PurchaseOrderNotFoundError, PrivacyScrubbingError\) inherit from FinDocAuditException and are caught by a global FastAPI) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 292.50 Tm (exception handler in app/main.py, returning a consistent JSON structure with error_code, message, details, timestamp, and) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 281.00 Tm (X-Correlation-ID.) Tj ET
+BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 251.50 Tm (Question 9: Automated Testing & Key Engineering Challenge) Tj ET
+0.50 w 0.150 0.230 0.350 RG 38.00 248.50 m 557.00 248.50 l S
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 236.50 Tm (Q: How is the project tested, and what was the most significant bug you fixed during development?) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 225.00 Tm (Answer:) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 213.50 Tm (Running python -m pytest tests -q executes 28 tests in Day 29 and 33 tests in Day 30, with all collected tests passing. The) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 202.00 Tm (tests cover 3-way reconciliation math, anomaly score monotonicity, regex PII masking, custom exception handlers, and) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 190.50 Tm (FastAPI endpoints.) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 179.00 Tm (The most instructive bug we fixed was frontend-to-backend preset coupling: early versions of dashboard.js reused the selected) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 167.50 Tm (preset PO's item array when submitting an invoice, which meant manual edits in the UI table were ignored. We fixed this by) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 156.00 Tm (implementing collectLineItemsFromDOM\(\), which reads invPrice, poPrice, billedQty, grnRec, and grnRej directly from the live) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 144.50 Tm (HTML <input> elements in each row, and added a multi-line dynamic regression test to verify it.) Tj ET
+BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 115.00 Tm (Question 10: Current Prototype Limitations & Future Scalability) Tj ET
+0.50 w 0.150 0.230 0.350 RG 38.00 112.00 m 557.00 112.00 l S
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 100.00 Tm (Q: What would be required to move this prototype into a real production environment?) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 88.50 Tm (Answer:) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 77.00 Tm (Four major upgrades would be required:) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 65.50 Tm (1. Durable Database Persistence: Replace the in-memory AUDIT_LEDGER Python list \(which resets on server restart\) with) Tj ET
 endstream
 endobj
 10 0 obj
@@ -348,7 +325,7 @@ endobj
 << /Type /Page /Parent 5 0 R /MediaBox [0 0 595.276 841.890] /Resources << /Font << /F1 1 0 R /F2 2 0 R /F3 3 0 R /F4 4 0 R >> >> /Contents 9 0 R /Annots [10 0 R] >>
 endobj
 12 0 obj
-<< /Length 10051 >>
+<< /Length 1887 >>
 stream
 0.060 0.090 0.160 rg 0.00 814.00 595.28 28.00 re f
 BT /F2 8.20 Tf 0.950 0.970 1.000 rg 1 0 0 1 38.00 824.00 Tm (LINKIFIC ENTERPRISE AI/ML ENGINEERING INTERNSHIP  |  SHRI SANJAYKUMAR V \(VIT VELLORE\)) Tj ET
@@ -356,94 +333,14 @@ BT /F3 8.00 Tf 0.750 0.820 0.920 rg 1 0 0 1 382.27 824.00 Tm (Day 29 Deliverable
 0.40 w 0.700 0.750 0.820 RG 38.00 36.00 m 557.00 36.00 l S
 BT /F1 7.80 Tf 0.350 0.400 0.480 rg 1 0 0 1 38.00 24.00 Tm (FinDoc-AuditEngine v3.0  |  github.com/Shri-Sanjaykumar/Linkific-Tasks  |  linkedin.com/in/shri-sanjaykumar-v-588bab28a) Tj ET
 BT /F2 8.00 Tf 0.200 0.250 0.330 rg 1 0 0 1 530.25 24.00 Tm (Page 3) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 790.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 790.00 Tm (Only) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 73.47 790.00 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 88.82 790.00 Tm (non-PII) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 121.04 790.00 Tm (numerical) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 163.47 790.00 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 181.37 790.00 Tm (categorical) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 228.41 790.00 Tm (features) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 264.21 790.00 Tm (are) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 280.06 790.00 Tm (passed) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 312.28 790.00 Tm (into) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 329.67 790.00 Tm (AnomalyScorer,) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 397.66 790.00 Tm (and) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 415.57 790.00 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 430.91 790.00 Tm (AuditDecision) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 489.71 790.00 Tm (records) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 522.94 790.00 Tm (the) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 778.50 Tm (redaction) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 92.40 778.50 Tm (count) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 117.46 778.50 Tm (for) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 130.75 778.50 Tm (compliance) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 179.83 778.50 Tm (auditing.) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 749.00 Tm (Question 8: How does the Defensive Error Handling architecture prevent unhandled crashes and leakages in production?) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 746.00 m 557.00 746.00 l S
-BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 727.00 Tm (Answer:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 714.00 Tm (We implemented a custom domain exception hierarchy in app/exceptions.py rooted at FinDocAuditException:) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 702.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 702.50 Tm (ReconciliationError) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 132.26 702.50 Tm ($\\to$) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 155.28 702.50 Tm (HTTP) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 181.86 702.50 Tm (422) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 199.76 702.50 Tm (Unprocessable) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 263.67 702.50 Tm (Entity) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 289.24 702.50 Tm (\(ERR_RECONCILIATION_FAILED\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 691.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 691.00 Tm (POCommitmentNotFoundError) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 180.83 691.00 Tm ($\\to$) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 203.85 691.00 Tm (HTTP) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 230.42 691.00 Tm (404) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 248.33 691.00 Tm (Not) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 265.20 691.00 Tm (Found) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 293.84 691.00 Tm (\(ERR_PO_NOT_FOUND\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 679.50 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 679.50 Tm (GovernancePolicyViolation) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 164.49 679.50 Tm ($\\to$) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 187.51 679.50 Tm (HTTP) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 214.09 679.50 Tm (403) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 231.99 679.50 Tm (Forbidden) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 275.96 679.50 Tm (\(ERR_POLICY_VIOLATION\)) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 42.00 668.00 Tm (•) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 52.00 668.00 Tm (AnomalyDetectionError) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 149.65 668.00 Tm ($\\to$) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 172.67 668.00 Tm (HTTP) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 199.25 668.00 Tm (500) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 217.15 668.00 Tm (Internal) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 250.39 668.00 Tm (Server) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 280.04 668.00 Tm (Error) Tj ET
-BT /F1 9.20 Tf 0.000 0.000 0.000 rg 1 0 0 1 303.04 668.00 Tm (\(ERR_ML_ANOMALY_ENGINE\)) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 651.50 Tm (A global FastAPI @app.exception_handler\(FinDocAuditException\) intercepts all domain exceptions, logs structured) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 640.00 Tm (diagnostics, and returns an RFC 7807 Problem Details JSON response containing error_code, message, details, timestamp,) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 628.50 Tm (and path–never exposing raw Python stack traces to clients.) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 599.00 Tm (Question 9: What were the toughest real-world engineering challenges you encountered during development and how did you resolve them?) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 596.00 m 557.00 596.00 l S
-BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 577.00 Tm (Answer:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 564.00 Tm (1. Windows Application Control Policy Blocking uvicorn.exe: Direct invocation of uvicorn.exe was blocked by Windows) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 552.50 Tm (Defender Application Control \(ResourceUnavailable\). We solved this by creating run_server.py, which resolves BASE_DIR,) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 541.00 Tm (sets the working directory, and invokes uvicorn.run\("app.main:app"\) directly through the trusted Python interpreter process.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 529.50 Tm (2. Windows Console cp1252 UnicodeEncodeError on Currency Symbols: Logging the Indian Rupee symbol \(INR  / \\u20b9\) to) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 518.00 Tm (standard output crashed on Windows cp1252 streams. We hardened setup_logger\(\) in app/core/logging_config.py with) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 506.50 Tm (sys.stdout.reconfigure\(encoding="utf-8", errors="replace"\) and standardized log formatting to INR for universal OS) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 495.00 Tm (compatibility.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 483.50 Tm (3. Eliminating Client-Side Preset Coupling: In early iterations, submitting an invoice from the UI reused the preset PO's line) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 472.00 Tm (items rather than reading live DOM edits. We refactored the workbench to bind every line-item cell to live DOM inputs) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 460.50 Tm (\(collectLineItemsFromDOM\(\)\), enabling true dynamic 3-way reconciliation on any user-modified row.) Tj ET
-BT /F2 11.20 Tf 0.060 0.090 0.160 rg 1 0 0 1 38.00 431.00 Tm (Question 10: How would you scale FinDoc-AuditEngine for a Fortune 500 deployment processing 500,000 invoices per day?) Tj ET
-0.50 w 0.150 0.230 0.350 RG 38.00 428.00 m 557.00 428.00 l S
-BT /F2 10.00 Tf 0.120 0.180 0.280 rg 1 0 0 1 38.00 409.00 Tm (Answer:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 396.00 Tm (To scale from an in-memory single-node service to 500,000+ daily invoices:) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 384.50 Tm (1. Persistent ACID + Vector Storage: Replace the in-memory AUDIT_LEDGER and PURCHASE_ORDERS dictionaries with) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 373.00 Tm (PostgreSQL \(using SERIALIZABLE / row-level locking for PO drawdown balances and pgvector for semantic duplicate-invoice) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 361.50 Tm (detection\).) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 350.00 Tm (2. Asynchronous Event-Driven Ingestion: Decouple document ingestion from ERP webhooks using Apache Kafka or RabbitMQ) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 338.50 Tm (with Celery / Ray workers running batch Isolation Forest inference.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 327.00 Tm (3. Multimodal OCR / VLM Extraction Layer: Place a LayoutLMv3 or Gemini Flash structured-output OCR pipeline upstream of) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 315.50 Tm (/api/v1/audit/process to extract tables directly from scanned PDF/TIFF invoices with bounding-box confidence scores.) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 304.00 Tm (4. Online Model Drift & Active Learning Feedback Loop: Log human-in-the-loop \(Tier 2 Manager and Tier 3 Director\) override) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 292.50 Tm (decisions in MLflow/Prometheus to periodically re-fit the IsolationForest baseline distribution and adjust contamination) Tj ET
-BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 281.00 Tm (thresholds as seasonal procurement patterns evolve.) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 790.00 Tm (PostgreSQL \(SQLAlchemy + asyncpg\) and Redis idempotency keys to prevent duplicate invoice submissions.) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 778.50 Tm (2. Real-World Model Validation & Drift Monitoring: Retrain and evaluate the anomaly detector on authorized historical) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 767.00 Tm (enterprise invoices, calibrate risk thresholds against verified outcomes, and track feature drift using EvidentlyAI \(Population) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 755.50 Tm (Stability Index\).) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 744.00 Tm (3. Authentication & Security Controls: Add OAuth2 / JWT authentication, role-based access control \(RBAC\) for approval) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 732.50 Tm (queues, and rate limiting.) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 721.00 Tm (4. Asynchronous Queueing & Optical OCR: Use Kafka or Celery workers for high-volume batch ingestion and integrate optical) Tj ET
+BT /F1 9.20 Tf 0.150 0.200 0.280 rg 1 0 0 1 38.00 709.50 Tm (layout extraction \(LayoutLMv3\) for scanned PDF invoices.) Tj ET
 endstream
 endobj
 13 0 obj
@@ -464,17 +361,17 @@ xref
 0000000319 00000 n 
 0000000428 00000 n 
 0000000499 00000 n 
-0000012395 00000 n 
-0000012582 00000 n 
-0000012762 00000 n 
-0000032780 00000 n 
-0000032968 00000 n 
-0000033150 00000 n 
-0000043255 00000 n 
-0000043443 00000 n 
-0000043626 00000 n 
+0000015295 00000 n 
+0000015482 00000 n 
+0000015662 00000 n 
+0000030082 00000 n 
+0000030270 00000 n 
+0000030452 00000 n 
+0000032392 00000 n 
+0000032580 00000 n 
+0000032763 00000 n 
 trailer
 << /Size 16 /Root 15 0 R >>
 startxref
-43676
+32813
 %%EOF
