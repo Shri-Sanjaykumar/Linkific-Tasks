@@ -3,8 +3,9 @@
 import logging
 import sys
 
+
 def setup_logger(name: str = "findoc_audit") -> logging.Logger:
-    """Configure enterprise console logger with consistent formatting."""
+    """Configure enterprise console logger with UTF-8 safe formatting."""
     logger = logging.getLogger(name)
     if not logger.handlers:
         logger.setLevel(logging.INFO)
@@ -21,5 +22,6 @@ def setup_logger(name: str = "findoc_audit") -> logging.Logger:
         handler.setFormatter(formatter)
         logger.addHandler(handler)
     return logger
+
 
 logger = setup_logger()

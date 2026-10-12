@@ -3,277 +3,377 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FinDoc-AuditEngine — Enterprise Financial Document Gateway</title>
+  <title>FinDoc-AuditEngine — Accounts Payable & 3-Way Reconciliation Workbench</title>
   <link rel="stylesheet" href="/static/css/dashboard.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Top Navigation Bar -->
-  <header class="header">
-    <div class="header-container">
-      <div class="logo-group">
-        <div class="logo-badge">FD</div>
-        <div class="logo-text">
+  <!-- Institutional Top Command Bar -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand-cluster">
+        <div class="brand-mark">FD</div>
+        <div class="brand-titles">
           <h1>FinDoc-AuditEngine</h1>
-          <p>Linkific Enterprise Financial Document Processing & Multi-Tier Audit Gateway</p>
+          <span class="brand-divider">/</span>
+          <span class="brand-subtitle">Enterprise 3-Way Reconciliation &amp; ML Risk Workbench</span>
         </div>
       </div>
-      <div class="header-actions">
-        <span class="pill pill-health">● API: READY</span>
-        <span class="pill pill-currency">FX: 1 USD = ₹86.50 INR</span>
-        <a href="/docs" target="_blank" class="btn-secondary">Swagger UI API</a>
+
+      <div class="topbar-controls">
+        <span class="meta-tag"><span class="status-dot"></span>Engine: IsolationForest v2.0</span>
+        <span class="meta-tag">FX Peg: 1 USD = 86.50 INR</span>
+        <button type="button" class="btn btn-outline btn-sm" onclick="runFullDemoBatch()" id="btnBatchDemo">Run 5-Scenario Batch</button>
+        <a href="/api/v1/audit/export/csv" class="btn btn-outline btn-sm">Export CSV</a>
+        <a href="/docs" target="_blank" class="btn btn-subtle btn-sm">OpenAPI Spec</a>
       </div>
     </div>
   </header>
 
-  <!-- Main Container -->
-  <main class="main-wrapper">
+  <main class="workspace">
 
-    <!-- KPI Metric Banner -->
-    <section class="metrics-banner">
-      <div class="metric-card">
-        <div class="metric-label">Total Invoices Audited</div>
-        <div class="metric-val" id="metricTotalAudits">0</div>
-        <div class="metric-sub">Across All Operational Tiers</div>
+    <!-- Hairline Tabular KPI Strip -->
+    <section class="kpi-strip">
+      <div class="kpi-cell">
+        <span class="kpi-label">Total Invoices Audited</span>
+        <span class="kpi-value" id="metricTotalAudits">0</span>
+        <span class="kpi-sub">Active session ledger volume</span>
       </div>
-      <div class="metric-card">
-        <div class="metric-label">Disbursed Capital (USD)</div>
-        <div class="metric-val" id="metricDisbursedUSD" style="color:#10b981">$0.00</div>
-        <div class="metric-sub">Compliant Approved Spend</div>
+      <div class="kpi-cell">
+        <span class="kpi-label">Disbursed Capital (USD)</span>
+        <span class="kpi-value" id="metricDisbursedUSD">$0.00</span>
+        <span class="kpi-sub">Authorized compliant spend</span>
       </div>
-      <div class="metric-card">
-        <div class="metric-label">Disbursed Capital (INR)</div>
-        <div class="metric-val" id="metricDisbursedINR" style="color:#06b6d4">₹0.00</div>
-        <div class="metric-sub">Pegged at ₹86.50 / USD</div>
+      <div class="kpi-cell">
+        <span class="kpi-label">Disbursed Capital (INR)</span>
+        <span class="kpi-value" id="metricDisbursedINR">INR 0.00</span>
+        <span class="kpi-sub">Converted at 86.50 INR / USD</span>
       </div>
-      <div class="metric-card">
-        <div class="metric-label">Straight-Through Rate (STP)</div>
-        <div class="metric-val" id="metricStpRate" style="color:#f59e0b">0.0%</div>
-        <div class="metric-sub">Zero Human Touch Volume</div>
+      <div class="kpi-cell">
+        <span class="kpi-label">Straight-Through Rate (STP)</span>
+        <span class="kpi-value" id="metricStpRate">0.0%</span>
+        <span class="kpi-sub">Tier 1 autonomous approvals</span>
       </div>
-      <div class="metric-card">
-        <div class="metric-label">Blocked / Frozen Transactions</div>
-        <div class="metric-val" id="metricBlockedCount" style="color:#ef4444">0</div>
-        <div class="metric-sub">Discrepancy & Fraud Defense</div>
+      <div class="kpi-cell">
+        <span class="kpi-label">Held / Blocked Exceptions</span>
+        <span class="kpi-value" id="metricBlockedCount">0</span>
+        <span class="kpi-sub">Discrepancy &amp; AML fraud holds</span>
       </div>
     </section>
 
-    <!-- Workspace: Simulator (Left) & Results (Right) -->
-    <div class="workspace-grid">
-      
-      <!-- Left Panel: Interactive Audit Simulator -->
+    <!-- Main Split Workbench -->
+    <div class="workbench-grid">
+
+      <!-- Left Panel: Dynamic Document Ingestion & 3-Way Reconciliation Editor -->
       <section class="panel">
         <div class="panel-header">
-          <div class="panel-title">
-            <span>⚡ Financial Document Audit Simulator</span>
+          <div class="panel-title-group">
+            <h2>1. Invoice &amp; Purchase Order Reconciliation Input</h2>
+            <p>Enter any custom vendor invoice, add or edit line-item rates and dock GRN quantities, or load a template.</p>
           </div>
-          <span style="font-size:0.75rem; color:var(--text-muted)">Live Transaction Gate</span>
+          <div style="display:flex; gap:6px;">
+            <button type="button" class="btn btn-subtle btn-sm" onclick="toggleRawParser()">Paste Raw Text / PII</button>
+            <button type="button" class="btn btn-subtle btn-sm" onclick="generateRandomScenario()">Synthesize Random Invoice</button>
+            <button type="button" class="btn btn-outline btn-sm" onclick="resetBlankInvoice()">New Blank</button>
+          </div>
         </div>
 
-        <!-- 1-Click Preset Scenario Loader -->
-        <div class="preset-box">
-          <label for="presetSelect">1-CLICK BENCHMARK SCENARIO PRELOADER:</label>
-          <select id="presetSelect" class="select-input" onchange="onPresetSelected()">
-            <option value="">Loading benchmark scenarios...</option>
-          </select>
+        <div class="panel-body">
+
+          <!-- Template Loader Bar -->
+          <div class="ingestion-toolbar">
+            <div class="preset-group">
+              <label for="presetSelect">Reference Templates:</label>
+              <select id="presetSelect" class="select-control" onchange="onPresetSelected()">
+                <option value="">-- Custom Dynamic Entry (Or Select Reference Case) --</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Optional Free-Text Document Parser & PII Scrubber Drawer -->
+          <div id="rawParserDrawer" class="raw-parser-drawer">
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <strong style="font-size:12px;">Unstructured Invoice Text &amp; Pre-Inference PII Scrubber</strong>
+              <span style="font-size:11px; color:var(--text-muted);">Detects PAN, Aadhaar, Email, Phone, Bank Account</span>
+            </div>
+            <textarea id="rawDocumentInput" placeholder="Example: Invoice INV-2040 from Apex Global Systems; PO: PO-8820; Total: $6,450.00; Country: US; Contact: finance@apexglobal.com; Tax PAN: ABCDE1234F; Account: 987654321012"></textarea>
+            <div style="display:flex; justify-content:space-between; align-items:center; gap:10px;">
+              <span id="rawScrubPreview" class="mono" style="font-size:11.5px; color:var(--status-approved-fg);"></span>
+              <button type="button" class="btn btn-primary btn-sm" onclick="parseRawInvoiceText()">Extract Fields &amp; Scrub PII</button>
+            </div>
+          </div>
+
+          <form id="auditForm" onsubmit="executeAudit(event)">
+            <div class="section-divider-title">
+              <span>Counterparty &amp; Settlement Metadata</span>
+              <span class="mono" style="font-weight:500; font-size:11px;">All fields dynamically evaluated</span>
+            </div>
+
+            <div class="form-grid-4">
+              <div class="field-group">
+                <label for="inputInvoiceId">Invoice Number</label>
+                <input type="text" id="inputInvoiceId" class="input-control mono" value="INV-1001" required>
+              </div>
+              <div class="field-group">
+                <label for="inputVendorName">Vendor Legal Name</label>
+                <input type="text" id="inputVendorName" class="input-control" value="OfficeDepot India Pvt Ltd" required>
+              </div>
+              <div class="field-group">
+                <label for="inputPoNumber">ERP PO Reference</label>
+                <input type="text" id="inputPoNumber" class="input-control mono" value="PO-9001" placeholder="e.g. PO-9001">
+              </div>
+              <div class="field-group">
+                <label for="inputCountry">Jurisdiction (ISO-2)</label>
+                <select id="inputCountry" class="select-control mono">
+                  <option value="IN">IN — India (Domestic)</option>
+                  <option value="US">US — United States</option>
+                  <option value="GB">GB — United Kingdom</option>
+                  <option value="DE">DE — Germany</option>
+                  <option value="SG">SG — Singapore</option>
+                  <option value="AE">AE — UAE (Regional Hub)</option>
+                  <option value="CH">CH — Switzerland</option>
+                  <option value="BZ">BZ — Belize (Offshore AML Flag)</option>
+                  <option value="KY">KY — Cayman Islands (Offshore AML Flag)</option>
+                  <option value="PA">PA — Panama (Offshore AML Flag)</option>
+                  <option value="VG">VG — British Virgin Islands (AML Flag)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-grid-4">
+              <div class="field-group">
+                <label for="inputInvoiceDate">Invoice Date</label>
+                <input type="date" id="inputInvoiceDate" class="input-control mono" value="2026-10-01" onchange="recalculateDynamicTotals()">
+              </div>
+              <div class="field-group">
+                <label for="inputDueDate">Settlement Due Date</label>
+                <input type="date" id="inputDueDate" class="input-control mono" value="2026-10-31" onchange="recalculateDynamicTotals()">
+              </div>
+              <div class="field-group">
+                <label for="inputTaxUsd">Tax Amount (USD)</label>
+                <input type="number" step="0.01" min="0" id="inputTaxUsd" class="input-control mono" value="32.00" oninput="recalculateDynamicTotals()">
+              </div>
+              <div class="field-group">
+                <label for="inputAmount">Total Billed (USD)</label>
+                <input type="number" step="0.01" min="0.01" id="inputAmount" class="input-control mono" value="432.00" required oninput="onManualTotalChange()">
+              </div>
+            </div>
+
+            <div class="form-grid-3">
+              <div class="field-group">
+                <label for="inputEmail">Vendor Contact Email (PII Gate)</label>
+                <input type="text" id="inputEmail" class="input-control mono" value="accounts@officedepot.in" placeholder="billing@vendor.com">
+              </div>
+              <div class="field-group">
+                <label for="inputPan">Tax ID / Indian PAN (PII Gate)</label>
+                <input type="text" id="inputPan" class="input-control mono" value="ABCDE1234F" placeholder="ABCDE1234F">
+              </div>
+              <div class="field-group">
+                <label for="inputBankAccount">Beneficiary Account (PII Gate)</label>
+                <input type="text" id="inputBankAccount" class="input-control mono" value="" placeholder="Optional account #">
+              </div>
+            </div>
+
+            <div class="checkbox-row">
+              <label class="checkbox-item">
+                <input type="checkbox" id="inputHasPo" checked onchange="recalculateDynamicTotals()">
+                <span>ERP Purchase Order Exists in Commitment Ledger</span>
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" id="inputIsNew" onchange="recalculateDynamicTotals()">
+                <span>First-Time / Unvetted Onboarding Vendor</span>
+              </label>
+            </div>
+
+            <!-- Dynamic Editable Line Items Table -->
+            <div class="section-divider-title">
+              <span>Line-Item 3-Way Matching Matrix (Invoice vs. PO vs. Dock GRN)</span>
+              <button type="button" class="btn btn-subtle btn-sm" onclick="addLineItemRow()">+ Add Line Item</button>
+            </div>
+
+            <div class="line-items-wrapper">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th style="width:110px;">Item Code</th>
+                    <th>Description</th>
+                    <th style="width:95px; text-align:right;">Inv Rate ($)</th>
+                    <th style="width:95px; text-align:right;">PO Rate ($)</th>
+                    <th style="width:75px; text-align:right;">Billed Qty</th>
+                    <th style="width:85px; text-align:right;">GRN Recv</th>
+                    <th style="width:85px; text-align:right;">GRN Rej</th>
+                    <th style="width:36px;"></th>
+                  </tr>
+                </thead>
+                <tbody id="itemsTableBody">
+                  <!-- Populated dynamically by JS -->
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Live Pre-Audit Calculation Strip -->
+            <div class="live-preview-strip">
+              <div class="preview-metric">
+                <span>Line Items Subtotal</span>
+                <span id="previewSubtotal">$400.00</span>
+              </div>
+              <div class="preview-metric">
+                <span>Invoice Total (INR @ 86.50)</span>
+                <span id="previewInrTotal">INR 37,368.00</span>
+              </div>
+              <div class="preview-metric">
+                <span>Projected Rate Variance</span>
+                <span id="previewRateVar">$0.00</span>
+              </div>
+              <div class="preview-metric">
+                <span>Projected Dock Shortage</span>
+                <span id="previewQtyVar">0 units</span>
+              </div>
+            </div>
+
+            <button type="submit" id="btnSubmitAudit" class="btn btn-primary btn-block">
+              Execute 3-Way Reconciliation &amp; Isolation Forest Audit
+            </button>
+          </form>
+
         </div>
-
-        <form id="auditForm" onsubmit="executeAudit(event)">
-          <div class="form-grid-2">
-            <div class="form-group">
-              <label>Invoice ID</label>
-              <input type="text" id="inputInvoiceId" class="text-input" value="INV-1001" required>
-            </div>
-            <div class="form-group">
-              <label>Purchase Order Number</label>
-              <input type="text" id="inputPoNumber" class="text-input" value="PO-9001" required>
-            </div>
-          </div>
-
-          <div class="form-grid-2">
-            <div class="form-group">
-              <label>Vendor Entity Name</label>
-              <input type="text" id="inputVendorName" class="text-input" value="OfficeDepot India Pvt Ltd" required>
-            </div>
-            <div class="form-group">
-              <label>Total Invoiced Amount (USD)</label>
-              <input type="number" step="0.01" id="inputAmount" class="text-input" value="432.00" required>
-            </div>
-          </div>
-
-          <div class="form-grid-2">
-            <div class="form-group">
-              <label>Jurisdiction Country (ISO-2)</label>
-              <input type="text" id="inputCountry" class="text-input" value="IN" required>
-            </div>
-            <div class="form-group">
-              <label>Vendor PAN Number (Indian Tax)</label>
-              <input type="text" id="inputPan" class="text-input" value="ABCDE1234F">
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label>Vendor Accounts Email</label>
-            <input type="email" id="inputEmail" class="text-input" value="accounts@officedepot.in">
-          </div>
-
-          <div class="form-group" style="display:flex; align-items:center; gap:0.5rem; margin:0.85rem 0;">
-            <input type="checkbox" id="inputIsNew" style="cursor:pointer">
-            <label for="inputIsNew" style="margin:0; cursor:pointer">New Vendor (No Prior Linkific Tenure)</label>
-          </div>
-
-          <!-- Line Items Table -->
-          <div style="margin:1rem 0;">
-            <div style="font-size:0.75rem; color:var(--text-muted); font-weight:600; margin-bottom:0.4rem;">
-              3-WAY RECONCILIATION LINE ITEMS (INVOICE vs PO vs DOCK GRN):
-            </div>
-            <table class="items-table">
-              <thead>
-                <tr>
-                  <th>Item ID / Description</th>
-                  <th>Invoiced Rate</th>
-                  <th>PO Rate</th>
-                  <th>Qty</th>
-                  <th>Dock GRN Units</th>
-                </tr>
-              </thead>
-              <tbody id="itemsTableBody">
-                <tr>
-                  <td><strong>ITEM-1</strong><br><small style="color:#64748b">Ergonomic Keyboards</small></td>
-                  <td>$40.00</td>
-                  <td>$40.00</td>
-                  <td>10</td>
-                  <td>10 accepted (0 rejected)</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <button type="submit" id="btnSubmitAudit" class="btn-primary">
-            <span>⚡ Run Financial Audit & ML Risk Analysis</span>
-          </button>
-        </form>
       </section>
 
-      <!-- Right Panel: Live Inspection & Decision Output -->
-      <section class="panel" id="inspectionResultCard">
+      <!-- Right Panel: Live Governance Determination & Perturbation ML Attribution -->
+      <section class="panel">
         <div class="panel-header">
-          <div class="panel-title">
-            <span>🔍 Live Audit Decision & Explainability Panel</span>
+          <div class="panel-title-group">
+            <h2>2. Audit Determination &amp; Explainable ML Attribution</h2>
+            <p>Real-time governance routing and Isolation Forest feature perturbation breakdown.</p>
           </div>
-          <span class="pill pill-currency" id="resPiiRedactions">0 PII masked</span>
+          <span class="meta-tag" id="badgeAuditId">Awaiting Run</span>
         </div>
 
-        <!-- Decision Hero Banner -->
-        <div id="decisionHero" class="decision-hero tier-STP">
-          <div class="hero-status-row">
-            <span class="tier-tag tag-STP">Tier 1: Straight-Through (STP)</span>
-            <span style="font-size:0.75rem; font-family:var(--font-mono); color:var(--text-muted)">AUD-READY</span>
-          </div>
-          <div class="hero-title">✅ AUTO-APPROVED DISBURSEMENT</div>
-          <div class="hero-summary">Ready for live submission. Select a benchmark scenario or enter custom values to inspect.</div>
-        </div>
+        <div class="panel-body">
 
-        <!-- Valuation Cards Grid -->
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.85rem; margin-bottom:1rem;">
-          <div style="background:var(--bg-surface-elevated); padding:0.85rem; border-radius:8px; border:1px solid var(--border-subtle)">
-            <div style="font-size:0.7rem; color:var(--text-muted); text-transform:uppercase">Disbursed Total (USD)</div>
-            <div id="resValUSD" style="font-size:1.35rem; font-weight:700; color:#10b981">$432.00</div>
+          <div id="emptyStatePanel" class="empty-determination">
+            <h3>No Active Transaction Selected</h3>
+            <p>Submit the reconciliation form on the left or run the 5-scenario batch to inspect live ML risk telemetry.</p>
           </div>
-          <div style="background:var(--bg-surface-elevated); padding:0.85rem; border-radius:8px; border:1px solid var(--border-subtle)">
-            <div style="font-size:0.7rem; color:var(--text-muted); text-transform:uppercase">Disbursed Total (INR @ 86.50)</div>
-            <div id="resValINR" style="font-size:1.35rem; font-weight:700; color:#06b6d4">₹37,368.00</div>
-          </div>
-        </div>
 
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.85rem; margin-bottom:1rem;">
-          <div style="background:var(--bg-surface-elevated); padding:0.85rem; border-radius:8px; border:1px solid var(--border-subtle)">
-            <div style="font-size:0.7rem; color:var(--text-muted); text-transform:uppercase">Price Variance (USD)</div>
-            <div id="resVarianceUSD" style="font-size:1.1rem; font-weight:700; color:#fff">$0.00</div>
-          </div>
-          <div style="background:var(--bg-surface-elevated); padding:0.85rem; border-radius:8px; border:1px solid var(--border-subtle)">
-            <div style="font-size:0.7rem; color:var(--text-muted); text-transform:uppercase">Price Variance (INR)</div>
-            <div id="resVarianceINR" style="font-size:1.1rem; font-weight:700; color:#06b6d4">₹0.00</div>
-          </div>
-        </div>
+          <div id="inspectionResultCard" style="display:none;">
+            <div id="certificateBanner" class="certificate-banner tier-STP">
+              <div>
+                <div class="cert-label" id="resAuthStatus">AUTHORIZED DISBURSEMENT</div>
+                <div class="cert-tier-title" id="resTierTitle">Tier 1: Straight-Through Processing (STP)</div>
+                <div class="cert-summary" id="resSummaryText"></div>
+              </div>
+              <span id="resRiskBadge" class="status-badge tag-STP">25.8 / 100 (LOW)</span>
+            </div>
 
-        <!-- ML Anomaly Risk Score Gauge -->
-        <div style="margin:1.25rem 0;">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.4rem;">
-            <span style="font-size:0.8rem; font-weight:700;">ISOLATION FOREST RISK SCORE:</span>
-            <span style="font-size:1.15rem; font-weight:800; font-family:var(--font-mono)"><span id="resRiskScore">25.8</span> / 100</span>
-          </div>
-          <div class="progress-bar-bg" style="height:10px;">
-            <div id="resRiskFill" class="progress-bar-fill" style="width:25.8%; background-color:#10b981;"></div>
-          </div>
-        </div>
+            <div class="determination-kv-grid">
+              <div class="kv-box">
+                <div class="kv-box-label">Audited Total (USD)</div>
+                <div class="kv-box-val" id="resAmountUSD">$0.00</div>
+              </div>
+              <div class="kv-box">
+                <div class="kv-box-label">Audited Total (INR)</div>
+                <div class="kv-box-val" id="resAmountINR">INR 0.00</div>
+              </div>
+              <div class="kv-box">
+                <div class="kv-box-label">Reconciliation Delta</div>
+                <div class="kv-box-val" id="resVarianceUSD">$0.00</div>
+              </div>
+            </div>
 
-        <!-- Feature Explainability Breakdown -->
-        <div style="margin-top:1.25rem;">
-          <div style="font-size:0.75rem; color:var(--text-muted); font-weight:700; text-transform:uppercase; letter-spacing:0.04em;">
-            EXPLAINABLE ML FEATURE WEIGHTS:
-          </div>
-          <div id="resFeatureContributions" class="contribution-list">
-            <!-- Dynamic Feature bars -->
-          </div>
-        </div>
+            <div class="section-divider-title">
+              <span>Line-Item Reconciliation Verification</span>
+              <span id="resPiiBadge" class="mono" style="font-size:11px; color:var(--status-approved-fg);">0 PII Tokens Masked</span>
+            </div>
+            <div class="line-items-wrapper" style="margin-bottom:16px;">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Item</th>
+                    <th style="text-align:right;">Billed vs PO Rate</th>
+                    <th style="text-align:right;">Billed vs Accepted Qty</th>
+                    <th style="text-align:right;">Variance</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="resItemDiffsBody"></tbody>
+              </table>
+            </div>
 
-        <!-- Compliance & Audit Flags -->
-        <div style="margin-top:1.25rem; background:var(--bg-surface-elevated); padding:0.85rem; border-radius:8px; border:1px solid var(--border-subtle);">
-          <div style="font-size:0.75rem; color:var(--text-muted); font-weight:700; margin-bottom:0.35rem;">
-            COMPLIANCE & AUDIT REASON FLAGS:
+            <div class="section-divider-title">
+              <span>Isolation Forest Marginal Feature Attribution (0–100 Scale)</span>
+              <span class="mono" style="font-size:11px;">7D StandardScaler + 200 Trees</span>
+            </div>
+            <div id="featureBarsContainer" class="xai-list"></div>
+
+            <div class="section-divider-title">
+              <span>Triggered Governance &amp; Compliance Signals</span>
+            </div>
+            <ul id="resFlagsList" class="flags-list"></ul>
+
+            <div class="telemetry-strip" id="resTelemetryStrip">
+              <span>PII Gate: 0.05ms</span>
+              <span>3-Way Match: 0.12ms</span>
+              <span>ML Inference: 1.40ms</span>
+              <span>Total: 1.62ms</span>
+            </div>
           </div>
-          <ul id="resAuditFlags" style="font-size:0.8rem; list-style-type:none; padding-left:0;">
-            <li style="color:#10b981">✨ Clean transaction: Zero compliance flags detected.</li>
-          </ul>
+
         </div>
       </section>
 
     </div>
 
-    <!-- Bottom Section: Executive Audit Ledger History -->
-    <section class="ledger-section">
+    <!-- Bottom Panel: Immutable Corporate Audit Ledger -->
+    <section class="panel">
       <div class="panel-header">
-        <div class="panel-title">
-          <span>📋 Immutable Corporate Audit Ledger</span>
+        <div class="panel-title-group">
+          <h2>3. Immutable Corporate Audit Ledger</h2>
+          <p>Real-time log of all processed invoices with tier filtering, search, and full JSON dossier inspection.</p>
         </div>
-        <button class="btn-secondary" onclick="refreshLedger()">↻ Refresh Ledger</button>
+
+        <div class="ledger-controls">
+          <div class="filter-tabs" id="filterChipsContainer">
+            <button type="button" class="filter-chip active" data-tier="ALL">All Entries</button>
+            <button type="button" class="filter-chip" data-tier="TIER_1_STP_AUTO_APPROVED">Tier 1 STP</button>
+            <button type="button" class="filter-chip" data-tier="TIER_2_MANAGER_REVIEW">Tier 2 Manager</button>
+            <button type="button" class="filter-chip" data-tier="TIER_3_DIRECTOR_SIGNOFF">Tier 3 Director</button>
+            <button type="button" class="filter-chip" data-tier="REJECTED_DISCREPANCY">Rejected</button>
+            <button type="button" class="filter-chip" data-tier="FROZEN_FRAUD_RISK">Frozen Fraud</button>
+          </div>
+
+          <div style="display:flex; gap:8px; align-items:center;">
+            <input type="text" id="ledgerSearchInput" class="input-control mono" style="width:210px; height:30px;" placeholder="Search Invoice ID or Vendor...">
+            <button type="button" class="btn btn-subtle btn-sm" onclick="clearLedgerHistory()">Clear Ledger</button>
+          </div>
+        </div>
       </div>
 
-      <!-- Filters & Search Bar -->
-      <div class="filter-bar">
-        <div class="filter-chips">
-          <button class="chip active" data-tier="ALL">All Invoices</button>
-          <button class="chip" data-tier="TIER_1_STP_AUTO_APPROVED">Tier 1: STP</button>
-          <button class="chip" data-tier="TIER_2_MANAGER_REVIEW">Tier 2: Manager</button>
-          <button class="chip" data-tier="TIER_3_DIRECTOR_SIGNOFF">Tier 3: Director</button>
-          <button class="chip" data-tier="REJECTED_DISCREPANCY">Discrepancy</button>
-          <button class="chip" data-tier="FROZEN_FRAUD_RISK">Fraud Freeze</button>
-        </div>
-        <div style="width:260px;">
-          <input type="text" id="ledgerSearch" class="text-input" placeholder="Search by Invoice ID...">
-        </div>
-      </div>
-
-      <!-- Ledger Table -->
-      <div style="overflow-x:auto;">
-        <table class="ledger-table">
+      <div class="panel-body" style="padding:0;">
+        <table class="data-table">
           <thead>
             <tr>
+              <th style="padding-left:20px;">Audit ID</th>
               <th>Timestamp (UTC)</th>
               <th>Invoice ID</th>
-              <th>Amount (USD)</th>
-              <th>Amount (INR @ 86.50)</th>
-              <th>Risk Score</th>
-              <th>Governance Status</th>
-              <th>Actions</th>
+              <th>Vendor Name</th>
+              <th>Governance Tier</th>
+              <th style="text-align:right;">Total (USD)</th>
+              <th style="text-align:right;">Total (INR @ 86.50)</th>
+              <th style="text-align:right;">Variance ($)</th>
+              <th style="text-align:right;">ML Risk Score</th>
+              <th style="text-align:right; padding-right:20px;">Dossier</th>
             </tr>
           </thead>
           <tbody id="ledgerTableBody">
-            <!-- Dynamic rows populated by dashboard.js -->
+            <tr>
+              <td colspan="10" style="text-align:center; padding:28px; color:var(--text-muted);">
+                No audit entries recorded yet. Submit an invoice above or click "Run 5-Scenario Batch".
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -281,12 +381,23 @@
 
   </main>
 
-  <!-- Inspection Modal Drawer -->
-  <div id="detailsModal" class="modal-overlay">
-    <div class="modal-content">
-      <button class="modal-close" onclick="closeModal()">&times;</button>
-      <h3 id="modalTitle" style="font-size:1.15rem; margin-bottom:1rem; font-weight:700;">Audit Details</h3>
-      <pre id="modalJsonPayload"></pre>
+  <!-- Slide-Over Audit Dossier Drawer -->
+  <div id="detailModalBackdrop" class="modal-backdrop" onclick="closeDetailModal(event)">
+    <div class="dossier-drawer" onclick="event.stopPropagation()">
+      <div class="dossier-header">
+        <div>
+          <h3 id="modalTitle" style="font-size:14px; font-weight:700;">Audit Dossier Certificate</h3>
+          <p id="modalSubtitle" class="mono" style="font-size:11.5px; color:var(--text-muted);"></p>
+        </div>
+        <button type="button" class="btn btn-outline btn-sm" onclick="closeDetailModal()">Close</button>
+      </div>
+      <div class="dossier-body">
+        <div class="section-divider-title"><span>Executive Determination Summary</span></div>
+        <p id="modalSummaryText" style="font-size:13px; margin-bottom:16px; color:var(--text-secondary);"></p>
+
+        <div class="section-divider-title"><span>Cryptographic Audit Payload (RFC-Compliant JSON)</span></div>
+        <pre id="modalJsonPayload" class="json-pre"></pre>
+      </div>
     </div>
   </div>
 

@@ -49,3 +49,5 @@ This repository contains day-wise folders to organize and document all internshi
 - Future training days will be added progressively as tasks are assigned.
 
 
+
+| **Day 29** | [`Day-29/`](./Day-29) | **Project Polish, Technical Documentation, Presentation & Live Mentor Demo** — `FinDoc-AuditEngine v3.0` with High-Contrast Institutional Editorial Light UI (`Plus Jakarta Sans` + `IBM Plex Mono`), 100% dynamic per-row line-item composer, unstructured OCR text parser (`/api/v1/audit/parse-raw`), 7-D `IsolationForest` + XAI feature attribution, 10 Technical Interview Q&As (`docs/INTERVIEW_QA.md`), 12-Slide Deck (`docs/PRESENTATION_NOTES_AND_SLIDES.md`), Demo Checklist (`docs/DEMO_PRACTICE_CHECKLIST.md`), Architecture Guide (`docs/ARCHITECTURE.md`), and 25/25 PyTest suite |

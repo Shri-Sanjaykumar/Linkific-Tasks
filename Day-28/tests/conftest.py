@@ -1,12 +1,10 @@
 """PyTest Configuration and Shared Test Fixtures for FinDoc-AuditEngine."""
 
-import os
 import sys
 from pathlib import Path
 import pytest
 from fastapi.testclient import TestClient
 
-# Ensure Day-28 root directory is on sys.path
 TESTS_DIR = Path(__file__).resolve().parent
 ROOT_DIR = TESTS_DIR.parent
 if str(ROOT_DIR) not in sys.path:

@@ -1,14 +1,5 @@
-"""Unit & Integration Tests for FinDoc-AuditEngine Core Services.
+"""Unit & Dynamic Integration Tests for FinDoc-AuditEngine Core Services."""
 
-Validates:
-1. 3-Way Reconciliation matching engine (PO, Invoice, Dock Receipt)
-2. Isolation Forest ML Risk Scorer & Explainable Feature Contributions
-3. Corporate Governance Approval Router & Dual Currency USD/INR Math
-4. Responsible AI PII Privacy Scrubber
-"""
-
-import pytest
-from app.core.config import settings
 from app.core.privacy import FinancialPrivacyScrubber
 from app.models import (
     ApprovalTierEnum,
@@ -21,10 +12,6 @@ from app.services.anomaly_detector import AnomalyScorer
 from app.services.matcher import ReconciliationMatcher
 from app.services.router import ApprovalRouter
 
-
-# --------------------------------------------------------------------------
-# 1. 3-Way Reconciliation Tests
-# --------------------------------------------------------------------------
 
 def test_reconciliation_exact_match():
     """Verify that identical invoice and PO with 100% accepted dock receipts pass match cleanly."""
@@ -50,7 +37,8 @@ def test_reconciliation_exact_match():
     assert result.po_found is True
     assert result.price_variance_usd == 0.0
     assert result.quantity_variance_units == 0
-    assert len(result.discrepancy_details) == 0
+    assert len(result.item_diffs) == 1
+    assert result.item_diffs[0].status == "MATCHED"
 
 
 def test_reconciliation_price_variance():
@@ -76,7 +64,8 @@ def test_reconciliation_price_variance():
 
     result = ReconciliationMatcher.match(invoice, po)
     assert result.matched is False
-    assert result.price_variance_usd == 200.0  # ($120 - $100) * 10
+    assert result.price_variance_usd == 200.0
+    assert result.item_diffs[0].status == "RATE_VARIANCE"
     assert any("Rate Variance on item 'ITEM-B'" in d for d in result.discrepancy_details)
 
 
@@ -96,13 +85,40 @@ def test_reconciliation_dock_shortage_rejected_goods():
         total_amount_usd=1000.0,
         items=[item],
         grn_units_received={"ITEM-C": 5},
-        grn_units_rejected={"ITEM-C": 2},  # 2 units damaged at dock
+        grn_units_rejected={"ITEM-C": 2},
     )
 
     result = ReconciliationMatcher.match(invoice, po)
     assert result.matched is False
     assert result.quantity_variance_units == 2
+    assert result.item_diffs[0].status == "QTY_SHORTAGE"
     assert any("Quantity Discrepancy" in d for d in result.discrepancy_details)
+
+
+def test_reconciliation_unlisted_phantom_line_item():
+    """Verify that a vendor billing an unlisted SKU absent from the PO is caught dynamically."""
+    po_item = LineItem(item_id="SKU-OK", description="Approved Switch", unit_price_usd=400.0, quantity=1)
+    phantom_item = LineItem(item_id="SKU-PHANTOM", description="Unapproved Cable Kit", unit_price_usd=150.0, quantity=2)
+
+    invoice = InvoicePayload(
+        invoice_id="INV-PHANTOM",
+        vendor_name="NetVendor",
+        total_amount_usd=700.0,
+        po_number="PO-PHANTOM",
+        items=[po_item, phantom_item],
+    )
+    po = PurchaseOrderRecord(
+        po_number="PO-PHANTOM",
+        vendor_name="NetVendor",
+        approved_total_usd=400.0,
+        items=[po_item],
+        grn_units_received={"SKU-OK": 1},
+    )
+
+    result = ReconciliationMatcher.match(invoice, po)
+    assert result.matched is False
+    assert result.price_variance_usd == 300.0
+    assert any(d.status == "UNLISTED_ITEM" for d in result.item_diffs)
 
 
 def test_reconciliation_missing_po():
@@ -122,12 +138,8 @@ def test_reconciliation_missing_po():
     assert any("not found" in d for d in result.discrepancy_details)
 
 
-# --------------------------------------------------------------------------
-# 2. ML Risk Engine & Feature Contributions
-# --------------------------------------------------------------------------
-
-def test_anomaly_scorer_bounds_and_contributions():
-    """Verify that ML anomaly scores are bounded [0, 100] and return explainability vectors."""
+def test_anomaly_scorer_bounds_and_perturbation_contributions():
+    """Verify that ML anomaly scores are bounded [0, 100] and return perturbation vectors."""
     scorer = AnomalyScorer()
     item = LineItem(item_id="ITEM-E", description="Standard Supplies", unit_price_usd=20.0, quantity=10)
     invoice = InvoicePayload(
@@ -138,15 +150,59 @@ def test_anomaly_scorer_bounds_and_contributions():
         is_new_vendor=False,
         items=[item],
     )
-    match_result = ReconciliationMatcher.match(invoice, None)
+    po = PurchaseOrderRecord(
+        po_number="PO-05",
+        approved_total_usd=200.0,
+        items=[item],
+        grn_units_received={"ITEM-E": 10},
+    )
+    match_result = ReconciliationMatcher.match(invoice, po)
 
     risk = scorer.assess_risk(invoice, match_result)
     assert 0.0 <= risk.anomaly_score <= 100.0
-    assert isinstance(risk.risk_level, RiskLevelEnum)
+    assert risk.risk_level == RiskLevelEnum.LOW
     assert len(risk.feature_contributions) == 5
     for feat in risk.feature_contributions:
         assert feat.feature_name != ""
         assert feat.risk_contribution >= 0.0
+
+
+def test_anomaly_scorer_dynamic_sensitivity_to_rush_payment_and_markup():
+    """Verify that dynamic changes in payment urgency and price markup continuously increase ML risk."""
+    scorer = AnomalyScorer()
+    base_item = LineItem(item_id="ITEM-X", description="Cloud Node", unit_price_usd=1000.0, quantity=2)
+    po = PurchaseOrderRecord(
+        po_number="PO-X",
+        approved_total_usd=2000.0,
+        items=[base_item],
+        grn_units_received={"ITEM-X": 2},
+    )
+
+    # Normal Net-30 matched invoice
+    inv_normal = InvoicePayload(
+        invoice_id="INV-NORM",
+        vendor_name="CloudPartner",
+        invoice_date="2026-10-01",
+        due_date="2026-10-31",
+        total_amount_usd=2000.0,
+        items=[base_item],
+    )
+    risk_normal = scorer.assess_risk(inv_normal, ReconciliationMatcher.match(inv_normal, po))
+
+    # Inflated rate + Net-1 rush due date + new vendor
+    inflated_item = LineItem(item_id="ITEM-X", description="Cloud Node", unit_price_usd=1400.0, quantity=2)
+    inv_rush = InvoicePayload(
+        invoice_id="INV-RUSH",
+        vendor_name="CloudPartner",
+        invoice_date="2026-10-01",
+        due_date="2026-10-02",
+        total_amount_usd=2800.0,
+        is_new_vendor=True,
+        items=[inflated_item],
+    )
+    risk_rush = scorer.assess_risk(inv_rush, ReconciliationMatcher.match(inv_rush, po))
+
+    assert risk_rush.anomaly_score > risk_normal.anomaly_score + 20.0
 
 
 def test_anomaly_scorer_offshore_tax_haven_flags():
@@ -168,10 +224,6 @@ def test_anomaly_scorer_offshore_tax_haven_flags():
     assert risk.anomaly_score >= 85.0
     assert any("BZ" in f for f in risk.risk_factors)
 
-
-# --------------------------------------------------------------------------
-# 3. Corporate Governance Approval Router & Dual Currency Math
-# --------------------------------------------------------------------------
 
 def test_governance_router_stp_tier():
     """Verify that low-risk invoices below $1,000 are routed to TIER_1_STP_AUTO_APPROVED."""
@@ -199,7 +251,6 @@ def test_governance_router_stp_tier():
     assert decision.approval_tier == ApprovalTierEnum.TIER_1_STP
     assert decision.authorized is True
     assert decision.requires_hitl is False
-    # Verify INR pegging @ 86.50
     assert decision.total_amount_inr == round(250.0 * 86.50, 2)
 
 
@@ -261,10 +312,6 @@ def test_governance_router_director_signoff_tier():
     assert decision.total_amount_inr == round(25000.0 * 86.50, 2)
 
 
-# --------------------------------------------------------------------------
-# 4. Responsible AI Privacy Scrubber
-# --------------------------------------------------------------------------
-
 def test_privacy_scrubber_pan_aadhaar_phone_email():
     """Verify that PAN cards, Aadhaar numbers, phones, and emails are properly redacted."""
     raw_text = (
@@ -281,7 +328,6 @@ def test_privacy_scrubber_pan_aadhaar_phone_email():
     assert "[PAN_" in scrubbed
     assert "[AADHAAR_" in scrubbed
 
-    # Also verify scrub_invoice helper
     inv = InvoicePayload(
         invoice_id="INV-PII-01",
         vendor_name="Test Corp",

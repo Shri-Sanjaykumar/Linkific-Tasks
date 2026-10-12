@@ -1,6 +1,5 @@
 """Tests for Custom Domain Exceptions and Global Error Handlers."""
 
-import pytest
 from fastapi.testclient import TestClient
 
 from app.exceptions import (
@@ -39,7 +38,6 @@ def test_exception_hierarchy():
 
 def test_global_exception_handler_integration(client: TestClient):
     """Verify that any route throwing a FinDocAuditException produces structured RFC-compliant JSON."""
-    # Temporarily attach a test endpoint that triggers a custom exception
     @app.get("/api/v1/audit/test-exception")
     def trigger_test_exception():
         raise POCommitmentNotFoundError("PO-TEST-MISSING")

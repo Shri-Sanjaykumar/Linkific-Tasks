@@ -1,4 +1,4 @@
-"""Responsible AI PII Scrubber and Numerical Verifier for FinDoc-AuditEngine."""
+"""Responsible AI PII Scrubber and Free-Text Invoice Parser for FinDoc-AuditEngine."""
 
 import re
 from typing import Dict, List, Tuple
@@ -6,16 +6,15 @@ from app.core.logging_config import logger
 
 
 class FinancialPrivacyScrubber:
-    """Detects and masks sensitive PII on financial payloads before storage or external transmission."""
+    """Detects and masks sensitive PII on financial payloads before storage or ML inference."""
 
-    # Pre-compiled regex patterns for maximum efficiency
     PATTERNS: List[Tuple[str, re.Pattern, str]] = [
-        ("EMAIL", re.compile(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,7}\b'), "[EMAIL_MASKED]"),
-        ("PAN", re.compile(r'\b[A-Z]{5}[0-9]{4}[A-Z]{1}\b'), "[PAN_MASKED]"),
-        ("CREDIT_CARD", re.compile(r'\b(?:\d{4}[-\s]?){3}\d{4}\b'), "[CREDIT_CARD_MASKED]"),
-        ("ACCOUNT", re.compile(r'(?i)(?:account|acct|iban|acc)[:\s#]*([0-9]{8,18})\b'), "[ACCOUNT_MASKED]"),
-        ("PHONE", re.compile(r'(?:\+91[\s-]?)?[6-9]\d{4}[\s-]?\d{5}\b'), "[PHONE_MASKED]"),
-        ("AADHAAR", re.compile(r'\b[1-9]\d{3}\s?\d{4}\s?\d{4}\b'), "[AADHAAR_MASKED]"),
+        ("EMAIL", re.compile(r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,7}\b"), "[EMAIL_MASKED]"),
+        ("PAN", re.compile(r"\b[A-Z]{5}[0-9]{4}[A-Z]{1}\b"), "[PAN_MASKED]"),
+        ("CREDIT_CARD", re.compile(r"\b(?:\d{4}[-\s]?){3}\d{4}\b"), "[CREDIT_CARD_MASKED]"),
+        ("ACCOUNT", re.compile(r"(?i)(?:account|acct|iban|acc|bank)[:\s#]*([0-9]{8,18})\b"), "[ACCOUNT_MASKED]"),
+        ("PHONE", re.compile(r"(?:\+91[\s-]?)?[6-9]\d{4}[\s-]?\d{5}\b"), "[PHONE_MASKED]"),
+        ("AADHAAR", re.compile(r"\b[1-9]\d{3}\s?\d{4}\s?\d{4}\b"), "[AADHAAR_MASKED]"),
     ]
 
     @classmethod
@@ -33,11 +32,11 @@ class FinancialPrivacyScrubber:
                 val = match.group(0)
                 if name == "ACCOUNT" and match.groups():
                     val = match.group(1)
-
-                redacted_count += 1
-                surrogate = f"[{name}_{redacted_count:02d}]"
-                surrogates[surrogate] = val
-                sanitized = sanitized.replace(val, surrogate)
+                if val not in surrogates.values():
+                    redacted_count += 1
+                    surrogate = f"[{name}_{redacted_count:02d}]"
+                    surrogates[surrogate] = val
+                    sanitized = sanitized.replace(val, surrogate)
 
         if redacted_count > 0:
             logger.info(f"Privacy Gate: Sanitized {redacted_count} PII token(s) from financial text.")

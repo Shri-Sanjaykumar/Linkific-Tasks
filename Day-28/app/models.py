@@ -38,11 +38,26 @@ class LineItem(BaseModel):
         return data
 
 
+class ItemReconciliationDiff(BaseModel):
+    """Granular per-item comparison between Invoice, PO, and Dock GRN."""
+    item_id: str
+    description: str
+    billed_qty: int
+    po_ordered_qty: int
+    grn_accepted_qty: int
+    grn_rejected_qty: int
+    billed_unit_price_usd: float
+    po_unit_price_usd: float
+    unit_price_delta_usd: float
+    line_variance_usd: float
+    status: str  # "MATCHED", "RATE_VARIANCE", "QTY_SHORTAGE", "UNLISTED_ITEM"
+
+
 class InvoicePayload(BaseModel):
     model_config = ConfigDict(extra="ignore")
 
     invoice_id: str
-    vendor_id: str = "VEND-DEFAULT"
+    vendor_id: str = "VEND-DYNAMIC"
     vendor_name: str
     po_number: Optional[str] = None
     invoice_date: str = "2026-10-01"
@@ -58,12 +73,21 @@ class InvoicePayload(BaseModel):
     vendor_pan: Optional[str] = None
     vendor_bank_account: Optional[str] = None
 
+    @model_validator(mode="before")
+    @classmethod
+    def auto_fill_subtotal(cls, data: Any):
+        if isinstance(data, dict):
+            if (data.get("subtotal_usd") is None or data.get("subtotal_usd") == 0.0) and "total_amount_usd" in data:
+                tax = float(data.get("tax_usd") or 0.0)
+                data["subtotal_usd"] = max(0.0, round(float(data["total_amount_usd"]) - tax, 2))
+        return data
+
 
 class PurchaseOrderRecord(BaseModel):
     model_config = ConfigDict(extra="ignore")
 
     po_number: str
-    vendor_id: str = "VEND-DEFAULT"
+    vendor_id: str = "VEND-DYNAMIC"
     vendor_name: Optional[str] = None
     approved_total_usd: float = Field(default=0.0, ge=0.0)
     items: List[LineItem] = Field(default_factory=list)
@@ -88,10 +112,11 @@ class MatchResult(BaseModel):
     quantity_variance_units: int = 0
     tax_variance_usd: float = 0.0
     discrepancy_details: List[str] = Field(default_factory=list)
+    item_diffs: List[ItemReconciliationDiff] = Field(default_factory=list)
 
 
 class FeatureContribution(BaseModel):
-    """Explainability vector element detailing how a single feature drove the risk score."""
+    """Explainability vector element detailing how a single feature drove the ML risk score."""
     model_config = ConfigDict(extra="ignore")
 
     feature_name: str
@@ -104,10 +129,20 @@ class RiskAssessment(BaseModel):
     model_config = ConfigDict(extra="ignore")
 
     anomaly_score: float = Field(..., ge=0.0, le=100.0)
+    raw_isolation_score: float = 0.0
     risk_level: RiskLevelEnum
     anomaly_detected: bool
     risk_factors: List[str] = Field(default_factory=list)
     feature_contributions: List[FeatureContribution] = Field(default_factory=list)
+
+
+class StageTimingTelemetry(BaseModel):
+    """Microsecond/millisecond execution latency per pipeline stage."""
+    pii_scrub_ms: float = 0.0
+    reconciliation_ms: float = 0.0
+    ml_inference_ms: float = 0.0
+    governance_routing_ms: float = 0.0
+    total_pipeline_ms: float = 0.0
 
 
 class AuditDecision(BaseModel):
@@ -115,6 +150,9 @@ class AuditDecision(BaseModel):
 
     audit_id: str
     invoice_id: str
+    vendor_name: str = ""
+    vendor_country: str = "IN"
+    po_number: Optional[str] = None
     timestamp: str
     approval_tier: ApprovalTierEnum
     authorized: bool
@@ -122,6 +160,7 @@ class AuditDecision(BaseModel):
     total_amount_inr: float
     variance_amount_usd: float
     variance_amount_inr: float
+    quantity_variance_units: int = 0
     risk_score: float
     risk_level: RiskLevelEnum
     requires_hitl: bool
@@ -129,11 +168,13 @@ class AuditDecision(BaseModel):
     reconciliation_summary: str
     audit_flags: List[str] = Field(default_factory=list)
     feature_contributions: List[FeatureContribution] = Field(default_factory=list)
+    item_diffs: List[ItemReconciliationDiff] = Field(default_factory=list)
+    telemetry: Optional[StageTimingTelemetry] = None
 
 
 class SystemErrorResponse(BaseModel):
     """Standardized RFC 7807 problem details error schema."""
     error_code: str
     message: str
+    details: Dict[str, Any] = Field(default_factory=dict)
     timestamp: str
-    details: Dict[str, str] = Field(default_factory=dict)
